@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=WordFeather Deutsch
+Comment=Học tiếng Đức với giọng đọc nơ-ron Thorsten-Voice TTS
+Exec=/home/azin/DEUTSCH/wordfeather/run_local.sh
+Icon=/home/azin/DEUTSCH/wordfeather/icons/192.png
+Terminal=false
+Categories=Education;Languages;
+StartupNotify=true
+

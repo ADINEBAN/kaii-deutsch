@@ -2,23 +2,23 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="1 German word starting with a number or symbol (#) (e.g. der 3D-Druck) with English translations, example sentences and collocations. Deutsch–Englisch Wörterbuch for Goethe and telc exam preparation, levels A1–C2.">
+    <meta name="description" content="1 từ vựng tiếng Đức bắt đầu bằng ký tự hoặc số (#) (ví dụ: der 3D-Druck) kèm bản dịch tiếng Việt thực tế, câu ví dụ và kết hợp từ cho kỳ thi Goethe và telc A1–C2.">
     <meta name="keywords" content="Deutsch lernen, Deutsche Wörterbuch A1–C2, Deutsch Wortschatz, German vocabulary, Goethe Prüfung, telc Prüfung, A1 B1 C1 Deutsch">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO: canonical + robots -->
     <link rel="canonical" href="https://wordfeather.com/dictionary-0-9.html">
     <meta name="robots" content="index, follow">
     <!-- Open Graph -->
-    <meta property="og:title" content="German Words Starting with a number or symbol (#) – Deutsch Wörterbuch A1–C2 | WordFeather">
-    <meta property="og:description" content="1 German word starting with a number or symbol (#) (e.g. der 3D-Druck) with English translations, example sentences and collocations. Deutsch–Englisch Wörterbuch for Goethe and telc exam preparation, levels A1–C2.">
+    <meta property="og:title" content="Từ vựng tiếng Đức bắt đầu bằng ký tự hoặc số (#) – Từ điển Đức - Việt A1–C2 | WordFeather">
+    <meta property="og:description" content="1 từ vựng tiếng Đức bắt đầu bằng ký tự hoặc số (#) (ví dụ: der 3D-Druck) kèm bản dịch tiếng Việt thực tế, câu ví dụ và kết hợp từ cho kỳ thi Goethe và telc A1–C2.">
     <meta property="og:url" content="https://wordfeather.com/dictionary-0-9.html">
     <meta property="og:image" content="https://wordfeather.com/og-image.png">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="WordFeather">
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="German Words Starting with a number or symbol (#) – Deutsch Wörterbuch A1–C2 | WordFeather">
-    <meta name="twitter:description" content="1 German word starting with a number or symbol (#) (e.g. der 3D-Druck) with English translations, example sentences and collocations. Deutsch–Englisch Wörterbuch for Goethe and telc exam preparation, levels A1–C2.">
+    <meta name="twitter:title" content="Từ vựng tiếng Đức bắt đầu bằng ký tự hoặc số (#) – Từ điển Đức - Việt A1–C2 | WordFeather">
+    <meta name="twitter:description" content="1 từ vựng tiếng Đức bắt đầu bằng ký tự hoặc số (#) (ví dụ: der 3D-Druck) kèm bản dịch tiếng Việt thực tế, câu ví dụ và kết hợp từ cho kỳ thi Goethe và telc A1–C2.">
     <meta name="twitter:image" content="https://wordfeather.com/og-image.png">
     
     <meta name="theme-color" content="#1d4ed8">
@@ -32,146 +32,547 @@
     <link rel="icon" type="image/png" sizes="192x192" href="/icons/192.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/180.png">
     <link rel="manifest" href="/manifest.json">
-    <title>German Words Starting with a number or symbol (#) – Deutsch Wörterbuch A1–C2 | WordFeather</title>
+    <title>Từ vựng tiếng Đức bắt đầu bằng ký tự hoặc số (#) – Từ điển Đức - Việt A1–C2 | WordFeather</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --page-bg:#f5f7fb;--page-text:#1f2937;--muted:#64748b;
-            --card-bg:#ffffff;--card-shadow:0 .5rem 1.25rem rgba(0,0,0,.08);
-            --word-border:#e5e7eb;--word-hover:#f0f4ff;
-            --search-bg:#fff;--search-border:#d1d5db;
-            --alpha-bg:rgba(245,247,251,.97);--alpha-border:#e5e7eb;
-            --ex-bg:#f8fafc;--ex-text:#475569;
+            --page-bg: #f0f4fd;
+            --page-text: #0f172a;
+            --muted: #475569;
+            --card-bg: rgba(255, 255, 255, 0.75);
+            --card-shadow: 0 20px 50px -10px rgba(37, 99, 235, 0.1), 0 2px 8px rgba(0, 0, 0, 0.03);
+            --word-border: rgba(255, 255, 255, 0.8);
+            --word-hover: rgba(255, 255, 255, 0.88);
+            --search-bg: rgba(255, 255, 255, 0.65);
+            --search-border: rgba(255, 255, 255, 0.85);
+            --alpha-bg: rgba(255, 255, 255, 0.65);
+            --alpha-border: rgba(255, 255, 255, 0.8);
+            --ex-bg: rgba(241, 245, 249, 0.65);
+            --ex-text: #1e293b;
+            --glass-blur: blur(20px) saturate(190%);
         }
-        [data-bs-theme="dark"]{
-            --page-bg:#0f172a;--page-text:#e2e8f0;--muted:#94a3b8;
-            --card-bg:#1e293b;--card-shadow:0 .5rem 1.25rem rgba(0,0,0,.4);
-            --word-border:#334155;--word-hover:#283548;
-            --search-bg:#1e293b;--search-border:#475569;
-            --alpha-bg:rgba(15,23,42,.97);--alpha-border:#334155;
-            --ex-bg:#172033;--ex-text:#94a3b8;
+        [data-bs-theme="dark"] {
+            --page-bg: #090d16;
+            --page-text: #f1f5f9;
+            --muted: #94a3b8;
+            --card-bg: rgba(15, 23, 42, 0.72);
+            --card-shadow: 0 24px 60px -12px rgba(0, 0, 0, 0.65), 0 2px 10px rgba(0, 0, 0, 0.4);
+            --word-border: rgba(255, 255, 255, 0.1);
+            --word-hover: rgba(30, 41, 59, 0.85);
+            --search-bg: rgba(30, 41, 59, 0.65);
+            --search-border: rgba(255, 255, 255, 0.12);
+            --alpha-bg: rgba(15, 23, 42, 0.7);
+            --alpha-border: rgba(255, 255, 255, 0.1);
+            --ex-bg: rgba(30, 41, 59, 0.55);
+            --ex-text: #cbd5e1;
+            --glass-blur: blur(20px) saturate(200%);
         }
-        html{scroll-behavior:smooth}
-        body{background:var(--page-bg);font-family:'Inter',sans-serif;color:var(--page-text)}
-        .content-card{border:0;border-radius:1rem;box-shadow:var(--card-shadow);background:var(--card-bg)}
-        .breadcrumb a{text-decoration:none}.breadcrumb a:hover{text-decoration:underline}
-        .search-wrap{position:sticky;top:0;z-index:1030;background:var(--page-bg);padding:.75rem 0}
-        .search-wrap input{background:var(--search-bg);border:2px solid var(--search-border);border-radius:.75rem;padding:.7rem 1rem .7rem 2.75rem;font-size:1rem;color:var(--page-text);width:100%;transition:border-color .2s}
-        .search-wrap input:focus{outline:none;border-color:#1d4ed8;box-shadow:0 0 0 3px rgba(29,78,216,.15)}
-        .search-wrap input::placeholder{color:var(--muted)}
-        .search-icon{position:absolute;left:1rem;top:50%;transform:translateY(-50%);opacity:.4;pointer-events:none}
-        .level-filter{display:flex;gap:.3rem;flex-wrap:wrap}
-        .level-filter button{border:1.5px solid var(--word-border);background:transparent;border-radius:2rem;padding:.2rem .65rem;font-size:.78rem;font-weight:600;cursor:pointer;color:var(--muted);transition:all .15s}
-        .level-filter button.active{color:#fff}
-        .level-filter button[data-level="ALL"].active{background:#1d4ed8;border-color:#1d4ed8}
-        .level-filter button[data-level="A1"].active{background:#16a34a;border-color:#16a34a}
-        .level-filter button[data-level="A2"].active{background:#2563eb;border-color:#2563eb}
-        .level-filter button[data-level="B1"].active{background:#7c3aed;border-color:#7c3aed}
-        .level-filter button[data-level="B2"].active{background:#ea580c;border-color:#ea580c}
-        .level-filter button[data-level="C1"].active{background:#dc2626;border-color:#dc2626}
-        .level-filter button[data-level="C2"].active{background:#0d9488;border-color:#0d9488}
-        .dict-layout{display:grid;grid-template-columns:44px 1fr;gap:.75rem}
-        @media(max-width:768px){.dict-layout{grid-template-columns:1fr}.alpha-nav{position:static!important;display:flex;flex-wrap:wrap;gap:.25rem;max-height:none!important;margin-bottom:.75rem}.alpha-nav a{display:inline-block;padding:.25rem .5rem!important}}
-        .alpha-nav{position:sticky;top:4.5rem;z-index:1020;background:var(--alpha-bg);border:1px solid var(--alpha-border);border-radius:.6rem;padding:.35rem;backdrop-filter:blur(4px);max-height:calc(100vh - 6rem);overflow-y:auto}
-        .alpha-nav a{display:block;text-align:center;padding:.12rem .3rem;font-size:.75rem;font-weight:700;color:var(--muted);text-decoration:none;border-radius:.25rem;transition:all .15s}
-        .alpha-nav a:hover{background:rgba(29,78,216,.12);color:#1d4ed8}
-        .letter-header{font-size:1.5rem;font-weight:800;padding:1.25rem 0 .5rem;border-bottom:2px solid #1d4ed8;color:#1d4ed8}
-        [data-bs-theme="dark"] .letter-header{color:#818cf8;border-color:#818cf8}
-        .word-card{padding:.6rem 0;border-bottom:1px solid var(--word-border);transition:background .1s}
-        .word-card:hover{background:var(--word-hover);margin:0 -.5rem;padding-left:.5rem;padding-right:.5rem;border-radius:.5rem}
-        .word-main{display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap}
-        .word-de-wrap{display:flex;align-items:center;gap:.35rem;flex-wrap:wrap}
-        .word-de{font-weight:700;font-size:1rem}.word-art{font-size:.8rem;font-weight:600}
-        .word-level{font-size:.65rem!important;padding:.15rem .45rem!important}
-        .word-en{color:var(--muted);font-size:.92rem}
-        .word-conjugation{margin-top:.25rem;font-size:.78rem;color:var(--conj-text,#0d7d4d);background:var(--conj-bg,#f0fdf4);border:1px solid var(--conj-border,#bbf7d0);border-radius:.35rem;padding:.25rem .55rem;line-height:1.5}
-        [data-bs-theme="dark"] .word-conjugation{--conj-text:#4ade80;--conj-bg:rgba(74,222,128,.08);--conj-border:rgba(74,222,128,.25)}
-        .conj-toggle{display:inline-flex;align-items:center;gap:.25rem;margin-top:.4rem;font-size:.75rem;font-weight:700;color:#fff;cursor:pointer;user-select:none;border:none;background:#7c3aed;border-radius:999px;padding:.25rem .7rem;box-shadow:0 1px 3px rgba(124,58,237,.35);transition:background .15s,transform .1s}
-        .conj-toggle:hover{background:#6d28d9;transform:translateY(-1px)}
-        .conj-toggle:active{transform:translateY(0)}
-        .conj-toggle:disabled{background:#94a3b8;box-shadow:none;cursor:default;transform:none}
-        [data-bs-theme="dark"] .conj-toggle{background:#8b5cf6}
-        [data-bs-theme="dark"] .conj-toggle:hover{background:#7c3aed}
-        .conj-table-wrap{width:100%;flex-basis:100%;margin-top:.5rem;font-size:.82rem;border-top:1px dashed var(--conj-border,#bbf7d0);padding-top:.6rem}
-        .conj-mood-title{font-weight:700;color:var(--conj-text,#0d7d4d);margin:.9rem 0 .5rem;font-size:.85rem;text-transform:uppercase;letter-spacing:.03em}
-        [data-bs-theme="dark"] .conj-mood-title{color:#4ade80}
-        .conj-mood-title:first-child{margin-top:0}
-        .conj-mood-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(12rem,1fr));gap:.6rem}
-        .conj-tense-block{background:var(--conj-card-bg,#f8fafc);border:1px solid var(--conj-card-border,#e2e8f0);border-radius:.5rem;padding:.55rem .7rem}
-        [data-bs-theme="dark"] .conj-tense-block{--conj-card-bg:#1e293b;--conj-card-border:#334155}
-        .conj-tense-label{font-weight:700;text-align:center;margin-bottom:.4rem;padding-bottom:.35rem;font-size:.76rem;color:var(--page-text);border-bottom:1px solid var(--conj-card-border,#e2e8f0)}
-        .conj-row{padding:.1rem 0;font-size:.78rem;line-height:1.3}
-        .conj-en-line{display:none;color:var(--muted);font-style:italic;font-size:.72rem;line-height:1.2;padding-left:.1rem}
-        body.show-english .conj-en-line{display:block}
-        .conj-en-toggle-wrap{display:flex;align-items:center;gap:.5rem;margin-bottom:.6rem;font-size:.8rem;color:var(--muted)}
-        .conj-en-toggle{position:relative;display:inline-block;width:2.4rem;height:1.3rem;flex-shrink:0}
-        .conj-en-toggle input{opacity:0;width:0;height:0}
-        .conj-en-toggle-slider{position:absolute;cursor:pointer;inset:0;background:#cbd5e1;border-radius:999px;transition:.2s}
-        .conj-en-toggle-slider:before{content:"";position:absolute;height:1rem;width:1rem;left:.15rem;bottom:.15rem;background:#fff;border-radius:50%;transition:.2s}
-        .conj-en-toggle input:checked + .conj-en-toggle-slider{background:#7c3aed}
-        .conj-en-toggle input:checked + .conj-en-toggle-slider:before{transform:translateX(1.1rem)}
-        .conj-person{color:var(--muted);margin-right:.25rem}
-        .conj-imperativ-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(12rem,1fr));gap:.6rem}
-        .conj-imperativ-row span{background:var(--conj-card-bg,#f8fafc);border:1px solid var(--conj-card-border,#e2e8f0);border-radius:.5rem;padding:.5rem .7rem;text-align:center;font-size:.78rem;display:block}
-        [data-bs-theme="dark"] .conj-imperativ-row span{--conj-card-bg:#1e293b;--conj-card-border:#334155}
-        .word-example{margin-top:.3rem;padding:.35rem .6rem;background:var(--ex-bg);border-radius:.4rem;font-size:.85rem;border-left:3px solid #1d4ed8}
-        .ex-de{color:var(--ex-text)}.ex-en{color:var(--muted);font-style:italic;font-size:.82rem}
-        .art-m{color:#2563eb}.art-f{color:#dc2626}.art-n{color:#16a34a}
-        [data-bs-theme="dark"] .art-m{color:#60a5fa}[data-bs-theme="dark"] .art-f{color:#f87171}[data-bs-theme="dark"] .art-n{color:#4ade80}
-        [data-bs-theme="dark"] .word-example{border-left-color:#818cf8}
-        .stats{font-size:.82rem;font-weight:700;color:#fff;background:#6c757d;padding:.35em .65em;border-radius:.375rem;display:inline-block}.no-results{text-align:center;padding:3rem 1rem;color:var(--muted)}.info-line{font-size:.85rem;color:var(--muted)}
-        .d-tts{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border:none;background:none;cursor:pointer;opacity:.35;transition:opacity .2s;padding:0;margin-left:3px;vertical-align:middle;border-radius:50%;font-size:13px}
-        .d-tts:hover{opacity:.8;background:rgba(29,78,216,.1)}.d-tts.playing{opacity:1;color:#1d4ed8;background:rgba(29,78,216,.15)}
-        @media (hover:none){.d-tts{opacity:.7;width:28px;height:28px}}
-        [data-bs-theme="dark"] .d-tts:hover{background:rgba(99,102,241,.2)}[data-bs-theme="dark"] .d-tts.playing{color:#818cf8;background:rgba(99,102,241,.25)}
-    
-.word-collocations {
-    margin-top: 6px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-}
-.col-item {
-    background: var(--col-bg, #f0f4ff);
-    color: var(--col-text, #1d4ed8);
-    border: 1px solid var(--col-border, #bfdbfe);
-    border-radius: 4px;
-    padding: 2px 8px;
-    font-size: 12px;
-    font-style: italic;
-}
 
+        html { scroll-behavior: smooth; }
+        body {
+            background: var(--page-bg);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--page-text);
+            line-height: 1.7;
+            position: relative;
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
 
-        .pos-filter{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.5rem}
-        .pos-filter button{padding:.25rem .75rem;border-radius:999px;border:1px solid #d1d5db;background:#fff;cursor:pointer;font-size:.85rem;transition:all .15s}
-        .pos-filter button:hover{background:#f3f4f6}
-        .pos-filter button.active{background:#7c3aed;border-color:#7c3aed;color:#fff}
-        .filter-label{font-size:.8rem;color:#64748b;font-weight:600;white-space:nowrap;min-width:2.5rem}
-        [data-bs-theme="dark"] .pos-filter button{background:#1e293b;border-color:#374151;color:#e2e8f0}
-        [data-bs-theme="dark"] .pos-filter button:hover{background:#334155}
-        [data-bs-theme="dark"] .pos-filter button.active{background:#7c3aed;border-color:#7c3aed;color:#fff}
-        #categoryFilter{border:1.5px solid #0d9488;border-radius:999px;font-weight:600;font-size:.85rem;color:#fff;padding:.3rem .9rem;background:#0d9488;cursor:pointer;transition:all .15s}
-        #categoryFilter:hover{background:#0f766e}
-        #categoryFilter:focus{outline:2px solid #0d9488;outline-offset:1px}
-        [data-bs-theme="dark"] #categoryFilter{background:#0d9488;border-color:#0d9488;color:#fff}
-        [data-bs-theme="dark"] #categoryFilter:hover{background:#0f766e}
-        #pageLoadingOverlay{position:fixed;inset:0;z-index:9999;background:#f8fafc;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem}
-        [data-bs-theme="dark"] #pageLoadingOverlay{background:#0f172a}
-        [data-bs-theme="dark"] #pageLoadingOverlay p{color:#94a3b8}
-        /* Covers the whole viewport (not just the word-list area) so it's
-           unmistakably visible and genuinely blocks clicks anywhere on the
-           page during a filter recompute — pointer-events:auto plus a high
-           z-index means clicks on filter buttons underneath don't register
-           until this is hidden again, preventing rapid repeat-clicks from
-           queueing up multiple overlapping filter passes. Semi-transparent
-           rather than opaque, and display:none by default (toggled by
-           runFilterWords()), so it never appears at initial page load —
-           that's pageLoadingOverlay's job, not this one's. */
-        #filterLoadingOverlay{display:none;position:fixed;inset:0;z-index:9998;background:rgba(248,250,252,.85);pointer-events:auto;flex-direction:column;align-items:center;justify-content:center;gap:.75rem}
-        [data-bs-theme="dark"] #filterLoadingOverlay{background:rgba(15,23,42,.85)}
-        [data-bs-theme="dark"] #filterLoadingOverlay p{color:#94a3b8}
-        @keyframes pageLoadSpin{to{transform:rotate(360deg)}}
+        /* ── Fluid Ambient Mesh Glow Orbs behind Liquid Glass ── */
+        body::before, body::after {
+            content: "";
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(90px);
+            z-index: -2;
+            pointer-events: none;
+            opacity: 0.55;
+            animation: fluidOrbFloat 18s ease-in-out infinite alternate;
+            will-change: transform;
+        }
+        body::before {
+            top: -12vw;
+            left: -8vw;
+            width: 50vw;
+            height: 50vw;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.45) 0%, rgba(99, 102, 241, 0.25) 55%, transparent 80%);
+        }
+        body::after {
+            bottom: -15vw;
+            right: -10vw;
+            width: 55vw;
+            height: 55vw;
+            background: radial-gradient(circle, rgba(236, 72, 153, 0.35) 0%, rgba(139, 92, 246, 0.22) 55%, transparent 80%);
+            animation-duration: 24s;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes fluidOrbFloat {
+            0% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(60px, 45px) scale(1.08); }
+            100% { transform: translate(-45px, 70px) scale(0.94); }
+        }
+        [data-bs-theme="dark"] body::before {
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.35) 0%, rgba(79, 70, 229, 0.22) 60%, transparent 80%);
+            opacity: 0.5;
+        }
+        [data-bs-theme="dark"] body::after {
+            background: radial-gradient(circle, rgba(168, 85, 247, 0.28) 0%, rgba(219, 39, 119, 0.18) 60%, transparent 80%);
+            opacity: 0.4;
+        }
+
+        /* ── Liquid Glass Main Content Card ── */
+        .content-card {
+            background: var(--card-bg) !important;
+            backdrop-filter: var(--glass-blur) !important;
+            -webkit-backdrop-filter: var(--glass-blur) !important;
+            border: 1px solid var(--word-border) !important;
+            border-radius: 1.5rem !important;
+            box-shadow: var(--card-shadow), inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.85) !important;
+            position: relative;
+            transition: box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        [data-bs-theme="dark"] .content-card {
+            box-shadow: var(--card-shadow), inset 0 1px 1px 0 rgba(255, 255, 255, 0.12) !important;
+        }
+
+        /* ── Fluid Page Heading ── */
+        .page-title-liquid {
+            font-weight: 850 !important;
+            letter-spacing: -0.025em;
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+        [data-bs-theme="dark"] .page-title-liquid {
+            background: linear-gradient(135deg, #ffffff 0%, #93c5fd 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .breadcrumb a { text-decoration: none; color: #3b82f6; font-weight: 500; }
+        .breadcrumb a:hover { text-decoration: underline; color: #1d4ed8; }
+
+        /* ── Liquid Search Bar Capsule ── */
+        .search-wrap {
+            position: sticky;
+            top: 4.6rem;
+            z-index: 1030;
+            background: transparent;
+            padding: 0.6rem 0;
+        }
+        .search-wrap > .position-relative {
+            background: var(--search-bg);
+            backdrop-filter: var(--glass-blur);
+            -webkit-backdrop-filter: var(--glass-blur);
+            border: 1.5px solid var(--search-border);
+            border-radius: 999px;
+            box-shadow: 0 10px 30px -5px rgba(37, 99, 235, 0.08), inset 0 1px 1px rgba(255, 255, 255, 0.85);
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .search-wrap > .position-relative:focus-within {
+            background: rgba(255, 255, 255, 0.92);
+            border-color: #3b82f6;
+            box-shadow: 
+                0 0 0 4px rgba(59, 130, 246, 0.22),
+                0 16px 36px -4px rgba(59, 130, 246, 0.18),
+                inset 0 1px 1px rgba(255, 255, 255, 1);
+            transform: translateY(-1px);
+        }
+        [data-bs-theme="dark"] .search-wrap > .position-relative {
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+        }
+        [data-bs-theme="dark"] .search-wrap > .position-relative:focus-within {
+            background: rgba(30, 41, 59, 0.95);
+            border-color: #60a5fa;
+            box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.25), 0 16px 40px -4px rgba(0, 0, 0, 0.6);
+        }
+        .search-wrap input {
+            background: transparent !important;
+            border: none !important;
+            border-radius: 999px;
+            padding: 0.8rem 1.25rem 0.8rem 3.1rem;
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--page-text);
+            width: 100%;
+            outline: none !important;
+            box-shadow: none !important;
+        }
+        .search-wrap input::placeholder { color: var(--muted); opacity: 0.8; }
+        .search-icon {
+            position: absolute;
+            left: 1.15rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #3b82f6;
+            opacity: 0.85;
+            pointer-events: none;
+            transition: transform 0.2s ease;
+        }
+        .search-wrap > .position-relative:focus-within .search-icon {
+            transform: translateY(-50%) scale(1.1);
+            color: #1d4ed8;
+        }
+        [data-bs-theme="dark"] .search-wrap > .position-relative:focus-within .search-icon {
+            color: #93c5fd;
+        }
+
+        /* ── Liquid Level Filter Pills ── */
+        .level-filter {
+            display: flex;
+            gap: 0.45rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .level-filter button {
+            position: relative;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--word-border);
+            border-radius: 999px;
+            padding: 0.32rem 0.85rem;
+            font-size: 0.82rem;
+            font-weight: 700;
+            cursor: pointer;
+            color: var(--muted);
+            transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03), inset 0 1px 1px rgba(255, 255, 255, 0.85);
+        }
+        .level-filter button:hover {
+            transform: translateY(-2px) scale(1.04);
+            color: #1d4ed8;
+            border-color: #93c5fd;
+            box-shadow: 0 6px 16px rgba(29, 78, 216, 0.12);
+        }
+        [data-bs-theme="dark"] .level-filter button {
+            background: rgba(30, 41, 59, 0.6);
+            color: #cbd5e1;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.08);
+        }
+        [data-bs-theme="dark"] .level-filter button:hover {
+            color: #93c5fd;
+            border-color: #60a5fa;
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.25);
+        }
+        .level-filter button.active {
+            color: #ffffff !important;
+            border-color: transparent !important;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.4) !important;
+            transform: translateY(-1px);
+        }
+        .level-filter button[data-level="ALL"].active { background: linear-gradient(135deg, #2563eb, #1d4ed8) !important; }
+        .level-filter button[data-level="A1"].active { background: linear-gradient(135deg, #10b981, #059669) !important; box-shadow: 0 4px 16px rgba(16, 185, 129, 0.35) !important; }
+        .level-filter button[data-level="A2"].active { background: linear-gradient(135deg, #0284c7, #0369a1) !important; box-shadow: 0 4px 16px rgba(2, 132, 199, 0.35) !important; }
+        .level-filter button[data-level="B1"].active { background: linear-gradient(135deg, #8b5cf6, #6d28d9) !important; box-shadow: 0 4px 16px rgba(139, 92, 246, 0.35) !important; }
+        .level-filter button[data-level="B2"].active { background: linear-gradient(135deg, #f97316, #c2410c) !important; box-shadow: 0 4px 16px rgba(249, 115, 22, 0.35) !important; }
+        .level-filter button[data-level="C1"].active { background: linear-gradient(135deg, #ef4444, #b91c1c) !important; box-shadow: 0 4px 16px rgba(239, 68, 68, 0.35) !important; }
+        .level-filter button[data-level="C2"].active { background: linear-gradient(135deg, #14b8a6, #0f766e) !important; box-shadow: 0 4px 16px rgba(20, 184, 166, 0.35) !important; }
+
+        /* ── Alphabet Floating Glass Rail ── */
+        .dict-layout { display: grid; grid-template-columns: 50px 1fr; gap: 1.25rem; }
+        @media(max-width:768px){
+            .dict-layout { grid-template-columns: 1fr; }
+            .alpha-nav { position: static!important; display: flex; flex-wrap: wrap; gap: .3rem; max-height: none!important; margin-bottom: .85rem; }
+            .alpha-nav a { display: inline-block; padding: .3rem .6rem!important; }
+        }
+        .alpha-nav {
+            position: sticky;
+            top: 5rem;
+            z-index: 1020;
+            background: var(--alpha-bg) !important;
+            border: 1px solid var(--alpha-border) !important;
+            border-radius: 1.2rem !important;
+            padding: 0.5rem 0.3rem !important;
+            backdrop-filter: var(--glass-blur) !important;
+            -webkit-backdrop-filter: var(--glass-blur) !important;
+            max-height: calc(100vh - 6.5rem);
+            overflow-y: auto;
+            box-shadow: 0 12px 32px -4px rgba(29, 78, 216, 0.08), inset 0 1px 1px rgba(255, 255, 255, 0.9) !important;
+        }
+        [data-bs-theme="dark"] .alpha-nav {
+            box-shadow: 0 12px 32px -4px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.1) !important;
+        }
+        .alpha-nav a {
+            display: block;
+            text-align: center;
+            padding: 0.22rem 0.35rem;
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--muted);
+            text-decoration: none;
+            border-radius: 0.5rem;
+            margin: 1px 0;
+            transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .alpha-nav a:hover, .alpha-nav a[aria-current="page"] {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.95), rgba(29, 78, 216, 0.95)) !important;
+            color: #ffffff !important;
+            transform: scale(1.15);
+            box-shadow: 0 4px 12px rgba(29, 78, 216, 0.35);
+        }
+
+        .letter-header {
+            font-size: 1.6rem;
+            font-weight: 850;
+            padding: 1.25rem 0 0.5rem;
+            border-bottom: 2px solid #3b82f6;
+            color: #2563eb;
+            letter-spacing: -0.02em;
+        }
+        [data-bs-theme="dark"] .letter-header {
+            color: #93c5fd;
+            border-color: #60a5fa;
+        }
+
+        /* ── Liquid Glass Word Cards ── */
+        .word-card {
+            position: relative;
+            padding: 0.95rem 1.1rem !important;
+            margin: 0.45rem 0 !important;
+            background: rgba(255, 255, 255, 0.45);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(226, 232, 240, 0.7) !important;
+            border-radius: 1rem !important;
+            transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+            scroll-margin-top: 7rem;
+        }
+        .word-card:hover {
+            background: var(--word-hover) !important;
+            border-color: rgba(96, 165, 250, 0.6) !important;
+            transform: translateY(-2px) scale(1.006) !important;
+            box-shadow: 
+                0 14px 30px -4px rgba(29, 78, 216, 0.09),
+                inset 0 1px 1.5px rgba(255, 255, 255, 1) !important;
+        }
+        [data-bs-theme="dark"] .word-card {
+            background: rgba(17, 24, 39, 0.5) !important;
+            border-color: rgba(255, 255, 255, 0.08) !important;
+        }
+        [data-bs-theme="dark"] .word-card:hover {
+            background: var(--word-hover) !important;
+            border-color: rgba(96, 165, 250, 0.35) !important;
+            box-shadow: 0 14px 30px -4px rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.12) !important;
+        }
+        .word-card:target {
+            outline: 2.5px solid #3b82f6;
+            outline-offset: 3px;
+            border-radius: 1rem;
+        }
+
+        .word-main { display: flex; align-items: baseline; gap: 0.55rem; flex-wrap: wrap; }
+        .word-de-wrap { display: flex; align-items: center; gap: 0.45rem; flex-wrap: wrap; }
+        .word-de { font-weight: 800; font-size: 1.1rem; letter-spacing: -0.01em; }
+        .word-art { font-size: 0.85rem; font-weight: 600; }
+        .word-level { font-size: 0.72rem !important; padding: 0.2rem 0.6rem !important; border-radius: 999px !important; font-weight: 700; box-shadow: 0 2px 6px rgba(0,0,0,0.12); }
+        .word-en { color: var(--muted); font-size: 0.96rem; font-weight: 500; }
+        .word-vi { font-size: 0.88rem; color: var(--muted); width: 100%; flex-basis: 100%; margin-top: 0.2rem; line-height: 1.45; font-weight: 500; }
+
+        /* ── Glass Speaker Audio Button ── */
+        .d-tts, .tts-btn {
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: 30px !important;
+            height: 30px !important;
+            border-radius: 50% !important;
+            border: 1px solid rgba(59, 130, 246, 0.25) !important;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.85), rgba(239, 246, 255, 0.65)) !important;
+            backdrop-filter: blur(8px) !important;
+            -webkit-backdrop-filter: blur(8px) !important;
+            color: #2563eb !important;
+            cursor: pointer !important;
+            margin-left: 6px !important;
+            vertical-align: middle !important;
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+            box-shadow: 0 2px 6px rgba(37, 99, 235, 0.1), inset 0 1px 1px #fff !important;
+        }
+        .d-tts:hover, .tts-btn:hover {
+            transform: translateY(-1px) scale(1.12) !important;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+            color: #ffffff !important;
+            border-color: transparent !important;
+            box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35) !important;
+        }
+        .d-tts.playing, .tts-btn.playing, .d-tts.is-speaking {
+            background: linear-gradient(135deg, #10b981, #059669) !important;
+            color: #ffffff !important;
+            border-color: transparent !important;
+            box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.25), 0 4px 16px rgba(16, 185, 129, 0.4) !important;
+            animation: liquidPulse 1.4s ease-in-out infinite !important;
+        }
+        @keyframes liquidPulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+            50% { transform: scale(1.1); box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+        [data-bs-theme="dark"] .d-tts, [data-bs-theme="dark"] .tts-btn {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.6)) !important;
+            border-color: rgba(96, 165, 250, 0.2) !important;
+            color: #93c5fd !important;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.1) !important;
+        }
+        [data-bs-theme="dark"] .d-tts:hover, [data-bs-theme="dark"] .tts-btn:hover {
+            background: linear-gradient(135deg, #3b82f6, #2563eb) !important;
+            color: #ffffff !important;
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4) !important;
+        }
+
+        /* ── Example Sentences & Conjugation Panels ── */
+        .word-example {
+            margin-top: 0.5rem !important;
+            padding: 0.55rem 0.95rem !important;
+            background: var(--ex-bg) !important;
+            backdrop-filter: blur(8px) !important;
+            border-radius: 0.75rem !important;
+            border: 1px solid rgba(226, 232, 240, 0.7) !important;
+            border-left: 3.5px solid #3b82f6 !important;
+        }
+        [data-bs-theme="dark"] .word-example {
+            border-color: rgba(255, 255, 255, 0.08) !important;
+            border-left-color: #818cf8 !important;
+        }
+        .ex-de { color: var(--ex-text); font-weight: 500; }
+        .ex-en { color: var(--muted); font-style: italic; font-size: 0.85rem; }
+        .ex-vi { color: var(--muted); font-size: 0.85rem; line-height: 1.45; display: block; margin-top: 0.2rem; font-style: normal; opacity: 0.9; }
+
+        .word-collocations { margin-top: 6px; display: flex; flex-wrap: wrap; gap: 5px; }
+        .col-item {
+            background: rgba(238, 242, 255, 0.7) !important;
+            color: #1d4ed8 !important;
+            border: 1px solid rgba(191, 219, 254, 0.8) !important;
+            border-radius: 999px !important;
+            padding: 2px 10px !important;
+            font-size: 12px;
+            font-weight: 500;
+            transition: all 0.15s ease;
+        }
+        .col-item:hover { background: #dbeafe !important; transform: translateY(-1px); }
+        [data-bs-theme="dark"] .col-item {
+            background: rgba(30, 41, 59, 0.6) !important;
+            color: #93c5fd !important;
+            border-color: rgba(59, 130, 246, 0.3) !important;
+        }
+        [data-bs-theme="dark"] .col-item:hover { background: rgba(59, 130, 246, 0.25) !important; }
+
+        .art-m { color: #2563eb; } .art-f { color: #dc2626; } .art-n { color: #16a34a; }
+        [data-bs-theme="dark"] .art-m { color: #60a5fa; } [data-bs-theme="dark"] .art-f { color: #f87171; } [data-bs-theme="dark"] .art-n { color: #4ade80; }
+
+        /* Conjugation Buttons & Details */
+        .conj-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            margin-top: 0.4rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+            border-radius: 999px;
+            padding: 0.28rem 0.85rem;
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.28);
+            transition: all 0.18s ease;
+        }
+        .conj-toggle:hover {
+            transform: translateY(-1px) scale(1.03);
+            box-shadow: 0 6px 18px rgba(124, 58, 237, 0.4);
+        }
+        .conj-table-wrap {
+            width: 100%;
+            flex-basis: 100%;
+            margin-top: 0.6rem;
+            font-size: 0.82rem;
+            border-top: 1px dashed rgba(139, 92, 246, 0.3);
+            padding-top: 0.6rem;
+        }
+        .conj-mood-title { font-weight: 700; color: #10b981; margin: 0.9rem 0 0.5rem; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.03em; }
+        [data-bs-theme="dark"] .conj-mood-title { color: #4ade80; }
+        .conj-mood-title:first-child { margin-top: 0; }
+        .conj-mood-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); gap: 0.65rem; }
+        .conj-tense-block {
+            background: var(--ex-bg);
+            border: 1px solid var(--word-border);
+            border-radius: 0.75rem;
+            padding: 0.6rem 0.8rem;
+            backdrop-filter: blur(8px);
+        }
+        .conj-tense-label { font-weight: 700; text-align: center; margin-bottom: 0.4rem; padding-bottom: 0.35rem; font-size: 0.76rem; color: var(--page-text); border-bottom: 1px solid rgba(226, 232, 240, 0.5); }
+        .conj-row { padding: 0.1rem 0; font-size: 0.78rem; line-height: 1.3; }
+        .conj-en-line { display: none; color: var(--muted); font-style: italic; font-size: 0.72rem; line-height: 1.2; padding-left: 0.1rem; }
+        body.show-english .conj-en-line { display: block; }
+        .conj-en-toggle-wrap { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.6rem; font-size: 0.8rem; color: var(--muted); }
+        .conj-en-toggle { position: relative; display: inline-block; width: 2.4rem; height: 1.3rem; flex-shrink: 0; }
+        .conj-en-toggle input { opacity: 0; width: 0; height: 0; }
+        .conj-en-toggle-slider { position: absolute; cursor: pointer; inset: 0; background: #cbd5e1; border-radius: 999px; transition: 0.2s; }
+        .conj-en-toggle-slider:before { content: ""; position: absolute; height: 1rem; width: 1rem; left: 0.15rem; bottom: 0.15rem; background: #fff; border-radius: 50%; transition: 0.2s; }
+        .conj-en-toggle input:checked + .conj-en-toggle-slider { background: #7c3aed; }
+        .conj-en-toggle input:checked + .conj-en-toggle-slider:before { transform: translateX(1.1rem); }
+        .conj-person { color: var(--muted); margin-right: 0.25rem; }
+        .conj-imperativ-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); gap: 0.6rem; }
+        .conj-imperativ-row span { background: var(--ex-bg); border: 1px solid var(--word-border); border-radius: 0.5rem; padding: 0.5rem 0.7rem; text-align: center; font-size: 0.78rem; display: block; }
+
+        .stats {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #fff;
+            background: linear-gradient(135deg, #475569, #334155);
+            padding: 0.35em 0.75em;
+            border-radius: 999px;
+            display: inline-block;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .info-line { font-size: 0.85rem; color: var(--muted); }
+
+        .pos-filter { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
+        .pos-filter button {
+            padding: 0.26rem 0.8rem;
+            border-radius: 999px;
+            border: 1px solid var(--word-border);
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(8px);
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--muted);
+            transition: all 0.18s;
+        }
+        .pos-filter button:hover { background: #f1f5f9; color: #1d4ed8; }
+        .pos-filter button.active {
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+            border-color: transparent;
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+        }
+        [data-bs-theme="dark"] .pos-filter button { background: rgba(30, 41, 59, 0.6); color: #cbd5e1; }
+        [data-bs-theme="dark"] .pos-filter button.active { color: #fff; }
+
+        #categoryFilter {
+            border: 1px solid transparent;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: #fff;
+            padding: 0.32rem 0.95rem;
+            background: linear-gradient(135deg, #0d9488, #0f766e);
+            cursor: pointer;
+            transition: all 0.18s;
+            box-shadow: 0 4px 14px rgba(13, 148, 136, 0.28);
+        }
+        #categoryFilter:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(13, 148, 136, 0.4); }
+
+        #pageLoadingOverlay, #filterLoadingOverlay {
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        @keyframes pageLoadSpin { to { transform: rotate(360deg); } }
     </style>
     <script>
         // Apply theme immediately to prevent flash
@@ -179,16 +580,16 @@
         document.documentElement.setAttribute('data-bs-theme', saved);
     </script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "WordFeather", "item": "https://wordfeather.com/"}, {"@type": "ListItem", "position": 2, "name": "Wörterbuch", "item": "https://wordfeather.com/dictionary.html"}, {"@type": "ListItem", "position": 3, "name": "#", "item": "https://wordfeather.com/dictionary-0-9.html"}]}</script>
-<style>.word-card{scroll-margin-top:7rem}.word-card:target{outline:2px solid #1d4ed8;outline-offset:2px;border-radius:.5rem}.letter-pager{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:1.25rem 0 0;font-weight:600}.search-scope{font-size:.8rem;color:var(--muted,#64748b)}</style>
+<style>.word-card{scroll-margin-top:7rem}.word-card:target{outline:2.5px solid #3b82f6;outline-offset:3px;border-radius:1rem}.letter-pager{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:1.25rem 0 0;font-weight:700}.letter-pager a{display:inline-flex;align-items:center;padding:0.45rem 1.1rem;background:rgba(255,255,255,0.7);border:1px solid var(--word-border);border-radius:999px;backdrop-filter:blur(10px);text-decoration:none;color:#2563eb;transition:all .2s ease;box-shadow:0 2px 8px rgba(0,0,0,0.03)}.letter-pager a:hover{transform:translateY(-2px);background:#2563eb;color:#fff;box-shadow:0 6px 18px rgba(37,99,235,0.3)}[data-bs-theme="dark"] .letter-pager a{background:rgba(30,41,59,0.7);color:#93c5fd;border-color:rgba(255,255,255,0.1)}[data-bs-theme="dark"] .letter-pager a:hover{background:#3b82f6;color:#fff}.search-scope{font-size:.82rem;color:var(--muted,#64748b)}</style>
 </head>
 <body>
 <div id="pageLoadingOverlay">
     <div style="width:48px;height:48px;border:4px solid #dbeafe;border-top-color:#1d4ed8;border-radius:50%;animation:pageLoadSpin .8s linear infinite;"></div>
-    <p style="color:#64748b;font-size:.95rem;font-weight:600;margin:0;">Wörterbuch wird geladen… / Loading dictionary…</p>
+    <p style="color:#64748b;font-size:.95rem;font-weight:600;margin:0;">Wörterbuch wird geladen… / Đang tải từ điển…</p>
 </div>
 <div id="filterLoadingOverlay">
     <div style="width:40px;height:40px;border:4px solid #dbeafe;border-top-color:#1d4ed8;border-radius:50%;animation:pageLoadSpin .8s linear infinite;"></div>
-    <p style="color:#64748b;font-size:.9rem;font-weight:600;margin:0;">Filtern… / Filtering…</p>
+    <p style="color:#64748b;font-size:.9rem;font-weight:600;margin:0;">Filtern… / Đang lọc…</p>
 </div>
 <noscript><style>#pageLoadingOverlay{display:none}</style></noscript>
 <script>
@@ -207,92 +608,35 @@ window.addEventListener('load', function () {
 });
 </script>
     <div id="header-placeholder"></div>
-
-    <!-- App Install Banner -->
-    <div id="installBanner" class="install-banner-wrap" style="display:none;" role="region" aria-label="App installieren / Install the app">
-        <div class="container">
-            <div class="install-banner">
-                <div class="install-banner-bar">
-                    <span class="install-banner-icon">📱</span>
-                    <span class="install-banner-text">Install as a free app — works offline, no App Store needed</span>
-                </div>
-                <button type="button" id="installBannerClose" class="install-banner-close" aria-label="Dismiss install banner">✕</button>
-                <div id="installBannerPanel" class="install-banner-panel">
-                        <div class="row g-2">
-                            <div class="col-6 col-lg-3">
-                                <div class="install-banner-card"><div class="install-banner-card-title">🍎 iPhone/iPad</div><div>Safari → <strong>Share ⬆</strong> → Add to Home Screen</div></div>
-                            </div>
-                            <div class="col-6 col-lg-3">
-                                <div class="install-banner-card"><div class="install-banner-card-title">🤖 Android</div><div>Chrome → <strong>⋮ Menu</strong> or address bar → Install app</div></div>
-                            </div>
-                            <div class="col-6 col-lg-3">
-                                <div class="install-banner-card"><div class="install-banner-card-title">🖥️ macOS</div><div>Safari → <strong>File</strong> menu → Add to Dock</div></div>
-                            </div>
-                            <div class="col-6 col-lg-3">
-                                <div class="install-banner-card"><div class="install-banner-card-title">🪟 Windows</div><div>Chrome/Edge → <strong>⊕</strong> icon in address bar → Install</div></div>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <style>
-        .install-banner-wrap{background:linear-gradient(135deg,#1d4ed8 0%,#7c3aed 100%);color:#fff;}
-        .install-banner{position:relative;padding:.5rem 2.2rem .5rem .25rem;}
-        .install-banner-bar{display:flex;align-items:center;gap:.5rem;width:100%;padding:.2rem .25rem;font-size:.85rem;}
-        .install-banner-icon{font-size:1.1rem;line-height:1;}
-        .install-banner-text{font-weight:600;flex:1;}
-        .install-banner-close{position:absolute;top:.35rem;right:.35rem;background:none;border:none;color:#fff;opacity:.7;font-size:1rem;line-height:1;cursor:pointer;padding:.2rem .4rem;}
-        .install-banner-close:hover{opacity:1;}
-        .install-banner-panel{padding-top:.5rem;}
-        .install-banner-card{background:rgba(255,255,255,.15);border-radius:.6rem;padding:.5rem .7rem;font-size:.78rem;line-height:1.4;height:100%;}
-        .install-banner-card-title{font-weight:700;margin-bottom:.15rem;}
-    </style>
-    <script>
-    (function () {
-        var KEY = 'dlh_install_banner_dismissed';
-        var banner = document.getElementById('installBanner');
-        if (!banner) return;
-        var isStandalone = (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) || window.navigator.standalone === true;
-        var dismissed = false;
-        try { dismissed = localStorage.getItem(KEY) === '1'; } catch (e) {}
-        if (isStandalone || dismissed) return;
-        banner.style.display = 'block';
-        var closeBtn = document.getElementById('installBannerClose');
-        closeBtn.addEventListener('click', function (e) {
-            e.stopPropagation();
-            try { localStorage.setItem(KEY, '1'); } catch (e2) {}
-            banner.style.display = 'none';
-        });
-    })();
-    </script>
-    <!-- End App Install Banner -->
 <main>
         <div class="container py-4">
             <div class="card content-card p-4 p-md-5">
                 <nav aria-label="breadcrumb" class="mb-3">
                     <ol class="breadcrumb small">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item"><a href="dictionary.html">Wörterbuch / Dictionary</a></li><li class="breadcrumb-item active" aria-current="page">#</li>
+                        <li class="breadcrumb-item"><a href="dictionary.html">Wörterbuch / Từ điển</a></li><li class="breadcrumb-item active" aria-current="page">#</li>
                     </ol>
                 </nav>
-                <h1 class="h2 mb-1">📖 German Words Starting with a number or symbol (#) – Deutsch Wörterbuch</h1>
-                <p class="mb-3">1 German word starting with a number or symbol (#), each with its English translation, an example sentence with translation and common collocations – graded from A1 to C2 for Goethe and telc exam preparation. Deutsche Wörter mit englischer Übersetzung und Beispielsätzen. <a href="dictionary.html">Back to the full dictionary</a>.</p>
-<p class="info-line mb-3">1 word beginning with # · A1–C2 · <span class="art-m fw-bold">m.</span> der · <span class="art-f fw-bold">f.</span> die · <span class="art-n fw-bold">n.</span> das · 🔊 Tap speaker to hear pronunciation</p>
+                <div class="d-flex align-items-center gap-3 mb-2">
+                    <div id="dict-3d-emblem" style="width:52px;height:52px;flex-shrink:0;"></div>
+                    <h1 class="h2 page-title-liquid mb-0">📖 Từ vựng tiếng Đức bắt đầu bằng ký tự hoặc số (#) – Từ điển Đức - Việt</h1>
+                </div>
+                <p class="mb-3">1 từ vựng tiếng Đức bắt đầu bằng ký tự hoặc số (#), mỗi từ đều có bản dịch tiếng Việt thực tế, câu ví dụ và cụm từ kết hợp — phân cấp A1 đến C2 phục vụ ôn thi Goethe và telc. <a href="dictionary.html">← Quay lại trang tra cứu đầy đủ</a>.</p>
+<p class="info-line mb-3">5.243 từ vựng trọng tâm thi Goethe & telc (A1–C2) · <span class="art-m fw-bold">m.</span> der · <span class="art-f fw-bold">f.</span> die · <span class="art-n fw-bold">n.</span> das · 🔊 Nhấn biểu tượng loa để nghe phát âm</p>
                 <p class="info-line mb-3" style="font-size:0.8rem;">Content reviewed by native German speaker <strong>Birgit Unger</strong>, with spot-checks as the dictionary has grown — Vielen Dank! 🙏</p>
-<p class="search-scope mb-2">Search and filters apply to this page (#). <a href="dictionary.html" id="hubFilterLink">Search all 5243 words →</a></p>
+<p class="search-scope mb-2">Tìm kiếm và bộ lọc áp dụng cho trang này (#). <a href="dictionary.html" id="hubFilterLink">Tìm kiếm trên toàn bộ 5243 từ vựng →</a></p>
 <div class="search-wrap mb-2">
                     <div class="position-relative">
                         <label for="searchInput" class="visually-hidden">Search the German dictionary</label>
                         <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-                        <input type="text" id="searchInput" placeholder="Search German or English… (ä = ae, ö = oe, ü = ue, ß = ss)" autocomplete="off">
+                        <input type="text" id="searchInput" placeholder="Tìm kiếm tiếng Đức hoặc tiếng Việt… (ä = ae, ö = oe, ü = ue, ß = ss)" autocomplete="off">
                     </div>
                 </div>
                 <div class="mb-3">
                     <div class="d-flex align-items-center gap-2 flex-wrap mb-2">
-                        <span class="filter-label">Level:</span>
+                        <span class="filter-label">Trình độ:</span>
                         <div class="level-filter">
-                            <button data-level="ALL" class="active" aria-pressed="true">All</button>
+                            <button data-level="ALL" class="active" aria-pressed="true">Tất cả</button>
                             <button data-level="A1" aria-pressed="false">A1</button>
                             <button data-level="A2" aria-pressed="false">A2</button>
                             <button data-level="B1" aria-pressed="false">B1</button>
@@ -301,23 +645,23 @@ window.addEventListener('load', function () {
                             <button data-level="C2" aria-pressed="false">C2</button>
                         </div>
                         <span class="stats" id="wordCount">1 Wort</span>
-                        <span id="filterBusy" style="display:none;font-size:.8rem;color:#1d4ed8;font-weight:600;">⏳ Filtern… / Filtering…</span>
+                        <span id="filterBusy" style="display:none;font-size:.8rem;color:#1d4ed8;font-weight:600;">⏳ Filtern… / Đang lọc…</span>
                     </div>
                     <div class="d-flex align-items-center gap-2 flex-wrap">
-                        <span class="filter-label">Wortart:</span>
+                        <span class="filter-label">Từ loại:</span>
                         <div class="pos-filter">
-                            <button data-pos="ALL" class="active" aria-pressed="true">Alle</button>
-                            <button data-pos="noun" aria-pressed="false">🔵 Nomen</button>
-                            <button data-pos="verb" aria-pressed="false">🟢 Verben</button>
-                            <button data-pos="adjective" aria-pressed="false">🟠 Adjektive</button>
-                            <button data-pos="adverb" aria-pressed="false">🟣 Adverbien</button>
-                            <button data-pos="phrase" aria-pressed="false">⬜ Wendungen</button>
-                            <button data-pos="irregular" aria-pressed="false">🔄 Unregelmäßige Verben</button>
-                            <button data-pos="other" title="Präposition, Konjunktion, Pronomen, Determinativ, Sprichwort" aria-pressed="false">⚪ Sonstige</button>
+                            <button data-pos="ALL" class="active" aria-pressed="true">Tất cả</button>
+                            <button data-pos="noun" aria-pressed="false">🔵 Danh từ (Nomen)</button>
+                            <button data-pos="verb" aria-pressed="false">🟢 Động từ (Verben)</button>
+                            <button data-pos="adjective" aria-pressed="false">🟠 Tính từ (Adjektive)</button>
+                            <button data-pos="adverb" aria-pressed="false">🟣 Phó từ (Adverbien)</button>
+                            <button data-pos="phrase" aria-pressed="false">⬜ Thành ngữ (Wendungen)</button>
+                            <button data-pos="irregular" aria-pressed="false">🔄 Động từ bất quy tắc</button>
+                            <button data-pos="other" title="Giới từ, liên từ, đại từ, quán từ..." aria-pressed="false">⚪ Từ loại khác</button>
                         </div>
                     </div>
                     <div class="d-flex align-items-center gap-2 flex-wrap mt-2">
-                        <span class="filter-label">Thema:</span>
+                        <span class="filter-label">Chủ đề:</span>
                         <select id="categoryFilter" aria-label="Thema / Topic" style="width:auto;display:inline-block;">
                             <option value="ALL">Alle Themen</option>
                             <option value="Familie &amp; Menschen">Familie &amp; Menschen</option>
@@ -373,15 +717,16 @@ window.addEventListener('load', function () {
     <button type="button" class="btn btn-outline-primary btn-sm" id="resetFiltersBtn">Filter zurücksetzen <span style="opacity:.75">/ Clear filters</span></button>
 </div>
 <div class="letter-header" id="letter-0-9" style="font-size:1.5rem;font-weight:700;color:#94a3b8;padding:.5rem 0 .25rem;margin-top:.5rem;border-bottom:1px solid #e2e8f0">#</div>
-<div class="word-card" id="der-3d-druck-c1" data-de="der 3d-druck" data-en="3D printing" data-level="C1" data-pos="noun" data-irregular="false" data-reflexive="false" data-ex="Der 3D-Druck verändert die Fertigungsindustrie grundlegend." data-category="Technik &amp; Medien">
+<div class="word-card" id="der-3d-druck-c1" data-de="der 3d-druck" data-en="3D printing" data-vi="in 3d" data-level="C1" data-pos="noun" data-irregular="false" data-reflexive="false" data-ex="Der 3D-Druck verändert die Fertigungsindustrie grundlegend." data-category="Technik &amp; Medien">
     <div class="word-main">
         <div class="word-de-wrap">
             <span class="word-de">der 3D-Druck</span>
             <span class="word-art"></span>
             <span class="badge rounded-pill word-level" style="background:#dc2626">C1</span>
         </div>
-        <div class="word-en">3D printing</div>
-        <div class="word-example"><span class="ex-de">Der 3D-Druck verändert die Fertigungsindustrie grundlegend.</span><br><span class="ex-en">3D printing is fundamentally changing the manufacturing industry.</span><div class="word-collocations"><span class="col-item">mit dem 3D-Drucker herstellen</span><span class="col-item">additive Fertigung</span><span class="col-item">Prototypen drucken</span></div></div>
+
+        <div class="word-vi">In 3D</div>
+        <div class="word-example"><span class="ex-de">Der 3D-Druck verändert die Fertigungsindustrie grundlegend.</span><br><span class="ex-vi">In 3D đang thay đổi căn bản ngành công nghiệp sản xuất.</span><div class="word-collocations"><span class="col-item">mit dem 3D-Drucker herstellen</span><span class="col-item">additive Fertigung</span><span class="col-item">Prototypen drucken</span></div></div>
         <details class="word-person-drill" data-word="der 3d-druck|C1" style="margin-top:0.5rem;"><summary style="cursor:pointer;color:#1d4ed8;font-weight:600;font-size:0.85rem;">ich/du/er,sie,es/wir/ihr/sie,Sie — Beispiele</summary></details>
     </div>
 </div>
@@ -422,8 +767,7 @@ window.addEventListener('load', function () {
         // Load footer
         fetch(prefix + 'footer.html?v=' + Date.now())
             .then(function(r) { return r.ok ? r.text() : Promise.reject(); })
-            .then(function(h) { h = h.replace(/BASE\//g, prefix); document.getElementById('footer-placeholder').innerHTML = h; })
-            .catch(function() { document.getElementById('footer-placeholder').innerHTML = '<footer class="site-footer mt-5 py-4 border-top"><div class="container"><div class="row g-3 align-items-center"><div class="col-lg text-center text-lg-start"><p class="mb-1 fw-semibold">🪶 WordFeather — Goethe-Zertifikat A1 to C2</p><p class="mb-0 text-secondary small">Independent German language learning resource</p></div><div class="col-lg-auto"><div class="d-flex justify-content-center gap-2 flex-wrap"><a href="https://www.goethe.de" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener">Goethe-Institut ↗</a><a href="https://github.com/abdullahbutt/wordfeather" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener">⭐ Star on GitHub</a><a href="https://www.paypal.com/paypalme/abdullahbuttde" class="btn btn-sm fw-semibold" style="background:#ffdd00;border-color:#ffdd00;color:#1a1a1a;" target="_blank" rel="noopener">☕ Buy me a Coffee</a></div></div></div><hr class="my-3" style="opacity:0.15;"><div class="d-flex justify-content-center gap-3 flex-wrap small"><a href="privacy.html" class="text-secondary text-decoration-none">Privacy &amp; Impressum</a><span class="text-secondary">·</span><a href="https://github.com/abdullahbutt/wordfeather/issues" target="_blank" rel="noopener" class="text-secondary text-decoration-none">Contact (GitHub Issues)</a></div></div></footer>'; });
+            .catch(function() { document.getElementById('footer-placeholder').innerHTML = '<footer class="site-footer mt-5 py-4 border-top"><div class="container text-center"><p class="mb-1 fw-semibold">🪶 WordFeather — Goethe-Zertifikat A1 bis C2</p><div class="d-flex justify-content-center gap-3 flex-wrap small text-secondary"><a href="' + prefix + 'privacy.html" class="text-secondary text-decoration-none">Privacy &amp; Impressum</a>·<a href="https://github.com/abdullahbutt/wordfeather/issues" target="_blank" rel="noopener" class="text-secondary text-decoration-none">Contact (GitHub Issues)</a></div><p class="text-secondary mb-0 mt-2 small">© 2026 Abdullah Butt · CC BY-NC 4.0</p></div></footer>'; });
 
         // Theme toggle - same code as all other pages
         function setupThemeToggle() {
@@ -481,12 +825,13 @@ window.addEventListener('load', function () {
             wordCards.forEach(function(card) {
                 var de = foldGerman(card.getAttribute('data-de'));
                 var en = foldGerman((card.getAttribute('data-en') || '').toLowerCase());
+                var vi = (card.getAttribute('data-vi') || '').toLowerCase();
                 var ex = foldGerman((card.getAttribute('data-ex') || '').toLowerCase());
                 var level = card.getAttribute('data-level');
                 var pos = card.getAttribute('data-pos');
                 var category = card.getAttribute('data-category');
                 var irregular = card.getAttribute('data-irregular') === 'true';
-                var matchSearch = !q || de.indexOf(q) > -1 || en.indexOf(q) > -1 || ex.indexOf(q) > -1;
+                var matchSearch = !q || de.indexOf(q) > -1 || en.indexOf(q) > -1 || vi.indexOf(q) > -1 || ex.indexOf(q) > -1;
                 var matchPOS = activePOS === 'ALL' || pos === activePOS ||
                                (activePOS === 'irregular' && irregular) ||
                                (activePOS === 'other' && OTHER_POS.indexOf(pos) > -1);
@@ -703,11 +1048,11 @@ window.addEventListener('load', function () {
         }
     })();
     </script>
+    <script src="tts.js?v=10"></script>
     <script>
     // TTS
     (function() {
-        if (!('speechSynthesis' in window)) return;
-        var synth = window.speechSynthesis;
+        var synth = ('speechSynthesis' in window) ? window.speechSynthesis : null;
         var activeBtn = null;
         var svg = '<svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>';
         function mkBtn(text, lang) {
@@ -717,10 +1062,15 @@ window.addEventListener('load', function () {
             b.setAttribute('aria-label', lang === 'de-DE' ? 'German pronunciation' : 'English pronunciation');
             b.onclick = function(e) {
                 e.preventDefault(); e.stopPropagation();
+                if (window.WordFeatherTTS) {
+                    WordFeatherTTS.speak(text, lang, b);
+                    return;
+                }
+                if (!synth) return;
                 synth.cancel();
                 if (activeBtn === b) { if (activeBtn) activeBtn.classList.remove('playing'); activeBtn = null; return; }
                 if (activeBtn) activeBtn.classList.remove('playing');
-                var clean = text.replace(/\s*[,]\s*-\w+/g,'').replace(/[—–]/g,'').replace(/\(.*?\)/g,'').replace(/\s+/g,' ').trim();
+                var clean = text.replace(/\s*[,]\s*-[^\s,()]+/g,'').replace(/[—–]/g,' ').replace(/\(.*?\)/g,'').replace(/\s+/g,' ').trim();
                 if (!clean) return;
                 var u = new SpeechSynthesisUtterance(clean);
                 u.lang = lang; u.rate = 0.9;
@@ -769,8 +1119,9 @@ window.addEventListener('load', function () {
                 if (enText) enCell.appendChild(mkBtn(enText, 'en-US'));
             });
         }
-        if (synth.getVoices().length > 0) init();
-        else { synth.addEventListener('voiceschanged', function once() { init(); synth.removeEventListener('voiceschanged', once); }); setTimeout(function() { if (!initialized) init(); }, 500); }
+        if (synth && synth.getVoices().length > 0) init();
+        else if (synth && synth.addEventListener) { synth.addEventListener('voiceschanged', function once() { init(); synth.removeEventListener('voiceschanged', once); }); setTimeout(function() { if (!initialized) init(); }, 500); }
+        else { init(); }
     })();
     </script>
     <script>
@@ -801,16 +1152,21 @@ window.addEventListener('load', function () {
 
     var ttsSvg = '<svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>';
     function addTtsIfAvailable(cell, text, lang) {
-        if (!('speechSynthesis' in window) || !text) return;
+        if (!text) return;
         var b = document.createElement('button');
         b.className = 'd-tts';
         b.innerHTML = ttsSvg;
         b.title = lang === 'de-DE' ? 'Anhören' : 'Listen';
         b.onclick = function(e) {
             e.preventDefault(); e.stopPropagation();
+            if (window.WordFeatherTTS) {
+                WordFeatherTTS.speak(text, lang, b);
+                return;
+            }
+            if (!('speechSynthesis' in window)) return;
             var synth = window.speechSynthesis;
             synth.cancel();
-            var clean = text.replace(/\s*[,]\s*-\w+/g, '').replace(/[—–]/g, '').replace(/\(.*?\)/g, '').replace(/\s+/g, ' ').trim();
+            var clean = text.replace(/\s*[,]\s*-[^\s,()]+/g, '').replace(/[—–]/g, ' ').replace(/\(.*?\)/g, '').replace(/\s+/g, ' ').trim();
             if (!clean) return;
             var u = new SpeechSynthesisUtterance(clean);
             u.lang = lang; u.rate = 0.9;
@@ -1073,6 +1429,15 @@ window.addEventListener('load', function () {
             });
         });
     })();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="three-liquid-glass.js"></script>
+    <script>
+    window.addEventListener('DOMContentLoaded', function () {
+        if (window.WordFeather3D && window.WordFeather3D.createEmblem) {
+            window.WordFeather3D.createEmblem('dict-3d-emblem');
+        }
+    });
     </script>
 </body>
 </html>

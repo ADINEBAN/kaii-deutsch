@@ -1,35 +1,55 @@
 <footer class="site-footer mt-5 py-4 border-top">
   <div class="container">
     <div class="row g-3 align-items-center">
-      <div class="col-lg text-center text-lg-start">
-        <p class="mb-1 fw-semibold"><span aria-hidden="true">🪶</span> WordFeather — Goethe-Zertifikat A1 to C2</p>
-        <p class="mb-0 text-secondary small">Independent German language learning resource</p>
-        <p class="mb-0 text-secondary small">Content is actively reviewed and refined with input from native-speaker instructors.</p>
+      <div class="col-md text-center text-md-start">
+        <p class="mb-1 fw-semibold"><span aria-hidden="true">🪶</span> WordFeather — Goethe-Zertifikat A1 bis C2</p>
+        <p class="mb-0 text-secondary small">Unabhängige deutsche Lernressource · Erstellt für Prüfungsvorbereitung</p>
       </div>
-      <div class="col-lg-auto">
-        <div class="d-flex justify-content-center gap-2 flex-wrap">
-          <a href="https://www.goethe.de" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener">Goethe-Institut ↗</a>
-          <a href="https://github.com/abdullahbutt/wordfeather" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener">⭐ Star on GitHub</a>
-          <a href="https://www.paypal.com/paypalme/abdullahbuttde" class="btn btn-sm fw-semibold" style="background:#ffdd00;border-color:#ffdd00;color:#1a1a1a;" target="_blank" rel="noopener">☕ Buy me a Coffee</a>
+      <div class="col-md-auto text-center text-md-end">
+        <div class="d-flex justify-content-center justify-content-md-end align-items-center gap-2 flex-wrap">
+          <a href="https://www.goethe.de" class="btn btn-sm btn-outline-secondary rounded-pill px-3" target="_blank" rel="noopener">Goethe-Institut ↗</a>
+          <button id="pwaInstallBtn" class="btn btn-sm btn-outline-secondary rounded-pill px-3 d-none" type="button" aria-label="App installieren">📱 App installieren</button>
         </div>
       </div>
     </div>
-    <hr class="my-3" style="opacity:0.15;">
-    <div class="d-flex justify-content-center gap-3 flex-wrap small">
+    <hr class="my-3 opacity-15">
+    <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap small">
       <a href="BASE/privacy.html" class="text-secondary text-decoration-none">Privacy &amp; Impressum</a>
-      <span class="text-secondary">·</span>
+      <span class="text-secondary opacity-50">·</span>
       <a href="https://github.com/abdullahbutt/wordfeather/issues" target="_blank" rel="noopener" class="text-secondary text-decoration-none">Contact (GitHub Issues)</a>
     </div>
     <!-- AUTO-LASTUPDATED-START -->
-    <p class="mb-0 mt-3 text-center text-secondary small">Last updated: 2026-10-16</p>
+    <p class="mb-0 mt-3 text-center text-secondary small">Last updated: 2026-10-30</p>
     <!-- AUTO-LASTUPDATED-END -->
-  </div>
-    <hr class="my-2 opacity-25">
-    <p class="text-center text-secondary mb-0" style="font-size:0.78rem">
+    <p class="text-center text-secondary mb-0 mt-2" style="font-size:0.78rem">
       <!-- AUTO-COPYRIGHT-START -->© 2026<!-- AUTO-COPYRIGHT-END --> <a href="https://abdullahbutt.github.io/" target="_blank" rel="noopener" class="text-secondary">Abdullah Butt</a>
       &nbsp;·&nbsp;
       <a href="BASE/LICENSE" target="_blank" rel="noopener" class="text-secondary">CC BY-NC 4.0</a>
       &nbsp;·&nbsp; Free for personal &amp; educational use &nbsp;·&nbsp; Not for commercial use
     </p>
   </div>
+  <script>
+  (function () {
+    var btn = document.getElementById('pwaInstallBtn');
+    if (!btn) return;
+    var deferredPrompt;
+    window.addEventListener('beforeinstallprompt', function (e) {
+      e.preventDefault();
+      deferredPrompt = e;
+      btn.classList.remove('d-none');
+    });
+    btn.addEventListener('click', function () {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then(function () {
+          deferredPrompt = null;
+          btn.classList.add('d-none');
+        });
+      }
+    });
+    window.addEventListener('appinstalled', function () {
+      btn.classList.add('d-none');
+    });
+  })();
+  </script>
 </footer>

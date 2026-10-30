@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="vi" data-bs-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grammatik-Test / Grammar Test — WordFeather</title>
-<meta name="theme-color" content="#1d4ed8">
+<title>Luyện tập Ngữ pháp tiếng Đức — KAII</title>
+<meta name="theme-color" content="#070a13">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="WordFeather">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="KAII">
 <link rel="icon" type="image/x-icon" href="/icons/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="/icons/32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/icons/96.png">
@@ -18,112 +18,460 @@
 <script src="/wf-lang.js"></script>
 <script src="/wf-a11y.js"></script>
 <style>
-    :root{--page-bg:#f8fafc;--page-text:#1e293b;--muted:#64748b;--card-bg:#ffffff;--card-border:#e2e8f0}
-    [data-bs-theme="dark"]{--page-bg:#0f172a;--page-text:#e2e8f0;--muted:#94a3b8;--card-bg:#1e293b;--card-border:#334155}
-    body{background:var(--page-bg);color:var(--page-text)}
-    .gq-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:.75rem;padding:1.5rem;max-width:640px;margin:0 auto}
-    .gq-topic{font-size:.8rem;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.03em}
-    .gq-prompt{font-size:1.25rem;font-weight:600;margin:.6rem 0 1.2rem}
-    .gq-blank-input{font-size:1.1rem;padding:.4rem .7rem;border-radius:.4rem;border:1.5px solid var(--card-border);background:var(--page-bg);color:var(--page-text);width:100%;max-width:220px}
-    .gq-mc-options{display:flex;flex-direction:column;gap:.5rem}
-    .gq-mc-btn{text-align:left;padding:.6rem 1rem;border-radius:.5rem;border:1.5px solid var(--card-border);background:var(--card-bg);color:var(--page-text);cursor:pointer;font-size:1rem;transition:all .15s}
-    .gq-mc-btn:hover{background:var(--page-bg)}
-    .gq-mc-btn.correct{background:#dcfce7;border-color:#16a34a;color:#166534}
-    .gq-mc-btn.incorrect{background:#fee2e2;border-color:#dc2626;color:#991b1b}
-    [data-bs-theme="dark"] .gq-mc-btn.correct{background:rgba(74,222,128,.15);color:#4ade80}
-    [data-bs-theme="dark"] .gq-mc-btn.incorrect{background:rgba(248,113,113,.15);color:#f87171}
-    .gq-wo-pool,.gq-wo-answer{display:flex;flex-wrap:wrap;gap:.5rem;min-height:2.6rem;padding:.5rem;border-radius:.5rem;border:1.5px dashed var(--card-border)}
-    .gq-wo-chunk{padding:.4rem .8rem;border-radius:.4rem;background:#1d4ed8;color:#fff;cursor:pointer;font-size:.95rem;user-select:none}
-    .gq-wo-chunk:hover{background:#1e40af}
-    .gq-feedback{margin-top:1rem;padding:.75rem 1rem;border-radius:.5rem;font-size:.9rem}
-    .gq-feedback.correct{background:#dcfce7;color:#166534}
-    .gq-feedback.incorrect{background:#fee2e2;color:#991b1b}
-    [data-bs-theme="dark"] .gq-feedback.correct{background:rgba(74,222,128,.12);color:#4ade80}
-    [data-bs-theme="dark"] .gq-feedback.incorrect{background:rgba(248,113,113,.12);color:#f87171}
-    .gq-en-hint{color:var(--muted);font-style:italic;font-size:.85rem;margin-top:.3rem}
-    .gq-nav{display:flex;justify-content:center;gap:.5rem;margin-top:1.5rem}
-    .gq-bm-btn{float:right;border:1.5px solid var(--card-border);background:var(--card-bg);color:var(--muted);border-radius:999px;padding:.15rem .7rem;font-size:.8rem;cursor:pointer;margin-left:.5rem}
-    .gq-bm-btn.on{color:#b45309;border-color:#f59e0b;background:#fef3c7}
-    [data-bs-theme="dark"] .gq-bm-btn.on{color:#fbbf24;background:rgba(245,158,11,.15)}
-    .gq-bm-item{border:1px solid var(--card-border);border-radius:.5rem;padding:.75rem 1rem;margin-bottom:.6rem;display:flex;justify-content:space-between;gap:1rem;align-items:flex-start}
-    .gq-bm-level{font-weight:700;margin:1rem 0 .4rem}
-    .gq-review-tag{font-size:.75rem;color:var(--muted);margin-bottom:.4rem}
-    .gq-progress{max-width:640px;margin:0 auto 1rem}
-    .gq-level-btn{border-radius:999px;padding:.3rem .9rem;border:1.5px solid var(--card-border);background:var(--card-bg);color:var(--page-text);cursor:pointer;font-weight:600}
-    .gq-level-btn.active{background:#1d4ed8;border-color:#1d4ed8;color:#fff}
-    .gq-topics{display:grid;gap:.35rem}
-    .gq-topic-btn{display:grid;grid-template-columns:2.2rem 1fr;column-gap:.6rem;align-items:center;width:100%;text-align:left;padding:.5rem .7rem;border:1px solid var(--card-border);border-radius:.5rem;background:var(--card-bg);color:var(--page-text);cursor:pointer}
-    .gq-topic-btn:hover{border-color:#1d4ed8}
-    .gq-topic-no{grid-row:span 3;font-weight:700;color:#1d4ed8;text-align:center}
-    .gq-topic-name{font-weight:600}
-    .gq-topic-fig{color:var(--muted);font-size:.8rem}
-    .gq-topic-bar{display:block;height:.3rem;border-radius:999px;background:var(--card-border);overflow:hidden;margin-top:.25rem}
-    .gq-topic-bar i{display:block;height:100%;background:#16a34a}
-    .gq-topic-head{max-width:640px;margin:0 auto 1rem;display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+    :root, [data-bs-theme="dark"], [data-bs-theme="light"] {
+      --page-bg: #070a13;
+      --page-text: #f1f5f9;
+      --muted: #94a3b8;
+      --card-bg: rgba(15, 23, 42, 0.88);
+      --card-border: rgba(255, 255, 255, 0.12);
+      --accent: #38bdf8;
+    }
+    
+    html, body {
+      background-color: #070a13 !important;
+      color: #f1f5f9 !important;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.08) 0%, transparent 60%),
+        radial-gradient(circle at 100% 50%, rgba(99, 102, 241, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 0% 100%, rgba(168, 85, 247, 0.05) 0%, transparent 40%) !important;
+      background-attachment: fixed !important;
+    }
+
+    /* Top Navigation Bar: KAII Dark Liquid Glass */
+    .kaii-topbar {
+      background: rgba(7, 10, 19, 0.88) !important;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+      z-index: 1030;
+    }
+    .kaii-back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(30, 41, 59, 0.75);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      color: #38bdf8 !important;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+    .kaii-back-btn:hover {
+      background: rgba(56, 189, 248, 0.2);
+      border-color: #38bdf8;
+      color: #7dd3fc !important;
+      transform: translateX(-2px);
+      box-shadow: 0 0 14px rgba(56, 189, 248, 0.3);
+    }
+    .kaii-brand-center {
+      text-align: center;
+      line-height: 1.2;
+    }
+    .kaii-brand-title {
+      font-size: 1.2rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      background: linear-gradient(135deg, #38bdf8, #818cf8, #c084fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.5));
+    }
+    .kaii-brand-sub {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: #94a3b8;
+    }
+    .kaii-level-tag {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      color: #38bdf8;
+      font-weight: 700;
+      font-size: 0.82rem;
+      letter-spacing: 0.5px;
+    }
+
+    /* Quiz Card & Content: Soft, Eye-Friendly Dark Glass */
+    .gq-card {
+      background: rgba(15, 23, 42, 0.85) !important;
+      border: 1px solid rgba(255, 255, 255, 0.12) !important;
+      border-radius: 20px !important;
+      padding: 1.75rem 1.5rem !important;
+      max-width: 640px;
+      margin: 0 auto;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .gq-topic {
+      font-size: 0.82rem;
+      color: #38bdf8;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.4rem;
+    }
+    .gq-topic a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+    .gq-topic a:hover {
+      text-decoration: underline;
+    }
+    .gq-prompt {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #f8fafc;
+      margin: 0.6rem 0 0.8rem;
+      line-height: 1.45;
+    }
+    .gq-prompt u {
+      text-underline-offset: 4px;
+      color: #38bdf8;
+      text-decoration-color: #38bdf8;
+    }
+    .gq-hint-box {
+      background: rgba(56, 189, 248, 0.08);
+      border-left: 3px solid #38bdf8;
+      border-radius: 8px;
+      padding: 10px 14px;
+      color: #7dd3fc;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .gq-blank-input {
+      font-size: 1.15rem;
+      padding: 0.65rem 1rem;
+      border-radius: 12px;
+      border: 1.5px solid rgba(255, 255, 255, 0.15);
+      background: rgba(15, 23, 42, 0.9);
+      color: #f8fafc;
+      width: 100%;
+      max-width: 280px;
+      outline: none;
+      transition: all 0.2s;
+    }
+    .gq-blank-input:focus {
+      border-color: #38bdf8;
+      box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+    }
+    .gq-mc-options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      margin-top: 1rem;
+    }
+    .gq-mc-btn {
+      text-align: left;
+      padding: 0.85rem 1.15rem;
+      border-radius: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(30, 41, 59, 0.75);
+      color: #f1f5f9;
+      cursor: pointer;
+      font-size: 1.05rem;
+      font-weight: 500;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    .gq-mc-btn:hover:not(:disabled) {
+      background: rgba(56, 189, 248, 0.15);
+      border-color: rgba(56, 189, 248, 0.4);
+      color: #38bdf8;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 14px rgba(56, 189, 248, 0.15);
+    }
+    .gq-mc-btn:active:not(:disabled) {
+      transform: scale(0.98);
+    }
+    .gq-mc-btn.correct {
+      background: rgba(16, 185, 129, 0.2) !important;
+      border-color: #10b981 !important;
+      color: #34d399 !important;
+      font-weight: 600;
+      box-shadow: 0 0 16px rgba(16, 185, 129, 0.25) !important;
+    }
+    .gq-mc-btn.incorrect {
+      background: rgba(244, 63, 94, 0.2) !important;
+      border-color: #f43f5e !important;
+      color: #fb7185 !important;
+      font-weight: 600;
+      box-shadow: 0 0 16px rgba(244, 63, 94, 0.25) !important;
+    }
+    .gq-wo-pool, .gq-wo-answer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      min-height: 3rem;
+      padding: 0.75rem;
+      border-radius: 14px;
+      border: 1.5px dashed rgba(255, 255, 255, 0.15);
+      background: rgba(15, 23, 42, 0.5);
+    }
+    .gq-wo-chunk {
+      padding: 0.5rem 0.95rem;
+      border-radius: 10px;
+      background: rgba(59, 130, 246, 0.25);
+      border: 1px solid rgba(96, 165, 250, 0.4);
+      color: #e0f2fe;
+      cursor: pointer;
+      font-size: 0.98rem;
+      font-weight: 500;
+      user-select: none;
+      transition: all 0.15s ease;
+    }
+    .gq-wo-chunk:hover {
+      background: rgba(59, 130, 246, 0.45);
+      border-color: #60a5fa;
+      transform: translateY(-1px);
+    }
+    .gq-feedback {
+      margin-top: 1.25rem;
+      padding: 1rem 1.25rem;
+      border-radius: 14px;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .gq-feedback.correct {
+      background: rgba(16, 185, 129, 0.12) !important;
+      border: 1px solid rgba(16, 185, 129, 0.3) !important;
+      color: #34d399 !important;
+    }
+    .gq-feedback.incorrect {
+      background: rgba(244, 63, 94, 0.12) !important;
+      border: 1px solid rgba(244, 63, 94, 0.3) !important;
+      color: #fb7185 !important;
+    }
+    .gq-nav {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+    .gq-nav .btn-primary, #gqSubmitBtn, #gqRestartBtn {
+      background: linear-gradient(135deg, #0284c7, #2563eb) !important;
+      border: 1px solid rgba(56, 189, 248, 0.3) !important;
+      color: #ffffff !important;
+      border-radius: 14px !important;
+      padding: 0.65rem 1.5rem !important;
+      font-weight: 600 !important;
+      box-shadow: 0 4px 16px rgba(37, 99, 235, 0.35) !important;
+      transition: all 0.2s;
+    }
+    .gq-nav .btn-primary:hover, #gqSubmitBtn:hover, #gqRestartBtn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5) !important;
+    }
+    .gq-nav .btn-outline-secondary {
+      background: rgba(30, 41, 59, 0.6) !important;
+      border: 1px solid rgba(255, 255, 255, 0.12) !important;
+      color: #cbd5e1 !important;
+      border-radius: 14px !important;
+      padding: 0.65rem 1.35rem !important;
+      font-weight: 500 !important;
+      transition: all 0.2s;
+    }
+    .gq-nav .btn-outline-secondary:hover {
+      background: rgba(56, 189, 248, 0.15) !important;
+      border-color: rgba(56, 189, 248, 0.3) !important;
+      color: #38bdf8 !important;
+    }
+    .gq-bm-btn {
+      float: right;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: rgba(30, 41, 59, 0.8);
+      color: #94a3b8;
+      border-radius: 999px;
+      padding: 0.25rem 0.8rem;
+      font-size: 0.82rem;
+      cursor: pointer;
+      margin-left: 0.5rem;
+      transition: all 0.2s;
+    }
+    .gq-bm-btn:hover {
+      border-color: #fbbf24;
+      color: #fbbf24;
+    }
+    .gq-bm-btn.on {
+      color: #fbbf24;
+      border-color: #f59e0b;
+      background: rgba(245, 158, 11, 0.15);
+    }
+    .gq-bm-item {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 14px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: flex-start;
+      background: rgba(30, 41, 59, 0.5);
+    }
+    .gq-bm-level {
+      font-weight: 700;
+      color: #38bdf8;
+      margin: 1.2rem 0 0.5rem;
+      font-size: 1.1rem;
+    }
+    .gq-review-tag {
+      font-size: 0.8rem;
+      color: #38bdf8;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    .gq-progress {
+      max-width: 640px;
+      margin: 0 auto 1rem;
+    }
+    .gq-level-btn {
+      border-radius: 999px;
+      padding: 0.45rem 1.1rem;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(30, 41, 59, 0.6);
+      color: #cbd5e1;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.88rem;
+      transition: all 0.2s;
+    }
+    .gq-level-btn:hover {
+      background: rgba(56, 189, 248, 0.15);
+      border-color: rgba(56, 189, 248, 0.3);
+      color: #38bdf8;
+    }
+    .gq-level-btn.active {
+      background: linear-gradient(135deg, #0284c7, #2563eb);
+      border-color: #38bdf8;
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+    }
+    .gq-topics {
+      display: grid;
+      gap: 0.5rem;
+    }
+    .gq-topic-btn {
+      display: grid;
+      grid-template-columns: 2.5rem 1fr;
+      column-gap: 0.75rem;
+      align-items: center;
+      width: 100%;
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 14px;
+      background: rgba(30, 41, 59, 0.6);
+      color: #f1f5f9;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .gq-topic-btn:hover {
+      background: rgba(56, 189, 248, 0.12);
+      border-color: rgba(56, 189, 248, 0.35);
+      transform: translateY(-1px);
+    }
+    .gq-topic-no {
+      grid-row: span 3;
+      font-weight: 700;
+      color: #38bdf8;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+    .gq-topic-name {
+      font-weight: 600;
+      color: #f8fafc;
+    }
+    .gq-topic-fig {
+      color: #94a3b8;
+      font-size: 0.82rem;
+    }
+    .gq-topic-bar {
+      display: block;
+      height: 0.35rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      overflow: hidden;
+      margin-top: 0.35rem;
+    }
+    .gq-topic-bar i {
+      display: block;
+      height: 100%;
+      background: linear-gradient(90deg, #10b981, #34d399);
+    }
+    .gq-topic-head {
+      max-width: 640px;
+      margin: 0 auto 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      padding: 0.5rem 0;
+    }
+    .alert-info {
+      background: rgba(14, 165, 233, 0.1) !important;
+      border: 1px solid rgba(56, 189, 248, 0.25) !important;
+      color: #7dd3fc !important;
+      border-radius: 14px !important;
+    }
+    .form-select {
+      background-color: rgba(30, 41, 59, 0.8) !important;
+      border-color: rgba(255, 255, 255, 0.15) !important;
+      color: #f1f5f9 !important;
+      border-radius: 10px !important;
+    }
 </style>
 </head>
 <body>
-<a class="wf-skip" href="#mainContent" onclick="document.getElementById('mainContent').focus();return false;"><span class="wf-de">Zum Inhalt springen</span><span class="wf-en">Skip to content</span></a>
-<div id="header-placeholder"></div>
-<script>
-(function () {
-    var saved = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    document.documentElement.setAttribute('data-bs-theme', saved);
 
-    var headerFallback = '<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm sticky-top"><div class="container"><a class="navbar-brand" href="index.html">🪶 WordFeather</a><button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#siteNavbar" aria-controls="siteNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="siteNavbar"><ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-2" id="nav-main-links"><li class="nav-item"><a class="nav-link" href="index.html" id="nav-home">Home</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="nav-levels">Levels</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="A1/index.html" data-level="A1">A1 – Beginner</a></li><li><a class="dropdown-item" href="A2/index.html" data-level="A2">A2 – Elementary</a></li><li><hr class="dropdown-divider"></li><li><a class="dropdown-item" href="B1/index.html" data-level="B1">B1 – Intermediate</a></li><li><a class="dropdown-item" href="B2/index.html" data-level="B2">B2 – Upper-Intermediate</a></li><li><hr class="dropdown-divider"></li><li><a class="dropdown-item" href="C1/index.html" data-level="C1">C1 – Advanced</a></li><li><a class="dropdown-item" href="C2/index.html" data-level="C2">C2 – Mastery</a></li></ul></li><li class="nav-item"><a class="nav-link" href="dictionary.html" id="nav-dictionary">📖 Dictionary</a></li><li class="nav-item"><a class="nav-link ext-highlight quiz-highlight" href="quiz.html" id="nav-quiz">🎯 Quiz</a></li><li class="nav-item"><a class="nav-link ext-highlight leben-highlight" href="https://leben.wordfeather.com" target="_blank" rel="noopener" id="nav-leben"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 5 3" style="vertical-align:middle;margin-right:3px;border-radius:1px" aria-hidden="true"><rect width="5" height="1" y="0" fill="#000"/><rect width="5" height="1" y="1" fill="#D00"/><rect width="5" height="1" y="2" fill="#FFCE00"/></svg>Leben in Deutschland</a></li></ul><div class="d-flex ms-lg-3 mt-2 mt-lg-0"><button id="themeToggle" class="btn btn-outline-light btn-sm theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle color theme">🌙 Dark</button></div></div></div></nav>';
-
-    function renderHeader(html) {
-        // header.html's own markup uses "BASE/..." as a placeholder path
-        // (since the same file is fetched from every page, some nested
-        // deeper than others) — every OTHER page on the site replaces this
-        // with the real root-relative "/" before injecting it, but this
-        // step was missing here, so Home/Dictionary/Levels links on this
-        // page were literally pointing at "/BASE/index.html" etc., a URL
-        // that doesn't exist. WordFeather is hosted at the domain root, so
-        // BASE is simply "/" everywhere.
-        html = html.replace(/BASE\//g, '/');
-        document.getElementById('header-placeholder').innerHTML = html;
-        var btn = document.getElementById('themeToggle');
-        if (btn) {
-            function syncBtn() {
-                var dark = document.documentElement.getAttribute('data-bs-theme') === 'dark';
-                btn.textContent = dark ? '☀️ Light' : '🌙 Dark';
-            }
-            syncBtn();
-            btn.addEventListener('click', function () {
-                var next = document.documentElement.getAttribute('data-bs-theme') === 'dark' ? 'light' : 'dark';
-                document.documentElement.setAttribute('data-bs-theme', next);
-                localStorage.setItem('theme', next);
-                syncBtn();
-            });
-        }
-    }
-
-    fetch('/header.html')
-        .then(function (r) { return r.ok ? r.text() : Promise.reject(new Error('header fetch failed')); })
-        .then(function (html) { renderHeader(html); })
-        .catch(function () { renderHeader(headerFallback); });
-})();
-</script>
+<!-- Sticky Dark Liquid Glass Header for Mobile & Desktop -->
+<nav class="kaii-topbar sticky-top">
+  <div class="container d-flex align-items-center justify-content-between py-2">
+    <a href="/m" class="kaii-back-btn" title="Quay lại KAII">
+      <span class="back-arrow">←</span>
+      <span class="back-text">Quay lại KAII</span>
+    </a>
+    <div class="kaii-brand-center">
+      <div class="kaii-brand-title">KAII</div>
+      <div class="kaii-brand-sub">Hết token thì sao ông</div>
+    </div>
+    <div class="kaii-level-tag" id="kaiiLevelTag">A1</div>
+  </div>
+</nav>
 
 <div id="quiz-bar" data-page="grammar"></div>
 <script src="/quiz-bar.js"></script>
 
 <main class="container py-4 py-lg-5" id="mainContent" tabindex="-1">
-    <p class="mb-4"><a href="/">Home</a> <span class="text-muted">/</span> <a href="quiz.html">Quiz</a> <span class="text-muted">/</span> <span class="text-muted">Grammatik-Test</span></p>
-    <h1 class="h2 text-center mb-1">📐 <span class="wf-pair"><span class="wf-de">Grammatik-Test</span> <span class="wf-en">Grammar test</span></span></h1>
-    <p class="text-center text-muted mb-4"><span class="wf-pair"><span class="wf-de">Teste dein Sprachgefühl — Kasus, Verbformen, Satzstellung</span> <span class="wf-en">Test your grammar — cases, verb forms, word order</span></span></p>
+    <p class="mb-4 small"><a href="/m" class="text-info text-decoration-none">KAII Mobile</a> <span class="text-secondary">/</span> <a href="quiz.html" class="text-secondary text-decoration-none">Quiz</a> <span class="text-secondary">/</span> <span class="text-light">Luyện tập Ngữ pháp</span></p>
+    
+    <h1 class="h2 text-center mb-1 text-light">📐 Luyện tập Ngữ pháp tiếng Đức</h1>
+    <p class="text-center text-muted mb-4">Củng cố kiến thức ngữ pháp — biến cách, chia động từ, trật tự câu</p>
 
     <div class="alert alert-info text-center" style="max-width:640px;margin:0 auto 1.5rem;">
-        <div class="wf-de">ℹ️ Falsch beantwortete Fragen werden <strong>in diesem Browser gespeichert</strong> (Tab „Meine Grammatik-Fehler“).</div>
-        <div class="wf-en" style="opacity:.75">ℹ️ Wrongly answered questions are <strong>saved in this browser</strong> (“My grammar mistakes” tab).</div>
+        <div>ℹ️ Các câu trả lời sai được <strong>tự động lưu trên trình duyệt</strong> để bạn ôn tập lại trong tab „Lỗi cần ôn“.</div>
     </div>
 
     <div class="d-flex justify-content-center gap-2 flex-wrap mb-3" id="modePicker">
-        <button class="gq-level-btn active" data-mode="practice">📐 <span class="wf-pair"><span class="wf-de">Üben</span> <span class="wf-en">Practice</span></span></button>
-        <button class="gq-level-btn" data-mode="topics">📚 <span class="wf-pair"><span class="wf-de">Nach Thema</span> <span class="wf-en">By topic</span></span></button>
-        <button class="gq-level-btn" data-mode="mistakes">❌ <span class="wf-pair"><span class="wf-de">Meine Grammatik-Fehler</span> <span class="wf-en">My grammar mistakes</span></span> (<span id="gqMistakeCount">0</span>)</button>
-        <button class="gq-level-btn" data-mode="bookmarks">⭐ <span class="wf-pair"><span class="wf-de">Grammatik-Lesezeichen</span> <span class="wf-en">Grammar bookmarks</span></span> (<span id="gqBookmarkCount">0</span>)</button>
+        <button class="gq-level-btn active" data-mode="practice">📐 Luyện tập</button>
+        <button class="gq-level-btn" data-mode="topics">📚 Theo chủ điểm</button>
+        <button class="gq-level-btn" data-mode="mistakes">❌ Lỗi cần ôn (<span id="gqMistakeCount">0</span>)</button>
+        <button class="gq-level-btn" data-mode="bookmarks">⭐ Đã lưu (<span id="gqBookmarkCount">0</span>)</button>
     </div>
 
     <div class="d-flex justify-content-center gap-2 flex-wrap mb-4" id="levelPicker">
@@ -136,16 +484,16 @@
     </div>
 
     <div class="text-center mb-3" id="topicPicker" style="display:none">
-        <label class="small text-muted me-2" for="topicFilter"><span class="wf-pair"><span class="wf-de">Thema</span> <span class="wf-en">Topic</span></span>:</label>
+        <label class="small text-muted me-2" for="topicFilter">Chủ điểm:</label>
         <select id="topicFilter" class="form-select form-select-sm d-inline-block w-auto" style="max-width:100%"></select>
     </div>
 
     <div class="d-flex justify-content-center align-items-center gap-2 flex-wrap mb-4" id="countPicker">
-        <span class="small text-muted"><span class="wf-pair"><span class="wf-de">Fragen</span> <span class="wf-en">Questions</span></span>:</span>
-        <button class="gq-level-btn active" data-count="33">33</button>
-        <button class="gq-level-btn" data-count="66">66</button>
-        <button class="gq-level-btn" data-count="99">99</button>
-        <button class="gq-level-btn" data-count="0"><span class="wf-pair"><span class="wf-de">Alle</span> <span class="wf-en">All</span></span></button>
+        <span class="small text-muted me-1">Số câu:</span>
+        <button class="gq-level-btn active" data-count="33">33 câu</button>
+        <button class="gq-level-btn" data-count="66">66 câu</button>
+        <button class="gq-level-btn" data-count="99">99 câu</button>
+        <button class="gq-level-btn" data-count="0">Tất cả</button>
     </div>
 
     <div id="gqTopicHead" class="gq-topic-head" style="display:none"></div>
@@ -158,41 +506,38 @@
     <div id="gqCard" class="gq-card"></div>
 
     <div class="gq-nav" id="gqNav" style="display:none">
-        <button class="btn btn-outline-secondary" id="gqBackBtn"><span class="wf-pair"><span class="wf-de">← Zurück</span> <span class="wf-en">Back</span></span></button>
-        <button class="btn btn-outline-secondary" id="gqSkipBtn"><span class="wf-pair"><span class="wf-de">Überspringen</span> <span class="wf-en">Skip →</span></span></button>
-        <button class="btn btn-primary" id="gqNextBtn"><span class="wf-pair"><span class="wf-de">Weiter →</span> <span class="wf-en">Next →</span></span></button>
+        <button class="btn btn-outline-secondary" id="gqBackBtn">← Câu trước</button>
+        <button class="btn btn-outline-secondary" id="gqSkipBtn">Bỏ qua →</button>
+        <button class="btn btn-primary" id="gqNextBtn">Tiếp theo →</button>
     </div>
 
     <div id="gqSummary" class="gq-card text-center" style="display:none">
-        <h2 class="mb-3"><span class="wf-pair"><span class="wf-de">Fertig!</span> <span class="wf-en">Done!</span></span></h2>
+        <h2 class="mb-3 text-light">Hoàn thành! 🎉</h2>
         <p id="gqSummaryText" class="fs-5"></p>
-        <button class="btn btn-warning mt-2" id="gqSummarySkippedBtn" style="display:none"><span class="wf-pair"><span class="wf-de">Übersprungene Fragen</span> <span class="wf-en">Go to skipped questions</span></span></button>
-        <button class="btn btn-outline-secondary mt-2" id="gqSummaryBackBtn"><span class="wf-pair"><span class="wf-de">← Antworten ansehen</span> <span class="wf-en">Review answers</span></span></button>
-        <button class="btn btn-primary mt-2" id="gqRestartBtn"><span class="wf-pair"><span class="wf-de">Nochmal</span> <span class="wf-en">Restart</span></span></button>
-        <button class="btn btn-outline-secondary mt-2" id="gqSummaryTopicsBtn" style="display:none"><span class="wf-pair"><span class="wf-de">← Alle Themen</span> <span class="wf-en">All topics</span></span></button>
-        <div class="mt-3"><button class="btn btn-link btn-sm text-muted" id="gqClearBtn"><span class="wf-pair"><span class="wf-de">Gespeicherte Fehler löschen</span> <span class="wf-en">Clear saved mistakes</span></span></button></div>
+        <button class="btn btn-warning mt-2" id="gqSummarySkippedBtn" style="display:none">Làm các câu đã bỏ qua</button>
+        <button class="btn btn-outline-secondary mt-2" id="gqSummaryBackBtn">← Xem lại các câu trả lời</button>
+        <button class="btn btn-primary mt-2" id="gqRestartBtn">Luyện tập lại</button>
+        <button class="btn btn-outline-secondary mt-2" id="gqSummaryTopicsBtn" style="display:none">← Tất cả chủ điểm</button>
+        <div class="mt-3"><button class="btn btn-link btn-sm text-muted" id="gqClearBtn">Xóa toàn bộ lịch sử sai</button></div>
     </div>
 </main>
 
 <div id="footer-placeholder"></div>
 <script>
-(function() {
-    var footerFallback = '<footer class="site-footer mt-5 py-4 border-top"><div class="container"><div class="row g-3 align-items-center"><div class="col-lg text-center text-lg-start"><p class="mb-1 fw-semibold">🪶 WordFeather — Goethe-Zertifikat A1 to C2</p><p class="mb-0 text-secondary small">Official certification materials for German language proficiency</p></div><div class="col-lg-auto"><div class="d-flex justify-content-center gap-2 flex-wrap"><a href="https://www.goethe.de" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener">Goethe-Institut ↗</a><a href="https://github.com/abdullahbutt/wordfeather" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener">⭐ Star on GitHub</a><a href="https://www.paypal.com/paypalme/abdullahbuttde" class="btn btn-sm fw-semibold" style="background:#ffdd00;border-color:#ffdd00;color:#1a1a1a;" target="_blank" rel="noopener">☕ Buy me a Coffee</a></div></div></div><hr class="my-3" style="opacity:0.15;"><div class="d-flex justify-content-center gap-3 flex-wrap small"><a href="privacy.html" class="text-secondary text-decoration-none">Privacy &amp; Impressum</a><span class="text-secondary">·</span><a href="https://github.com/abdullahbutt/wordfeather/issues" target="_blank" rel="noopener" class="text-secondary text-decoration-none">Contact (GitHub Issues)</a></div></div></footer>';
+    var footerFallback = '<footer class="site-footer mt-5 py-4 border-top border-secondary text-secondary"><div class="container text-center"><p class="mb-1 fw-semibold text-light">🪶 KAII — Luyện thi tiếng Đức A1 đến C2</p><div class="d-flex justify-content-center gap-3 flex-wrap small"><a href="/m" class="text-info text-decoration-none">Về ứng dụng Mobile</a>·<a href="/privacy.html" class="text-secondary text-decoration-none">Điều khoản</a></div><p class="text-secondary mb-0 mt-2 small">© 2026 KAII · Hết token thì sao ông</p></div></footer>';
     fetch('/footer.html?v=' + Date.now())
         .then(function(r) { return r.ok ? r.text() : Promise.reject(new Error('footer fetch failed')); })
         .then(function(html) { html = html.replace(/BASE\//g, '/'); document.getElementById('footer-placeholder').innerHTML = html; })
         .catch(function() { document.getElementById('footer-placeholder').innerHTML = footerFallback; });
-})();
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
 (function () {
-    // ---------------------------------------------------------------
-    // Persistence (localStorage, same approach as the Wortschatz quiz).
-    // Every storage access is wrapped in try/catch so the quiz keeps
-    // working (without saving) if storage is blocked.
-    // ---------------------------------------------------------------
+    // Force dark mode
+    document.documentElement.setAttribute('data-bs-theme', 'dark');
+    try { localStorage.setItem('theme', 'dark'); } catch(e) {}
+
     var STORAGE_KEY = 'wf_grammar_progress_v1';
 
     function loadProgress() {
@@ -208,9 +553,6 @@
     }
     var progress = loadProgress();
 
-    // A question is a "current mistake" if its last attempt was wrong
-    // (streak 0) and it was wrong at least once. A later correct answer
-    // removes it from the list automatically.
     function isMistake(q) {
         var e = progress[q.id];
         return !!e && e.streak === 0 && e.timesWrong > 0;
@@ -224,8 +566,6 @@
         saveProgress();
     }
 
-    // Bookmarks: stored as small snapshots keyed by question id, so the
-    // list can be shown without loading any level file.
     var BOOKMARK_KEY = 'wf_grammar_bookmarks_v1';
     function loadBookmarks() {
         try {
@@ -244,14 +584,14 @@
         level: 'A1',
         mode: 'practice',   // 'practice' | 'topics' | 'mistakes' | 'bookmarks'
         count: 33,
-        topic: null,        // practice and mistakes: only the questions of this section of the grammar page (null: all)
-        section: null,      // "by topic": the section whose round is running (null: the list of topics is shown)
+        topic: null,
+        section: null,
         questions: [],
-        history: [],        // per question: null or {given, ok}
-        skipped: [],        // per question: true once the learner skipped it (it stays unanswered until answered)
-        pos: 0              // question currently displayed
+        history: [],
+        skipped: [],
+        pos: 0
     };
-    var cache = {};         // level -> question array
+    var cache = {};
 
     function $(id) { return document.getElementById(id); }
     function esc(s) {
@@ -282,8 +622,6 @@
             .then(function (data) { cache[level] = data; return data; });
     }
 
-    // The numbered sections of the grammar pages A1/02_Grammatik.html and A2/02_Grammatik.html (grammar_sections.json). They are
-    // an extra: if the file cannot be loaded, the quiz works as before without the topic dropdown and the section names.
     var sectionsData = null;
     function fetchSections() {
         if (sectionsData) return Promise.resolve(sectionsData);
@@ -298,10 +636,10 @@
         for (var i = 0; i < list.length; i++) { if (list[i].no === q.section) return list[i]; }
         return null;
     }
-    function sectionName(s) { return (s.page ? s.no + '. ' : '') + s.de; }
+    function sectionName(s) { 
+        return (s.page ? s.no + '. ' : '') + s.de + (s.vi ? ' / ' + s.vi : ''); 
+    }
 
-    // One round of a topic: what has not been answered yet comes first, then what was answered wrongly, then the rest (the longest
-    // ago first); the chosen ones are asked from easy to hard (multiple choice, fill in, word order).
     var TOPIC_ROUND = 10;
     var TYPE_ORDER = { mc: 0, fill_blank: 1, word_order: 2 };
     function typeRank(q) { return TYPE_ORDER[q.type] === undefined ? 9 : TYPE_ORDER[q.type]; }
@@ -320,7 +658,7 @@
         chosen.sort(function (a, b) { return (typeRank(a.q) - typeRank(b.q)) || (a.i - b.i); });
         return chosen.map(function (x) { return x.q; });
     }
-    // How far the learner is in each section: total questions, answered, last answer right.
+
     function sectionStats(data) {
         var stats = {};
         data.forEach(function (q) {
@@ -342,15 +680,15 @@
     function bmBtnHtml(q) {
         var on = !!bookmarks[q.id];
         return '<button type="button" class="gq-bm-btn' + (on ? ' on' : '') + '" id="gqBookmarkBtn" aria-pressed="' + on + '">' +
-            (on ? WF_LANG.bi('★ Gemerkt', 'Bookmarked') : WF_LANG.bi('☆ Merken', 'Bookmark')) + '</button>';
+            (on ? '★ Đã ghi nhớ' : '☆ Lưu ghi nhớ') + '</button>';
     }
     function toggleBookmark(q) {
         if (bookmarks[q.id]) delete bookmarks[q.id];
         else bookmarks[q.id] = {
             id: q.id, level: q.level, topic: q.topic,
-            prompt_de: q.prompt_de, prompt_en: q.prompt_en,
+            prompt_de: q.prompt_de, prompt_en: q.prompt_en, prompt_vi: q.prompt_vi || '',
             correct: correctText(q),
-            explanation_de: q.explanation_de, explanation_en: q.explanation_en,
+            explanation_de: q.explanation_de, explanation_en: q.explanation_en, explanation_vi: q.explanation_vi || '',
             added: Date.now()
         };
         saveBookmarks();
@@ -367,27 +705,29 @@
         updateBookmarkBadge();
         var keys = Object.keys(bookmarks);
         if (!keys.length) {
-            $('gqCard').innerHTML = '<div class="text-center"><div class="fs-5 wf-de">Noch keine Lesezeichen.</div>' +
-                '<div class="gq-en-hint wf-en">No bookmarks yet. Tap “☆ Bookmark” on a question to save it here.</div></div>';
+            $('gqCard').innerHTML = '<div class="text-center py-4"><div class="fs-5 text-light">Chưa có câu nào được lưu ghi nhớ.</div>' +
+                '<div class="gq-hint-box mt-3">Nhấn nút „☆ Lưu ghi nhớ“ ở góc mỗi câu hỏi để lưu vào đây nhé!</div></div>';
             return;
         }
-        var html = '<div class="mb-2">' + WF_LANG.bi('<b>' + keys.length + '</b> Lesezeichen', '<b>' + keys.length + '</b> bookmark' + (keys.length === 1 ? '' : 's')) +
-            ' <span class="text-muted small">' + WF_LANG.bi('— in diesem Browser gespeichert', '— saved in this browser') + '</span></div>';
+        var html = '<div class="mb-3 text-light"><b>' + keys.length + '</b> câu ghi nhớ' +
+            ' <span class="text-muted small">— lưu tự động trên trình duyệt</span></div>';
         ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'].forEach(function (lvl) {
             var items = keys.filter(function (k) { return bookmarks[k].level === lvl; })
                 .sort(function (a, b) { return (bookmarks[a].added || 0) - (bookmarks[b].added || 0); });
             if (!items.length) return;
-            html += '<div class="gq-bm-level">' + lvl + ' (' + items.length + ')</div>';
+            html += '<div class="gq-bm-level">' + lvl + ' (' + items.length + ' câu)</div>';
             items.forEach(function (k) {
                 var b = bookmarks[k];
+                var hint = b.prompt_vi || b.prompt_en || '';
+                var exp = b.explanation_vi || b.explanation_en || '';
                 html += '<div class="gq-bm-item" data-id="' + esc(k) + '"><div>' +
                     '<div class="gq-topic">' + esc(b.topic) + '</div>' +
-                    '<div class="fw-semibold">' + b.prompt_de.replace('___', '<u>____</u>') + '</div>' +
-                    '<div class="gq-en-hint">' + b.prompt_en + '</div>' +
-                    '<div class="mt-1">✓ <b>' + esc(b.correct) + '</b></div>' +
-                    '<div class="small mt-1">' + b.explanation_de + '</div>' +
-                    '<div class="gq-en-hint">' + b.explanation_en + '</div></div>' +
-                    '<button type="button" class="btn btn-outline-danger btn-sm gq-bm-remove flex-shrink-0">' + WF_LANG.bi('🗑 Entfernen', 'Remove') + '</button></div>';
+                    '<div class="fw-semibold text-light">' + b.prompt_de.replace('___', '<u class=\"text-info\">____</u>') + '</div>' +
+                    (hint ? '<div class="gq-hint-box py-1 px-2 my-1 small">💡 ' + esc(hint) + '</div>' : '') +
+                    '<div class="mt-1 text-success">✓ <b>' + esc(b.correct) + '</b></div>' +
+                    (b.explanation_de ? '<div class="small mt-1 text-muted">' + b.explanation_de + '</div>' : '') +
+                    (exp ? '<div class="small mt-1 text-info">' + exp + '</div>' : '') + '</div>' +
+                    '<button type="button" class="btn btn-outline-danger btn-sm gq-bm-remove flex-shrink-0">🗑 Xóa</button></div>';
             });
         });
         $('gqCard').innerHTML = html;
@@ -404,7 +744,7 @@
             toggleBookmark(state.questions[state.pos]);
         }
         var topicBtn = e.target.closest('.gq-topic-btn');
-        if (topicBtn) {                      // a topic of the list: start its round
+        if (topicBtn) {
             state.section = parseInt(topicBtn.getAttribute('data-section'), 10);
             start();
         }
@@ -426,27 +766,23 @@
         $('gqCard').style.display = '';
         var list = sectionsFor(state.level);
         if (!list.length) {
-            $('gqCard').innerHTML = '<div class="text-center"><div class="fs-5 wf-de">Themen gibt es für A1 und A2. Wähle eines dieser Niveaus.</div>' +
-                '<div class="gq-en-hint wf-en">Topics are available for A1 and A2. Choose one of these levels.</div></div>';
+            $('gqCard').innerHTML = '<div class="text-center py-4"><div class="fs-5 text-light">Chủ điểm ngữ pháp hiện có sẵn cho A1 và A2. Hãy chọn một trong hai cấp độ này.</div></div>';
             return;
         }
         var stats = sectionStats(data);
-        var html = '<p class="text-muted small">' + WF_LANG.bi(
-            'Wähle ein Thema der Grammatikseite. Jede Runde hat bis zu ' + TOPIC_ROUND + ' Fragen: zuerst neue, dann falsch beantwortete, von leicht nach schwer.',
-            'Choose a topic from the grammar page. Each round has up to ' + TOPIC_ROUND + ' questions: new ones first, then those you got wrong, from easy to hard.') + '</p>';
+        var html = '<p class="text-muted small">Chọn một chủ điểm ngữ pháp dưới đây. Mỗi vòng có tối đa ' + TOPIC_ROUND + ' câu: câu mới trước, sau đó là câu từng làm sai, sắp xếp từ dễ đến nâng cao.</p>';
         [true, false].forEach(function (onPage) {
             var items = list.filter(function (s) { return !!s.page === onPage; });
             if (!items.length) return;
-            if (!onPage) html += '<div class="gq-bm-level">' + WF_LANG.bi('Weitere Themen', 'More topics') + '</div>';
+            if (!onPage) html += '<div class="gq-bm-level mt-3">Các chủ điểm khác</div>';
             html += '<div class="gq-topics">';
             items.forEach(function (s) {
                 var st = stats[s.no] || { total: 0, tried: 0, right: 0 };
                 var pct = st.total ? Math.round(st.right / st.total * 100) : 0;
                 html += '<button type="button" class="gq-topic-btn" data-section="' + s.no + '">' +
                     '<span class="gq-topic-no">' + (s.page ? s.no : '•') + '</span>' +
-                    '<span class="gq-topic-name">' + esc(s.de) + '</span>' +
-                    '<span class="gq-topic-fig">' + WF_LANG.bi(st.total + ' Fragen · ' + st.tried + ' beantwortet · ' + st.right + ' richtig',
-                        st.total + ' questions · ' + st.tried + ' answered · ' + st.right + ' right') + '</span>' +
+                    '<span class="gq-topic-name">' + esc(sectionName(s)) + '</span>' +
+                    '<span class="gq-topic-fig">' + st.total + ' câu · đã làm: ' + st.tried + ' · đúng: ' + st.right + '</span>' +
                     '<span class="gq-topic-bar"><i style="width:' + pct + '%"></i></span></button>';
             });
             html += '</div>';
@@ -456,19 +792,18 @@
 
     function showTopicHead() {
         var s = sectionsFor(state.level).filter(function (x) { return x.no === state.section; })[0];
-        $('gqTopicHead').innerHTML = '<strong>' + esc(s ? sectionName(s) : '') + '</strong>' +
-            '<button type="button" class="btn btn-outline-secondary btn-sm" id="gqTopicsBackBtn">' + WF_LANG.bi('← Alle Themen', 'All topics') + '</button>';
+        $('gqTopicHead').innerHTML = '<strong class="text-info fs-5">' + esc(s ? sectionName(s) : '') + '</strong>' +
+            '<button type="button" class="btn btn-outline-secondary btn-sm" id="gqTopicsBackBtn">← Tất cả chủ điểm</button>';
         $('gqTopicHead').style.display = '';
     }
 
-    // The dropdown of practice and mistakes: all topics, or one section of the grammar page.
     function fillTopicPicker(data) {
         var list = sectionsFor(state.level);
         var show = (state.mode === 'practice' || state.mode === 'mistakes') && list.length > 0;
         $('topicPicker').style.display = show ? '' : 'none';
         if (!show) return;
         var stats = sectionStats(data);
-        var html = '<option value="">' + WF_LANG.s('Alle Themen', 'All topics') + '</option>';
+        var html = '<option value="">Tất cả chủ điểm</option>';
         list.forEach(function (s) {
             html += '<option value="' + s.no + '"' + (state.topic === s.no ? ' selected' : '') + '>' + esc(sectionName(s)) + ' (' +
                 ((stats[s.no] || {}).total || 0) + ')</option>';
@@ -486,7 +821,6 @@
     function answeredCount() {
         return state.history.filter(function (h) { return h; }).length;
     }
-    // Questions the learner skipped and has not answered since. They are not answers and never count as mistakes.
     function skippedCount() {
         return state.history.filter(function (h, i) { return !h && state.skipped[i]; }).length;
     }
@@ -497,16 +831,16 @@
 
     function showError(err) {
         $('gqCard').style.display = '';
-        $('gqCard').innerHTML = '<p class="text-danger">' + WF_LANG.bi('Fehler beim Laden:', 'Error while loading:') + ' ' + esc(err.message) + '</p>';
+        $('gqCard').innerHTML = '<p class="text-danger py-4 text-center">Lỗi khi tải dữ liệu câu hỏi: ' + esc(err.message) + '</p>';
     }
 
-    // The rows of the pickers have Bootstrap's d-flex, which forces "display:flex !important": hide them with an important rule too.
     function setShown(el, shown) {
         if (shown) el.style.removeProperty('display');
         else el.style.setProperty('display', 'none', 'important');
     }
 
     function start() {
+        $('kaiiLevelTag').textContent = state.level;
         setShown($('countPicker'), state.mode === 'practice');
         setShown($('levelPicker'), state.mode !== 'bookmarks');
         $('gqNav').style.display = 'none';
@@ -521,7 +855,7 @@
             updateMistakeBadge();
             fillTopicPicker(data);
             if (state.mode === 'topics') {
-                if (state.section === null) {      // no topic chosen yet: show the list
+                if (state.section === null) {
                     state.questions = []; state.history = []; state.skipped = [];
                     renderTopics(data);
                     return;
@@ -529,13 +863,10 @@
                 state.questions = buildTopic(data, state.section);
                 showTopicHead();
             } else {
-                // practice and mistakes may be limited to one section of the grammar page
                 var pool = state.topic === null ? data : data.filter(function (q) { return q.section === state.topic; });
                 if (state.mode === 'mistakes') {
                     state.questions = shuffle(pool.filter(isMistake));
                 } else {
-                    // Placement-test questions (marked "core": 1-96) always come first, in test order;
-                    // all other questions follow in random order.
                     var core = pool.filter(function (q) { return q.core; })
                         .sort(function (a, b) { return a.core - b.core; });
                     var rest = pool.filter(function (q) { return !q.core; });
@@ -564,27 +895,27 @@
         $('gqNav').style.display = 'none';
         $('gqCard').style.display = '';
         $('gqCard').innerHTML =
-            '<div class="text-center">' +
-            '<div class="fs-5 wf-de">Keine aktuellen Fehler auf diesem Niveau — gut gemacht! 🎉</div>' +
-            '<div class="gq-en-hint wf-en">No current mistakes at this level — well done! Questions you answer wrongly in practice will appear here.</div>' +
+            '<div class="text-center py-4">' +
+            '<div class="fs-4 text-success fw-bold">Tuyệt vời! 🎉</div>' +
+            '<div class="fs-6 text-light mt-2">Hiện không có câu sai nào ở cấp độ này.</div>' +
+            '<div class="gq-hint-box mt-3">Khi bạn làm sai câu nào trong phần Luyện tập, câu đó sẽ tự động xuất hiện ở đây để bạn ôn luyện lại.</div>' +
             '</div>';
     }
 
     function updateProgress() {
-        $('gqProgress').innerHTML = WF_LANG.bi('Frage ' + (state.pos + 1) + ' / ' + state.questions.length, 'Question ' + (state.pos + 1) + ' / ' + state.questions.length);
+        $('gqProgress').innerHTML = 'Câu <b>' + (state.pos + 1) + '</b> / ' + state.questions.length;
         var skipped = skippedCount();
-        $('gqScore').textContent = '✅ ' + score() + ' / ' + answeredCount() + (skipped ? '  ·  ⏭ ' + skipped : '');
+        $('gqScore').innerHTML = '✅ <span class="text-success fw-bold">' + score() + '</span> / ' + answeredCount() + (skipped ? '  ·  ⏭ ' + skipped + ' bỏ qua' : '');
     }
 
     function updateNav() {
         var h = state.history[state.pos];
         $('gqNav').style.display = '';
         $('gqBackBtn').style.display = state.pos > 0 ? '' : 'none';
-        $('gqSkipBtn').style.display = h ? 'none' : '';   // an unanswered question can be skipped and answered later
+        $('gqSkipBtn').style.display = h ? 'none' : '';
         $('gqNextBtn').style.display = h ? '' : 'none';
     }
 
-    // Show question i: unanswered -> live; answered -> read-only review.
     function show(i) {
         state.pos = i;
         $('gqSummary').style.display = 'none';
@@ -595,7 +926,6 @@
     }
 
     function header(q) {
-        // the section of the grammar page this question belongs to, linked to its explanation (A1 and A2)
         var s = sectionOf(q), label = '';
         if (s) {
             var name = esc(sectionName(s));
@@ -605,7 +935,14 @@
         }
         var html = bmBtnHtml(q) + '<div class="gq-topic">' + label + esc(q.topic) + ' · ' + q.level + '</div>';
         html += '<div class="gq-prompt">' + q.prompt_de.replace('___', '<u>____</u>') + '</div>';
-        html += '<div class="gq-en-hint">' + q.prompt_en + '</div>';
+        
+        var hintVi = q.prompt_vi || '';
+        var hintEn = q.prompt_en || '';
+        if (hintVi) {
+            html += '<div class="gq-hint-box"><span class="hint-icon">💡 Dịch nghĩa:</span> ' + esc(hintVi) + '</div>';
+        } else if (hintEn) {
+            html += '<div class="gq-hint-box"><span class="hint-icon">💡 Gợi ý:</span> ' + esc(hintEn) + '</div>';
+        }
         return html;
     }
 
@@ -616,23 +953,26 @@
     function feedbackHtml(ok, q, given, review) {
         var reveal = '';
         if (!ok && q.type !== 'mc') {
-            reveal = '<div class="mt-2"><b>' + WF_LANG.bi('Richtig:', 'Correct:') + '</b> ' + esc(correctText(q)) + '</div>';
+            reveal = '<div class="mt-2 text-warning"><b>Đáp án đúng:</b> <span class="fw-bold fs-5">' + esc(correctText(q)) + '</span></div>';
         }
         var yours = review
-            ? '<div class="mb-1"><b>' + WF_LANG.bi('Deine Antwort:', 'Your answer:') + '</b> ' + (given ? esc(given) : '<i>—</i>') + '</div>'
+            ? '<div class="mb-1 text-muted"><b>Đáp án của bạn:</b> ' + (given ? esc(given) : '<i>—</i>') + '</div>'
             : '';
+        var expDe = q.explanation_de ? '<div class="gq-exp-de mb-1">' + q.explanation_de + '</div>' : '';
+        var expVi = q.explanation_vi || q.explanation_en || '';
+        var expViHtml = expVi ? '<div class="gq-exp-vi text-info"><b>Giải thích:</b> ' + expVi + '</div>' : '';
+        
         return '<div class="gq-feedback ' + (ok ? 'correct' : 'incorrect') + '">' +
-            (ok ? WF_LANG.bi('✅ Richtig!', 'Correct!') : WF_LANG.bi('❌ Nicht ganz.', 'Not quite.')) +
-            '<div class="mt-1">' + yours + '</div>' +
-            '<div>' + q.explanation_de + '</div>' +
-            '<div class="gq-en-hint">' + q.explanation_en + '</div>' +
+            (ok ? '<div class="fw-bold fs-5 text-success">✅ Chính xác! Rất tốt!</div>' : '<div class="fw-bold fs-5 text-danger">❌ Chưa chính xác.</div>') +
+            (yours ? '<div class="mt-2">' + yours + '</div>' : '') +
+            (expDe ? '<div class="mt-2 text-light">' + expDe + '</div>' : '') +
+            (expViHtml ? '<div class="mt-1">' + expViHtml + '</div>' : '') +
             reveal + '</div>';
     }
 
-    // Read-only view of an already answered question.
     function renderReview(i) {
         var q = state.questions[i], h = state.history[i];
-        var html = '<div class="gq-review-tag">' + WF_LANG.bi('📖 Wiederholung', 'Review') + '</div>' + header(q);
+        var html = '<div class="gq-review-tag">📖 Xem lại câu trả lời</div>' + header(q);
         if (q.type === 'mc') {
             html += '<div class="gq-mc-options mt-2">';
             q.options.forEach(function (opt) {
@@ -650,8 +990,8 @@
         var html = header(q);
 
         if (q.type === 'fill_blank') {
-            html += '<div class="mt-3"><input type="text" id="gqInput" class="gq-blank-input" autocomplete="off" autocapitalize="off" placeholder="…" aria-label="' + WF_LANG.t('Deine Antwort', 'Your answer') + '"></div>';
-            html += '<button class="btn btn-primary mt-3" id="gqSubmitBtn">' + WF_LANG.bi('Prüfen', 'Check') + '</button>';
+            html += '<div class="mt-3"><input type="text" id="gqInput" class="gq-blank-input" autocomplete="off" autocapitalize="off" placeholder="Nhập đáp án…" aria-label="Đáp án của bạn"></div>';
+            html += '<button class="btn btn-primary mt-3" id="gqSubmitBtn">Kiểm tra đáp án</button>';
         } else if (q.type === 'mc') {
             html += '<div class="gq-mc-options mt-2">';
             q.options.forEach(function (opt, k) {
@@ -659,15 +999,15 @@
             });
             html += '</div>';
         } else if (q.type === 'word_order') {
-            html += '<p class="text-muted small mt-2">' + WF_LANG.bi('Klicke die Wörter in der richtigen Reihenfolge', 'Click the words in the correct order') + '</p>';
+            html += '<p class="text-muted small mt-2">Chạm vào các từ theo đúng thứ tự câu:</p>';
             html += '<div class="gq-wo-answer mb-2" id="gqWoAnswer"></div>';
             html += '<div class="gq-wo-pool" id="gqWoPool"></div>';
-            html += '<button class="btn btn-primary mt-3" id="gqSubmitBtn" disabled>' + WF_LANG.bi('Prüfen', 'Check') + '</button>';
+            html += '<button class="btn btn-primary mt-3" id="gqSubmitBtn" disabled>Kiểm tra đáp án</button>';
         }
 
         html += '<div id="gqFeedback" role="status" aria-live="polite"></div>';
         $('gqCard').innerHTML = html;
-        WF_A11Y.focus($('gqCard')); // the question is read out; a text field takes the focus itself below
+        WF_A11Y.focus($('gqCard'));
         wireQuestionEvents(q, i);
     }
 
@@ -678,7 +1018,7 @@
         updateProgress();
         $('gqFeedback').innerHTML = feedbackHtml(isCorrect, q, given, false);
         updateNav();
-        $('gqNextBtn').focus(); // the answer disabled the controls: the focus continues at "Next"
+        $('gqNextBtn').focus();
     }
 
     function wireQuestionEvents(q, i) {
@@ -739,7 +1079,9 @@
                 chosenW.forEach(function (chunk, k) {
                     var el = document.createElement('span');
                     el.className = 'gq-wo-chunk';
-                    el.style.background = '#16a34a';
+                    el.style.background = 'rgba(16, 185, 129, 0.35)';
+                    el.style.borderColor = '#10b981';
+                    el.style.color = '#a7f3d0';
                     el.textContent = chunk;
                     el.addEventListener('click', function () {
                         if (answered()) return;
@@ -770,23 +1112,21 @@
         $('gqNav').style.display = 'none';
         $('gqProgress').textContent = '';
         $('gqSummary').style.display = '';
-        WF_A11Y.focus($('gqSummary')); // the result is read out; the controls that had the focus are gone
+        WF_A11Y.focus($('gqSummary'));
         var n = state.questions.length, s = score(), answered = answeredCount();
-        var wrong = answered - s;       // skipped questions are not mistakes
-        var skipped = n - answered;     // everything still unanswered here was skipped
-        var txt = WF_LANG.bi('Du hast ' + s + ' von ' + n + ' richtig beantwortet.', 'You answered ' + s + ' out of ' + n + ' correctly.');
+        var wrong = answered - s;
+        var skipped = n - answered;
+        var txt = 'Bạn đã trả lời đúng <b class="text-success fs-4">' + s + '</b> / ' + n + ' câu.';
         if (skipped > 0) {
-            txt += '<div class="small mt-2">' + WF_LANG.bi('⏭ ' + skipped + ' übersprungen — du kannst sie noch beantworten.',
-                skipped + ' skipped — you can still answer ' + (skipped === 1 ? 'it' : 'them') + '.') + '</div>';
+            txt += '<div class="small mt-2 text-warning">⏭ ' + skipped + ' câu đã bỏ qua — bạn có thể làm lại ngay.</div>';
         }
         $('gqSummarySkippedBtn').style.display = skipped > 0 ? '' : 'none';
         if (wrong > 0) {
-            txt += '<div class="small mt-2">' + WF_LANG.bi('❌ ' + wrong + ' Fehler gespeichert — übe sie im Tab „Meine Fehler“.',
-                wrong + ' mistake' + (wrong === 1 ? '' : 's') + ' saved — practise them in the “My mistakes” tab.') + '</div>';
+            txt += '<div class="small mt-2 text-info">❌ ' + wrong + ' câu sai đã được lưu — hãy ôn lại trong tab „Lỗi cần ôn“.</div>';
         }
         $('gqSummaryText').innerHTML = txt;
         var byTopic = state.mode === 'topics';
-        $('gqRestartBtn').innerHTML = byTopic ? WF_LANG.bi('Nächste Runde', 'Next round') : WF_LANG.bi('Nochmal', 'Restart');
+        $('gqRestartBtn').innerHTML = byTopic ? 'Vòng tiếp theo' : 'Luyện tập lại';
         $('gqSummaryTopicsBtn').style.display = byTopic ? '' : 'none';
         $('gqSummaryBackBtn').style.display = n > 0 ? '' : 'none';
         updateMistakeBadge();
@@ -800,7 +1140,7 @@
         if (state.pos > 0) show(state.pos - 1);
     });
     $('gqSkipBtn').addEventListener('click', function () {
-        if (state.history[state.pos]) return;   // answered questions cannot be skipped
+        if (state.history[state.pos]) return;
         state.skipped[state.pos] = true;
         if (state.pos + 1 >= state.questions.length) showSummary();
         else show(state.pos + 1);
@@ -815,9 +1155,9 @@
     $('gqRestartBtn').addEventListener('click', start);
 
     $('gqClearBtn').addEventListener('click', function () {
-        if (!window.confirm(WF_LANG.t('Alle gespeicherten Fehler und Fortschritte löschen?', 'Delete all saved mistakes and progress?'))) return;
+        if (!window.confirm('Bạn có chắc muốn xóa toàn bộ lịch sử câu sai và tiến trình?')) return;
         progress = {};
-        try { localStorage.removeItem(STORAGE_KEY); } catch (e) { /* ignore */ }
+        try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
         start();
     });
 
@@ -826,7 +1166,7 @@
             document.querySelectorAll('#levelPicker button').forEach(function (b) { b.classList.remove('active'); });
             btn.classList.add('active');
             state.level = btn.getAttribute('data-level');
-            state.topic = null; state.section = null;       // the sections belong to a level
+            state.topic = null; state.section = null;
             start();
         });
     });
@@ -850,15 +1190,6 @@
         });
     });
 
-    // The shared header has already set the theme (the saved choice, or the system setting); only fill it in if that did not happen.
-    if (!document.documentElement.getAttribute('data-bs-theme')) {
-        var saved = 'light';
-        try { saved = localStorage.getItem('theme') || 'light'; } catch (e) { /* ignore */ }
-        document.documentElement.setAttribute('data-bs-theme', saved);
-    }
-
-    // Support linking directly into a specific level from an external page
-    // (e.g. "grammar-quiz.html?level=B1" from B1/02_Grammatik.html).
     var VALID_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
     var urlLevel = new URLSearchParams(window.location.search).get('level');
     state.level = VALID_LEVELS.indexOf((urlLevel || '').toUpperCase()) > -1
@@ -868,7 +1199,6 @@
         btn.classList.toggle('active', btn.getAttribute('data-level') === state.level);
     });
 
-    // A link such as "grammar-quiz.html?level=A1&section=10" (the "Practise this topic" button of the grammar pages) opens that topic.
     var urlSection = parseInt(new URLSearchParams(window.location.search).get('section'), 10);
     if (!isNaN(urlSection)) {
         state.mode = 'topics';
@@ -879,26 +1209,6 @@
     }
     start();
 })();
-</script>
-<!-- Cloudflare Web Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "d435b2572b82459cb083e37f7c734b75"}'></script><!-- End Cloudflare Web Analytics -->
-<script>
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js')
-        .then(function(reg) {
-            // Check for updates on every page load
-            reg.update();
-            // When a new SW is found, activate it immediately
-            reg.addEventListener('updatefound', function() {
-                var newWorker = reg.installing;
-                newWorker.addEventListener('statechange', function() {
-                    if (newWorker.state === 'activated') {
-                        console.log('App updated to latest version');
-                    }
-                });
-            });
-        })
-        .catch(function(err) { console.log('SW failed:', err); });
-}
 </script>
 </body>
 </html>

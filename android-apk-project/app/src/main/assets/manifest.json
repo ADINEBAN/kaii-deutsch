@@ -1,0 +1,30 @@
+{
+  "id": "/mobile/",
+  "name": "KAII — Học Tiếng Đức",
+  "short_name": "KAII",
+  "description": "Ứng dụng học tiếng Đức KAII dành riêng cho điện thoại Realme GT Neo 2T",
+  "start_url": "/mobile/",
+  "scope": "/mobile/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#070a13",
+  "theme_color": "#070a13",
+  "lang": "vi",
+  "dir": "ltr",
+  "categories": ["education", "reference"],
+  "icons": [
+    {
+      "src": "/icons/kaii_192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/kaii_512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
+

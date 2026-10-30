@@ -15,7 +15,9 @@
     ],
     "correct": "wird",
     "explanation_de": "Präsens Passiv wird mit 'werden' + Partizip II gebildet: <b>wird...unterschrieben</b>.",
-    "explanation_en": "Present passive is formed with 'werden' + past participle: <b>wird...unterschrieben</b>."
+    "explanation_en": "Present passive is formed with 'werden' + past participle: <b>wird...unterschrieben</b>.",
+    "prompt_vi": "Hợp đồng hiện đang được ký kết.",
+    "explanation_vi": "Thể bị động ở thì hiện tại (Präsens Passiv) được cấu tạo từ 'werden' + phân từ II (Partizip II): <b>wird...unterschrieben</b>."
   },
   {
     "id": "b2-rel-dativ-001",
@@ -33,7 +35,9 @@
     ],
     "correct": "der",
     "explanation_de": "'Gehören' verlangt den Dativ. 'Die Frau' ist feminin, also lautet das Dativ-Relativpronomen <b>der</b>.",
-    "explanation_en": "'Gehören' takes the dative. 'Die Frau' is feminine, so the dative relative pronoun is <b>der</b>."
+    "explanation_en": "'Gehören' takes the dative. 'Die Frau' is feminine, so the dative relative pronoun is <b>der</b>.",
+    "prompt_vi": "Người phụ nữ sở hữu chiếc xe đạp này tên là Lena.",
+    "explanation_vi": "Động từ 'Gehören' đòi hỏi cách Dativ. 'Die Frau' là danh từ giống cái, do đó đại từ quan hệ ở Dativ là <b>der</b>."
   },
   {
     "id": "b2-wortschatz-derselbe-003",
@@ -51,7 +55,9 @@
     ],
     "correct": "der gleiche/derselbe",
     "explanation_de": "'Das ist ____' verlangt den Nominativ, was die Akkusativ-Optionen ausschließt. Von den verbleibenden nominativen Formen ergibt <b>der gleiche/derselbe</b> den sinnvollen Kontrast: gleiches Modell, aber nicht dasselbe Stück.",
-    "explanation_en": "'Das ist ____' requires the nominative case, ruling out the accusative options. Between the remaining nominative pair, <b>der gleiche/derselbe</b> makes the sensible contrast: same model, but not the literal same physical item."
+    "explanation_en": "'Das ist ____' requires the nominative case, ruling out the accusative options. Between the remaining nominative pair, <b>der gleiche/derselbe</b> makes the sensible contrast: same model, but not the literal same physical item.",
+    "prompt_vi": "Đây là cùng một mẫu mã, nhưng không phải chính xác cùng một chiếc đó.",
+    "explanation_vi": "Cấu trúc 'Das ist ____' đòi hỏi danh cách (Nominativ), loại bỏ các lựa chọn ở Akkusativ. Giữa các cặp Nominativ còn lại, <b>der gleiche/derselbe</b> tạo ra sự tương phản hợp lý: cùng mẫu mã ('der gleiche' - cùng loại), nhưng không phải chính chiếc cụ thể đó ('derselbe' - cùng một hiện vật duy nhất)."
   },
   {
     "id": "b2-konjii-wuerde-modal-001",
@@ -69,7 +75,9 @@
     ],
     "correct": "würde/können",
     "explanation_de": "Konjunktiv II 'würde' + Modalverb 'können' drückt einen höflichen hypothetischen Wunsch aus: <b>würde...können</b>.",
-    "explanation_en": "Konjunktiv II 'würde' + modal 'können' expresses a polite hypothetical wish: <b>würde...können</b>."
+    "explanation_en": "Konjunktiv II 'würde' + modal 'können' expresses a polite hypothetical wish: <b>würde...können</b>.",
+    "prompt_vi": "Tôi ước gì mình có thể thư giãn một chút.",
+    "explanation_vi": "Thể giả định II (Konjunktiv II) với 'würde' + động từ khuyết thiếu 'können' diễn tả một mong ước giả định lịch sự: <b>würde...können</b>."
   },
   {
     "id": "b2-hoeflich-waeren-001",
@@ -87,7 +95,9 @@
     ],
     "correct": "Wären",
     "explanation_de": "'Wären Sie so freundlich/nett, ... zu ...?' ist die feste, standardsprachliche Höflichkeitsformel.",
-    "explanation_en": "'Wären Sie so freundlich/nett, ... zu ...?' is the standard, fixed German polite-request idiom."
+    "explanation_en": "'Wären Sie so freundlich/nett, ... zu ...?' is the standard, fixed German polite-request idiom.",
+    "prompt_vi": "Bạn có thể vui lòng đóng cửa sổ lại giúp tôi được không?",
+    "explanation_vi": "'Wären Sie so freundlich/nett, ... zu ...?' là cấu trúc thành ngữ cố định chuẩn mực trong tiếng Đức dùng để đưa ra lời yêu cầu lịch sự."
   },
   {
     "id": "b2-konj-nichtnur-neben-001",
@@ -105,7 +115,9 @@
     ],
     "correct": "nicht nur/sondern auch",
     "explanation_de": "'Nicht nur ... sondern auch' ist ein festes Konnektorenpaar. Beginnt 'sondern auch' den Satz, folgt das Verb direkt danach: <b>sondern auch muss ich...</b>",
-    "explanation_en": "'Nicht nur ... sondern auch' is a fixed correlating pair; with 'sondern auch' beginning the clause, the verb follows directly: <b>sondern auch muss ich...</b>"
+    "explanation_en": "'Nicht nur ... sondern auch' is a fixed correlating pair; with 'sondern auch' beginning the clause, the verb follows directly: <b>sondern auch muss ich...</b>",
+    "prompt_vi": "Tôi không những phải thấu hiểu anh ấy, mà còn phải tin tưởng anh ấy nữa.",
+    "explanation_vi": "'Nicht nur ... sondern auch' là một cặp liên từ hô ứng cố định; khi 'sondern auch' đứng ở đầu mệnh đề, động từ sẽ theo ngay sau: <b>sondern auch muss ich...</b>"
   },
   {
     "id": "b2-inf-zu-wortschatz-001",
@@ -123,7 +135,9 @@
     ],
     "correct": "zu besichtigen",
     "explanation_de": "'Besichtigen' bedeutet eine Sehenswürdigkeit besuchen; die anderen Verben (beschichten, beschützen, berichten) passen nicht in den Kontext.",
-    "explanation_en": "'Besichtigen' means to visit/tour (a sight); the other verbs (to coat, to protect, to report) don't fit the context."
+    "explanation_en": "'Besichtigen' means to visit/tour (a sight); the other verbs (to coat, to protect, to report) don't fit the context.",
+    "prompt_vi": "Chắc chắn bạn sẽ thấy chuyến tham quan viện bảo tàng này rất thú vị.",
+    "explanation_vi": "'Besichtigen' có nghĩa là tham quan (một danh lam thắng cảnh / viện bảo tàng); các động từ khác (beschichten - phủ lớp, beschützen - bảo vệ, berichten - tường thuật) không phù hợp với ngữ cảnh."
   },
   {
     "id": "b2-genitiv-004",
@@ -141,7 +155,9 @@
     ],
     "correct": "der Stadt",
     "explanation_de": "'Außerhalb' verlangt den Genitiv: <b>der Stadt</b> (Genitiv feminin).",
-    "explanation_en": "'Außerhalb' governs the genitive case: <b>der Stadt</b> (genitive feminine)."
+    "explanation_en": "'Außerhalb' governs the genitive case: <b>der Stadt</b> (genitive feminine).",
+    "prompt_vi": "Họ sống ở rất xa ngoại ô thành phố.",
+    "explanation_vi": "Giới từ 'Außerhalb' đòi hỏi sở hữu cách (Genitiv): <b>der Stadt</b> (Genitiv giống cái)."
   },
   {
     "id": "b2-neben-dass-001",
@@ -159,7 +175,9 @@
     ],
     "correct": "dass",
     "explanation_de": "'Dass' leitet einen Inhaltssatz ein, der erklärt, worin das Pech bestand.",
-    "explanation_en": "'Dass' introduces a content clause explaining what the bad luck consisted of."
+    "explanation_en": "'Dass' introduces a content clause explaining what the bad luck consisted of.",
+    "prompt_vi": "Tôi đã không may khi không vượt qua được kỳ thi.",
+    "explanation_vi": "'Dass' dẫn dắt một mệnh đề nội dung giải thích rõ điều không may đó cụ thể là gì."
   },
   {
     "id": "b2-genitiv-005",
@@ -177,7 +195,9 @@
     ],
     "correct": "des kalten Wassers",
     "explanation_de": "'Trotz' verlangt formal den Genitiv. 'Das kalte Wasser' (Neutrum) → Genitiv <b>des kalten Wassers</b>.",
-    "explanation_en": "'Trotz' formally governs the genitive case. 'Das kalte Wasser' (neuter) → genitive <b>des kalten Wassers</b>."
+    "explanation_en": "'Trotz' formally governs the genitive case. 'Das kalte Wasser' (neuter) → genitive <b>des kalten Wassers</b>.",
+    "prompt_vi": "Mặc cho nước lạnh, cô ấy vẫn đi bơi.",
+    "explanation_vi": "Giới từ 'Trotz' trong chuẩn ngữ pháp đi với sở hữu cách (Genitiv). 'Das kalte Wasser' (giống trung) → Genitiv <b>des kalten Wassers</b>."
   },
   {
     "id": "b2-neben-weil-001",
@@ -195,7 +215,9 @@
     ],
     "correct": "Weil",
     "explanation_de": "'Weil' ist eine unterordnende Konjunktion und schickt das Verb ans Satzende ('...schlecht ist'), passend zur vorgegebenen Wortstellung.",
-    "explanation_en": "'Weil' is a subordinating conjunction, sending the verb to the end of the clause ('...schlecht ist'), which matches the given word order."
+    "explanation_en": "'Weil' is a subordinating conjunction, sending the verb to the end of the clause ('...schlecht ist'), which matches the given word order.",
+    "prompt_vi": "Tại sao chuyến bay bị hoãn lại? Bởi vì thời tiết xấu.",
+    "explanation_vi": "'Weil' là liên từ phụ thuộc, đẩy động từ xuống cuối mệnh đề ('...schlecht ist'), hoàn toàn khớp với trật tự từ đã cho."
   },
   {
     "id": "b2-wortschatz-richtung-001",
@@ -213,7 +235,9 @@
     ],
     "correct": "runter",
     "explanation_de": "'Runter' passt zur Abwärtsrichtung des Rufs; die anderen Optionen beschreiben die falsche Richtung oder einen festen Ort.",
-    "explanation_en": "'Runter' (down) matches the downward direction of the call; the other options describe the wrong direction or a static location."
+    "explanation_en": "'Runter' (down) matches the downward direction of the call; the other options describe the wrong direction or a static location.",
+    "prompt_vi": "Xuống đây đi! Vâng, tôi xuống ngay đây.",
+    "explanation_vi": "'Runter' (xuống dưới) khớp với phương hướng đi xuống của lời gọi; các phương án khác miêu tả sai hướng hoặc chỉ vị trí tĩnh."
   },
   {
     "id": "b2-vorfeld-001",
@@ -231,7 +255,9 @@
     ],
     "correct": "geh ich einkaufen",
     "explanation_de": "Das vorangestellte Adverb 'zuerst' löst die Verb-Zweit-Regel aus: Das finite Verb bleibt an Position 2, gefolgt vom Subjekt.",
-    "explanation_en": "Fronting the adverb 'zuerst' triggers the verb-second (V2) rule: the finite verb stays in second position, followed by the subject."
+    "explanation_en": "Fronting the adverb 'zuerst' triggers the verb-second (V2) rule: the finite verb stays in second position, followed by the subject.",
+    "prompt_vi": "Trước hết, tôi sẽ đi mua sắm đã.",
+    "explanation_vi": "Việc đưa trạng từ 'zuerst' lên đầu câu áp dụng quy tắc động từ đứng ở vị trí thứ hai (V2): động từ chia giữ vị trí thứ hai, theo sau là chủ ngữ."
   },
   {
     "id": "b2-wortschatz-redewendung-001",
@@ -249,7 +275,9 @@
     ],
     "correct": "hast du Recht",
     "explanation_de": "'Recht haben' ist eine feste Redewendung — nicht 'Recht sein' oder andere Kombinationen.",
-    "explanation_en": "'Recht haben' (to be right) is a fixed idiom — not 'Recht sein' or other combinations."
+    "explanation_en": "'Recht haben' (to be right) is a fixed idiom — not 'Recht sein' or other combinations.",
+    "prompt_vi": "Có lẽ bạn nói đúng đấy.",
+    "explanation_vi": "'Recht haben' (có lý / đúng) là một thành ngữ cố định — không kết hợp với 'Recht sein' hay các dạng khác."
   },
   {
     "id": "b2-kausativ-lassen-003",
@@ -267,7 +295,9 @@
     ],
     "correct": "lassen",
     "explanation_de": "Die kausative Konstruktion 'sich etwas machen lassen' (etwas von jemand anderem erledigen lassen) verwendet 'lassen'.",
-    "explanation_en": "The causative construction 'sich etwas machen lassen' (to have something done) uses 'lassen'."
+    "explanation_en": "The causative construction 'sich etwas machen lassen' (to have something done) uses 'lassen'.",
+    "prompt_vi": "Bạn đã đi khám răng ở đâu vậy?",
+    "explanation_vi": "Cấu trúc cầu khiến 'sich etwas machen lassen' (nhờ ai làm gì cho mình) sử dụng động từ 'lassen'."
   },
   {
     "id": "b2-verb-dat-akk-002",
@@ -285,7 +315,9 @@
     ],
     "correct": "der/dem/den",
     "explanation_de": "'Schicken' verlangt Dativ (Empfänger) + Akkusativ (Sache). Subjekt 'der Absender' (Nom.), 'der Freund' → Dativ <b>dem Freund</b>, 'der Brief' → Akkusativ <b>den Brief</b>.",
-    "explanation_en": "'Schicken' takes dative (recipient) + accusative (thing sent). Subject 'der Absender' (nom.), 'der Freund' → dative <b>dem Freund</b>, 'der Brief' → accusative <b>den Brief</b>."
+    "explanation_en": "'Schicken' takes dative (recipient) + accusative (thing sent). Subject 'der Absender' (nom.), 'der Freund' → dative <b>dem Freund</b>, 'der Brief' → accusative <b>den Brief</b>.",
+    "prompt_vi": "Người gửi gửi lá thư cho người bạn.",
+    "explanation_vi": "Động từ 'Schicken' đi với Dativ (người nhận) + Akkusativ (vật được gửi). Chủ ngữ 'der Absender' (Nominativ), 'der Freund' → Dativ <b>dem Freund</b>, 'der Brief' → Akkusativ <b>den Brief</b>."
   },
   {
     "id": "b2-konj-001",
@@ -296,7 +328,9 @@
     "prompt_en": "If I had had more time, I would have finished the project.",
     "correct": "hätte",
     "explanation_de": "Konjunktiv II Vergangenheit: hätte + Partizip II (gehabt) im wenn-Satz, hätte + Partizip II im Hauptsatz.",
-    "explanation_en": "Past subjunctive: hätte + past participle (gehabt) in the wenn-clause, hätte + past participle in the main clause."
+    "explanation_en": "Past subjunctive: hätte + past participle (gehabt) in the wenn-clause, hätte + past participle in the main clause.",
+    "prompt_vi": "Nếu tôi có nhiều thời gian hơn thì tôi đã hoàn thành dự án rồi.",
+    "explanation_vi": "Thể giả định trong quá khứ (Konjunktiv II quá khứ): hätte + phân từ II (gehabt) trong mệnh đề wenn, và hätte + phân từ II trong mệnh đề chính."
   },
   {
     "id": "b2-konj-002",
@@ -307,7 +341,9 @@
     "prompt_en": "If he had left earlier, he wouldn't have been late.",
     "correct": "wäre",
     "explanation_de": "Verben mit 'sein' im Perfekt bilden den Konjunktiv II Vergangenheit mit wäre + Partizip II.",
-    "explanation_en": "Verbs that use 'sein' in the perfect tense form the past subjunctive with wäre + past participle."
+    "explanation_en": "Verbs that use 'sein' in the perfect tense form the past subjunctive with wäre + past participle.",
+    "prompt_vi": "Nếu anh ấy khởi hành sớm hơn thì anh ấy đã không bị muộn rồi.",
+    "explanation_vi": "Các động từ đi với trợ động từ 'sein' ở thì hoàn thành sẽ tạo thể giả định quá khứ với wäre + phân từ II (Partizip II)."
   },
   {
     "id": "b2-konj-004",
@@ -318,7 +354,9 @@
     "prompt_en": "I would like to know where he lives.",
     "correct": "wüsste",
     "explanation_de": "Konjunktiv II von 'wissen' ist unregelmäßig: wüsste.",
-    "explanation_en": "Konjunktiv II of 'wissen' is irregular: wüsste."
+    "explanation_en": "Konjunktiv II of 'wissen' is irregular: wüsste.",
+    "prompt_vi": "Tôi rất muốn biết anh ấy sống ở đâu.",
+    "explanation_vi": "Dạng Konjunktiv II của động từ 'wissen' là bất quy tắc: wüsste."
   },
   {
     "id": "b2-konj-005",
@@ -334,7 +372,9 @@
     ],
     "correct": "bräuchten",
     "explanation_de": "Konjunktiv II von 'brauchen' im Alltag: bräuchte(n) — weit verbreitet, obwohl formal 'würde brauchen' auch korrekt ist.",
-    "explanation_en": "Everyday Konjunktiv II of 'brauchen': bräuchte(n) — widely used, though formally 'würde brauchen' is also correct."
+    "explanation_en": "Everyday Konjunktiv II of 'brauchen': bräuchte(n) — widely used, though formally 'würde brauchen' is also correct.",
+    "prompt_vi": "Chúng tôi sẽ cần thêm thông tin để đưa ra quyết định.",
+    "explanation_vi": "Dạng Konjunktiv II thông dụng trong giao tiếp hàng ngày của 'brauchen' là: bräuchte(n) — được dùng rất phổ biến, dù về mặt ngữ pháp quy chuẩn dạng 'würde brauchen' cũng đúng."
   },
   {
     "id": "b2-pass-001",
@@ -345,7 +385,9 @@
     "prompt_en": "The problem can be solved.",
     "correct": "kann",
     "explanation_de": "Modalverb konjugiert (kann) + Partizip II (gelöst) + werden (Infinitiv Passiv) am Ende.",
-    "explanation_en": "Modal verb conjugated (kann) + past participle (gelöst) + werden (passive infinitive) at the end."
+    "explanation_en": "Modal verb conjugated (kann) + past participle (gelöst) + werden (passive infinitive) at the end.",
+    "prompt_vi": "Vấn đề này có thể được giải quyết.",
+    "explanation_vi": "Động từ khuyết thiếu được chia (kann) + phân từ II (gelöst) + werden (nguyên thể bị động) ở cuối câu."
   },
   {
     "id": "b2-pass-002",
@@ -361,7 +403,9 @@
     ],
     "correct": "soll",
     "explanation_de": "'Die Aufgabe' ist 3. Person Singular: sie soll erledigt werden.",
-    "explanation_en": "'Die Aufgabe' is 3rd person singular: sie soll erledigt werden."
+    "explanation_en": "'Die Aufgabe' is 3rd person singular: sie soll erledigt werden.",
+    "prompt_vi": "Nhiệm vụ này phải được hoàn thành trước ngày mai.",
+    "explanation_vi": "'Die Aufgabe' là ngôi thứ 3 số ít: sie soll erledigt werden."
   },
   {
     "id": "b2-pass-003",
@@ -372,7 +416,9 @@
     "prompt_en": "Smoking is not allowed here.",
     "correct": "darf",
     "explanation_de": "Unpersönliches Passiv mit Modalverb: Hier darf nicht geraucht werden.",
-    "explanation_en": "Impersonal passive with a modal verb: Hier darf nicht geraucht werden."
+    "explanation_en": "Impersonal passive with a modal verb: Hier darf nicht geraucht werden.",
+    "prompt_vi": "Cấm hút thuốc ở đây.",
+    "explanation_vi": "Thể bị động vô thân (impersonal passive) kết hợp với động từ khuyết thiếu: Hier darf nicht geraucht werden."
   },
   {
     "id": "b2-pass-004",
@@ -388,7 +434,9 @@
     ],
     "correct": "musste",
     "explanation_de": "Präteritum von 'müssen' + Partizip II + werden: musste repariert werden.",
-    "explanation_en": "Präteritum of 'müssen' + past participle + werden: musste repariert werden."
+    "explanation_en": "Präteritum of 'müssen' + past participle + werden: musste repariert werden.",
+    "prompt_vi": "Chiếc xe ô tô đã phải đem đi sửa chữa.",
+    "explanation_vi": "Thì quá khứ đơn (Präteritum) của 'müssen' + phân từ II + werden: musste repariert werden."
   },
   {
     "id": "b2-nom-001",
@@ -399,7 +447,9 @@
     "prompt_en": "Smoking is forbidden here.",
     "correct": "Das Rauchen",
     "explanation_de": "Der Infinitiv als Nomen ist immer Neutrum: das Rauchen.",
-    "explanation_en": "An infinitive used as a noun is always neuter: das Rauchen."
+    "explanation_en": "An infinitive used as a noun is always neuter: das Rauchen.",
+    "prompt_vi": "Việc hút thuốc bị cấm ở đây.",
+    "explanation_vi": "Động từ nguyên thể khi được danh từ hóa luôn mang giống trung: das Rauchen."
   },
   {
     "id": "b2-nom-002",
@@ -410,7 +460,9 @@
     "prompt_en": "Swimming in the sea is fun.",
     "correct": "Das Schwimmen",
     "explanation_de": "Infinitiv als Nomen, Neutrum: das Schwimmen.",
-    "explanation_en": "Infinitive used as a noun, neuter: das Schwimmen."
+    "explanation_en": "Infinitive used as a noun, neuter: das Schwimmen.",
+    "prompt_vi": "Bơi lội dưới biển mang lại nhiều niềm vui.",
+    "explanation_vi": "Động từ nguyên thể được danh từ hóa, mang giống trung: das Schwimmen."
   },
   {
     "id": "b2-nom-003",
@@ -426,7 +478,9 @@
     ],
     "correct": "Das Kochen",
     "explanation_de": "Alle nominalisierten Infinitive sind Neutrum: das Kochen (nie der/die Kochen).",
-    "explanation_en": "All nominalized infinitives are neuter: das Kochen (never der/die Kochen)."
+    "explanation_en": "All nominalized infinitives are neuter: das Kochen (never der/die Kochen).",
+    "prompt_vi": "Nấu ăn là một kỹ năng quan trọng.",
+    "explanation_vi": "Tất cả các động từ nguyên thể được danh từ hóa đều mang giống trung: das Kochen (không bao giờ dùng der/die Kochen)."
   },
   {
     "id": "b2-ind-001",
@@ -437,7 +491,9 @@
     "prompt_en": "He says he is tired.",
     "correct": "sei",
     "explanation_de": "Konjunktiv I von 'sein', 3. Person Singular: sei.",
-    "explanation_en": "Konjunktiv I of 'sein', 3rd person singular: sei."
+    "explanation_en": "Konjunktiv I of 'sein', 3rd person singular: sei.",
+    "prompt_vi": "Anh ấy nói rằng mình đang mệt.",
+    "explanation_vi": "Thể giả định I (Konjunktiv I) của 'sein', ngôi thứ 3 số ít: sei."
   },
   {
     "id": "b2-ind-002",
@@ -448,7 +504,9 @@
     "prompt_en": "She said she had no time.",
     "correct": "habe",
     "explanation_de": "Konjunktiv I von 'haben', 3. Person Singular: habe.",
-    "explanation_en": "Konjunktiv I of 'haben', 3rd person singular: habe."
+    "explanation_en": "Konjunktiv I of 'haben', 3rd person singular: habe.",
+    "prompt_vi": "Cô ấy nói rằng cô ấy không có thời gian.",
+    "explanation_vi": "Thể giả định I (Konjunktiv I) của 'haben', ngôi thứ 3 số ít: habe."
   },
   {
     "id": "b2-ind-003",
@@ -464,7 +522,9 @@
     ],
     "correct": "könne",
     "explanation_de": "Konjunktiv I 'könne' unterscheidet sich von der Indikativform 'kann' und wird deshalb hier bevorzugt.",
-    "explanation_en": "The Konjunktiv I form 'könne' is distinct from the indicative 'kann', so it's preferred here."
+    "explanation_en": "The Konjunktiv I form 'könne' is distinct from the indicative 'kann', so it's preferred here.",
+    "prompt_vi": "Anh ấy nói rằng mình không thể đến được.",
+    "explanation_vi": "Dạng Konjunktiv I 'könne' có hình thức khác biệt với dạng chỉ định (Indikativ) 'kann', do đó được ưu tiên sử dụng ở đây."
   },
   {
     "id": "b2-ind-004",
@@ -475,7 +535,9 @@
     "prompt_en": "The speaker said prices would rise.",
     "correct": "werde",
     "explanation_de": "Konjunktiv I von 'werden', 3. Person Singular: werde.",
-    "explanation_en": "Konjunktiv I of 'werden', 3rd person singular: werde."
+    "explanation_en": "Konjunktiv I of 'werden', 3rd person singular: werde.",
+    "prompt_vi": "Người phát ngôn cho biết giá cả sẽ tăng lên.",
+    "explanation_vi": "Thể giả định I (Konjunktiv I) của 'werden', ngôi thứ 3 số ít: werde."
   },
   {
     "id": "b2-konj-006",
@@ -486,7 +548,9 @@
     "prompt_en": "In your place, I would be more careful.",
     "correct": "wäre",
     "explanation_de": "'sein' hat eine eigene Konjunktiv-II-Form (wäre); 'würde sein' wird im Deutschen vermieden.",
-    "explanation_en": "'sein' has its own Konjunktiv II form (wäre); 'würde sein' is avoided in German."
+    "explanation_en": "'sein' has its own Konjunktiv II form (wäre); 'würde sein' is avoided in German.",
+    "prompt_vi": "Nếu ở vị trí của bạn, tôi sẽ cẩn thận hơn.",
+    "explanation_vi": "Động từ 'sein' có dạng Konjunktiv II riêng biệt (wäre); người Đức tránh dùng 'würde sein'."
   },
   {
     "id": "b2-konj-007",
@@ -497,7 +561,9 @@
     "prompt_en": "He would have had to repair the car.",
     "correct": "müssen",
     "explanation_de": "Konjunktiv II Vergangenheit mit Modalverb nutzt den Ersatzinfinitiv: hätte + Infinitiv + Modalverb (Infinitiv) am Ende.",
-    "explanation_en": "Past subjunctive with a modal verb uses the 'double infinitive': hätte + infinitive + modal (infinitive) at the end."
+    "explanation_en": "Past subjunctive with a modal verb uses the 'double infinitive': hätte + infinitive + modal (infinitive) at the end.",
+    "prompt_vi": "Đáng lẽ ra anh ấy đã phải sửa chiếc xe ô tô rồi.",
+    "explanation_vi": "Thể giả định quá khứ với động từ khuyết thiếu dùng cấu trúc 'hai động từ nguyên thể' (Ersatzinfinitiv): hätte + động từ nguyên thể + động từ khuyết thiếu (ở dạng nguyên thể) ở cuối câu."
   },
   {
     "id": "b2-wortstellung-001",
@@ -521,7 +587,9 @@
       "hätte"
     ],
     "explanation_de": "Nebensatz: Konjunktion, Subjekt, Objekt, Partizip II, Hilfsverb (hätte) am Ende.",
-    "explanation_en": "Subordinate clause: conjunction, subject, object, past participle, auxiliary (hätte) at the end."
+    "explanation_en": "Subordinate clause: conjunction, subject, object, past participle, auxiliary (hätte) at the end.",
+    "prompt_vi": "Sắp xếp các từ: (nếu / tôi / điều đó / biết / đã)",
+    "explanation_vi": "Mệnh đề phụ: liên từ, chủ ngữ, tân ngữ, phân từ II, trợ động từ (hätte) đứng ở cuối câu."
   },
   {
     "id": "b2-ind-005",
@@ -537,7 +605,9 @@
     ],
     "correct": "ob",
     "explanation_de": "Eine indirekte Ja/Nein-Frage wird mit 'ob' eingeleitet.",
-    "explanation_en": "An indirect yes/no question is introduced with 'ob'."
+    "explanation_en": "An indirect yes/no question is introduced with 'ob'.",
+    "prompt_vi": "Anh ấy đã hỏi liệu tôi có thời gian hay không.",
+    "explanation_vi": "Câu hỏi gián tiếp dạng Có/Không (Yes/No) được dẫn dắt bởi liên từ 'ob' (liệu rằng)."
   },
   {
     "id": "b2-placementstyle-001",
@@ -554,7 +624,9 @@
     ],
     "correct": "hatte",
     "explanation_de": "Nach „nachdem“ steht das Plusquamperfekt: hatte + Partizip II.",
-    "explanation_en": "After \"nachdem\" the past perfect is used: hatte + past participle."
+    "explanation_en": "After \"nachdem\" the past perfect is used: hatte + past participle.",
+    "prompt_vi": "Sau khi đã ăn xong, tôi đi dạo.",
+    "explanation_vi": "Đứng sau liên từ „nachdem“ là thì quá khứ hoàn thành (Plusquamperfekt): hatte + phân từ II (Partizip II)."
   },
   {
     "id": "b2-placementstyle-002",
@@ -571,7 +643,9 @@
     ],
     "correct": "die",
     "explanation_de": "„arbeiten für“ + Akkusativ; Firma ist feminin: für die.",
-    "explanation_en": "\"arbeiten für\" + accusative; Firma is feminine: für die."
+    "explanation_en": "\"arbeiten für\" + accusative; Firma is feminine: für die.",
+    "prompt_vi": "Đây là công ty mà tôi đang làm việc cho.",
+    "explanation_vi": "Cụm „arbeiten für“ + đối cách (Akkusativ); danh từ Firma mang giống cái: für die."
   },
   {
     "id": "b2-placementstyle-003",
@@ -588,7 +662,9 @@
     ],
     "correct": "wird",
     "explanation_de": "Futur I (werden + Infinitiv) drückt eine Vermutung aus.",
-    "explanation_en": "Futur I (werden + infinitive) expresses a supposition."
+    "explanation_en": "Futur I (werden + infinitive) expresses a supposition.",
+    "prompt_vi": "Anh ấy không có ở văn phòng. Chắc hẳn là anh ấy bị ốm rồi.",
+    "explanation_vi": "Thì tương lai I (Futur I: werden + động từ nguyên thể) diễn tả một phỏng đoán hoặc giả định."
   },
   {
     "id": "b2-placementstyle-004",
@@ -605,7 +681,9 @@
     ],
     "correct": "Wegen",
     "explanation_de": "„wegen“ + Genitiv: wegen des Regens.",
-    "explanation_en": "\"wegen\" + genitive: wegen des Regens."
+    "explanation_en": "\"wegen\" + genitive: wegen des Regens.",
+    "prompt_vi": "Vì trời mưa nên chúng tôi ở nhà.",
+    "explanation_vi": "Giới từ „wegen“ đi với sở hữu cách (Genitiv): wegen des Regens."
   },
   {
     "id": "b2-placementstyle-005",
@@ -622,7 +700,9 @@
     ],
     "correct": "weinende",
     "explanation_de": "Partizip I + Endung: das weinende Kind (Nom. Neutrum nach „das“: -e).",
-    "explanation_en": "Present participle + ending: das weinende Kind (nom. neuter after \"das\": -e)."
+    "explanation_en": "Present participle + ending: das weinende Kind (nom. neuter after \"das\": -e).",
+    "prompt_vi": "Đứa trẻ đang khóc đang đi tìm mẹ của nó.",
+    "explanation_vi": "Phân từ I (Partizip I) làm tính từ + đuôi tính từ: das weinende Kind (Nominativ giống trung sau mạo từ xác định „das“: đuôi -e)."
   },
   {
     "id": "b2-placementstyle-006",
@@ -639,7 +719,9 @@
     ],
     "correct": "damit",
     "explanation_de": "„damit“ leitet einen Zwecksatz ein (Ziel).",
-    "explanation_en": "\"damit\" introduces a purpose clause."
+    "explanation_en": "\"damit\" introduces a purpose clause.",
+    "prompt_vi": "Tôi tiết kiệm tiền để có thể mua được một chiếc ô tô.",
+    "explanation_vi": "Liên từ „damit“ (để mà) dẫn dắt một mệnh đề chỉ mục đích."
   },
   {
     "id": "b2-placementstyle-007",
@@ -656,7 +738,9 @@
     ],
     "correct": "um",
     "explanation_de": "sich bewerben um + Akkusativ.",
-    "explanation_en": "sich bewerben um + accusative."
+    "explanation_en": "sich bewerben um + accusative.",
+    "prompt_vi": "Anh ấy đã nộp đơn ứng tuyển cho vị trí này.",
+    "explanation_vi": "Cấu trúc cố định: sich bewerben um + đối cách (Akkusativ)."
   },
   {
     "id": "b2-placementstyle-008",
@@ -673,6 +757,8 @@
     ],
     "correct": "hätte",
     "explanation_de": "Irreal in der Vergangenheit: hätte + Partizip II.",
-    "explanation_en": "Unreal past: hätte + past participle."
+    "explanation_en": "Unreal past: hätte + past participle.",
+    "prompt_vi": "Nếu tôi có nhiều thời gian hơn thì tôi đã đến rồi.",
+    "explanation_vi": "Câu điều kiện không có thật trong quá khứ (Irrealis der Vergangenheit): hätte + phân từ II (Partizip II)."
   }
 ]

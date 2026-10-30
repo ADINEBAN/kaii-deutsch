@@ -15,7 +15,9 @@
     ],
     "correct": "kennenzulernen",
     "explanation_de": "Der zu-Infinitiv von 'kennenlernen' fügt 'zu' in einem Wort ein: <b>kennenzulernen</b> (vgl. Frage 25, wo der Satz bereits ein separates 'zu' vorgibt).",
-    "explanation_en": "The zu-infinitive of 'kennenlernen' has 'zu' infixed as one word: <b>kennenzulernen</b> (compare Q25, where the sentence template already provides a separate 'zu')."
+    "explanation_en": "The zu-infinitive of 'kennenlernen' has 'zu' infixed as one word: <b>kennenzulernen</b> (compare Q25, where the sentence template already provides a separate 'zu').",
+    "prompt_vi": "Tôi rất hân hạnh được làm quen với bạn.",
+    "explanation_vi": "Động từ nguyên thể có 'zu' của 'kennenlernen' chèn 'zu' vào giữa thành một từ duy nhất: <b>kennenzulernen</b>."
   },
   {
     "id": "c1-praep-dativ-002",
@@ -33,7 +35,9 @@
     ],
     "correct": "gegenüber",
     "explanation_de": "'Gegenüber' (gegenüber von) verlangt den Dativ.",
-    "explanation_en": "'Gegenüber' (across from/opposite) governs the dative case."
+    "explanation_en": "'Gegenüber' (across from/opposite) governs the dative case.",
+    "prompt_vi": "Tiệm bánh mì nằm đối diện với nhà thờ.",
+    "explanation_vi": "Giới từ 'Gegenüber' (đối diện) đòi hỏi cách Dativ."
   },
   {
     "id": "c1-rel-genitiv-001",
@@ -51,7 +55,9 @@
     ],
     "correct": "dessen",
     "explanation_de": "'Dessen' ist das Genitiv-Relativpronomen für maskuline/neutrale Bezugswörter und bedeutet 'whose'.",
-    "explanation_en": "'Dessen' is the genitive relative pronoun for masculine/neuter antecedents, meaning 'whose'."
+    "explanation_en": "'Dessen' is the genitive relative pronoun for masculine/neuter antecedents, meaning 'whose'.",
+    "prompt_vi": "Người hàng xóm có chiếc xe ô tô luôn gây ồn ào sống ở ngay cạnh nhà.",
+    "explanation_vi": "'Dessen' là đại từ quan hệ ở sở hữu cách (Genitiv) dùng cho từ liên hệ giống đực và giống trung, mang nghĩa 'của người mà / có...'."
   },
   {
     "id": "c1-n-deklination-001",
@@ -69,7 +75,9 @@
     ],
     "correct": "Jungen",
     "explanation_de": "'Der Junge' ist ein N-Nomen und nimmt in allen Kasus außer Nominativ Singular ein -n. Akkusativ: <b>Jungen</b>.",
-    "explanation_en": "'Der Junge' is an N-noun, taking -n in all cases except nominative singular. Accusative: <b>Jungen</b>."
+    "explanation_en": "'Der Junge' is an N-noun, taking -n in all cases except nominative singular. Accusative: <b>Jungen</b>.",
+    "prompt_vi": "Tôi quen một cậu bé có hai người anh em trai.",
+    "explanation_vi": "'Der Junge' là danh từ biến cách N (N-Deklination), nhận thêm đuôi -n ở tất cả các cách ngoại trừ Nominativ số ít. Ở đối cách (Akkusativ): <b>Jungen</b>."
   },
   {
     "id": "c1-praep-dativ-003",
@@ -87,7 +95,9 @@
     ],
     "correct": "der",
     "explanation_de": "'Nach' verlangt den Dativ: <b>der Schule</b> (Dativ feminin).",
-    "explanation_en": "'Nach' governs the dative case: <b>der Schule</b> (dative feminine)."
+    "explanation_en": "'Nach' governs the dative case: <b>der Schule</b> (dative feminine).",
+    "prompt_vi": "Sau giờ học ở trường, tôi chơi bóng đá.",
+    "explanation_vi": "Giới từ 'Nach' đòi hỏi cách Dativ: <b>der Schule</b> (Dativ giống cái)."
   },
   {
     "id": "c1-wortschatz-redewendung-002",
@@ -105,7 +115,9 @@
     ],
     "correct": "nehmen",
     "explanation_de": "'Etwas in Angriff nehmen' (mit etwas beginnen) ist eine feste Redewendung.",
-    "explanation_en": "'Etwas in Angriff nehmen' (to tackle something) is a fixed idiom."
+    "explanation_en": "'Etwas in Angriff nehmen' (to tackle something) is a fixed idiom.",
+    "prompt_vi": "Chúng ta phải hoàn thành việc đó! Ngày mai chúng ta sẽ bắt tay vào làm ngay.",
+    "explanation_vi": "'Etwas in Angriff nehmen' (bắt tay vào giải quyết / xúc tiến việc gì) là một thành ngữ cố định."
   },
   {
     "id": "c1-adj-dekl-ohne-artikel-001",
@@ -123,7 +135,9 @@
     ],
     "correct": "gegrillten/frischem",
     "explanation_de": "Ohne Artikel gilt die starke Deklination. 'Fisch' (mask., Akkusativobjekt von 'mögen') → <b>gegrillten</b>; 'Gemüse' (neutr., Dativ nach 'mit') → <b>frischem</b>.",
-    "explanation_en": "With no article, strong declension applies. 'Fisch' (masc., accusative object of 'mögen') → <b>gegrillten</b>; 'Gemüse' (neut., dative after 'mit') → <b>frischem</b>."
+    "explanation_en": "With no article, strong declension applies. 'Fisch' (masc., accusative object of 'mögen') → <b>gegrillten</b>; 'Gemüse' (neut., dative after 'mit') → <b>frischem</b>.",
+    "prompt_vi": "Tôi thích cá nướng ăn kèm với rau củ tươi.",
+    "explanation_vi": "Khi không có mạo từ đi kèm, ta áp dụng quy tắc biến cách mạnh cho tính từ. 'Fisch' (giống đực, tân ngữ Akkusativ của 'mögen') → <b>gegrillten</b>; 'Gemüse' (giống trung, cách Dativ đứng sau giới từ 'mit') → <b>frischem</b>."
   },
   {
     "id": "c1-verb-bestehen-001",
@@ -141,7 +155,9 @@
     ],
     "correct": "besteht",
     "explanation_de": "'Bestehen aus' bedeutet 'sich zusammensetzen aus'.",
-    "explanation_en": "'Bestehen aus' means 'to consist of'."
+    "explanation_en": "'Bestehen aus' means 'to consist of'.",
+    "prompt_vi": "Một đội bóng bao gồm 5 cầu thủ.",
+    "explanation_vi": "Cụm 'Bestehen aus' có nghĩa là 'bao gồm / được tạo thành từ'."
   },
   {
     "id": "c1-adj-zu-inf-003",
@@ -159,7 +175,9 @@
     ],
     "correct": "fähig",
     "explanation_de": "'Fähig sein, etwas zu tun' bedeutet, in der Lage zu sein, etwas zu tun.",
-    "explanation_en": "'Fähig sein, etwas zu tun' means 'to be capable of doing something'."
+    "explanation_en": "'Fähig sein, etwas zu tun' means 'to be capable of doing something'.",
+    "prompt_vi": "Cô ấy có thể giải quyết nhiệm vụ này = Cô ấy có đủ khả năng giải quyết nhiệm vụ này.",
+    "explanation_vi": "'Fähig sein, etwas zu tun' có nghĩa là 'có khả năng / có năng lực làm điều gì'."
   },
   {
     "id": "c1-modal-perfekt-passiv-000",
@@ -177,7 +195,9 @@
     ],
     "correct": "beteiligt gewesen sein",
     "explanation_de": "Modalverb 'sollen' für Vermutungen/Gerüchte über ein vergangenes Ereignis verwendet den Perfekt-Infinitiv: <b>beteiligt gewesen sein</b>.",
-    "explanation_en": "Modal 'sollen' expressing hearsay about a past event uses the perfect infinitive: <b>beteiligt gewesen sein</b> (to have been involved)."
+    "explanation_en": "Modal 'sollen' expressing hearsay about a past event uses the perfect infinitive: <b>beteiligt gewesen sein</b> (to have been involved).",
+    "prompt_vi": "Nghe nói anh ta có dính líu đến vụ trộm cắp đó.",
+    "explanation_vi": "Động từ khuyết thiếu 'sollen' dùng để thuật lại tin đồn về một sự việc trong quá khứ kết hợp với dạng nguyên thể hoàn thành (Perfekt-Infinitiv): <b>beteiligt gewesen sein</b> (đã từng tham gia/dính líu)."
   },
   {
     "id": "c1-neben-sofern-001",
@@ -195,7 +215,9 @@
     ],
     "correct": "sofern",
     "explanation_de": "'Sofern' bedeutet 'unter der Bedingung, dass' und leitet eine Bedingung ein.",
-    "explanation_en": "'Sofern' means 'provided that', introducing a condition."
+    "explanation_en": "'Sofern' means 'provided that', introducing a condition.",
+    "prompt_vi": "Cuộc họp có thể được hoãn lại, với điều kiện là tất cả mọi người đều đồng ý.",
+    "explanation_vi": "'Sofern' mang nghĩa 'với điều kiện là / miễn là', dẫn dắt một mệnh đề điều kiện."
   },
   {
     "id": "c1-ind-konji-sein-002",
@@ -213,7 +235,9 @@
     ],
     "correct": "sei",
     "explanation_de": "Formelle indirekte Rede verwendet Konjunktiv I: <b>sei</b> (von 'sein').",
-    "explanation_en": "Formal indirect speech uses Konjunktiv I: <b>sei</b> (from 'sein')."
+    "explanation_en": "Formal indirect speech uses Konjunktiv I: <b>sei</b> (from 'sein').",
+    "prompt_vi": "„Tôi đến phòng tập gym vào mỗi thứ Sáu.“ Cô ấy nói rằng cô ấy đến phòng tập gym vào mỗi thứ Sáu.",
+    "explanation_vi": "Lời nói gián tiếp trang trọng sử dụng thể giả định I (Konjunktiv I): <b>sei</b> (từ động từ 'sein')."
   },
   {
     "id": "c1-trenn-untrenn-umfahren-003",
@@ -231,7 +255,9 @@
     ],
     "correct": "zu umfahren",
     "explanation_de": "Trennbares 'úmfahren' bedeutet 'anfahren/umstoßen' (zu-Infinitiv: umzufahren); untrennbares 'umfáhren' bedeutet 'umgehen' (zu-Infinitiv: zu umfahren). Eine Baustelle kann man nur umgehen: <b>zu umfahren</b>.",
-    "explanation_en": "Separable 'úmfahren' means 'to knock into' (zu-infinitive: umzufahren); inseparable 'umfáhren' means 'to bypass' (zu-infinitive: zu umfahren). A construction site can only be bypassed: <b>zu umfahren</b>."
+    "explanation_en": "Separable 'úmfahren' means 'to knock into' (zu-infinitive: umzufahren); inseparable 'umfáhren' means 'to bypass' (zu-infinitive: zu umfahren). A construction site can only be bypassed: <b>zu umfahren</b>.",
+    "prompt_vi": "Trên đường cao tốc, không dễ để lái xe đi vòng qua một công trường thi công.",
+    "explanation_vi": "Động từ tách 'úmfahren' có nghĩa là 'đâm đổ/chèn qua' (dạng zu-infinitive: umzufahren); động từ không tách 'umfáhren' có nghĩa là 'lái xe đi vòng qua' (dạng zu-infinitive: zu umfahren). Với một công trường thi công, chỉ có thể là lái xe đi vòng qua: <b>zu umfahren</b>."
   },
   {
     "id": "c1-konjii-bedingung-003",
@@ -249,7 +275,9 @@
     ],
     "correct": "gäbe/wäre",
     "explanation_de": "Irreale Bedingungssätze verwenden in beiden Teilsätzen Konjunktiv II: <b>gäbe/wäre</b>.",
-    "explanation_en": "Unreal/hypothetical conditionals use Konjunktiv II in both clauses: <b>gäbe/wäre</b>."
+    "explanation_en": "Unreal/hypothetical conditionals use Konjunktiv II in both clauses: <b>gäbe/wäre</b>.",
+    "prompt_vi": "Nếu có nhiều chỗ đỗ xe hơn thì áp lực sẽ giảm bớt đi.",
+    "explanation_vi": "Câu điều kiện giả định / không có thật sử dụng thể giả định II (Konjunktiv II) ở cả hai mệnh đề: <b>gäbe/wäre</b>."
   },
   {
     "id": "c1-indef-mancher-000",
@@ -267,7 +295,9 @@
     ],
     "correct": "Mancher",
     "explanation_de": "'Mancher' (so mancher) ist die nominative maskuline Form des Indefinitpronomens und fungiert hier als Subjekt.",
-    "explanation_en": "'Mancher' (many a one) is the nominative masculine indefinite pronoun functioning as the subject."
+    "explanation_en": "'Mancher' (many a one) is the nominative masculine indefinite pronoun functioning as the subject.",
+    "prompt_vi": "Rất nhiều người mong muốn được làm khách mời tại buổi dạ tiệc.",
+    "explanation_vi": "'Mancher' (nhiều người / khối kẻ) là đại từ bất định giống đực ở danh cách (Nominativ), đóng vai trò làm chủ ngữ trong câu."
   },
   {
     "id": "c1-neben-obwohl-002",
@@ -285,7 +315,9 @@
     ],
     "correct": "Obwohl",
     "explanation_de": "'Obwohl' (obgleich) ist eine konzessive unterordnende Konjunktion.",
-    "explanation_en": "'Obwohl' (although) is a concessive subordinating conjunction."
+    "explanation_en": "'Obwohl' (although) is a concessive subordinating conjunction.",
+    "prompt_vi": "Mặc dù góp phần bảo vệ môi trường, xe ô tô điện đơn lẻ không thể ngăn chặn được biến đổi khí hậu.",
+    "explanation_vi": "'Obwohl' (mặc dù) là một liên từ phụ thuộc biểu thị sự nhượng bộ (Konzessivsatz)."
   },
   {
     "id": "c1-wortschatz-verb-formell-001",
@@ -303,7 +335,9 @@
     ],
     "correct": "gewährleisten",
     "explanation_de": "'Gewährleisten' bedeutet 'sicherstellen/garantieren'.",
-    "explanation_en": "'Gewährleisten' means 'to ensure/guarantee'."
+    "explanation_en": "'Gewährleisten' means 'to ensure/guarantee'.",
+    "prompt_vi": "Đôi khi rất khó để duy trì trật tự an ninh tại các buổi hòa nhạc.",
+    "explanation_vi": "'Gewährleisten' có nghĩa là 'bảo đảm / duy trì / cam kết'."
   },
   {
     "id": "c1-wortschatz-menge-002",
@@ -321,7 +355,9 @@
     ],
     "correct": "doppelt",
     "explanation_de": "'Doppelt' (zweifach) drückt aus, ein Duplikat zu besitzen.",
-    "explanation_en": "'Doppelt' (doubly) expresses having a duplicate."
+    "explanation_en": "'Doppelt' (doubly) expresses having a duplicate.",
+    "prompt_vi": "Bạn có thể giữ chìa khóa đó, tôi có hai chiếc giống nhau mà.",
+    "explanation_vi": "'Doppelt' (gấp đôi / hai bản) diễn tả việc có một bản sao/chiếc thứ hai dự phòng."
   },
   {
     "id": "c1-gen-praep-aufgrund-003",
@@ -339,7 +375,9 @@
     ],
     "correct": "Aufgrund",
     "explanation_de": "'Aufgrund' + Genitiv bedeutet 'wegen/auf der Grundlage von'.",
-    "explanation_en": "'Aufgrund' + genitive means 'due to/because of'."
+    "explanation_en": "'Aufgrund' + genitive means 'due to/because of'.",
+    "prompt_vi": "Do tình trạng khan hiếm lao động có tay nghề, các vị trí làm việc mới đã được tạo ra.",
+    "explanation_vi": "'Aufgrund' + sở hữu cách (Genitiv) mang nghĩa 'do / bởi vì / trên cơ sở của'."
   },
   {
     "id": "c1-passiv-futur-001",
@@ -357,7 +395,9 @@
     ],
     "correct": "entwickelt",
     "explanation_de": "Futur Passiv: 'werden...entwickelt werden' ('werden entwickelt werden'); die anderen Optionen passen nicht in dieses Muster.",
-    "explanation_en": "Future passive: 'werden...entwickelt werden' ('will be developed'); the other options don't fit this passive-future pattern."
+    "explanation_en": "Future passive: 'werden...entwickelt werden' ('will be developed'); the other options don't fit this passive-future pattern.",
+    "prompt_vi": "Xe ô tô điện với phạm vi hoạt động lớn sẽ được phát triển.",
+    "explanation_vi": "Thể bị động ở thì tương lai: 'werden...entwickelt werden' ('sẽ được phát triển'); các lựa chọn khác không đúng với cấu trúc tương lai bị động."
   },
   {
     "id": "c1-partitiv-superlativ-000",
@@ -375,7 +415,9 @@
     ],
     "correct": "einen der",
     "explanation_de": "'Einen der [Superlativ]' (Akkusativ, maskulin) bedeutet 'einer der ...sten'.",
-    "explanation_en": "'Einen der [superlative]' (accusative, masculine) means 'one of the most...'"
+    "explanation_en": "'Einen der [superlative]' (accusative, masculine) means 'one of the most...'",
+    "prompt_vi": "Tại hội nghị, tôi đã gặp một trong những nhà nghiên cứu nổi tiếng nhất.",
+    "explanation_vi": "'Einen der [cấp so sánh nhất]' (đối cách Akkusativ, giống đực) mang nghĩa 'một trong những... nhất'."
   },
   {
     "id": "c1-demonstrativ-derjenige-003",
@@ -393,7 +435,9 @@
     ],
     "correct": "Derjenige/dem",
     "explanation_de": "'Gefallen' verlangt den Dativ. 'Derjenige' (wer auch immer, Subjekt im Nominativ) + Dativ-Relativpronomen <b>dem</b>.",
-    "explanation_en": "'Gefallen' takes the dative. 'Derjenige' (whoever, nominative subject) + dative relative <b>dem</b>."
+    "explanation_en": "'Gefallen' takes the dative. 'Derjenige' (whoever, nominative subject) + dative relative <b>dem</b>.",
+    "prompt_vi": "Bất kỳ ai không thích blog của tôi thì không nhất thiết phải đọc nó.",
+    "explanation_vi": "Động từ 'Gefallen' đòi hỏi cách Dativ. 'Derjenige' (bất cứ ai, chủ ngữ Nominativ) + đại từ quan hệ Dativ <b>dem</b>."
   },
   {
     "id": "c1-wortbildung-komposita-002",
@@ -411,7 +455,9 @@
     ],
     "correct": "Der",
     "explanation_de": "Ein deutsches Kompositum übernimmt das Genus seines letzten Bestandteils. 'Der Schlüssel' ist maskulin, also ist 'Autotürschlüssel' ebenfalls maskulin: <b>der</b>.",
-    "explanation_en": "A German compound noun takes the gender of its final component. 'Der Schlüssel' is masculine, so 'Autotürschlüssel' is also masculine: <b>der</b>."
+    "explanation_en": "A German compound noun takes the gender of its final component. 'Der Schlüssel' is masculine, so 'Autotürschlüssel' is also masculine: <b>der</b>.",
+    "prompt_vi": "Ô tô + cánh cửa + chìa khóa = chiếc chìa khóa cửa ô tô.",
+    "explanation_vi": "Một danh từ ghép trong tiếng Đức luôn mang giống của thành phần đứng cuối cùng. 'Der Schlüssel' là danh từ giống đực, vì thế 'Autotürschlüssel' cũng là giống đực: <b>der</b>."
   },
   {
     "id": "c1-konn-einerseits-002",
@@ -429,7 +475,9 @@
     ],
     "correct": "Einerseits/andererseits",
     "explanation_de": "'Einerseits...andererseits' ist ein festes Kontrastpaar.",
-    "explanation_en": "'Einerseits...andererseits' is a fixed contrastive pair meaning 'on one hand...on the other hand'."
+    "explanation_en": "'Einerseits...andererseits' is a fixed contrastive pair meaning 'on one hand...on the other hand'.",
+    "prompt_vi": "Một mặt tôi quý cô ấy, nhưng mặt khác cô ấy lại làm tôi bực mình.",
+    "explanation_vi": "'Einerseits...andererseits' là một cặp liên từ tương phản cố định mang nghĩa 'một mặt thì... nhưng mặt khác thì...'."
   },
   {
     "id": "c1-n-dekl-possessiv-001",
@@ -447,7 +495,9 @@
     ],
     "correct": "ihrem",
     "explanation_de": "'Es geht jemandem gut' verlangt den Dativ. 'Der Patient' ist ein N-Nomen (daher 'Patienten'), also lautet das passende Possessivpronomen im Dativ maskulin: <b>ihrem</b>.",
-    "explanation_en": "'Es geht jemandem gut' uses the dative. 'Der Patient' is masculine (an N-noun, hence 'Patienten'), so the matching possessive is dative masculine: <b>ihrem</b>."
+    "explanation_en": "'Es geht jemandem gut' uses the dative. 'Der Patient' is masculine (an N-noun, hence 'Patienten'), so the matching possessive is dative masculine: <b>ihrem</b>.",
+    "prompt_vi": "Nữ bác sĩ khẳng định rằng tình trạng bệnh nhân của cô ấy hôm nay đã tiến triển tốt hơn.",
+    "explanation_vi": "Cấu trúc 'Es geht jemandem gut' dùng cách Dativ. 'Der Patient' là danh từ giống đực (thuộc nhóm biến cách N, do đó mang đuôi 'Patienten'), vì vậy đại từ sở hữu tương ứng ở Dativ giống đực là: <b>ihrem</b>."
   },
   {
     "id": "c1-konn-zwaraber-001",
@@ -465,7 +515,9 @@
     ],
     "correct": "zwar/aber",
     "explanation_de": "'Zwar...aber' ist ein festes konzessives Konnektorenpaar.",
-    "explanation_en": "'Zwar...aber' is a fixed concessive pair meaning 'admittedly...but'."
+    "explanation_en": "'Zwar...aber' is a fixed concessive pair meaning 'admittedly...but'.",
+    "prompt_vi": "Những sai sót nhỏ tuy có thể sửa chữa được, nhưng sự cẩn thận dù sao vẫn rất quan trọng.",
+    "explanation_vi": "'Zwar...aber' là cặp liên từ nhượng bộ cố định mang nghĩa 'tuy rằng... nhưng...'."
   },
   {
     "id": "c1-abtoenung-vielleicht-003",
@@ -483,7 +535,9 @@
     ],
     "correct": "vielleicht",
     "explanation_de": "'Vielleicht' mildert eine höfliche Bitte ab.",
-    "explanation_en": "'Vielleicht' softens a polite request."
+    "explanation_en": "'Vielleicht' softens a polite request.",
+    "prompt_vi": "Bạn có thể gửi giúp tôi các tài liệu được không?",
+    "explanation_vi": "Từ tình thái 'Vielleicht' giúp làm lời đề nghị, yêu cầu thêm phần nhẹ nhàng và lịch thiệp hơn."
   },
   {
     "id": "c1-adj-dekl-ein-stark-002",
@@ -501,7 +555,9 @@
     ],
     "correct": "ereignisreicher/abwechslungsreicher",
     "explanation_de": "'Der Abend' ist maskulin. Nach dem unbestimmten Artikel 'ein' gilt die starke Deklination mit der Endung <b>-er</b>: <b>ereignisreicher und abwechslungsreicher Abend</b>.",
-    "explanation_en": "'Der Abend' is masculine. After the indefinite article 'ein', strong declension applies, taking <b>-er</b>: <b>ereignisreicher und abwechslungsreicher Abend</b>."
+    "explanation_en": "'Der Abend' is masculine. After the indefinite article 'ein', strong declension applies, taking <b>-er</b>: <b>ereignisreicher und abwechslungsreicher Abend</b>.",
+    "prompt_vi": "Đó là một buổi tối đầy ắp sự kiện và vô cùng phong phú.",
+    "explanation_vi": "'Der Abend' là danh từ giống đực. Đứng sau mạo từ bất định 'ein' ở danh cách, tính từ biến cách theo dạng hỗn hợp/mạnh, nhận đuôi <b>-er</b>: <b>ereignisreicher und abwechslungsreicher Abend</b>."
   },
   {
     "id": "c1-nomin-nichts-adj-003",
@@ -519,7 +575,9 @@
     ],
     "correct": "Besonderes",
     "explanation_de": "Nach 'nichts' wird ein substantiviertes Adjektiv großgeschrieben und nimmt '-es': <b>nichts Besonderes</b>.",
-    "explanation_en": "After 'nichts', a substantivized adjective is capitalized and takes '-es': <b>nichts Besonderes</b>."
+    "explanation_en": "After 'nichts', a substantivized adjective is capitalized and takes '-es': <b>nichts Besonderes</b>.",
+    "prompt_vi": "Bộ phim ngày hôm qua chẳng có gì đặc biệt cả.",
+    "explanation_vi": "Đứng sau 'nichts', tính từ được danh từ hóa phải viết hoa chữ cái đầu và nhận đuôi '-es': <b>nichts Besonderes</b>."
   },
   {
     "id": "c1-pronomen-es-platzhalter-001",
@@ -537,7 +595,9 @@
     ],
     "correct": "es",
     "explanation_de": "'Es tun' ist der idiomatische Platzhalter für eine wiederholte Verbphrase: 'ich tue es auch'.",
-    "explanation_en": "'Es tun' is the idiomatic placeholder for a repeated verb phrase: 'ich tue es auch' ('I do so too')."
+    "explanation_en": "'Es tun' is the idiomatic placeholder for a repeated verb phrase: 'ich tue es auch' ('I do so too').",
+    "prompt_vi": "Rất nhiều người hết lời ca ngợi những quán cà phê ở đây. Tôi cũng vậy.",
+    "explanation_vi": "'Es tun' là cấu trúc thành ngữ dùng đại từ giữ chỗ thay thế cho cụm động từ đã nhắc trước đó: 'ich tue es auch' ('tôi cũng làm vậy')."
   },
   {
     "id": "c1-wortschatz-redewendung-003",
@@ -555,7 +615,9 @@
     ],
     "correct": "nimmt kein Blatt vor den Mund.",
     "explanation_de": "'Kein Blatt vor den Mund nehmen' ist eine Redewendung für 'offen/direkt sprechen'.",
-    "explanation_en": "'Kein Blatt vor den Mund nehmen' is an idiom meaning 'to speak bluntly/not mince words'."
+    "explanation_en": "'Kein Blatt vor den Mund nehmen' is an idiom meaning 'to speak bluntly/not mince words'.",
+    "prompt_vi": "Cô ấy luôn thẳng thắn nói ra suy nghĩ của mình. Cô ấy chẳng bao giờ rào trước đón sau cả.",
+    "explanation_vi": "'Kein Blatt vor den Mund nehmen' là một thành ngữ có nghĩa là 'nói thẳng nói thật / không ngần ngại, giấu giếm'."
   },
   {
     "id": "c1-genitiv-006",
@@ -573,7 +635,9 @@
     ],
     "correct": "des bekannten",
     "explanation_de": "Genitiv maskulin Singular mit schwacher Adjektivdeklination nach dem bestimmten Artikel: <b>des bekannten</b> Künstlers.",
-    "explanation_en": "Genitive masculine singular with weak adjective declension after the definite article: <b>des bekannten</b> Künstlers."
+    "explanation_en": "Genitive masculine singular with weak adjective declension after the definite article: <b>des bekannten</b> Künstlers.",
+    "prompt_vi": "Tác phẩm của người nghệ sĩ nổi tiếng đã bán hết sạch rất nhanh.",
+    "explanation_vi": "Sở hữu cách (Genitiv) giống đực số ít với biến cách yếu của tính từ đứng sau mạo từ xác định: <b>des bekannten</b> Künstlers."
   },
   {
     "id": "c1-konj-001",
@@ -584,7 +648,9 @@
     "prompt_en": "They said they had no idea.",
     "correct": "hätten",
     "explanation_de": "Konjunktiv I Plural von 'haben' (haben) ist mit dem Indikativ identisch; deshalb weicht man auf Konjunktiv II (hätten) aus.",
-    "explanation_en": "The Konjunktiv I plural of 'haben' (haben) is identical to the indicative, so Konjunktiv II (hätten) is used instead."
+    "explanation_en": "The Konjunktiv I plural of 'haben' (haben) is identical to the indicative, so Konjunktiv II (hätten) is used instead.",
+    "prompt_vi": "Họ nói rằng họ hoàn toàn không biết gì.",
+    "explanation_vi": "Dạng Konjunktiv I số nhiều của 'haben' (haben) trùng khớp với dạng chỉ định (Indikativ), do đó thể giả định II (Konjunktiv II: hätten) được dùng để thay thế."
   },
   {
     "id": "c1-konj-002",
@@ -595,7 +661,9 @@
     "prompt_en": "He explained that one must follow the rules.",
     "correct": "müsse",
     "explanation_de": "Konjunktiv I von 'müssen', 3. Person Singular: müsse.",
-    "explanation_en": "Konjunktiv I of 'müssen', 3rd person singular: müsse."
+    "explanation_en": "Konjunktiv I of 'müssen', 3rd person singular: müsse.",
+    "prompt_vi": "Anh ấy giải thích rằng người ta phải tuân thủ các quy tắc.",
+    "explanation_vi": "Thể giả định I (Konjunktiv I) của 'müssen', ngôi thứ 3 số ít: müsse."
   },
   {
     "id": "c1-konj-003",
@@ -606,7 +674,9 @@
     "prompt_en": "She claimed she wanted to finish the project.",
     "correct": "wolle",
     "explanation_de": "Konjunktiv I von 'wollen', 3. Person Singular: wolle.",
-    "explanation_en": "Konjunktiv I of 'wollen', 3rd person singular: wolle."
+    "explanation_en": "Konjunktiv I of 'wollen', 3rd person singular: wolle.",
+    "prompt_vi": "Cô ấy quả quyết rằng mình muốn hoàn thành dự án.",
+    "explanation_vi": "Thể giả định I (Konjunktiv I) của 'wollen', ngôi thứ 3 số ít: wolle."
   },
   {
     "id": "c1-konj-004",
@@ -622,7 +692,9 @@
     ],
     "correct": "dürfe",
     "explanation_de": "Konjunktiv I von 'dürfen', 3. Person Singular: dürfe (unterscheidet sich vom Indikativ 'darf').",
-    "explanation_en": "Konjunktiv I of 'dürfen', 3rd person singular: dürfe (distinct from the indicative 'darf')."
+    "explanation_en": "Konjunktiv I of 'dürfen', 3rd person singular: dürfe (distinct from the indicative 'darf').",
+    "prompt_vi": "Vị bộ trưởng giải thích rằng không một ai được phép bước vào tòa nhà.",
+    "explanation_vi": "Thể giả định I (Konjunktiv I) của 'dürfen', ngôi thứ 3 số ít: dürfe (khác biệt với dạng chỉ định 'darf')."
   },
   {
     "id": "c1-konj-005",
@@ -633,7 +705,9 @@
     "prompt_en": "He said she should please come on time.",
     "correct": "möge",
     "explanation_de": "Konjunktiv I 'möge' wird für indirekt wiedergegebene Aufforderungen/Wünsche verwendet.",
-    "explanation_en": "The Konjunktiv I form 'möge' is used for indirectly reported requests/wishes."
+    "explanation_en": "The Konjunktiv I form 'möge' is used for indirectly reported requests/wishes.",
+    "prompt_vi": "Anh ấy nói rằng xin cô ấy hãy vui lòng đến đúng giờ.",
+    "explanation_vi": "Dạng Konjunktiv I 'möge' được dùng để thuật lại gián tiếp một lời thỉnh cầu hoặc mong muốn."
   },
   {
     "id": "c1-part-001",
@@ -644,7 +718,9 @@
     "prompt_en": "The laughing man waved to us.",
     "correct": "lachende",
     "explanation_de": "Partizip I (Präsenspartizip) als attributives Adjektiv + Adjektivendung: lachende.",
-    "explanation_en": "Partizip I (present participle) as an attributive adjective + adjective ending: lachende."
+    "explanation_en": "Partizip I (present participle) as an attributive adjective + adjective ending: lachende.",
+    "prompt_vi": "Người đàn ông đang cười vẫy tay chào chúng tôi.",
+    "explanation_vi": "Phân từ I (Partizip I) đóng vai trò làm tính từ bổ ngữ + đuôi tính từ: lachende."
   },
   {
     "id": "c1-part-002",
@@ -655,7 +731,9 @@
     "prompt_en": "The written book is on the table.",
     "correct": "geschriebene",
     "explanation_de": "Partizip II als attributives Adjektiv + Adjektivendung: geschriebene.",
-    "explanation_en": "Partizip II as an attributive adjective + adjective ending: geschriebene."
+    "explanation_en": "Partizip II as an attributive adjective + adjective ending: geschriebene.",
+    "prompt_vi": "Cuốn sách đã viết xong nằm ở trên bàn.",
+    "explanation_vi": "Phân từ II (Partizip II) đóng vai trò làm tính từ bổ ngữ + đuôi tính từ: geschriebene."
   },
   {
     "id": "c1-part-003",
@@ -671,7 +749,9 @@
     ],
     "correct": "von mir geschriebene",
     "explanation_de": "Erweiterte Partizipialkonstruktion ersetzt einen Relativsatz: der Brief, der von mir geschrieben wurde.",
-    "explanation_en": "An extended participial construction replaces a relative clause: der Brief, der von mir geschrieben wurde."
+    "explanation_en": "An extended participial construction replaces a relative clause: der Brief, der von mir geschrieben wurde.",
+    "prompt_vi": "Lá thư do tôi viết đang nằm ở trên bàn.",
+    "explanation_vi": "Cấu trúc phân từ mở rộng thay thế cho một mệnh đề quan hệ: der Brief, der von mir geschrieben wurde."
   },
   {
     "id": "c1-part-004",
@@ -682,7 +762,9 @@
     "prompt_en": "The fast-running children reached the goal first.",
     "correct": "schnell laufenden",
     "explanation_de": "Erweitertes Partizip I (mit Adverb) + Adjektivendung: schnell laufenden.",
-    "explanation_en": "Extended Partizip I (with adverb) + adjective ending: schnell laufenden."
+    "explanation_en": "Extended Partizip I (with adverb) + adjective ending: schnell laufenden.",
+    "prompt_vi": "Những đứa trẻ chạy nhanh đã cán đích đầu tiên.",
+    "explanation_vi": "Phân từ I mở rộng (đi kèm trạng từ) + đuôi tính từ: schnell laufenden."
   },
   {
     "id": "c1-neben-001",
@@ -693,7 +775,9 @@
     "prompt_en": "He worked hard, so that he passed the exam.",
     "correct": "sodass",
     "explanation_de": "'sodass' leitet einen Konsekutivsatz ein (Folge/Ergebnis).",
-    "explanation_en": "'sodass' introduces a consecutive clause (result/consequence)."
+    "explanation_en": "'sodass' introduces a consecutive clause (result/consequence).",
+    "prompt_vi": "Anh ấy đã học tập chăm chỉ, đến mức anh ấy đã vượt qua kỳ thi.",
+    "explanation_vi": "'sodass' (đến nỗi mà / vì thế mà) dẫn dắt một mệnh đề chỉ kết quả (Konsekutivsatz)."
   },
   {
     "id": "c1-neben-002",
@@ -704,7 +788,9 @@
     "prompt_en": "She improved her German by reading a lot.",
     "correct": "indem",
     "explanation_de": "'indem' leitet einen Modalsatz ein (Art und Weise, wie etwas geschieht).",
-    "explanation_en": "'indem' introduces a clause of manner (how something is done)."
+    "explanation_en": "'indem' introduces a clause of manner (how something is done).",
+    "prompt_vi": "Cô ấy đã trau dồi tiếng Đức của mình bằng cách đọc sách thật nhiều.",
+    "explanation_vi": "'indem' (bằng cách) dẫn dắt một mệnh đề chỉ phương thức thực hiện (Modalsatz)."
   },
   {
     "id": "c1-neben-003",
@@ -720,7 +806,9 @@
     ],
     "correct": "Obschon",
     "explanation_de": "'obschon' (= obwohl) leitet einen Konzessivsatz ein.",
-    "explanation_en": "'obschon' (= obwohl, 'although') introduces a concessive clause."
+    "explanation_en": "'obschon' (= obwohl, 'although') introduces a concessive clause.",
+    "prompt_vi": "Dù cho rất mệt mỏi, anh ấy vẫn tiếp tục làm việc.",
+    "explanation_vi": "'obschon' (= obwohl, mang nghĩa 'mặc dù / dẫu cho') dẫn dắt một mệnh đề nhượng bộ (Konzessivsatz)."
   },
   {
     "id": "c1-korrel-001",
@@ -731,7 +819,9 @@
     "prompt_en": "The more he practices, the better he gets.",
     "correct": "desto",
     "explanation_de": "Korrelative Konstruktion: je + Komparativ ..., desto + Komparativ ...",
-    "explanation_en": "Correlative construction: je + comparative ..., desto + comparative ..."
+    "explanation_en": "Correlative construction: je + comparative ..., desto + comparative ...",
+    "prompt_vi": "Anh ấy càng luyện tập nhiều thì anh ấy càng giỏi hơn.",
+    "explanation_vi": "Cấu trúc tương quan hô ứng so sánh kép: je + cấp so sánh hơn ..., desto + cấp so sánh hơn ... (càng... càng...)."
   },
   {
     "id": "c1-korrel-002",
@@ -755,7 +845,9 @@
       "aus"
     ],
     "explanation_de": "Der desto-Satz hat Verb-Zweit-Stellung wie ein normaler Hauptsatz: desto + Vergleichsform, Verb, Subjekt, Rest.",
-    "explanation_en": "The 'desto' clause has verb-second word order like a normal main clause: desto + comparative, verb, subject, rest."
+    "explanation_en": "The 'desto' clause has verb-second word order like a normal main clause: desto + comparative, verb, subject, rest.",
+    "prompt_vi": "Sắp xếp mệnh đề 'desto': (càng nhiều / chi tiêu / anh ấy / ra) — từ câu 'Je mehr Geld er verdient, ...'",
+    "explanation_vi": "Mệnh đề 'desto' có trật tự động từ đứng ở vị trí thứ hai giống như một mệnh đề chính thông thường: desto + dạng so sánh, động từ, chủ ngữ, các thành phần còn lại."
   },
   {
     "id": "c1-ger-001",
@@ -766,7 +858,9 @@
     "prompt_en": "The task to be solved is difficult.",
     "correct": "lösende",
     "explanation_de": "Gerundivum: zu + Partizip I + Adjektivendung drückt Notwendigkeit aus: die zu lösende Aufgabe = die Aufgabe, die gelöst werden muss.",
-    "explanation_en": "Gerundive: zu + Partizip I + adjective ending expresses necessity: die zu lösende Aufgabe = the task that must be solved."
+    "explanation_en": "Gerundive: zu + Partizip I + adjective ending expresses necessity: die zu lösende Aufgabe = the task that must be solved.",
+    "prompt_vi": "Bài toán cần giải quyết này rất khó.",
+    "explanation_vi": "Dạng tính động từ (Gerundivum): zu + phân từ I (Partizip I) + đuôi tính từ diễn đạt tính cần thiết: die zu lösende Aufgabe = nhiệm vụ cần phải được giải quyết."
   },
   {
     "id": "c1-ger-002",
@@ -782,7 +876,9 @@
     ],
     "correct": "zu behandelnde",
     "explanation_de": "Gerundivum: zu + Partizip I (behandelnd) + Adjektivendung: zu behandelnde.",
-    "explanation_en": "Gerundive: zu + Partizip I (behandelnd) + adjective ending: zu behandelnde."
+    "explanation_en": "Gerundive: zu + Partizip I (behandelnd) + adjective ending: zu behandelnde.",
+    "prompt_vi": "Vấn đề cần xử lý phải được giải quyết ngay lập tức.",
+    "explanation_vi": "Dạng tính động từ (Gerundivum): zu + phân từ I (behandelnd) + đuôi tính từ: zu behandelnde."
   },
   {
     "id": "c1-neben-004",
@@ -796,7 +892,9 @@
       "Statt dass"
     ],
     "explanation_de": "'Anstatt dass' leitet einen Kontrastsatz ein (etwas Erwartetes geschieht nicht).",
-    "explanation_en": "'Anstatt dass' introduces a contrastive clause (an expected action doesn't happen)."
+    "explanation_en": "'Anstatt dass' introduces a contrastive clause (an expected action doesn't happen).",
+    "prompt_vi": "Thay vì giúp đỡ, anh ấy lại chỉ bỏ đi mất.",
+    "explanation_vi": "'Anstatt dass' (thay vì) dẫn dắt một mệnh đề tương phản biểu thị việc một hành động đáng mong đợi đã không diễn ra."
   },
   {
     "id": "c1-konj-006",
@@ -807,7 +905,9 @@
     "prompt_en": "The newspaper reported that the government was planning new tax laws.",
     "correct": "plane",
     "explanation_de": "Konjunktiv I von 'planen', 3. Person Singular: plane.",
-    "explanation_en": "Konjunktiv I of 'planen', 3rd person singular: plane."
+    "explanation_en": "Konjunktiv I of 'planen', 3rd person singular: plane.",
+    "prompt_vi": "Tờ báo đưa tin rằng chính phủ đang lên kế hoạch cho các đạo luật thuế mới.",
+    "explanation_vi": "Thể giả định I (Konjunktiv I) của 'planen', ngôi thứ 3 số ít: plane."
   },
   {
     "id": "c1-konj-007",
@@ -818,7 +918,9 @@
     "prompt_en": "They said they were satisfied.",
     "correct": "seien",
     "explanation_de": "Konjunktiv I Plural von 'sein' ist 'seien' — unterscheidet sich vom Indikativ 'sind', daher hier korrekt (im Gegensatz zu 'haben').",
-    "explanation_en": "Konjunktiv I plural of 'sein' is 'seien' — distinct from the indicative 'sind', so it's used directly here (unlike 'haben')."
+    "explanation_en": "Konjunktiv I plural of 'sein' is 'seien' — distinct from the indicative 'sind', so it's used directly here (unlike 'haben').",
+    "prompt_vi": "Họ nói rằng họ cảm thấy hài lòng.",
+    "explanation_vi": "Dạng Konjunktiv I số nhiều của 'sein' là 'seien' — khác biệt rõ ràng với dạng chỉ định 'sind', do đó được dùng trực tiếp ở đây (khác với trường hợp của 'haben')."
   },
   {
     "id": "c1-korrel-003",
@@ -834,6 +936,8 @@
     ],
     "correct": "desto",
     "explanation_de": "Der zweite Teil der Korrelation beginnt immer mit 'desto'.",
-    "explanation_en": "The second part of the correlation always begins with 'desto'."
+    "explanation_en": "The second part of the correlation always begins with 'desto'.",
+    "prompt_vi": "Cuộc họp càng kéo dài bao nhiêu thì các nhân viên lại càng trở nên sốt ruột bấy nhiêu.",
+    "explanation_vi": "Vế thứ hai của cấu trúc tương quan so sánh kép luôn bắt đầu bằng 'desto'."
   }
 ]

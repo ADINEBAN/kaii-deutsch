@@ -23,6 +23,15 @@ from conjugator import conjugate, _regular_stem
 from english_conjugator import build_english_table
 from split_dictionary import split_dictionary   # splits the full dictionary into hub + per-letter pages (<2 MB each)
 
+if sys.platform == "win32":
+    try:
+        if hasattr(sys.stdout, "reconfigure"):
+            sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+        if hasattr(sys.stderr, "reconfigure"):
+            sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
 REPO    = os.path.dirname(os.path.abspath(__file__))
 JSON    = os.path.join(REPO, 'words_final.json')
 BASE    = ''
@@ -184,13 +193,14 @@ def audit(words):
     if generic:
         issues.append(f"GENERIC EXAMPLES ({len(generic)}): " + ', '.join(generic[:5]))
 
-    # Collocations coverage B2+
-    for lv in ['B2','C1','C2']:
-        total = counts[lv]
-        has   = sum(1 for w in words if w['level']==lv and w.get('collocations'))
-        pct   = has * 100 // total if total else 0
-        if pct < 80:
-            issues.append(f"LOW COLLOCATIONS {lv}: {has}/{total} ({pct}%)")
+    # Vietnamese coverage audit
+    has_vi = sum(1 for w in words if w.get('vi', '').strip())
+    has_ex_vi = sum(1 for w in words if w.get('example_vi', '').strip())
+    total_words = len(words)
+    if has_vi < total_words:
+        issues.append(f"INCOMPLETE VIETNAMESE GLOSS: {has_vi}/{total_words} ({has_vi*100//total_words}%)")
+    if has_ex_vi < total_words:
+        issues.append(f"INCOMPLETE VIETNAMESE EXAMPLES: {has_ex_vi}/{total_words} ({has_ex_vi*100//total_words}%)")
 
     return issues, counts
 
@@ -258,48 +268,10 @@ INSTALL_BANNER_CARDS = (
 
 # Version for index.html / level index pages — inserted before <main>, wrapped
 # in its own full-width container.
-INSTALL_BANNER = (
-    '\n    <!-- App Install Banner -->\n'
-    '    <div id="installBanner" class="install-banner-wrap" style="display:none;" role="region" aria-label="App installieren / Install the app">\n'
-    '        <div class="container">\n'
-    '            <div class="install-banner">\n'
-    '                <div class="install-banner-bar">\n'
-    '                    <span class="install-banner-icon">📱</span>\n'
-    '                    <span class="install-banner-text">Install as a free app — works offline, no App Store needed</span>\n'
-    '                </div>\n'
-    '                <button type="button" id="installBannerClose" class="install-banner-close" '
-    'aria-label="Dismiss install banner">✕</button>\n'
-    '                <div id="installBannerPanel" class="install-banner-panel">\n'
-    + INSTALL_BANNER_CARDS.replace('                    ', '                        ')
-    + '                </div>\n'
-    '            </div>\n'
-    '        </div>\n'
-    '    </div>\n'
-    + INSTALL_BANNER_STYLE_SCRIPT +
-    '    <!-- End App Install Banner -->\n'
-)
-
-# Version for dictionary.html — no outer .container (it already sits inside the
-# content card), inserted after the search/filter block instead of before <main>
-# so the search box stays the first visible element.
-INSTALL_BANNER_DICT = (
-    '                <!-- App Install Banner -->\n'
-    '                <div id="installBanner" class="install-banner-wrap mb-3" style="display:none;" role="region" aria-label="App installieren / Install the app">\n'
-    '                    <div class="install-banner">\n'
-    '                        <div class="install-banner-bar">\n'
-    '                            <span class="install-banner-icon">📱</span>\n'
-    '                            <span class="install-banner-text">Install as a free app — works offline, no App Store needed</span>\n'
-    '                        </div>\n'
-    '                        <button type="button" id="installBannerClose" class="install-banner-close" '
-    'aria-label="Dismiss install banner">✕</button>\n'
-    '                        <div id="installBannerPanel" class="install-banner-panel">\n'
-    + INSTALL_BANNER_CARDS.replace('                    ', '                            ')
-    + '                        </div>\n'
-    '                    </div>\n'
-    '                </div>\n'
-    + INSTALL_BANNER_STYLE_SCRIPT +
-    '                <!-- End App Install Banner -->\n'
-)
+# Promotional app install banner removed per Master UI/UX Redesign;
+# PWA installation is now cleanly accessible via the compact footer control without interrupting learning.
+INSTALL_BANNER = ''
+INSTALL_BANNER_DICT = ''
 
 _BANNER_STRIP_RE = re.compile(
     r'\s*<!-- [─\-]*\s*App Install Banner.*?End App Install Banner\s*[─\-]*\s*-->\s*',
@@ -694,16 +666,21 @@ PERSON_SENTENCES_SCRIPT = """<script>
 
     var ttsSvg = '<svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>';
     function addTtsIfAvailable(cell, text, lang) {
-        if (!('speechSynthesis' in window) || !text) return;
+        if (!text) return;
         var b = document.createElement('button');
         b.className = 'd-tts';
         b.innerHTML = ttsSvg;
         b.title = lang === 'de-DE' ? 'Anhören' : 'Listen';
         b.onclick = function(e) {
             e.preventDefault(); e.stopPropagation();
+            if (window.WordFeatherTTS) {
+                WordFeatherTTS.speak(text, lang, b);
+                return;
+            }
+            if (!('speechSynthesis' in window)) return;
             var synth = window.speechSynthesis;
             synth.cancel();
-            var clean = text.replace(/\\s*[,]\\s*-\\w+/g, '').replace(/[—–]/g, '').replace(/\\(.*?\\)/g, '').replace(/\\s+/g, ' ').trim();
+            var clean = text.replace(/\\s*[,]\\s*-[^\\s,()]+/g, '').replace(/[—–]/g, ' ').replace(/\\(.*?\\)/g, '').replace(/\\s+/g, ' ').trim();
             if (!clean) return;
             var u = new SpeechSynthesisUtterance(clean);
             u.lang = lang; u.rate = 0.9;
@@ -1092,9 +1069,11 @@ def make_word_card(w):
     """Build a single word-card div from a JSON entry."""
     de    = w['de']
     en    = w['en']
+    vi    = w.get('vi', '').strip()
     level = w['level']
     ex    = w.get('example','').strip()
     ex_en = w.get('example_en','').strip()
+    ex_vi = w.get('example_vi','').strip()
     cols  = w.get('collocations', [])
     conj  = w.get('conjugation')
     color = COLORS[level]
@@ -1137,11 +1116,12 @@ def make_word_card(w):
     # second nested toggle for anyone who wants the fuller grammar.
     ex_html = ''
     if ex:
-        en_span = (f'<br><span class="ex-en">{htmllib.escape(ex_en)}</span>'
-                   if ex_en else '')
+        vi_ex_text = ex_vi if ex_vi else ex_en
+        vi_span = (f'<br><span class="ex-vi">{htmllib.escape(vi_ex_text)}</span>'
+                   if vi_ex_text else '')
         ex_html = (f'\n        <div class="word-example">'
                    f'<span class="ex-de">{htmllib.escape(ex)}</span>'
-                   f'{en_span}{col_html}</div>')
+                   f'{vi_span}{col_html}</div>')
 
     # 6-person sentence drill (ich/du/er,sie,es/wir/ihr/sie,Sie) — the
     # actual 6 rows are NOT baked into this HTML. They're written once
@@ -1171,10 +1151,14 @@ def make_word_card(w):
             '</details>'
         )
 
+    vi_text = vi if vi else en
+    vi_div = f'\n        <div class="word-vi">{htmllib.escape(vi_text)}</div>'
+
     return (
         f'<div class="word-card" '
         f'data-de="{htmllib.escape(de.lower(), quote=True)}" '
         f'data-en="{htmllib.escape(en, quote=True)}" '
+        f'data-vi="{htmllib.escape(vi.lower(), quote=True)}" '
         f'data-level="{level}" '
         f'data-pos="{pos}" '
         f'data-irregular="{"true" if (pos == "verb" and is_irregular_verb(conj)) else "false"}" '
@@ -1188,7 +1172,7 @@ def make_word_card(w):
         f'            <span class="badge rounded-pill word-level" '
         f'style="background:{color}">{level}</span>\n'
         f'        </div>\n'
-        f'        <div class="word-en">{htmllib.escape(en)}</div>'
+        f'{vi_div}'
         f'{conj_html}'
         f'{ex_html}'
         f'{person_html}\n'
@@ -1889,6 +1873,46 @@ CATEGORY_EN = {
     "Allgemein": "General",
 }
 
+CATEGORY_VI = {
+    "Wohnen & Haushalt": "Nhà ở & Gia dụng",
+    "Moebel": "Đồ nội thất",
+    "Wohnungssuche & Umzug": "Tìm nhà & Chuyển nhà",
+    "Essen & Trinken": "Ăn uống & Thực phẩm",
+    "Familie & Menschen": "Gia đình & Con người",
+    "Beziehungsleben & Liebe": "Tình cảm & Mối quan hệ",
+    "Koerper & Gesundheit": "Cơ thể & Sức khỏe",
+    "Kleidung & Aussehen": "Trang phục & Ngoại hình",
+    "Farben & Formen": "Màu sắc & Hình khối",
+    "Farben": "Màu sắc",
+    "Verkehr & Reisen": "Giao thông & Du lịch",
+    "Arbeit & Beruf": "Công việc & Nghề nghiệp",
+    "Schule & Bildung": "Trường học & Giáo dục",
+    "Einkaufen & Geld": "Mua sắm & Tiền bạc",
+    "Zahlen & Mengen": "Con số & Số lượng",
+    "Zahlen & Zeit": "Con số & Thời gian",
+    "Natur & Wetter": "Thiên nhiên & Thời tiết",
+    "Tiere & Pflanzen": "Động vật & Thực vật",
+    "Freizeit & Sport": "Giải trí & Thể thao",
+    "Kunst & Unterhaltung": "Nghệ thuật & Giải trí",
+    "Feste & Traditionen": "Lễ hội & Truyền thống",
+    "Zeit & Alltag": "Thời gian & Đời sống hàng ngày",
+    "Technik & Medien": "Công nghệ & Truyền thông",
+    "Stadt & Orte": "Thành phố & Địa điểm",
+    "Gefuehle & Charakter": "Cảm xúc & Tính cách",
+    "Kommunikation & Sprache": "Giao tiếp & Ngôn ngữ",
+    "Gesellschaft & Umwelt": "Xã hội & Môi trường",
+    "Aemter & Buerokratie": "Cơ quan công quyền & Thủ tục",
+    "Sicherheit & Notfaelle": "An toàn & Tình huống khẩn cấp",
+    "Philosophie & Erkenntnistheorie": "Triết học & Nhận thức luận",
+    "Recht & Politik": "Pháp luật & Chính trị",
+    "Wirtschaft & Finanzen": "Kinh tế & Tài chính",
+    "Wissenschaft & Medizin": "Khoa học & Y học",
+    "Gesellschaft & Kultur": "Xã hội & Văn hóa",
+    "Sprache & Literatur": "Ngôn ngữ & Văn học",
+    "Argumentation & Analyse": "Lập luận & Phân tích",
+    "Allgemein": "Chủ đề chung",
+}
+
 def get_topic(w, level):
     # Uses the word's pre-computed 'category' field (from the domain-
     # tagging project) instead of this file's own per-level keyword
@@ -1938,7 +1962,7 @@ def build_wortschatz_page(level, level_words):
 
     jump_html = '\n'.join(
         f'<a href="#{sl}" class="btn btn-sm btn-outline-secondary mb-1 w-100 text-start" '
-        f'title="{htmllib.escape(CATEGORY_EN.get(tp, tp), quote=True)}">'
+        f'title="{htmllib.escape(CATEGORY_VI.get(tp, tp), quote=True)}">'
         f'{tp[:22]}{"…" if len(tp)>22 else ""} '
         f'<span class="badge ms-1" style="background:{color};font-size:.65rem">{n}</span></a>'
         for tp, sl, n in topic_nav
@@ -1950,24 +1974,27 @@ def build_wortschatz_page(level, level_words):
         if not ws:
             continue
         slug = re.sub(r'[^a-z0-9]+', '-', topic.lower()).strip('-')
-        topic_en = CATEGORY_EN.get(topic, topic)
+        topic_vi = CATEGORY_VI.get(topic, topic)
         sections += f'<div class="topic-section" data-topic-section="{slug}">\n'
         sections += (f'<h2 id="{slug}" class="mt-4 mb-3" style="color:{color}">'
                      f'{htmllib.escape(topic)} '
-                     f'<span class="fs-6 fw-normal text-muted">({htmllib.escape(topic_en)})</span> '
+                     f'<span class="fs-6 fw-normal text-muted">({htmllib.escape(topic_vi)})</span> '
                      f'<small class="text-muted fs-6">({len(ws)} Wörter)</small></h2>\n')
         sections += '<div class="table-responsive">\n'
         sections += ('<table class="table table-bordered table-hover vocab-table mb-4">\n'
                      '<thead class="table-dark"><tr>'
                      '<th style="width:22%">Deutsch</th>'
-                     '<th style="width:15%">Englisch</th>'
+                     '<th style="width:20%">Tiếng Việt</th>'
                      '<th>Beispielsatz</th>'
                      '</tr></thead>\n<tbody>\n')
         for w in ws:
             de  = htmllib.escape(w['de'])
-            en  = htmllib.escape(w['en'])
+            en  = htmllib.escape(w.get('en', ''))
+            vi  = htmllib.escape(w.get('vi', ''))
+            meaning_vi = vi if vi else en
             exd = htmllib.escape(w.get('example', ''))
             exe = htmllib.escape(w.get('example_en', ''))
+            exvi = htmllib.escape(w.get('example_vi', ''))
             cols = w.get('collocations', [])
             pos = detect_pos(w)
             col_html = ''
@@ -1977,18 +2004,12 @@ def build_wortschatz_page(level, level_words):
                     f'style="font-size:.7rem;font-weight:400">{htmllib.escape(c)}</span>'
                     for c in cols[:3])
                 col_html = f'<div class="mt-1">{pills}</div>'
-            exe_row = (f'<span class="ex-en d-block text-muted small">{exe}</span>' if exe else '')
+            example_vi_row = (f'<span class="ex-vi d-block text-secondary small">{exvi}</span>' if exvi else (f'<span class="ex-vi d-block text-secondary small">{exe}</span>' if exe else ''))
 
             conj_btn = (f'<br><button type="button" class="conj-toggle-ws" '
                         f'data-de-lower="{htmllib.escape(w["de"].lower())}">'
                         f'📖 Konjugation</button>' if pos == 'verb' else '')
 
-            # 6-person sentence drill (ich/du/er,sie,es/wir/ihr/sie,Sie) —
-            # same lazy-load pattern as dictionary.html: rows live in
-            # person-sentences.json and are fetched + rendered on first
-            # expand (see PERSON_DRILL_WS_SCRIPT), not baked in per-word.
-            # Same A1 exception as make_word_card() above: no full-sentence
-            # drill with English translation at A1 — see that comment.
             person_html = ''
             person_sentences = w.get('person_sentences')
             if level != 'A1' and person_sentences and len(person_sentences) == 6:
@@ -2001,16 +2022,16 @@ def build_wortschatz_page(level, level_words):
                 )
 
             search_blob = htmllib.escape(
-                f"{w['de']} {w['en']} {w.get('example','')} {w.get('example_en','')}".lower(),
+                f"{w['de']} {w.get('vi','')} {w.get('en','')} {w.get('example','')} {w.get('example_vi','')} {w.get('example_en','')}".lower(),
                 quote=True)
             is_irregular = pos == 'verb' and is_irregular_verb(w.get('conjugation'))
             is_reflexive = pos == 'verb' and bool(w.get('conjugation', {}).get('reflexiv'))
-            example_or_conj_html = f'<span class="ex-de d-block">{exd}</span>{exe_row}'
+            example_or_conj_html = f'<span class="ex-de d-block">{exd}</span>{example_vi_row}'
             sections += (
                 f'<tr data-pos="{pos}" data-irregular="{"true" if is_irregular else "false"}" '
                 f'data-reflexive="{"true" if is_reflexive else "false"}" data-search="{search_blob}">\n'
                 f'  <td class="fw-semibold de-word">{de}{conj_btn}</td>\n'
-                f'  <td class="text-muted">{en}</td>\n'
+                f'  <td class="text-muted word-vi">{meaning_vi}</td>\n'
                 f'  <td>{example_or_conj_html}{col_html}{person_html}</td>\n'
                 f'</tr>\n'
             )
@@ -2038,18 +2059,18 @@ def build_wortschatz_page(level, level_words):
     <title>01 Wortschatz – {level} | {count} Vokabeln</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        :root{{--page-bg:#f5f7fb;--page-text:#1f2937;--muted-text:#334155;--card-bg:#fff;--card-shadow:0 .5rem 1.25rem rgba(0,0,0,.08);--alpha-bg:rgba(245,247,251,.95);--alpha-border:#e5e7eb;--table-bg:#fff;--table-stripe:#f8fafc;--table-hover:#eaf3ff;}}
-        [data-bs-theme="dark"]{{--page-bg:#0f172a;--page-text:#e2e8f0;--muted-text:#cbd5e1;--card-bg:#111827;--card-shadow:0 .5rem 1.25rem rgba(0,0,0,.35);--alpha-bg:rgba(17,24,39,.95);--alpha-border:#374151;--table-bg:#111827;--table-stripe:#172033;--table-hover:#1f2a44;}}
+        :root{{--page-bg:#f6f8fc;--page-text:#1e293b;--muted-text:#566069;--card-bg:#fff;--card-border:rgba(226,232,240,.85);--card-shadow:0 8px 30px rgba(29,78,216,.06);--alpha-bg:rgba(246,248,252,.92);--alpha-border:#e2e8f0;--table-bg:#fff;--table-stripe:#f8fafc;--table-hover:#eff6ff;}}
+        [data-bs-theme="dark"]{{--page-bg:#0b1120;--page-text:#e2e8f0;--muted-text:#94a3b8;--card-bg:#111827;--card-border:rgba(255,255,255,.08);--card-shadow:0 8px 32px rgba(0,0,0,.45);--alpha-bg:rgba(15,23,42,.92);--alpha-border:#334155;--table-bg:#111827;--table-stripe:#172033;--table-hover:#1e2a44;}}
         html{{scroll-behavior:smooth;}}
         body{{background:var(--page-bg);font-size:1.05rem;line-height:1.7;color:var(--page-text);}}
-        .content-card{{border:0;border-radius:1rem;box-shadow:var(--card-shadow);background:var(--card-bg);}}
-        .page-header{{border-bottom:2px solid #e9ecef;padding-bottom:1rem;margin-bottom:1.5rem;}}
+        .content-card{{border:1px solid var(--card-border);border-radius:1.15rem;box-shadow:var(--card-shadow);background:var(--card-bg);}}
+        .page-header{{border-bottom:1px solid var(--card-border);padding-bottom:1rem;margin-bottom:1.5rem;}}
         .breadcrumb a{{text-decoration:none;}} .breadcrumb a:hover{{text-decoration:underline;}}
-        .jump-bar{{z-index:1020;background:var(--alpha-bg);border:1px solid var(--alpha-border);border-radius:.75rem;padding:.75rem;backdrop-filter:blur(4px);max-height:80vh;overflow-y:auto;}}
+        .jump-bar{{z-index:1020;background:var(--alpha-bg);border:1px solid var(--alpha-border);border-radius:.85rem;padding:.75rem;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);max-height:80vh;overflow-y:auto;box-shadow:0 4px 16px rgba(0,0,0,.04);}}
         .jump-layout{{display:block;}}
         @media(min-width:992px){{.jump-layout{{display:grid;grid-template-columns:15rem minmax(0,1fr);gap:1.5rem;}}.jump-bar{{position:sticky;top:6rem;}}}}
         h2[id]{{scroll-margin-top:6rem;}}
-        .ws-search-shade{{background:var(--page-bg);border-radius:.9rem;padding:.6rem;}}
+        .ws-search-shade{{background:var(--alpha-bg);border-radius:.9rem;padding:.6rem;border:1px solid var(--alpha-border);}}
         .ws-search-wrap{{position:relative;}}
         .ws-search-wrap input{{background:var(--card-bg);border:2px solid var(--alpha-border);border-radius:.75rem;padding:.7rem 1rem .7rem 2.75rem;font-size:1rem;color:var(--page-text);width:100%;transition:border-color .2s;}}
         .ws-search-wrap input:focus{{outline:none;border-color:#1d4ed8;box-shadow:0 0 0 3px rgba(29,78,216,.15);}}
@@ -2057,17 +2078,22 @@ def build_wortschatz_page(level, level_words):
         .ws-search-icon{{position:absolute;left:1rem;top:50%;transform:translateY(-50%);opacity:.4;pointer-events:none;color:var(--page-text);}}
         .filter-label-ws{{font-size:.8rem;color:var(--muted-text);font-weight:600;white-space:nowrap;min-width:4.5rem;}}
         .pos-filter-ws{{display:flex;flex-wrap:wrap;gap:.4rem;}}
-        .pos-filter-ws button{{padding:.25rem .75rem;border-radius:999px;border:1px solid var(--alpha-border);background:var(--card-bg);color:var(--page-text);cursor:pointer;font-size:.85rem;transition:all .15s;}}
-        .pos-filter-ws button:hover{{background:var(--table-stripe);}}
+        .pos-filter-ws button{{padding:.25rem .75rem;border-radius:999px;border:1.5px solid var(--alpha-border);background:var(--card-bg);color:var(--page-text);cursor:pointer;font-size:.85rem;transition:all .15s;}}
+        .pos-filter-ws button:hover{{background:var(--table-stripe);border-color:#1d4ed8;}}
         .pos-filter-ws button.active{{background:#7c3aed;border-color:#7c3aed;color:#fff;}}
         .pos-filter-ws-sep{{align-self:center;color:var(--page-text);opacity:.35;padding:0 .1rem;}}
         .ws-pos-footnote{{font-size:.75rem;color:var(--page-text);opacity:.55;margin-top:.25rem;}}
-        .vocab-table th,.vocab-table td{{vertical-align:top;padding:.5rem .65rem;}}
-        .de-word{{font-size:1rem;}} .ex-de{{font-size:.92rem;}} .ex-en{{font-size:.82rem;}}
+        .vocab-table{{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--alpha-border);border-radius:.85rem;overflow:hidden;}}
+        .vocab-table thead th{{background:linear-gradient(135deg,#1d4ed8 0%,#2563eb 100%)!important;color:#fff!important;border:none!important;padding:.75rem 1rem!important;font-weight:600;}}
+        [data-bs-theme="dark"] .vocab-table thead th{{background:linear-gradient(135deg,#1e3a8a 0%,#1e40af 100%)!important;color:#f8fafc!important;}}
+        .vocab-table th,.vocab-table td{{vertical-align:middle;padding:.65rem 1rem;border-top:1px solid var(--alpha-border);}}
+        .de-word{{font-size:1.02rem;font-weight:700;}} .ex-de{{font-size:.92rem;}} .ex-en{{font-size:.82rem;}}
+        .word-vi{{font-size:.84rem;color:var(--muted-text);margin-top:.15rem;line-height:1.4;}}
+        .ex-vi{{font-size:.8rem;color:var(--muted-text);margin-top:.1rem;line-height:1.4;}}
         .back-to-top{{position:fixed;right:1rem;bottom:1rem;z-index:1030;display:none;width:2.8rem;height:2.8rem;align-items:center;justify-content:center;box-shadow:0 .5rem 1rem rgba(13,110,253,.3);}}
         .theme-toggle{{min-width:5.8rem;height:2.2rem;display:inline-flex;align-items:center;justify-content:center;padding:0 .65rem;}}
         .site-footer{{background:var(--page-bg);color:var(--page-text);font-size:.9rem;}}
-        [data-bs-theme="dark"] .site-footer{{background:#1e293b!important;color:#e2e8f0;border-color:#374151!important;}}
+        [data-bs-theme="dark"] .site-footer{{background:#111827!important;color:#e2e8f0;border-color:rgba(255,255,255,.08)!important;}}
         [data-bs-theme="dark"] .table{{--bs-table-bg:var(--table-bg);--bs-table-striped-bg:var(--table-stripe);}}
         [data-bs-theme="dark"] .table-bordered td,[data-bs-theme="dark"] .table-bordered th{{border-color:#374151;}}
         [data-bs-theme="dark"] .badge.text-bg-light{{background:#1e293b!important;color:#cbd5e1!important;border-color:#374151!important;}}
@@ -2127,7 +2153,7 @@ fetch(prefix+'header.html').then(function(r){{return r.ok?r.text():Promise.rejec
     <p class="text-muted mb-1">{htmllib.escape(desc)}</p>
     <p class="text-muted small mb-3">
         Klicke auf <strong>🔊</strong> um Aussprache zu hören.
-        Jeder Eintrag enthält Beispielsatz und englische Übersetzung.
+        Jeder Eintrag enthält Beispielsatz und vietnamesische Übersetzung (kèm bản dịch tiếng Việt thực tế).
     </p>
 
     <div class="mb-4">
@@ -2191,7 +2217,7 @@ fetch(prefix+'header.html').then(function(r){{return r.ok?r.text():Promise.rejec
     fetch(prefix+'footer.html').then(function(r){{return r.ok?r.text():Promise.reject();}}).then(function(html){{html=html.replace(/BASE\\//g,prefix);document.getElementById('footer-placeholder').innerHTML=html;}}).catch(function(){{document.getElementById('footer-placeholder').innerHTML=fFb.replace(/BASE\\//g,prefix);}});
 }})();
 </script>
-<script src="../tts.js?v=7"></script>
+<script src="../tts.js?v=9"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>if('serviceWorker' in navigator){{navigator.serviceWorker.register('/sw.js').then(function(r){{r.update();}}).catch(function(){{}});}}</script>
 {conjugation_ws_script(level)}

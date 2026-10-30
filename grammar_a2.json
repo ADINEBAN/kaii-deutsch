@@ -16,7 +16,9 @@
     ],
     "correct": "mir",
     "explanation_de": "'Gehören' verlangt den Dativ: <b>mir</b> (Dativ von ich).",
-    "explanation_en": "'Gehören' (to belong to) governs the dative case: <b>mir</b> (dative of ich)."
+    "explanation_en": "'Gehören' (to belong to) governs the dative case: <b>mir</b> (dative of ich).",
+    "prompt_vi": "Cây bút này thuộc về tôi!",
+    "explanation_vi": "'Gehören' (thuộc về) đi với cách Dativ: <b>mir</b> (Dativ của ich)."
   },
   {
     "id": "a2-wortschatz-einkaufen-001",
@@ -35,7 +37,9 @@
     ],
     "correct": "Größe",
     "explanation_de": "'Größe' bedeutet die Kleider- oder Schuhgröße, passend zum Kontext.",
-    "explanation_en": "'Größe' means size, matching the context of a shoe size."
+    "explanation_en": "'Größe' means size, matching the context of a shoe size.",
+    "prompt_vi": "Bạn đi cỡ (size) bao nhiêu? Với giày thì tôi đi cỡ 42.",
+    "explanation_vi": "'Größe' có nghĩa là kích cỡ/size (quần áo hoặc giày dép), phù hợp với ngữ cảnh."
   },
   {
     "id": "a2-partizip-adj-001",
@@ -54,7 +58,9 @@
     ],
     "correct": "krankgeschrieben",
     "explanation_de": "Das Partizip II 'krankgeschrieben' wirkt hier als prädikatives Adjektiv und beschreibt den entstandenen Zustand.",
-    "explanation_en": "The past participle 'krankgeschrieben' functions as a predicate adjective here, describing the resulting state."
+    "explanation_en": "The past participle 'krankgeschrieben' functions as a predicate adjective here, describing the resulting state.",
+    "prompt_vi": "Bác sĩ cho tôi giấy nghỉ ốm. Tôi được cho nghỉ ốm.",
+    "explanation_vi": "Phân từ II (Partizip II) 'krankgeschrieben' ở đây đóng vai trò như một tính từ vị ngữ, mô tả trạng thái được nghỉ ốm."
   },
   {
     "id": "a2-verb-praep-001",
@@ -73,7 +79,9 @@
     ],
     "correct": "anmelden",
     "explanation_de": "'Sich anmelden für' bedeutet, sich für etwas einzutragen.",
-    "explanation_en": "'Sich anmelden für' means to register/sign up for something."
+    "explanation_en": "'Sich anmelden für' means to register/sign up for something.",
+    "prompt_vi": "Tôi muốn đăng ký khóa học.",
+    "explanation_vi": "'Sich anmelden für' có nghĩa là đăng ký tham gia một cái gì đó."
   },
   {
     "id": "a2-ind-frage-001",
@@ -92,7 +100,9 @@
     ],
     "correct": "wo",
     "explanation_de": "'Wo' fragt nach dem Ort — genau das, wonach hier gesucht wird (die Post).",
-    "explanation_en": "'Wo' asks about location, matching what's being sought (the post office's location)."
+    "explanation_en": "'Wo' asks about location, matching what's being sought (the post office's location).",
+    "prompt_vi": "Tôi muốn biết bưu điện ở đâu.",
+    "explanation_vi": "'Wo' dùng để hỏi về địa điểm, phù hợp với điều đang cần tìm (vị trí bưu điện)."
   },
   {
     "id": "a2-trennbar-perfekt-001",
@@ -111,7 +121,9 @@
     ],
     "correct": "hat/zugemacht",
     "explanation_de": "Perfekt des trennbaren Verbs 'zumachen': <b>hat...zugemacht</b> (Hilfsverb 'hat' + Partizip mit 'ge-' zwischen Präfix und Stamm).",
-    "explanation_en": "Perfekt tense of the separable verb 'zumachen': <b>hat...zugemacht</b> (auxiliary 'hat' + past participle with 'ge-' inserted between the prefix and stem)."
+    "explanation_en": "Perfekt tense of the separable verb 'zumachen': <b>hat...zugemacht</b> (auxiliary 'hat' + past participle with 'ge-' inserted between the prefix and stem).",
+    "prompt_vi": "Ông Schmidt đã đóng cửa lại.",
+    "explanation_vi": "Thì Perfekt của động từ tách 'zumachen': <b>hat...zugemacht</b> (trợ động từ 'hat' + Partizip II chèn 'ge-' vào giữa tiền tố và gốc từ)."
   },
   {
     "id": "a2-adj-dekl-best-001",
@@ -130,7 +142,9 @@
     ],
     "correct": "aktuellen",
     "explanation_de": "Nach dem bestimmten Artikel 'die' (Plural) gilt die schwache Deklination, die im Plural für alle Genera/Kasus die Endung <b>-en</b> nimmt.",
-    "explanation_en": "After the definite article 'die' (plural), weak adjective declension applies, taking the ending <b>-en</b> for all genders/cases in the plural."
+    "explanation_en": "After the definite article 'die' (plural), weak adjective declension applies, taking the ending <b>-en</b> for all genders/cases in the plural.",
+    "prompt_vi": "Đây là các mức giá hiện tại.",
+    "explanation_vi": "Sau quán từ xác định 'die' (số nhiều), áp dụng quy tắc biến đuôi tính từ yếu: tính từ luôn mang đuôi <b>-en</b> cho tất cả các giống và các cách ở số nhiều."
   },
   {
     "id": "a2-adj-dekl-poss-001",
@@ -149,7 +163,9 @@
     ],
     "correct": "neuen",
     "explanation_de": "Nach dem Possessivartikel 'unserem' (Dativ, Neutrum) nimmt das Adjektiv die schwache Endung <b>-en</b>, da 'unserem' die Kasusmarkierung bereits trägt.",
-    "explanation_en": "After the possessive 'unserem' (dative, neuter — das Hotelzimmer), the adjective takes the weak dative ending <b>-en</b>, since 'unserem' already carries the case marking."
+    "explanation_en": "After the possessive 'unserem' (dative, neuter — das Hotelzimmer), the adjective takes the weak dative ending <b>-en</b>, since 'unserem' already carries the case marking.",
+    "prompt_vi": "Hãy nghỉ qua đêm trong phòng khách sạn mới của chúng tôi.",
+    "explanation_vi": "Sau quán từ sở hữu 'unserem' (Dativ, giống trung — das Hotelzimmer), tính từ mang đuôi Dativ yếu <b>-en</b> vì 'unserem' đã thể hiện dấu hiệu ngữ cách."
   },
   {
     "id": "a2-praet-001",
@@ -161,7 +177,9 @@
     "prompt_en": "I was tired yesterday.",
     "correct": "war",
     "explanation_de": "Präteritum von 'sein', 1. Person Singular: ich war.",
-    "explanation_en": "Präteritum of 'sein', 1st person singular: ich war."
+    "explanation_en": "Präteritum of 'sein', 1st person singular: ich war.",
+    "prompt_vi": "Hôm qua tôi bị mệt.",
+    "explanation_vi": "Thì Präteritum của 'sein', ngôi thứ nhất số ít: ich war."
   },
   {
     "id": "a2-praet-002",
@@ -173,7 +191,9 @@
     "prompt_en": "We had no time.",
     "correct": "hatten",
     "explanation_de": "Präteritum von 'haben', 1. Person Plural: wir hatten.",
-    "explanation_en": "Präteritum of 'haben', 1st person plural: wir hatten."
+    "explanation_en": "Präteritum of 'haben', 1st person plural: wir hatten.",
+    "prompt_vi": "Chúng tôi đã không có thời gian.",
+    "explanation_vi": "Thì Präteritum của 'haben', ngôi thứ nhất số nhiều: wir hatten."
   },
   {
     "id": "a2-praet-003",
@@ -190,7 +210,9 @@
     ],
     "correct": "ging",
     "explanation_de": "'gehen' ist unregelmäßig: Präteritum-Stamm ist 'ging-'.",
-    "explanation_en": "'gehen' is irregular: the Präteritum stem is 'ging-'."
+    "explanation_en": "'gehen' is irregular: the Präteritum stem is 'ging-'.",
+    "prompt_vi": "Cô ấy đã đi về nhà.",
+    "explanation_vi": "'gehen' là động từ bất quy tắc: gốc thì Präteritum là 'ging-'."
   },
   {
     "id": "a2-perfekt-001",
@@ -202,7 +224,9 @@
     "prompt_en": "I have read the book.",
     "correct": "gelesen",
     "explanation_de": "Partizip II von 'lesen' (unregelmäßig): gelesen.",
-    "explanation_en": "Past participle of 'lesen' (irregular): gelesen."
+    "explanation_en": "Past participle of 'lesen' (irregular): gelesen.",
+    "prompt_vi": "Tôi đã đọc quyển sách này.",
+    "explanation_vi": "Phân từ II (Partizip II) của 'lesen' (bất quy tắc): gelesen."
   },
   {
     "id": "a2-perfekt-002",
@@ -219,7 +243,9 @@
     ],
     "correct": "ist",
     "explanation_de": "Verben der Bewegung (fahren, gehen, fliegen...) bilden das Perfekt mit 'sein'.",
-    "explanation_en": "Verbs of motion (fahren, gehen, fliegen...) form the perfect tense with 'sein'."
+    "explanation_en": "Verbs of motion (fahren, gehen, fliegen...) form the perfect tense with 'sein'.",
+    "prompt_vi": "Anh ấy đã đi đến Berlin.",
+    "explanation_vi": "Các động từ chỉ sự chuyển động (fahren, gehen, fliegen...) tạo thì Perfekt với trợ động từ 'sein'."
   },
   {
     "id": "a2-perfekt-003",
@@ -236,7 +262,9 @@
     ],
     "correct": "haben",
     "explanation_de": "'kochen' ist ein transitives Verb (kein Bewegungs-/Zustandsverb): Perfekt mit 'haben'.",
-    "explanation_en": "'kochen' is a transitive verb (not motion/change of state): perfect tense with 'haben'."
+    "explanation_en": "'kochen' is a transitive verb (not motion/change of state): perfect tense with 'haben'.",
+    "prompt_vi": "Chúng tôi đã nấu bữa ăn.",
+    "explanation_vi": "'kochen' là ngoại động từ (không chỉ sự chuyển động hay biến đổi trạng thái): thì Perfekt đi với 'haben'."
   },
   {
     "id": "a2-perfekt-004",
@@ -284,7 +312,9 @@
       ]
     ],
     "explanation_de": "Perfekt: 'haben/sein' auf Position 2, Partizip II am Satzende.",
-    "explanation_en": "Perfect tense: 'haben/sein' in position 2, past participle at the end of the clause."
+    "explanation_en": "Perfect tense: 'haben/sein' in position 2, past participle at the end of the clause.",
+    "prompt_vi": "Sắp xếp từ: (tôi / đã / hôm qua / pizza / ăn)",
+    "explanation_vi": "Thì Perfekt: trợ động từ 'haben/sein' đứng ở vị trí 2, Partizip II đứng ở cuối câu."
   },
   {
     "id": "a2-dativ-001",
@@ -299,7 +329,9 @@
       "dem Mann"
     ],
     "explanation_de": "Dativ maskulin: der → dem.",
-    "explanation_en": "Dative masculine: der → dem."
+    "explanation_en": "Dative masculine: der → dem.",
+    "prompt_vi": "Tôi đưa cho người đàn ông quyển sách.",
+    "explanation_vi": "Dativ giống đực: der → dem."
   },
   {
     "id": "a2-dativ-002",
@@ -316,7 +348,9 @@
     ],
     "correct": "der",
     "explanation_de": "Dativ feminin: die → der. 'gehören' verlangt Dativ.",
-    "explanation_en": "Dative feminine: die → der. 'gehören' takes the dative case."
+    "explanation_en": "Dative feminine: die → der. 'gehören' takes the dative case.",
+    "prompt_vi": "Cái đó thuộc về người phụ nữ.",
+    "explanation_vi": "Dativ giống cái: die → der. 'gehören' đòi hỏi cách Dativ."
   },
   {
     "id": "a2-dativ-003",
@@ -328,7 +362,9 @@
     "prompt_en": "He often helps me.",
     "correct": "mir",
     "explanation_de": "'helfen' verlangt Dativ; Dativ von 'ich' ist 'mir'.",
-    "explanation_en": "'helfen' takes the dative; the dative of 'ich' is 'mir'."
+    "explanation_en": "'helfen' takes the dative; the dative of 'ich' is 'mir'.",
+    "prompt_vi": "Anh ấy thường giúp đỡ tôi.",
+    "explanation_vi": "'helfen' đi với Dativ; Dativ của 'ich' là 'mir'."
   },
   {
     "id": "a2-prep-001",
@@ -345,7 +381,9 @@
     ],
     "correct": "dem",
     "explanation_de": "'mit' verlangt immer Dativ; 'der Bus' → dem Bus.",
-    "explanation_en": "'mit' always takes the dative; 'der Bus' → dem Bus."
+    "explanation_en": "'mit' always takes the dative; 'der Bus' → dem Bus.",
+    "prompt_vi": "Tôi đi bằng xe buýt.",
+    "explanation_vi": "'mit' luôn đi với Dativ; 'der Bus' → dem Bus."
   },
   {
     "id": "a2-prep-002",
@@ -362,7 +400,9 @@
     ],
     "correct": "meinen",
     "explanation_de": "'für' verlangt immer Akkusativ; maskulin: mein → meinen.",
-    "explanation_en": "'für' always takes the accusative; masculine: mein → meinen."
+    "explanation_en": "'für' always takes the accusative; masculine: mein → meinen.",
+    "prompt_vi": "Món quà này dành cho bố tôi.",
+    "explanation_vi": "'für' luôn đi với Akkusativ; giống đực: mein → meinen."
   },
   {
     "id": "a2-prep-003",
@@ -379,7 +419,9 @@
     ],
     "correct": "den",
     "explanation_de": "Wechselpräposition 'auf' + Bewegung (wohin?) = Akkusativ: den Tisch.",
-    "explanation_en": "Two-way preposition 'auf' + motion (wohin?) = accusative: den Tisch."
+    "explanation_en": "Two-way preposition 'auf' + motion (wohin?) = accusative: den Tisch.",
+    "prompt_vi": "Tôi đặt quyển sách lên bàn. (chuyển động)",
+    "explanation_vi": "Giới từ 2 cách 'auf' + hướng chuyển động (wohin?) = Akkusativ: den Tisch."
   },
   {
     "id": "a2-prep-004",
@@ -396,7 +438,9 @@
     ],
     "correct": "dem",
     "explanation_de": "Wechselpräposition 'auf' + Ort (wo?) = Dativ: dem Tisch.",
-    "explanation_en": "Two-way preposition 'auf' + location (wo?) = dative: dem Tisch."
+    "explanation_en": "Two-way preposition 'auf' + location (wo?) = dative: dem Tisch.",
+    "prompt_vi": "Quyển sách đang nằm ở trên bàn. (vị trí cố định)",
+    "explanation_vi": "Giới từ 2 cách 'auf' + vị trí cố định (wo?) = Dativ: dem Tisch."
   },
   {
     "id": "a2-trenn-001",
@@ -437,7 +481,9 @@
       ]
     ],
     "explanation_de": "Trennbares Verb 'aufstehen': Vorsilbe 'auf' steht am Satzende.",
-    "explanation_en": "Separable verb 'aufstehen': the prefix 'auf' goes to the end of the clause."
+    "explanation_en": "Separable verb 'aufstehen': the prefix 'auf' goes to the end of the clause.",
+    "prompt_vi": "Sắp xếp từ: (tôi / hôm nay / thức dậy / sớm)",
+    "explanation_vi": "Động từ tách 'aufstehen': tiền tố 'auf' chuyển xuống cuối câu."
   },
   {
     "id": "a2-trenn-002",
@@ -449,7 +495,9 @@
     "prompt_en": "The film starts at 8pm.",
     "correct": "fängt",
     "explanation_de": "'anfangen' ist trennbar: fängt ... an. Die Vorsilbe 'an' bleibt am Satzende stehen.",
-    "explanation_en": "'anfangen' is separable: fängt ... an. The prefix 'an' stays at the end of the clause."
+    "explanation_en": "'anfangen' is separable: fängt ... an. The prefix 'an' stays at the end of the clause.",
+    "prompt_vi": "Bộ phim bắt đầu lúc 20 giờ.",
+    "explanation_vi": "'anfangen' là động từ tách: fängt ... an. Tiền tố 'an' đứng ở cuối câu."
   },
   {
     "id": "a2-komp-001",
@@ -461,7 +509,9 @@
     "prompt_en": "Berlin is bigger than Munich.",
     "correct": "größer",
     "explanation_de": "Komparativ von 'groß' mit Umlaut: größer.",
-    "explanation_en": "Comparative of 'groß' with umlaut: größer."
+    "explanation_en": "Comparative of 'groß' with umlaut: größer.",
+    "prompt_vi": "Berlin lớn hơn Munich.",
+    "explanation_vi": "So sánh hơn của 'groß' có thêm Umlaut: größer."
   },
   {
     "id": "a2-komp-002",
@@ -478,7 +528,9 @@
     ],
     "correct": "besser",
     "explanation_de": "Komparativ von 'gut' ist unregelmäßig: besser.",
-    "explanation_en": "Comparative of 'gut' is irregular: besser."
+    "explanation_en": "Comparative of 'gut' is irregular: besser.",
+    "prompt_vi": "Chiếc xe này tốt hơn xe của tôi.",
+    "explanation_vi": "So sánh hơn của 'gut' là bất quy tắc: besser."
   },
   {
     "id": "a2-komp-003",
@@ -490,7 +542,9 @@
     "prompt_en": "That is the fastest train.",
     "correct": "schnellste",
     "explanation_de": "Superlativ mit -ste-Endung: der schnellste.",
-    "explanation_en": "Superlative with -ste ending: der schnellste."
+    "explanation_en": "Superlative with -ste ending: der schnellste.",
+    "prompt_vi": "Đó là đoàn tàu chạy nhanh nhất.",
+    "explanation_vi": "So sánh nhất với đuôi -ste: der schnellste."
   },
   {
     "id": "a2-praet-mod-001",
@@ -502,7 +556,9 @@
     "prompt_en": "As a child I had to get up early every morning.",
     "correct": "musste",
     "explanation_de": "Präteritum von 'müssen': ich musste (ohne Umlaut).",
-    "explanation_en": "Präteritum of 'müssen': ich musste (no umlaut)."
+    "explanation_en": "Präteritum of 'müssen': ich musste (no umlaut).",
+    "prompt_vi": "Khi còn nhỏ, tôi phải thức dậy sớm mỗi sáng.",
+    "explanation_vi": "Thì Präteritum của 'müssen': ich musste (không có Umlaut)."
   },
   {
     "id": "a2-praet-mod-002",
@@ -514,7 +570,9 @@
     "prompt_en": "We wanted to go to the cinema yesterday, but it was sold out.",
     "correct": "wollten",
     "explanation_de": "Präteritum von 'wollen', 1. Person Plural: wir wollten.",
-    "explanation_en": "Präteritum of 'wollen', 1st person plural: wir wollten."
+    "explanation_en": "Präteritum of 'wollen', 1st person plural: wir wollten.",
+    "prompt_vi": "Hôm qua chúng tôi muốn đi xem phim, nhưng rạp đã bán hết vé.",
+    "explanation_vi": "Thì Präteritum của 'wollen', ngôi thứ nhất số nhiều: wir wollten."
   },
   {
     "id": "a2-refl-001",
@@ -526,7 +584,9 @@
     "prompt_en": "You have to hurry, the train is leaving soon.",
     "correct": "dich",
     "explanation_de": "'sich beeilen' ist ein reflexives Verb. Zu 'du' passt das Reflexivpronomen <b>dich</b> (Akkusativ).",
-    "explanation_en": "'sich beeilen' is a reflexive verb. The reflexive pronoun for 'du' is <b>dich</b> (accusative)."
+    "explanation_en": "'sich beeilen' is a reflexive verb. The reflexive pronoun for 'du' is <b>dich</b> (accusative).",
+    "prompt_vi": "Bạn phải nhanh lên, tàu sắp chạy rồi.",
+    "explanation_vi": "'sich beeilen' là động từ phản thân. Đại từ phản thân đi với 'du' là <b>dich</b> (Akkusativ)."
   },
   {
     "id": "a2-refl-002",
@@ -538,7 +598,9 @@
     "prompt_en": "We are meeting at 6 pm in front of the cinema.",
     "correct": "uns",
     "explanation_de": "'sich treffen' ist reflexiv. Zu 'wir' passt das Reflexivpronomen <b>uns</b>.",
-    "explanation_en": "'sich treffen' is reflexive. The reflexive pronoun for 'wir' is <b>uns</b>."
+    "explanation_en": "'sich treffen' is reflexive. The reflexive pronoun for 'wir' is <b>uns</b>.",
+    "prompt_vi": "Chúng tôi gặp nhau lúc 18 giờ trước rạp chiếu phim.",
+    "explanation_vi": "'sich treffen' là động từ phản thân. Đại từ phản thân đi với 'wir' là <b>uns</b>."
   },
   {
     "id": "a2-imp-001",
@@ -550,7 +612,9 @@
     "prompt_en": "Please come on time! (to several people)",
     "correct": "Kommt",
     "explanation_de": "Imperativ ihr-Form: Verbform der 2. Person Plural ohne Pronomen: <b>Kommt</b>!",
-    "explanation_en": "Imperative, ihr-form: the 2nd person plural verb form without the pronoun: <b>Kommt</b>!"
+    "explanation_en": "Imperative, ihr-form: the 2nd person plural verb form without the pronoun: <b>Kommt</b>!",
+    "prompt_vi": "Các bạn hãy đến đúng giờ nhé! (nói với nhiều người)",
+    "explanation_vi": "Câu mệnh lệnh thể ihr: dạng động từ ngôi thứ 2 số nhiều bỏ đại từ: <b>Kommt</b>!"
   },
   {
     "id": "a2-imp-002",
@@ -562,7 +626,9 @@
     "prompt_en": "Please be quiet! (to one person)",
     "correct": "Sei",
     "explanation_de": "Der Imperativ von 'sein' ist unregelmäßig: du-Form <b>Sei</b>!, ihr-Form Seid!",
-    "explanation_en": "The imperative of 'sein' is irregular: du-form <b>Sei</b>!, ihr-form Seid!"
+    "explanation_en": "The imperative of 'sein' is irregular: du-form <b>Sei</b>!, ihr-form Seid!",
+    "prompt_vi": "Hãy trật tự đi nào! (nói với một người)",
+    "explanation_vi": "Câu mệnh lệnh của 'sein' là bất quy tắc: thể du là <b>Sei</b>!, thể ihr là Seid!"
   },
   {
     "id": "a2-dativ-004",
@@ -577,7 +643,9 @@
       "meiner Freundin"
     ],
     "explanation_de": "'schreiben' + Dativ für die Person: 'die Freundin' (feminin) → Dativ: <b>meiner</b> Freundin.",
-    "explanation_en": "'schreiben' takes the dative for the person: 'die Freundin' (feminine) → dative: <b>meiner</b> Freundin."
+    "explanation_en": "'schreiben' takes the dative for the person: 'die Freundin' (feminine) → dative: <b>meiner</b> Freundin.",
+    "prompt_vi": "Tôi đang nhắn tin cho bạn gái tôi.",
+    "explanation_vi": "'schreiben' đi với Dativ cho đối tượng người nhận: 'die Freundin' (giống cái) → Dativ: <b>meiner</b> Freundin."
   },
   {
     "id": "a2-superl-001",
@@ -589,7 +657,9 @@
     "prompt_en": "He is the oldest in the family.",
     "correct": "älteste",
     "explanation_de": "Superlativ von 'alt' mit Umlaut und zusätzlichem -e-: der <b>älteste</b>.",
-    "explanation_en": "Superlative of 'alt' with umlaut and an extra -e-: der <b>älteste</b>."
+    "explanation_en": "Superlative of 'alt' with umlaut and an extra -e-: der <b>älteste</b>.",
+    "prompt_vi": "Anh ấy lớn tuổi nhất trong gia đình.",
+    "explanation_vi": "So sánh nhất của 'alt' có thêm Umlaut và chèn thêm -e-: der <b>älteste</b>."
   },
   {
     "id": "a2-perfekt-005",
@@ -601,7 +671,9 @@
     "prompt_en": "I went to bed early yesterday.",
     "correct": "gegangen",
     "explanation_de": "'gehen' ist ein Bewegungsverb: Perfekt mit 'sein' + Partizip II (unregelmäßig): <b>gegangen</b>.",
-    "explanation_en": "'gehen' is a verb of motion: perfect tense with 'sein' + irregular past participle: <b>gegangen</b>."
+    "explanation_en": "'gehen' is a verb of motion: perfect tense with 'sein' + irregular past participle: <b>gegangen</b>.",
+    "prompt_vi": "Hôm qua tôi đi ngủ sớm.",
+    "explanation_vi": "'gehen' là động từ chỉ sự chuyển động: thì Perfekt đi với 'sein' + Partizip II bất quy tắc: <b>gegangen</b>."
   },
   {
     "id": "a2-zeit-001",
@@ -613,7 +685,9 @@
     "prompt_en": "I have been living in Fulda for three years.",
     "correct": "seit",
     "explanation_de": "'seit' + Dativ: etwas hat in der Vergangenheit begonnen und dauert bis jetzt an (mit Präsens): <b>seit</b> drei Jahren.",
-    "explanation_en": "'seit' + dative: something began in the past and continues until now (used with the present tense): <b>seit</b> drei Jahren."
+    "explanation_en": "'seit' + dative: something began in the past and continues until now (used with the present tense): <b>seit</b> drei Jahren.",
+    "prompt_vi": "Tôi sống ở Fulda đã được ba năm.",
+    "explanation_vi": "'seit' + Dativ: sự việc bắt đầu trong quá khứ và vẫn đang tiếp diễn ở hiện tại (dùng với thì hiện tại): <b>seit</b> drei Jahren."
   },
   {
     "id": "a2-temp-001",
@@ -631,7 +705,9 @@
     ],
     "correct": "um",
     "explanation_de": "Für genaue Uhrzeiten verwendet man 'um': <b>um</b> 20 Uhr.",
-    "explanation_en": "For exact clock times German uses 'um': <b>um</b> 20 Uhr."
+    "explanation_en": "For exact clock times German uses 'um': <b>um</b> 20 Uhr.",
+    "prompt_vi": "Bộ phim bắt đầu lúc 20 giờ.",
+    "explanation_vi": "Đối với giờ giấc chính xác, tiếng Đức dùng 'um': <b>um</b> 20 Uhr."
   },
   {
     "id": "a2-temp-002",
@@ -649,7 +725,9 @@
     ],
     "correct": "im",
     "explanation_de": "Für Jahreszeiten und Monate verwendet man 'im' (= in dem): <b>im</b> Sommer.",
-    "explanation_en": "For seasons and months German uses 'im' (= in dem): <b>im</b> Sommer."
+    "explanation_en": "For seasons and months German uses 'im' (= in dem): <b>im</b> Sommer.",
+    "prompt_vi": "Chúng tôi sẽ đi Ý vào mùa hè.",
+    "explanation_vi": "Đối với các mùa và các tháng trong năm, dùng 'im' (= in dem): <b>im</b> Sommer."
   },
   {
     "id": "a2-prep-005",
@@ -667,7 +745,9 @@
     ],
     "correct": "zum",
     "explanation_de": "Bei 'gehen' + Person steht 'zu' (Dativ): <b>zum</b> (= zu dem) Arzt. 'Beim Arzt' antwortet auf 'Wo?'.",
-    "explanation_en": "With 'gehen' + a person, German uses 'zu' (dative): <b>zum</b> (= zu dem) Arzt. 'Beim Arzt' answers 'wo?'."
+    "explanation_en": "With 'gehen' + a person, German uses 'zu' (dative): <b>zum</b> (= zu dem) Arzt. 'Beim Arzt' answers 'wo?'.",
+    "prompt_vi": "Ngày mai tôi phải đi bác sĩ khám bệnh.",
+    "explanation_vi": "Với 'gehen' + người, tiếng Đức dùng 'zu' (Dativ): <b>zum</b> (= zu dem) Arzt. Còn 'beim Arzt' trả lời cho câu hỏi 'Wo?' (ở đâu)."
   },
   {
     "id": "a2-prep-006",
@@ -685,7 +765,9 @@
     ],
     "correct": "an",
     "explanation_de": "Eine Wand ist senkrecht: Man hängt etwas <b>an</b> die Wand (Bewegung, Akkusativ).",
-    "explanation_en": "A wall is vertical: you hang something <b>an</b> die Wand (movement, accusative)."
+    "explanation_en": "A wall is vertical: you hang something <b>an</b> die Wand (movement, accusative).",
+    "prompt_vi": "Anh ấy treo bức tranh lên tường.",
+    "explanation_vi": "Tường là mặt phẳng thẳng đứng: treo vật gì lên tường dùng <b>an</b> die Wand (chuyển động, Akkusativ)."
   },
   {
     "id": "a2-weil-001",
@@ -703,7 +785,9 @@
     ],
     "correct": "weil",
     "explanation_de": "'weil' leitet einen Nebensatz ein: Das konjugierte Verb steht am Ende ('…arbeiten möchte'). 'denn' und 'aber' verlangen Hauptsatz-Wortstellung.",
-    "explanation_en": "'weil' introduces a subordinate clause: the conjugated verb goes to the end ('…arbeiten möchte'). 'denn' and 'aber' need main-clause word order."
+    "explanation_en": "'weil' introduces a subordinate clause: the conjugated verb goes to the end ('…arbeiten möchte'). 'denn' and 'aber' need main-clause word order.",
+    "prompt_vi": "Tôi học tiếng Đức vì tôi muốn làm việc tại Đức.",
+    "explanation_vi": "'weil' mở đầu một mệnh đề phụ: động từ đã chia chuyển xuống cuối câu ('…arbeiten möchte'). Còn 'denn' và 'aber' giữ cấu trúc mệnh đề chính."
   },
   {
     "id": "a2-modal-001",
@@ -721,7 +805,9 @@
     ],
     "correct": "dürfen",
     "explanation_de": "'Kinder' ist Plural (3. Person Plural): sie <b>dürfen</b>. 'darf' = er/sie/es, 'darfst' = du, 'dürft' = ihr.",
-    "explanation_en": "'Kinder' is plural (3rd person plural): sie <b>dürfen</b>. 'darf' = he/she/it, 'darfst' = you (sg.), 'dürft' = you (pl.)."
+    "explanation_en": "'Kinder' is plural (3rd person plural): sie <b>dürfen</b>. 'darf' = he/she/it, 'darfst' = you (sg.), 'dürft' = you (pl.).",
+    "prompt_vi": "Trẻ em không được phép hút thuốc ở đây.",
+    "explanation_vi": "'Kinder' là danh từ số nhiều (ngôi thứ 3 số nhiều): sie <b>dürfen</b>. 'darf' = er/sie/es, 'darfst' = du, 'dürft' = ihr."
   },
   {
     "id": "a2-hoeflich-001",
@@ -739,7 +825,9 @@
     ],
     "correct": "bringen",
     "explanation_de": "Nach dem Modalverb 'könnten' steht der Infinitiv am Satzende: Könnten Sie mir … <b>bringen</b>?",
-    "explanation_en": "After the modal verb 'könnten' the infinitive goes to the end of the sentence: Könnten Sie mir … <b>bringen</b>?"
+    "explanation_en": "After the modal verb 'könnten' the infinitive goes to the end of the sentence: Könnten Sie mir … <b>bringen</b>?",
+    "prompt_vi": "Xin vui lòng mang cho tôi thực đơn được không?",
+    "explanation_vi": "Sau động từ khuyết thiếu 'könnten', động từ nguyên thể đứng ở cuối câu: Könnten Sie mir … <b>bringen</b>?"
   },
   {
     "id": "a2-adj-001",
@@ -757,7 +845,9 @@
     ],
     "correct": "neues",
     "explanation_de": "Nach 'ein' im Nominativ Neutrum trägt das Adjektiv die Endung <b>-es</b>: ein neues Auto.",
-    "explanation_en": "After 'ein' in the nominative neuter, the adjective takes the ending <b>-es</b>: ein neues Auto."
+    "explanation_en": "After 'ein' in the nominative neuter, the adjective takes the ending <b>-es</b>: ein neues Auto.",
+    "prompt_vi": "Đó là một chiếc ô tô mới.",
+    "explanation_vi": "Sau quán từ 'ein' ở Nominativ giống trung, tính từ mang đuôi <b>-es</b>: ein neues Auto."
   },
   {
     "id": "a2-adj-002",
@@ -775,7 +865,9 @@
     ],
     "correct": "warme",
     "explanation_de": "'Eine Jacke' ist feminin (Akkusativ). Nach 'eine' steht die Endung <b>-e</b>: eine warme Jacke.",
-    "explanation_en": "'Eine Jacke' is feminine (accusative). After 'eine' the ending is <b>-e</b>: eine warme Jacke."
+    "explanation_en": "'Eine Jacke' is feminine (accusative). After 'eine' the ending is <b>-e</b>: eine warme Jacke.",
+    "prompt_vi": "Tôi đang mặc một chiếc áo khoác ấm.",
+    "explanation_vi": "'Eine Jacke' là giống cái (Akkusativ). Sau 'eine', đuôi tính từ là <b>-e</b>: eine warme Jacke."
   },
   {
     "id": "a2-wo-frage-001",
@@ -798,7 +890,9 @@
       "mit"
     ],
     "explanation_de": "Ja/Nein-Frage: Das konjugierte Verb steht auf Position 1, danach das Subjekt. Die Vorsilbe 'mit' (mitkommen) steht am Satzende.",
-    "explanation_en": "Yes/no question: the conjugated verb comes first, then the subject. The separable prefix 'mit' (mitkommen) goes to the end."
+    "explanation_en": "Yes/no question: the conjugated verb comes first, then the subject. The separable prefix 'mit' (mitkommen) goes to the end.",
+    "prompt_vi": "Sắp xếp thành câu hỏi: (bạn / đến / tối nay / cùng)",
+    "explanation_vi": "Câu hỏi Yes/No (Ja/Nein-Frage): động từ chia đứng ở vị trí 1, tiếp theo là chủ ngữ. Tiền tố tách 'mit' (mitkommen) đứng ở cuối câu."
   },
   {
     "id": "a2-wo-modal-001",
@@ -832,7 +926,9 @@
       ]
     ],
     "explanation_de": "Modalverb 'kann' auf Position 2, Infinitiv 'kommen' am Ende. 'nicht' steht vor dem Infinitiv am Satzende.",
-    "explanation_en": "Modal verb 'kann' in position 2, infinitive 'kommen' at the end. 'nicht' comes before the final infinitive."
+    "explanation_en": "Modal verb 'kann' in position 2, infinitive 'kommen' at the end. 'nicht' comes before the final infinitive.",
+    "prompt_vi": "Sắp xếp từ: (tôi / có thể / ngày mai / không / đến)",
+    "explanation_vi": "Động từ khuyết thiếu 'kann' đứng ở vị trí 2, động từ nguyên thể 'kommen' đứng ở cuối câu. 'nicht' đứng trước động từ nguyên thể ở cuối câu."
   },
   {
     "id": "a2-wo-tekamolo-001",
@@ -873,7 +969,9 @@
       ]
     ],
     "explanation_de": "Faustregel: Zeitangabe vor Ortsangabe. Die Normalfolge ist Zeit – Art und Weise – Ort: morgen → mit dem Zug → nach Berlin. Das Verb bleibt auf Position 2.",
-    "explanation_en": "Rule of thumb: time before place. The usual order is time – manner – place: morgen → mit dem Zug → nach Berlin. The verb stays in position 2."
+    "explanation_en": "Rule of thumb: time before place. The usual order is time – manner – place: morgen → mit dem Zug → nach Berlin. The verb stays in position 2.",
+    "prompt_vi": "Sắp xếp từ: (tôi / đi / ngày mai / bằng tàu hỏa / đến Berlin)",
+    "explanation_vi": "Quy tắc: thời gian trước địa điểm (TeKaMoLo). Trật tự thông thường là Thời gian – Cách thức – Địa điểm: morgen → mit dem Zug → nach Berlin. Động từ đứng ở vị trí 2."
   },
   {
     "id": "a2-genus-001",
@@ -890,7 +988,9 @@
     ],
     "correct": "die",
     "explanation_de": "-ei → feminin: die Bäckerei.",
-    "explanation_en": "-ei → feminine: die Bäckerei."
+    "explanation_en": "-ei → feminine: die Bäckerei.",
+    "prompt_vi": "tiệm bánh mì",
+    "explanation_vi": "Đuôi -ei → giống cái (feminin): die Bäckerei."
   },
   {
     "id": "a2-genus-002",
@@ -907,7 +1007,9 @@
     ],
     "correct": "die",
     "explanation_de": "-tät → feminin: die Universität.",
-    "explanation_en": "-tät → feminine: die Universität."
+    "explanation_en": "-tät → feminine: die Universität.",
+    "prompt_vi": "trường đại học",
+    "explanation_vi": "Đuôi -tät → giống cái (feminin): die Universität."
   },
   {
     "id": "a2-genus-003",
@@ -924,7 +1026,9 @@
     ],
     "correct": "die",
     "explanation_de": "-schaft → feminin.",
-    "explanation_en": "-schaft → feminine."
+    "explanation_en": "-schaft → feminine.",
+    "prompt_vi": "khu phố / vùng lân cận",
+    "explanation_vi": "Đuôi -schaft → giống cái (feminin)."
   },
   {
     "id": "a2-genus-004",
@@ -941,7 +1045,9 @@
     ],
     "correct": "das",
     "explanation_de": "-chen → neutral: das Mädchen.",
-    "explanation_en": "-chen → neuter: das Mädchen."
+    "explanation_en": "-chen → neuter: das Mädchen.",
+    "prompt_vi": "cô bé / cô gái nhỏ",
+    "explanation_vi": "Đuôi chỉ nhỏ -chen → giống trung (neutral): das Mädchen."
   },
   {
     "id": "a2-genus-005",
@@ -958,7 +1064,9 @@
     ],
     "correct": "das",
     "explanation_de": "-ment → neutral: das Apartment.",
-    "explanation_en": "-ment → neuter: das Apartment."
+    "explanation_en": "-ment → neuter: das Apartment.",
+    "prompt_vi": "căn hộ",
+    "explanation_vi": "Đuôi -ment → giống trung (neutral): das Apartment."
   },
   {
     "id": "a2-genus-006",
@@ -975,7 +1083,9 @@
     ],
     "correct": "der",
     "explanation_de": "-ling → maskulin: der Lehrling.",
-    "explanation_en": "-ling → masculine: der Lehrling."
+    "explanation_en": "-ling → masculine: der Lehrling.",
+    "prompt_vi": "người học việc",
+    "explanation_vi": "Đuôi -ling → giống đực (maskulin): der Lehrling."
   },
   {
     "id": "a2-genus-007",
@@ -992,7 +1102,9 @@
     ],
     "correct": "der",
     "explanation_de": "-ich → meist maskulin: der Teppich.",
-    "explanation_en": "-ich → mostly masculine: der Teppich."
+    "explanation_en": "-ich → mostly masculine: der Teppich.",
+    "prompt_vi": "tấm thảm",
+    "explanation_vi": "Đuôi -ich → hầu hết là giống đực (maskulin): der Teppich."
   },
   {
     "id": "a2-genus-008",
@@ -1010,7 +1122,9 @@
     ],
     "correct": "-ung",
     "explanation_de": "-ung, -heit, -keit, -schaft, -ei, -ion, -ik, -tät, -ur, -enz, -e → die.",
-    "explanation_en": "-ung, -heit, -keit, -schaft, -ei, -ion, -ik, -tät, -ur, -enz, -e → die."
+    "explanation_en": "-ung, -heit, -keit, -schaft, -ei, -ion, -ik, -tät, -ur, -enz, -e → die.",
+    "prompt_vi": "Đuôi từ nào thường báo hiệu một danh từ giống cái?",
+    "explanation_vi": "Các đuôi -ung, -heit, -keit, -schaft, -ei, -ion, -ik, -tät, -ur, -enz, -e → giống cái (die)."
   },
   {
     "id": "a2-perfx-001",
@@ -1022,7 +1136,9 @@
     "prompt_en": "You had a pen yesterday.",
     "correct": "hattest",
     "explanation_de": "haben → hatte: du hattest.",
-    "explanation_en": "haben → hatte: du hattest."
+    "explanation_en": "haben → hatte: du hattest.",
+    "prompt_vi": "Hôm qua bạn có một cây bút.",
+    "explanation_vi": "haben → hatte: du hattest."
   },
   {
     "id": "a2-perfx-002",
@@ -1034,7 +1150,9 @@
     "prompt_en": "You (all) were in Berlin yesterday.",
     "correct": "wart",
     "explanation_de": "sein → war: ihr wart.",
-    "explanation_en": "sein → war: ihr wart."
+    "explanation_en": "sein → war: ihr wart.",
+    "prompt_vi": "Hôm qua các bạn đã ở Berlin.",
+    "explanation_vi": "sein → war: ihr wart."
   },
   {
     "id": "a2-perfx-003",
@@ -1046,7 +1164,9 @@
     "prompt_en": "We were in Berlin last year.",
     "correct": "waren",
     "explanation_de": "sein → war: wir waren.",
-    "explanation_en": "sein → war: wir waren."
+    "explanation_en": "sein → war: wir waren.",
+    "prompt_vi": "Năm ngoái chúng tôi đã ở Berlin.",
+    "explanation_vi": "sein → war: wir waren."
   },
   {
     "id": "a2-perfx-004",
@@ -1058,7 +1178,9 @@
     "prompt_en": "I worked at Siemens.",
     "correct": "gearbeitet",
     "explanation_de": "arbeiten → gearbeitet.",
-    "explanation_en": "arbeiten → gearbeitet."
+    "explanation_en": "arbeiten → gearbeitet.",
+    "prompt_vi": "Tôi đã làm việc tại Siemens.",
+    "explanation_vi": "arbeiten → gearbeitet."
   },
   {
     "id": "a2-perfx-005",
@@ -1070,7 +1192,9 @@
     "prompt_en": "We lived in Frankfurt.",
     "correct": "gewohnt",
     "explanation_de": "wohnen → gewohnt.",
-    "explanation_en": "wohnen → gewohnt."
+    "explanation_en": "wohnen → gewohnt.",
+    "prompt_vi": "Chúng tôi đã từng sống ở Frankfurt.",
+    "explanation_vi": "wohnen → gewohnt."
   },
   {
     "id": "a2-perfx-006",
@@ -1082,7 +1206,9 @@
     "prompt_en": "He bought a car.",
     "correct": "gekauft",
     "explanation_de": "kaufen → gekauft.",
-    "explanation_en": "kaufen → gekauft."
+    "explanation_en": "kaufen → gekauft.",
+    "prompt_vi": "Anh ấy đã mua một chiếc ô tô.",
+    "explanation_vi": "kaufen → gekauft."
   },
   {
     "id": "a2-perfx-007",
@@ -1094,7 +1220,9 @@
     "prompt_en": "You flew to New York.",
     "correct": "geflogen",
     "explanation_de": "fliegen → geflogen (mit sein).",
-    "explanation_en": "fliegen → geflogen (with sein)."
+    "explanation_en": "fliegen → geflogen (with sein).",
+    "prompt_vi": "Bạn đã bay đến New York.",
+    "explanation_vi": "fliegen → geflogen (đi với trợ động từ sein)."
   },
   {
     "id": "a2-perfx-008",
@@ -1106,7 +1234,9 @@
     "prompt_en": "He came to me.",
     "correct": "gekommen",
     "explanation_de": "kommen → gekommen (mit sein).",
-    "explanation_en": "kommen → gekommen (with sein)."
+    "explanation_en": "kommen → gekommen (with sein).",
+    "prompt_vi": "Anh ấy đã đến chỗ tôi.",
+    "explanation_vi": "kommen → gekommen (đi với trợ động từ sein)."
   },
   {
     "id": "a2-perfx-009",
@@ -1124,7 +1254,9 @@
     ],
     "correct": "sind",
     "explanation_de": "Bewegung (gehen) → sein.",
-    "explanation_en": "Movement (gehen) → sein."
+    "explanation_en": "Movement (gehen) → sein.",
+    "prompt_vi": "Chúng tôi đã đi về nhà.",
+    "explanation_vi": "Chuyển động (gehen) → dùng trợ động từ sein."
   },
   {
     "id": "a2-pronx-001",
@@ -1136,7 +1268,9 @@
     "prompt_en": "I see him.",
     "correct": "ihn",
     "explanation_de": "er → ihn.",
-    "explanation_en": "er → ihn."
+    "explanation_en": "er → ihn.",
+    "prompt_vi": "Tôi nhìn thấy anh ấy.",
+    "explanation_vi": "er → ihn (Akkusativ)."
   },
   {
     "id": "a2-pronx-002",
@@ -1148,7 +1282,9 @@
     "prompt_en": "He gives her a book.",
     "correct": "ihr",
     "explanation_de": "sie (Sg.) → ihr.",
-    "explanation_en": "sie (sg.) → ihr."
+    "explanation_en": "sie (sg.) → ihr.",
+    "prompt_vi": "Anh ấy đưa cho cô ấy một quyển sách.",
+    "explanation_vi": "sie (số ít) → ihr (Dativ)."
   },
   {
     "id": "a2-pronx-003",
@@ -1160,7 +1296,9 @@
     "prompt_en": "I help them.",
     "correct": "ihnen",
     "explanation_de": "sie (Pl.) → ihnen.",
-    "explanation_en": "sie (pl.) → ihnen."
+    "explanation_en": "sie (pl.) → ihnen.",
+    "prompt_vi": "Tôi giúp đỡ họ.",
+    "explanation_vi": "sie (số nhiều) → ihnen (Dativ)."
   },
   {
     "id": "a2-pronx-004",
@@ -1172,7 +1310,9 @@
     "prompt_en": "We will see you (all) tomorrow.",
     "correct": "euch",
     "explanation_de": "ihr → euch.",
-    "explanation_en": "ihr → euch."
+    "explanation_en": "ihr → euch.",
+    "prompt_vi": "Ngày mai chúng tôi sẽ gặp các bạn.",
+    "explanation_vi": "ihr → euch (Akkusativ)."
   },
   {
     "id": "a2-pronx-005",
@@ -1184,7 +1324,9 @@
     "prompt_en": "Are you coming with us?",
     "correct": "uns",
     "explanation_de": "mit + Dativ; wir → uns.",
-    "explanation_en": "mit + dative; wir → uns."
+    "explanation_en": "mit + dative; wir → uns.",
+    "prompt_vi": "Bạn có đi cùng chúng tôi không?",
+    "explanation_vi": "mit + Dativ; wir → uns."
   },
   {
     "id": "a2-possy-001",
@@ -1196,7 +1338,9 @@
     "prompt_en": "I have breakfast with my family.",
     "correct": "meiner",
     "explanation_de": "Dativ feminin: meiner.",
-    "explanation_en": "Dative feminine: meiner."
+    "explanation_en": "Dative feminine: meiner.",
+    "prompt_vi": "Tôi ăn sáng cùng gia đình mình.",
+    "explanation_vi": "Dativ giống cái: meiner."
   },
   {
     "id": "a2-possy-002",
@@ -1208,7 +1352,9 @@
     "prompt_en": "I go to Lahore with my brother.",
     "correct": "meinem",
     "explanation_de": "Dativ maskulin: meinem.",
-    "explanation_en": "Dative masculine: meinem."
+    "explanation_en": "Dative masculine: meinem.",
+    "prompt_vi": "Tôi đi Lahore cùng với anh trai tôi.",
+    "explanation_vi": "Dativ giống đực: meinem."
   },
   {
     "id": "a2-possy-003",
@@ -1220,7 +1366,9 @@
     "prompt_en": "Are you coming with your children?",
     "correct": "euren",
     "explanation_de": "Dativ Plural: euren (euer verliert das zweite -e-).",
-    "explanation_en": "Dative plural: euren (euer drops its second -e-)."
+    "explanation_en": "Dative plural: euren (euer drops its second -e-).",
+    "prompt_vi": "Các bạn có đi cùng các con của mình không?",
+    "explanation_vi": "Dativ số nhiều: euren ('euer' bị lược bỏ chữ -e- thứ hai)."
   },
   {
     "id": "a2-possy-004",
@@ -1232,7 +1380,9 @@
     "prompt_en": "We take your books.",
     "correct": "eure",
     "explanation_de": "Plural Akkusativ: eure.",
-    "explanation_en": "Plural accusative: eure."
+    "explanation_en": "Plural accusative: eure.",
+    "prompt_vi": "Chúng tôi lấy những quyển sách của các bạn.",
+    "explanation_vi": "Akkusativ số nhiều: eure."
   },
   {
     "id": "a2-possy-005",
@@ -1244,7 +1394,9 @@
     "prompt_en": "I take your book.",
     "correct": "dein",
     "explanation_de": "Neutrum Akkusativ: dein Buch.",
-    "explanation_en": "Neuter accusative: dein Buch."
+    "explanation_en": "Neuter accusative: dein Buch.",
+    "prompt_vi": "Tôi lấy quyển sách của bạn.",
+    "explanation_vi": "Akkusativ giống trung: dein Buch."
   },
   {
     "id": "a2-dprep-001",
@@ -1256,7 +1408,9 @@
     "prompt_en": "I go to my uncle’s.",
     "correct": "zu",
     "explanation_de": "zu + Person.",
-    "explanation_en": "zu + person."
+    "explanation_en": "zu + person.",
+    "prompt_vi": "Tôi đến nhà chú/bác tôi.",
+    "explanation_vi": "zu + người (chỉ hướng đến người nào đó)."
   },
   {
     "id": "a2-dprep-002",
@@ -1268,7 +1422,9 @@
     "prompt_en": "I go to the university.",
     "correct": "zur",
     "explanation_de": "zu + der = zur.",
-    "explanation_en": "zu + der = zur."
+    "explanation_en": "zu + der = zur.",
+    "prompt_vi": "Tôi đến trường đại học.",
+    "explanation_vi": "zu + der = zur."
   },
   {
     "id": "a2-dprep-003",
@@ -1280,7 +1436,9 @@
     "prompt_en": "I go to the supermarket.",
     "correct": "zum",
     "explanation_de": "zu + dem = zum.",
-    "explanation_en": "zu + dem = zum."
+    "explanation_en": "zu + dem = zum.",
+    "prompt_vi": "Tôi đi đến siêu thị.",
+    "explanation_vi": "zu + dem = zum."
   },
   {
     "id": "a2-dprep-004",
@@ -1292,7 +1450,9 @@
     "prompt_en": "It is quarter past seven.",
     "correct": "nach",
     "explanation_de": "nach bei Uhrzeiten.",
-    "explanation_en": "nach with clock times."
+    "explanation_en": "nach with clock times.",
+    "prompt_vi": "Bây giờ là bảy giờ mười lăm (7 giờ 15 phút).",
+    "explanation_vi": "Dùng 'nach' khi nói giờ hơn (sau ... giờ)."
   },
   {
     "id": "a2-dprep-005",
@@ -1304,7 +1464,9 @@
     "prompt_en": "After work I visit my mother.",
     "correct": "Nach",
     "explanation_de": "nach = after.",
-    "explanation_en": "nach = after."
+    "explanation_en": "nach = after.",
+    "prompt_vi": "Sau giờ làm việc, tôi đi thăm mẹ tôi.",
+    "explanation_vi": "nach = sau khi (sau giờ làm)."
   },
   {
     "id": "a2-dprep-006",
@@ -1316,7 +1478,9 @@
     "prompt_en": "Kotri is near Hyderabad.",
     "correct": "bei",
     "explanation_de": "bei = in der Nähe von.",
-    "explanation_en": "bei = near."
+    "explanation_en": "bei = near.",
+    "prompt_vi": "Kotri ở gần Hyderabad.",
+    "explanation_vi": "bei = ở gần (về mặt địa lý)."
   },
   {
     "id": "a2-dprep-007",
@@ -1328,7 +1492,9 @@
     "prompt_en": "I come out of the room.",
     "correct": "aus",
     "explanation_de": "aus dem Zimmer.",
-    "explanation_en": "aus dem Zimmer."
+    "explanation_en": "aus dem Zimmer.",
+    "prompt_vi": "Tôi đi ra khỏi phòng.",
+    "explanation_vi": "aus dem Zimmer (ra khỏi phòng, aus + Dativ)."
   },
   {
     "id": "a2-dprep-008",
@@ -1340,7 +1506,9 @@
     "prompt_en": "I come from my uncle’s.",
     "correct": "von",
     "explanation_de": "Bei Personen: von.",
-    "explanation_en": "With people: von."
+    "explanation_en": "With people: von.",
+    "prompt_vi": "Tôi đi từ nhà chú tôi về.",
+    "explanation_vi": "Với người (từ chỗ người nào đó): dùng von (+ Dativ)."
   },
   {
     "id": "a2-dprep-009",
@@ -1352,7 +1520,9 @@
     "prompt_en": "I have worked in Berlin since February.",
     "correct": "seit",
     "explanation_de": "seit = Zeitpunkt/Dauer.",
-    "explanation_en": "seit = point in time/duration."
+    "explanation_en": "seit = point in time/duration.",
+    "prompt_vi": "Tôi làm việc ở Berlin từ tháng Hai đến nay.",
+    "explanation_vi": "seit = mốc thời gian/khoảng thời gian bắt đầu từ quá khứ kéo dài đến nay."
   },
   {
     "id": "a2-dprep-010",
@@ -1370,7 +1540,9 @@
     ],
     "correct": "Hause",
     "explanation_de": "Feste Ausdrücke: nach Hause (wohin), zu Hause (wo).",
-    "explanation_en": "Fixed expressions: nach Hause (where to), zu Hause (where)."
+    "explanation_en": "Fixed expressions: nach Hause (where to), zu Hause (where).",
+    "prompt_vi": "Tôi đi về nhà và sau đó ở nhà.",
+    "explanation_vi": "Cụm cố định: nach Hause (đi về nhà - wohin), zu Hause (ở nhà - wo)."
   },
   {
     "id": "a2-aprep-001",
@@ -1382,7 +1554,9 @@
     "prompt_en": "I am against you.",
     "correct": "dich",
     "explanation_de": "gegen + Akkusativ.",
-    "explanation_en": "gegen + accusative."
+    "explanation_en": "gegen + accusative.",
+    "prompt_vi": "Tôi phản đối bạn.",
+    "explanation_vi": "gegen + Akkusativ."
   },
   {
     "id": "a2-aprep-002",
@@ -1394,7 +1568,9 @@
     "prompt_en": "I work without you.",
     "correct": "dich",
     "explanation_de": "ohne + Akkusativ.",
-    "explanation_en": "ohne + accusative."
+    "explanation_en": "ohne + accusative.",
+    "prompt_vi": "Tôi làm việc mà không có bạn.",
+    "explanation_vi": "ohne + Akkusativ."
   },
   {
     "id": "a2-aprep-003",
@@ -1406,7 +1582,9 @@
     "prompt_en": "I walk through the city.",
     "correct": "die",
     "explanation_de": "durch + Akkusativ; feminin: die.",
-    "explanation_en": "durch + accusative; feminine: die."
+    "explanation_en": "durch + accusative; feminine: die.",
+    "prompt_vi": "Tôi đi bộ xuyên qua thành phố.",
+    "explanation_vi": "durch + Akkusativ; giống cái: die."
   },
   {
     "id": "a2-aprep-004",
@@ -1418,7 +1596,9 @@
     "prompt_en": "I walk around the house.",
     "correct": "das",
     "explanation_de": "um + Akkusativ; Neutrum: das.",
-    "explanation_en": "um + accusative; neuter: das."
+    "explanation_en": "um + accusative; neuter: das.",
+    "prompt_vi": "Tôi đi dạo quanh ngôi nhà.",
+    "explanation_vi": "um + Akkusativ; giống trung: das."
   },
   {
     "id": "a2-aprep-005",
@@ -1436,7 +1616,9 @@
     ],
     "correct": "gegen",
     "explanation_de": "gegen + Uhrzeit = ungefähr.",
-    "explanation_en": "gegen + clock time = approximately."
+    "explanation_en": "gegen + clock time = approximately.",
+    "prompt_vi": "Tôi sẽ đến vào khoảng 8 giờ.",
+    "explanation_vi": "gegen + giờ giấc = vào khoảng (xấp xỉ)."
   },
   {
     "id": "a2-aprep-006",
@@ -1454,7 +1636,9 @@
     ],
     "correct": "bis",
     "explanation_de": "bis = until / as far as.",
-    "explanation_en": "bis = until / as far as."
+    "explanation_en": "bis = until / as far as.",
+    "prompt_vi": "Tôi đi tới tận Munich.",
+    "explanation_vi": "bis = cho đến / tới tận."
   },
   {
     "id": "a2-wech-001",
@@ -1466,7 +1650,9 @@
     "prompt_en": "The bottle is under the table.",
     "correct": "dem",
     "explanation_de": "Wo? → Dativ: unter dem Tisch.",
-    "explanation_en": "Wo? → dative: unter dem Tisch."
+    "explanation_en": "Wo? → dative: unter dem Tisch.",
+    "prompt_vi": "Cái chai đang ở dưới gầm bàn.",
+    "explanation_vi": "Wo? (ở đâu) → Dativ: unter dem Tisch."
   },
   {
     "id": "a2-wech-002",
@@ -1478,7 +1664,9 @@
     "prompt_en": "I put the bottle under the table.",
     "correct": "den",
     "explanation_de": "Wohin? → Akkusativ: unter den Tisch.",
-    "explanation_en": "Wohin? → accusative: unter den Tisch."
+    "explanation_en": "Wohin? → accusative: unter den Tisch.",
+    "prompt_vi": "Tôi đặt cái chai xuống dưới gầm bàn.",
+    "explanation_vi": "Wohin? (đến đâu) → Akkusativ: unter den Tisch."
   },
   {
     "id": "a2-wech-003",
@@ -1490,7 +1678,9 @@
     "prompt_en": "The picture hangs on the wall.",
     "correct": "der",
     "explanation_de": "Wo? → Dativ feminin: der Wand.",
-    "explanation_en": "Wo? → dative feminine: der Wand."
+    "explanation_en": "Wo? → dative feminine: der Wand.",
+    "prompt_vi": "Bức tranh đang treo trên tường.",
+    "explanation_vi": "Wo? (ở đâu) → Dativ giống cái: der Wand."
   },
   {
     "id": "a2-wech-004",
@@ -1502,7 +1692,9 @@
     "prompt_en": "He puts the cheese in the fridge.",
     "correct": "den",
     "explanation_de": "Wohin? → Akkusativ: in den Kühlschrank.",
-    "explanation_en": "Wohin? → accusative: in den Kühlschrank."
+    "explanation_en": "Wohin? → accusative: in den Kühlschrank.",
+    "prompt_vi": "Anh ấy cất phô mai vào trong tủ lạnh.",
+    "explanation_vi": "Wohin? (vào đâu) → Akkusativ: in den Kühlschrank."
   },
   {
     "id": "a2-wech-005",
@@ -1514,7 +1706,9 @@
     "prompt_en": "We are at the beach.",
     "correct": "am",
     "explanation_de": "an + dem = am.",
-    "explanation_en": "an + dem = am."
+    "explanation_en": "an + dem = am.",
+    "prompt_vi": "Chúng tôi đang ở bãi biển.",
+    "explanation_vi": "an + dem = am."
   },
   {
     "id": "a2-wech-006",
@@ -1526,7 +1720,9 @@
     "prompt_en": "We go to the sea.",
     "correct": "ans",
     "explanation_de": "an + das = ans.",
-    "explanation_en": "an + das = ans."
+    "explanation_en": "an + das = ans.",
+    "prompt_vi": "Chúng tôi đi ra biển.",
+    "explanation_vi": "an + das = ans."
   },
   {
     "id": "a2-wech-007",
@@ -1538,7 +1734,9 @@
     "prompt_en": "Quaid goes into the room.",
     "correct": "ins",
     "explanation_de": "in + das = ins.",
-    "explanation_en": "in + das = ins."
+    "explanation_en": "in + das = ins.",
+    "prompt_vi": "Quaid đi vào phòng.",
+    "explanation_vi": "in + das = ins."
   },
   {
     "id": "a2-wech-008",
@@ -1550,7 +1748,9 @@
     "prompt_en": "The book is between the laptop and the smartphone.",
     "correct": "dem",
     "explanation_de": "Wo? → Dativ: zwischen dem Laptop.",
-    "explanation_en": "Wo? → dative: zwischen dem Laptop."
+    "explanation_en": "Wo? → dative: zwischen dem Laptop.",
+    "prompt_vi": "Quyển sách nằm ở giữa máy tính xách tay và điện thoại thông minh.",
+    "explanation_vi": "Wo? (ở đâu) → Dativ: zwischen dem Laptop."
   },
   {
     "id": "a2-wech-009",
@@ -1562,7 +1762,9 @@
     "prompt_en": "I sit on the bike.",
     "correct": "dem",
     "explanation_de": "auf dem Fahrrad (Neutrum, Dativ).",
-    "explanation_en": "auf dem Fahrrad (neuter, dative)."
+    "explanation_en": "auf dem Fahrrad (neuter, dative).",
+    "prompt_vi": "Tôi đang ngồi trên xe đạp.",
+    "explanation_vi": "auf dem Fahrrad (giống trung, Dativ)."
   },
   {
     "id": "a2-wech-010",
@@ -1580,7 +1782,9 @@
     ],
     "correct": "legen",
     "explanation_de": "Wohin? → legen (+ Akkusativ).",
-    "explanation_en": "Wohin? → legen (+ accusative)."
+    "explanation_en": "Wohin? → legen (+ accusative).",
+    "prompt_vi": "Bạn đặt quyển sách vào đâu thế? — Ở trên bàn.",
+    "explanation_vi": "Wohin? (vào đâu) → legen (+ Akkusativ - đặt nằm)."
   },
   {
     "id": "a2-wech-011",
@@ -1598,7 +1802,9 @@
     ],
     "correct": "steht",
     "explanation_de": "Wo? (Zustand, aufrecht) → stehen.",
-    "explanation_en": "Wo? (state, upright) → stehen."
+    "explanation_en": "Wo? (state, upright) → stehen.",
+    "prompt_vi": "Cái chai ở đâu thế? — Ở dưới gầm bàn.",
+    "explanation_vi": "Wo? (trạng thái, đứng thẳng) → stehen."
   },
   {
     "id": "a2-wech-012",
@@ -1616,7 +1822,9 @@
     ],
     "correct": "hängen",
     "explanation_de": "Wohin? + Akkusativ → hängen (Aktion).",
-    "explanation_en": "Wohin? + accusative → hängen (action)."
+    "explanation_en": "Wohin? + accusative → hängen (action).",
+    "prompt_vi": "Bạn treo bức tranh vào đâu? — Lên tường.",
+    "explanation_vi": "Wohin? + Akkusativ → hängen (hành động treo)."
   },
   {
     "id": "a2-wech-013",
@@ -1634,7 +1842,9 @@
     ],
     "correct": "Akkusativ",
     "explanation_de": "Wohin? → Akkusativ (Richtung); Wo? → Dativ (Position).",
-    "explanation_en": "Wohin? → accusative (direction); Wo? → dative (position)."
+    "explanation_en": "Wohin? → accusative (direction); Wo? → dative (position).",
+    "prompt_vi": "\"Wohin?\" hỏi về cách nào trong câu?",
+    "explanation_vi": "Wohin? → Akkusativ (hướng chuyển động); Wo? → Dativ (vị trí cố định)."
   },
   {
     "id": "a2-vpraep-001",
@@ -1652,7 +1862,9 @@
     ],
     "correct": "auf",
     "explanation_de": "Lust haben auf + Akkusativ.",
-    "explanation_en": "Lust haben auf + accusative."
+    "explanation_en": "Lust haben auf + accusative.",
+    "prompt_vi": "Tôi thèm / có hứng ăn một chiếc pizza.",
+    "explanation_vi": "Lust haben auf + Akkusativ (có hứng thú / thèm cái gì)."
   },
   {
     "id": "a2-vpraep-002",
@@ -1670,7 +1882,9 @@
     ],
     "correct": "vor",
     "explanation_de": "Angst haben vor + Dativ.",
-    "explanation_en": "Angst haben vor + dative."
+    "explanation_en": "Angst haben vor + dative.",
+    "prompt_vi": "Tôi sợ các kỳ thi.",
+    "explanation_vi": "Angst haben vor + Dativ (sợ hãi điều gì)."
   },
   {
     "id": "a2-vpraep-003",
@@ -1682,7 +1896,9 @@
     "prompt_en": "The shirt looks good.",
     "correct": "aus",
     "explanation_de": "aussehen → sieht … aus.",
-    "explanation_en": "aussehen → sieht … aus."
+    "explanation_en": "aussehen → sieht … aus.",
+    "prompt_vi": "Chiếc áo sơ mi trông rất đẹp.",
+    "explanation_vi": "aussehen → sieht … aus (trông có vẻ/ngoại hình)."
   },
   {
     "id": "a2-vpraep-004",
@@ -1694,7 +1910,9 @@
     "prompt_en": "I am waiting for my uncle.",
     "correct": "auf",
     "explanation_de": "warten auf + Akkusativ.",
-    "explanation_en": "warten auf + accusative."
+    "explanation_en": "warten auf + accusative.",
+    "prompt_vi": "Tôi đang đợi chú tôi.",
+    "explanation_vi": "warten auf + Akkusativ (chờ đợi ai/cái gì)."
   },
   {
     "id": "a2-vpraep-005",
@@ -1706,7 +1924,9 @@
     "prompt_en": "I dream of my own house.",
     "correct": "von",
     "explanation_de": "träumen von + Dativ.",
-    "explanation_en": "träumen von + dative."
+    "explanation_en": "träumen von + dative.",
+    "prompt_vi": "Tôi mơ về một ngôi nhà của riêng mình.",
+    "explanation_vi": "träumen von + Dativ (mơ về điều gì)."
   },
   {
     "id": "a2-vpraep-006",
@@ -1718,7 +1938,9 @@
     "prompt_en": "He is crazy about action films.",
     "correct": "nach",
     "explanation_de": "verrückt sein nach + Dativ.",
-    "explanation_en": "verrückt sein nach + dative."
+    "explanation_en": "verrückt sein nach + dative.",
+    "prompt_vi": "Anh ấy mê mẩn phim hành động.",
+    "explanation_vi": "verrückt sein nach + Dativ (phát cuồng/rất mê cái gì)."
   },
   {
     "id": "a2-vpraep-007",
@@ -1730,7 +1952,9 @@
     "prompt_en": "I often think of my family.",
     "correct": "an",
     "explanation_de": "denken an + Akkusativ.",
-    "explanation_en": "denken an + accusative."
+    "explanation_en": "denken an + accusative.",
+    "prompt_vi": "Tôi thường nghĩ về gia đình mình.",
+    "explanation_vi": "denken an + Akkusativ (nghĩ về ai/cái gì)."
   },
   {
     "id": "a2-vpraep-008",
@@ -1742,7 +1966,9 @@
     "prompt_en": "The reporter reports on the accident.",
     "correct": "über",
     "explanation_de": "berichten über + Akkusativ.",
-    "explanation_en": "berichten über + accusative."
+    "explanation_en": "berichten über + accusative.",
+    "prompt_vi": "Phóng viên đưa tin về vụ tai nạn.",
+    "explanation_vi": "berichten über + Akkusativ (đưa tin/báo cáo về cái gì)."
   },
   {
     "id": "a2-vpraep-009",
@@ -1760,7 +1986,9 @@
     ],
     "correct": "mir",
     "explanation_de": "schmecken + Dativ (Person).",
-    "explanation_en": "schmecken + dative (person)."
+    "explanation_en": "schmecken + dative (person).",
+    "prompt_vi": "Món thịt này tôi thấy rất ngon miệng.",
+    "explanation_vi": "schmecken + Dativ (chỉ người cảm nhận vị: mir)."
   },
   {
     "id": "a2-vpraep-010",
@@ -1778,7 +2006,9 @@
     ],
     "correct": "auf",
     "explanation_de": "verzichten auf + Akkusativ.",
-    "explanation_en": "verzichten auf + accusative."
+    "explanation_en": "verzichten auf + accusative.",
+    "prompt_vi": "Tôi từ bỏ đường / không dùng đường.",
+    "explanation_vi": "verzichten auf + Akkusativ (từ bỏ / kiêng cái gì)."
   },
   {
     "id": "a2-doch-001",
@@ -1795,7 +2025,9 @@
     ],
     "correct": "Doch",
     "explanation_de": "Doch widerspricht einer verneinten Frage.",
-    "explanation_en": "Doch contradicts a negative question."
+    "explanation_en": "Doch contradicts a negative question.",
+    "prompt_vi": "Bạn không đi làm à? — Có chứ, tôi có đi làm.",
+    "explanation_vi": "Dùng 'Doch' để phản bác lại một câu hỏi phủ định (mang nghĩa khẳng định)."
   },
   {
     "id": "a2-doch-002",
@@ -1812,7 +2044,9 @@
     ],
     "correct": "Nein",
     "explanation_de": "Die Antwort bleibt negativ: Nein.",
-    "explanation_en": "The answer stays negative: Nein."
+    "explanation_en": "The answer stays negative: Nein.",
+    "prompt_vi": "Bạn không có bút à? — Ừ, tôi không có bút.",
+    "explanation_vi": "Câu trả lời đồng tình với ý phủ định: Nein."
   },
   {
     "id": "a2-doch-003",
@@ -1829,7 +2063,9 @@
     ],
     "correct": "Doch",
     "explanation_de": "Positive Antwort auf negative Frage: Doch.",
-    "explanation_en": "Positive answer to a negative question: Doch."
+    "explanation_en": "Positive answer to a negative question: Doch.",
+    "prompt_vi": "Bạn không có sách à? — Có chứ, tôi có sách.",
+    "explanation_vi": "Trả lời khẳng định cho một câu hỏi mang tính phủ định: Doch."
   },
   {
     "id": "a2-doch-004",
@@ -1846,7 +2082,9 @@
     ],
     "correct": "Ja",
     "explanation_de": "Bei einer normalen Frage: Ja.",
-    "explanation_en": "For a normal question: Ja."
+    "explanation_en": "For a normal question: Ja.",
+    "prompt_vi": "Bạn có làm việc không? — Có, tôi có làm việc.",
+    "explanation_vi": "Với một câu hỏi bình thường (khẳng định): dùng Ja."
   },
   {
     "id": "a2-weilx-001",
@@ -1864,7 +2102,9 @@
     ],
     "correct": "weil",
     "explanation_de": "Verb am Ende (brauche) → weil.",
-    "explanation_en": "Verb at the end (brauche) → weil."
+    "explanation_en": "Verb at the end (brauche) → weil.",
+    "prompt_vi": "Tôi làm việc vì tôi cần tiền.",
+    "explanation_vi": "Động từ đứng ở cuối câu (brauche) → dùng liên từ weil."
   },
   {
     "id": "a2-weilx-002",
@@ -1876,7 +2116,9 @@
     "prompt_en": "I work because I need money.",
     "correct": "brauche",
     "explanation_de": "Nach „denn“ bleibt das Verb auf Position 2.",
-    "explanation_en": "After \"denn\" the verb stays in position 2."
+    "explanation_en": "After \"denn\" the verb stays in position 2.",
+    "prompt_vi": "Tôi làm việc, bởi vì tôi cần tiền.",
+    "explanation_vi": "Sau liên từ „denn“, động từ giữ nguyên ở vị trí 2."
   },
   {
     "id": "a2-weilx-003",
@@ -1888,7 +2130,9 @@
     "prompt_en": "I buy water because I am thirsty.",
     "correct": "habe",
     "explanation_de": "Nach „weil“ steht das Verb am Ende.",
-    "explanation_en": "After \"weil\" the verb is at the end."
+    "explanation_en": "After \"weil\" the verb is at the end.",
+    "prompt_vi": "Tôi mua nước vì tôi đang khát.",
+    "explanation_vi": "Sau liên từ „weil“, động từ đứng ở cuối câu: habe."
   },
   {
     "id": "a2-weilx-004",
@@ -1900,7 +2144,9 @@
     "prompt_en": "Because I want to work in Germany, I learn German.",
     "correct": "lerne",
     "explanation_de": "Steht der weil-Satz vorn, kommt danach sofort das Verb des Hauptsatzes.",
-    "explanation_en": "If the weil-clause comes first, the main-clause verb follows directly."
+    "explanation_en": "If the weil-clause comes first, the main-clause verb follows directly.",
+    "prompt_vi": "Vì tôi muốn làm việc tại Đức, nên tôi học tiếng Đức.",
+    "explanation_vi": "Nếu mệnh đề phụ với 'weil' đứng đầu câu, động từ của mệnh đề chính đứng ngay sau dấu phẩy: lerne ich."
   },
   {
     "id": "a2-weilx-005",
@@ -1912,7 +2158,9 @@
     "prompt_en": "I cannot come because I am shopping at the supermarket.",
     "correct": "einkaufe",
     "explanation_de": "Im Nebensatz wird das trennbare Verb nicht getrennt: einkaufe.",
-    "explanation_en": "In the subordinate clause the separable verb stays together: einkaufe."
+    "explanation_en": "In the subordinate clause the separable verb stays together: einkaufe.",
+    "prompt_vi": "Tôi không thể đến vì tôi đang đi mua sắm ở siêu thị.",
+    "explanation_vi": "Trong mệnh đề phụ, động từ tách không bị tách ra mà viết liền ở cuối câu: einkaufe."
   },
   {
     "id": "a2-weilx-006",
@@ -1935,7 +2183,9 @@
       "habe"
     ],
     "explanation_de": "Nach „weil“: Subjekt … Verb am Ende.",
-    "explanation_en": "After \"weil\": subject … verb at the end."
+    "explanation_en": "After \"weil\": subject … verb at the end.",
+    "prompt_vi": "Sắp xếp từ: (bởi vì / đói / tôi / có)",
+    "explanation_vi": "Sau „weil“: Chủ ngữ … động từ đứng ở cuối câu."
   },
   {
     "id": "a2-dassx-001",
@@ -1947,7 +2197,9 @@
     "prompt_en": "I think it is good that we are learning German.",
     "correct": "lernen",
     "explanation_de": "Nach „dass“ steht das Verb am Ende.",
-    "explanation_en": "After \"dass\" the verb is at the end."
+    "explanation_en": "After \"dass\" the verb is at the end.",
+    "prompt_vi": "Tôi thấy rất tốt khi chúng ta học tiếng Đức.",
+    "explanation_vi": "Sau „dass“, động từ đứng ở cuối câu."
   },
   {
     "id": "a2-dassx-002",
@@ -1959,7 +2211,9 @@
     "prompt_en": "I think he is not coming.",
     "correct": "kommt",
     "explanation_de": "dass-Satz: er kommt.",
-    "explanation_en": "dass-clause: er kommt."
+    "explanation_en": "dass-clause: er kommt.",
+    "prompt_vi": "Tôi nghĩ rằng anh ấy sẽ không đến.",
+    "explanation_vi": "Mệnh đề dass: động từ chuyển xuống cuối câu: er kommt."
   },
   {
     "id": "a2-dassx-003",
@@ -1971,7 +2225,9 @@
     "prompt_en": "I am sure that he will visit us.",
     "correct": "besucht",
     "explanation_de": "dass-Satz: er besucht.",
-    "explanation_en": "dass-clause: er besucht."
+    "explanation_en": "dass-clause: er besucht.",
+    "prompt_vi": "Tôi chắc chắn rằng anh ấy sẽ đến thăm chúng tôi.",
+    "explanation_vi": "Mệnh đề dass: er besucht."
   },
   {
     "id": "a2-dassx-004",
@@ -1983,7 +2239,9 @@
     "prompt_en": "I like that he can dance well.",
     "correct": "kann",
     "explanation_de": "Bei Modalverb: … tanzen kann.",
-    "explanation_en": "With a modal verb: … tanzen kann."
+    "explanation_en": "With a modal verb: … tanzen kann.",
+    "prompt_vi": "Tôi thích việc anh ấy có thể nhảy múa giỏi.",
+    "explanation_vi": "Với động từ khuyết thiếu trong mệnh đề dass: … tanzen kann (động từ khuyết thiếu đứng cuối cùng)."
   },
   {
     "id": "a2-dassx-005",
@@ -1995,7 +2253,9 @@
     "prompt_en": "For me it is very good that the internet exists.",
     "correct": "gibt",
     "explanation_de": "dass-Satz: es gibt.",
-    "explanation_en": "dass-clause: es gibt."
+    "explanation_en": "dass-clause: es gibt.",
+    "prompt_vi": "Đối với tôi, việc có internet là một điều rất tuyệt vời.",
+    "explanation_vi": "Mệnh đề dass: động từ 'gibt' đứng cuối câu (es gibt)."
   },
   {
     "id": "a2-dassx-006",
@@ -2013,7 +2273,9 @@
     ],
     "correct": "dass",
     "explanation_de": "„dass“ leitet den Inhaltssatz ein.",
-    "explanation_en": "\"dass\" introduces the content clause."
+    "explanation_en": "\"dass\" introduces the content clause.",
+    "prompt_vi": "Tôi hy vọng rằng tôi sẽ thi đỗ.",
+    "explanation_vi": "„dass“ mở đầu một mệnh đề phụ chỉ nội dung (rằng...)."
   },
   {
     "id": "a2-dassx-007",
@@ -2036,7 +2298,9 @@
       "besuchst"
     ],
     "explanation_de": "Verb am Ende: … dass du mich besuchst.",
-    "explanation_en": "Verb at the end: … dass du mich besuchst."
+    "explanation_en": "Verb at the end: … dass du mich besuchst.",
+    "prompt_vi": "Sắp xếp từ: (rằng / bạn / tôi / thăm)",
+    "explanation_vi": "Động từ đứng ở cuối câu: … dass du mich besuchst."
   },
   {
     "id": "a2-wennx-001",
@@ -2048,7 +2312,9 @@
     "prompt_en": "I go to Pakistan when I have a holiday.",
     "correct": "habe",
     "explanation_de": "wenn-Satz: Verb am Ende.",
-    "explanation_en": "wenn-clause: verb at the end."
+    "explanation_en": "wenn-clause: verb at the end.",
+    "prompt_vi": "Tôi sẽ đi Pakistan khi tôi có kỳ nghỉ.",
+    "explanation_vi": "Mệnh đề wenn: động từ đứng ở cuối câu."
   },
   {
     "id": "a2-wennx-002",
@@ -2060,7 +2326,9 @@
     "prompt_en": "When I have time, I do my homework.",
     "correct": "mache",
     "explanation_de": "Nach dem wenn-Satz kommt das Verb direkt: mache ich.",
-    "explanation_en": "After the wenn-clause the verb follows directly: mache ich."
+    "explanation_en": "After the wenn-clause the verb follows directly: mache ich.",
+    "prompt_vi": "Khi có thời gian, tôi làm bài tập về nhà.",
+    "explanation_vi": "Sau mệnh đề wenn ở đầu câu, động từ của mệnh đề chính đứng ngay sau dấu phẩy: mache ich."
   },
   {
     "id": "a2-wennx-003",
@@ -2072,7 +2340,9 @@
     "prompt_en": "When I have a headache, I take a tablet.",
     "correct": "nehme",
     "explanation_de": "Verb direkt nach dem Komma: nehme ich.",
-    "explanation_en": "Verb directly after the comma: nehme ich."
+    "explanation_en": "Verb directly after the comma: nehme ich.",
+    "prompt_vi": "Khi bị đau đầu, tôi uống một viên thuốc.",
+    "explanation_vi": "Động từ đứng ngay sau dấu phẩy: nehme ich."
   },
   {
     "id": "a2-wennx-004",
@@ -2084,7 +2354,9 @@
     "prompt_en": "I am happy when I meet my parents.",
     "correct": "treffe",
     "explanation_de": "Nach „wenn ich“ endet das Verb auf -e: treffe.",
-    "explanation_en": "After \"wenn ich\" the verb ends in -e: treffe."
+    "explanation_en": "After \"wenn ich\" the verb ends in -e: treffe.",
+    "prompt_vi": "Tôi rất vui khi được gặp bố mẹ mình.",
+    "explanation_vi": "Sau „wenn ich“, động từ chia theo ngôi ich kết thúc bằng đuôi -e: treffe."
   },
   {
     "id": "a2-alsx-001",
@@ -2102,7 +2374,9 @@
     ],
     "correct": "Als",
     "explanation_de": "als = einmaliges Ereignis / Zeitraum in der Vergangenheit.",
-    "explanation_en": "als = single event / period in the past."
+    "explanation_en": "als = single event / period in the past.",
+    "prompt_vi": "Khi tôi còn là một đứa trẻ, tôi đã chơi đùa với những đứa trẻ khác.",
+    "explanation_vi": "als = một sự kiện hoặc một giai đoạn diễn ra một lần trong quá khứ."
   },
   {
     "id": "a2-alsx-002",
@@ -2120,7 +2394,9 @@
     ],
     "correct": "Wenn",
     "explanation_de": "wenn = wiederholtes Ereignis.",
-    "explanation_en": "wenn = repeated event."
+    "explanation_en": "wenn = repeated event.",
+    "prompt_vi": "Mỗi khi có kỳ nghỉ, tôi đều đến thăm chú tôi.",
+    "explanation_vi": "wenn = sự việc lặp đi lặp lại nhiều lần trong quá khứ."
   },
   {
     "id": "a2-alsx-003",
@@ -2138,7 +2414,9 @@
     ],
     "correct": "Als",
     "explanation_de": "Einmaliges Ereignis → als.",
-    "explanation_en": "Single event → als."
+    "explanation_en": "Single event → als.",
+    "prompt_vi": "Khi tôi 16 tuổi, tôi đã đến thăm nước Anh.",
+    "explanation_vi": "Sự kiện diễn ra một lần trong quá khứ (mốc 16 tuổi) → dùng als."
   },
   {
     "id": "a2-alsx-004",
@@ -2156,7 +2434,9 @@
     ],
     "correct": "wenn",
     "explanation_de": "„immer wenn“ = wiederholt.",
-    "explanation_en": "\"immer wenn\" = repeated."
+    "explanation_en": "\"immer wenn\" = repeated.",
+    "prompt_vi": "Bất cứ khi nào đến London, tôi đều gặp gỡ bạn bè.",
+    "explanation_vi": "„immer wenn“ = bất cứ khi nào (hành động lặp đi lặp lại)."
   },
   {
     "id": "a2-alsx-005",
@@ -2174,7 +2454,9 @@
     ],
     "correct": "Als",
     "explanation_de": "Einmaliges Ereignis in der Vergangenheit.",
-    "explanation_en": "Single event in the past."
+    "explanation_en": "Single event in the past.",
+    "prompt_vi": "Khi Melly 14 tuổi, cô ấy đã chuyển trường.",
+    "explanation_vi": "Sự kiện diễn ra một lần trong quá khứ → dùng Als."
   },
   {
     "id": "a2-folge-001",
@@ -2192,7 +2474,9 @@
     ],
     "correct": "deshalb",
     "explanation_de": "deshalb = Folge.",
-    "explanation_en": "deshalb = consequence."
+    "explanation_en": "deshalb = consequence.",
+    "prompt_vi": "Tôi không có tiền, do đó tôi phải làm việc.",
+    "explanation_vi": "deshalb = do đó / vì vậy (chỉ kết quả, hậu quả)."
   },
   {
     "id": "a2-folge-002",
@@ -2210,7 +2494,9 @@
     ],
     "correct": "trotzdem",
     "explanation_de": "trotzdem = Gegensatz.",
-    "explanation_en": "trotzdem = contrast."
+    "explanation_en": "trotzdem = contrast.",
+    "prompt_vi": "Tôi có ít thời gian, tuy nhiên tôi vẫn gặp bạn bè.",
+    "explanation_vi": "trotzdem = tuy nhiên / mặc dù vậy (chỉ sự tương phản)."
   },
   {
     "id": "a2-folge-003",
@@ -2228,7 +2514,9 @@
     ],
     "correct": "trotzdem",
     "explanation_de": "Trotz des Wetters → trotzdem.",
-    "explanation_en": "In spite of the weather → trotzdem."
+    "explanation_en": "In spite of the weather → trotzdem.",
+    "prompt_vi": "Thời tiết xấu, mặc dù vậy tôi vẫn đi siêu thị.",
+    "explanation_vi": "Bất chấp thời tiết xấu → dùng trotzdem."
   },
   {
     "id": "a2-folge-004",
@@ -2246,7 +2534,9 @@
     ],
     "correct": "deshalb",
     "explanation_de": "Krank → deshalb.",
-    "explanation_en": "Ill → deshalb."
+    "explanation_en": "Ill → deshalb.",
+    "prompt_vi": "Anh ấy bị ốm, vì vậy anh ấy đã không đi làm.",
+    "explanation_vi": "Bị ốm → dùng deshalb (chỉ nguyên nhân - kết quả)."
   },
   {
     "id": "a2-folge-005",
@@ -2258,7 +2548,9 @@
     "prompt_en": "The exam was hard, so I failed.",
     "correct": "durchgefallen",
     "explanation_de": "durchfallen → ist durchgefallen.",
-    "explanation_en": "durchfallen → ist durchgefallen."
+    "explanation_en": "durchfallen → ist durchgefallen.",
+    "prompt_vi": "Kỳ thi rất khó, vì vậy tôi đã bị thi trượt.",
+    "explanation_vi": "durchfallen (thi trượt) → thì Perfekt: ist durchgefallen."
   },
   {
     "id": "a2-folge-006",
@@ -2279,7 +2571,9 @@
       "ich"
     ],
     "explanation_de": "Nach „deshalb“ kommt das Verb (Position 2), dann das Subjekt.",
-    "explanation_en": "After \"deshalb\" comes the verb (position 2), then the subject."
+    "explanation_en": "After \"deshalb\" comes the verb (position 2), then the subject.",
+    "prompt_vi": "Sắp xếp từ: (do đó / tôi / làm việc)",
+    "explanation_vi": "Sau „deshalb“ là động từ (vị trí 2), sau đó mới đến chủ ngữ."
   },
   {
     "id": "a2-folge-007",
@@ -2302,7 +2596,9 @@
       "meine Freunde"
     ],
     "explanation_de": "Nach „trotzdem“ Inversion: Verb vor Subjekt.",
-    "explanation_en": "After \"trotzdem\" inversion: verb before subject."
+    "explanation_en": "After \"trotzdem\" inversion: verb before subject.",
+    "prompt_vi": "Sắp xếp từ: (tuy nhiên / gặp / tôi / những người bạn của tôi)",
+    "explanation_vi": "Sau „trotzdem“ đảo ngữ: động từ đứng trước chủ ngữ."
   },
   {
     "id": "a2-gibtx-001",
@@ -2314,7 +2610,9 @@
     "prompt_en": "Is there a pen here?",
     "correct": "einen",
     "explanation_de": "es gibt + Akkusativ: einen Kuli.",
-    "explanation_en": "es gibt + accusative: einen Kuli."
+    "explanation_en": "es gibt + accusative: einen Kuli.",
+    "prompt_vi": "Ở đây có cây bút nào không?",
+    "explanation_vi": "es gibt + Akkusativ: einen Kuli (giống đực)."
   },
   {
     "id": "a2-gibtx-002",
@@ -2326,7 +2624,9 @@
     "prompt_en": "There is no parking space here.",
     "correct": "keinen",
     "explanation_de": "Akkusativ maskulin: keinen.",
-    "explanation_en": "Accusative masculine: keinen."
+    "explanation_en": "Accusative masculine: keinen.",
+    "prompt_vi": "Ở đây không có chỗ đỗ xe nào.",
+    "explanation_vi": "Akkusativ giống đực: keinen (der Parkplatz)."
   },
   {
     "id": "a2-gibtx-003",
@@ -2344,7 +2644,9 @@
     ],
     "correct": "gibt",
     "explanation_de": "Immer: es gibt (auch im Plural).",
-    "explanation_en": "Always: es gibt (also in the plural)."
+    "explanation_en": "Always: es gibt (also in the plural).",
+    "prompt_vi": "Ở đây có sách không? — Có, ở đây có nhiều sách.",
+    "explanation_vi": "Luôn luôn dùng cụm: es gibt (kể cả với danh từ số nhiều)."
   },
   {
     "id": "a2-dakk-001",
@@ -2356,7 +2658,9 @@
     "prompt_en": "I give the man the pen. → I give it to the man.",
     "correct": "ihn",
     "explanation_de": "Akkusativ-Pronomen steht vor dem Dativ: ihn dem Mann.",
-    "explanation_en": "The accusative pronoun comes before the dative: ihn dem Mann."
+    "explanation_en": "The accusative pronoun comes before the dative: ihn dem Mann.",
+    "prompt_vi": "Tôi đưa cây bút cho người đàn ông. → Tôi đưa nó cho người đàn ông.",
+    "explanation_vi": "Đại từ ở cách Akkusativ đứng trước danh từ ở cách Dativ: ihn dem Mann."
   },
   {
     "id": "a2-dakk-002",
@@ -2368,7 +2672,9 @@
     "prompt_en": "We explain the rules to the guests. → We explain them to the guests.",
     "correct": "sie",
     "explanation_de": "die Regeln → sie (vor dem Dativ).",
-    "explanation_en": "die Regeln → sie (before the dative)."
+    "explanation_en": "die Regeln → sie (before the dative).",
+    "prompt_vi": "Chúng tôi giải thích các quy tắc cho khách. → Chúng tôi giải thích chúng cho khách.",
+    "explanation_vi": "die Regeln → đại từ sie (đứng trước danh từ Dativ den Gästen)."
   },
   {
     "id": "a2-dakk-003",
@@ -2380,7 +2686,9 @@
     "prompt_en": "I send you an e-mail. → I send it to you.",
     "correct": "sie",
     "explanation_de": "eine E-Mail → sie.",
-    "explanation_en": "eine E-Mail → sie."
+    "explanation_en": "eine E-Mail → sie.",
+    "prompt_vi": "Tôi gửi cho bạn một email. → Tôi gửi nó cho bạn.",
+    "explanation_vi": "eine E-Mail (giống cái) → thay bằng đại từ sie (đứng trước Dativ: sie dir)."
   },
   {
     "id": "a2-dakk-004",
@@ -2392,7 +2700,9 @@
     "prompt_en": "I recommend Kababji to you (all).",
     "correct": "euch",
     "explanation_de": "empfehlen + Dativ: euch.",
-    "explanation_en": "empfehlen + dative: euch."
+    "explanation_en": "empfehlen + dative: euch.",
+    "prompt_vi": "Tôi giới thiệu quán Kababji cho các bạn.",
+    "explanation_vi": "empfehlen + Dativ: euch (ngôi ihr)."
   },
   {
     "id": "a2-dakk-005",
@@ -2404,7 +2714,9 @@
     "prompt_en": "My father sends his boss an e-mail.",
     "correct": "seinem",
     "explanation_de": "Dativ maskulin: seinem.",
-    "explanation_en": "Dative masculine: seinem."
+    "explanation_en": "Dative masculine: seinem.",
+    "prompt_vi": "Bố tôi gửi cho sếp của ông ấy một email.",
+    "explanation_vi": "Dativ giống đực: seinem (der Chef)."
   },
   {
     "id": "a2-dakk-006",
@@ -2416,7 +2728,9 @@
     "prompt_en": "I wish you a nice day.",
     "correct": "dir",
     "explanation_de": "wünschen + Dativ.",
-    "explanation_en": "wünschen + dative."
+    "explanation_en": "wünschen + dative.",
+    "prompt_vi": "Tôi chúc bạn một ngày tốt lành.",
+    "explanation_vi": "wünschen + Dativ: dir."
   },
   {
     "id": "a2-dakk-007",
@@ -2428,7 +2742,9 @@
     "prompt_en": "I congratulate you.",
     "correct": "dir",
     "explanation_de": "gratulieren + Dativ.",
-    "explanation_en": "gratulieren + dative."
+    "explanation_en": "gratulieren + dative.",
+    "prompt_vi": "Tôi chúc mừng bạn.",
+    "explanation_vi": "gratulieren + Dativ: dir (chúc mừng ai đi với Dativ)."
   },
   {
     "id": "a2-dakk-008",
@@ -2446,7 +2762,9 @@
     ],
     "correct": "dich",
     "explanation_de": "fragen + Akkusativ.",
-    "explanation_en": "fragen + accusative."
+    "explanation_en": "fragen + accusative.",
+    "prompt_vi": "Tôi hỏi bạn.",
+    "explanation_vi": "fragen + Akkusativ: dich (hỏi ai đi với Akkusativ)."
   },
   {
     "id": "a2-dakk-009",
@@ -2464,7 +2782,9 @@
     ],
     "correct": "stelle",
     "explanation_de": "vorstellen → Ich stelle … vor.",
-    "explanation_en": "vorstellen → Ich stelle … vor."
+    "explanation_en": "vorstellen → Ich stelle … vor.",
+    "prompt_vi": "Tôi giới thiệu bạn bè của tôi với bạn.",
+    "explanation_vi": "vorstellen (động từ tách) → Ich stelle … vor."
   },
   {
     "id": "a2-dakk-010",
@@ -2487,7 +2807,9 @@
       "meine Kamera"
     ],
     "explanation_de": "Subjekt – Verb – Dativ – Akkusativ.",
-    "explanation_en": "Subject – verb – dative – accusative."
+    "explanation_en": "Subject – verb – dative – accusative.",
+    "prompt_vi": "Sắp xếp từ: (tôi / cho xem / bạn / máy ảnh của tôi)",
+    "explanation_vi": "Chủ ngữ – Động từ – Dativ – Akkusativ."
   },
   {
     "id": "a2-dakk-011",
@@ -2510,7 +2832,9 @@
       "ein Buch"
     ],
     "explanation_de": "Dativ (Nomen) vor Akkusativ (Nomen).",
-    "explanation_en": "Dative (noun) before accusative (noun)."
+    "explanation_en": "Dative (noun) before accusative (noun).",
+    "prompt_vi": "Sắp xếp từ: (đưa / tôi / cho người đàn ông / một quyển sách)",
+    "explanation_vi": "Khi cả hai đều là danh từ: Dativ (người) đứng trước Akkusativ (vật)."
   },
   {
     "id": "a2-refx-001",
@@ -2522,7 +2846,9 @@
     "prompt_en": "I hurry.",
     "correct": "mich",
     "explanation_de": "ich → mich.",
-    "explanation_en": "ich → mich."
+    "explanation_en": "ich → mich.",
+    "prompt_vi": "Tôi đang vội.",
+    "explanation_vi": "Đại từ phản thân của ich → mich."
   },
   {
     "id": "a2-refx-002",
@@ -2534,7 +2860,9 @@
     "prompt_en": "You hurry.",
     "correct": "dich",
     "explanation_de": "du → dich.",
-    "explanation_en": "du → dich."
+    "explanation_en": "du → dich.",
+    "prompt_vi": "Bạn hãy nhanh lên.",
+    "explanation_vi": "Đại từ phản thân của du → dich."
   },
   {
     "id": "a2-refx-003",
@@ -2546,7 +2874,9 @@
     "prompt_en": "He hurries.",
     "correct": "sich",
     "explanation_de": "er/sie/es → sich.",
-    "explanation_en": "er/sie/es → sich."
+    "explanation_en": "er/sie/es → sich.",
+    "prompt_vi": "Anh ấy vội vàng.",
+    "explanation_vi": "Đại từ phản thân của er/sie/es → sich."
   },
   {
     "id": "a2-refx-004",
@@ -2558,7 +2888,9 @@
     "prompt_en": "We hurry.",
     "correct": "uns",
     "explanation_de": "wir → uns.",
-    "explanation_en": "wir → uns."
+    "explanation_en": "wir → uns.",
+    "prompt_vi": "Chúng tôi đang vội.",
+    "explanation_vi": "Đại từ phản thân của wir → uns."
   },
   {
     "id": "a2-refx-005",
@@ -2570,7 +2902,9 @@
     "prompt_en": "You (all) hurry.",
     "correct": "euch",
     "explanation_de": "ihr → euch.",
-    "explanation_en": "ihr → euch."
+    "explanation_en": "ihr → euch.",
+    "prompt_vi": "Các bạn hãy nhanh lên.",
+    "explanation_vi": "Đại từ phản thân của ihr → euch."
   },
   {
     "id": "a2-refx-006",
@@ -2582,7 +2916,9 @@
     "prompt_en": "They hurry.",
     "correct": "sich",
     "explanation_de": "sie/Sie → sich.",
-    "explanation_en": "sie/Sie → sich."
+    "explanation_en": "sie/Sie → sich.",
+    "prompt_vi": "Họ vội vàng.",
+    "explanation_vi": "Đại từ phản thân của sie/Sie → sich."
   },
   {
     "id": "a2-refx-007",
@@ -2594,7 +2930,9 @@
     "prompt_en": "May I sit down?",
     "correct": "mich",
     "explanation_de": "ich → mich.",
-    "explanation_en": "ich → mich."
+    "explanation_en": "ich → mich.",
+    "prompt_vi": "Tôi có thể ngồi xuống được không?",
+    "explanation_vi": "sich setzen: ngôi ich → mich."
   },
   {
     "id": "a2-refx-008",
@@ -2606,7 +2944,9 @@
     "prompt_en": "Please sit down.",
     "correct": "sich",
     "explanation_de": "Sie → sich.",
-    "explanation_en": "Sie → sich."
+    "explanation_en": "Sie → sich.",
+    "prompt_vi": "Xin mời ngài ngồi xuống.",
+    "explanation_vi": "sich setzen: ngôi lịch sự Sie → sich."
   },
   {
     "id": "a2-refx-009",
@@ -2618,7 +2958,9 @@
     "prompt_en": "I was annoyed about you.",
     "correct": "geärgert",
     "explanation_de": "sich ärgern → hat sich geärgert.",
-    "explanation_en": "sich ärgern → hat sich geärgert."
+    "explanation_en": "sich ärgern → hat sich geärgert.",
+    "prompt_vi": "Tôi đã bực mình vì bạn.",
+    "explanation_vi": "sich ärgern → thì Perfekt: hat sich geärgert."
   },
   {
     "id": "a2-refx-010",
@@ -2630,7 +2972,9 @@
     "prompt_en": "I changed clothes.",
     "correct": "umgezogen",
     "explanation_de": "umziehen → umgezogen.",
-    "explanation_en": "umziehen → umgezogen."
+    "explanation_en": "umziehen → umgezogen.",
+    "prompt_vi": "Tôi đã thay quần áo.",
+    "explanation_vi": "sich umziehen (thay đồ) → thì Perfekt: hat sich umgezogen."
   },
   {
     "id": "a2-refx-011",
@@ -2642,7 +2986,9 @@
     "prompt_en": "I decided on the black trousers.",
     "correct": "entschieden",
     "explanation_de": "entscheiden → entschieden (kein ge-).",
-    "explanation_en": "entscheiden → entschieden (no ge-)."
+    "explanation_en": "entscheiden → entschieden (no ge-).",
+    "prompt_vi": "Tôi đã quyết định chọn chiếc quần màu đen.",
+    "explanation_vi": "entscheiden → entschieden (tiền tố không tách ent-, không thêm ge-)."
   },
   {
     "id": "a2-refx-012",
@@ -2654,7 +3000,9 @@
     "prompt_en": "I change clothes.",
     "correct": "mich",
     "explanation_de": "sich umziehen: Ich ziehe mich um.",
-    "explanation_en": "sich umziehen: Ich ziehe mich um."
+    "explanation_en": "sich umziehen: Ich ziehe mich um.",
+    "prompt_vi": "Tôi thay quần áo.",
+    "explanation_vi": "sich umziehen: Ich ziehe mich um."
   },
   {
     "id": "a2-refx-013",
@@ -2672,7 +3020,9 @@
     ],
     "correct": "mit",
     "explanation_de": "sich treffen mit + Dativ.",
-    "explanation_en": "sich treffen mit + dative."
+    "explanation_en": "sich treffen mit + dative.",
+    "prompt_vi": "Tôi gặp bạn của mình.",
+    "explanation_vi": "sich treffen mit + Dativ (gặp gỡ ai)."
   },
   {
     "id": "a2-refx-014",
@@ -2690,7 +3040,9 @@
     ],
     "correct": "über",
     "explanation_de": "sich ärgern über + Akkusativ.",
-    "explanation_en": "sich ärgern über + accusative."
+    "explanation_en": "sich ärgern über + accusative.",
+    "prompt_vi": "Tôi bực mình về bạn.",
+    "explanation_vi": "sich ärgern über + Akkusativ (bực tức về ai/điều gì)."
   },
   {
     "id": "a2-refx-015",
@@ -2708,7 +3060,9 @@
     ],
     "correct": "auf",
     "explanation_de": "sich freuen auf = Zukunft.",
-    "explanation_en": "sich freuen auf = future."
+    "explanation_en": "sich freuen auf = future.",
+    "prompt_vi": "Tôi rất háo hức mong chờ bữa tiệc.",
+    "explanation_vi": "sich freuen auf + Akkusativ = mong đợi điều gì sắp diễn ra trong tương lai."
   },
   {
     "id": "a2-refx-016",
@@ -2726,7 +3080,9 @@
     ],
     "correct": "über",
     "explanation_de": "sich freuen über = Gegenwart/Vergangenheit.",
-    "explanation_en": "sich freuen über = present/past."
+    "explanation_en": "sich freuen über = present/past.",
+    "prompt_vi": "Tôi rất vui về món quà của mình.",
+    "explanation_vi": "sich freuen über + Akkusativ = vui mừng về điều đã hoặc đang có ở hiện tại."
   },
   {
     "id": "a2-refx-017",
@@ -2744,7 +3100,9 @@
     ],
     "correct": "an",
     "explanation_de": "sich erinnern an + Akkusativ.",
-    "explanation_en": "sich erinnern an + accusative."
+    "explanation_en": "sich erinnern an + accusative.",
+    "prompt_vi": "Tôi nhớ về trường học.",
+    "explanation_vi": "sich erinnern an + Akkusativ (nhớ về ai/điều gì)."
   },
   {
     "id": "a2-refx-018",
@@ -2762,7 +3120,9 @@
     ],
     "correct": "für",
     "explanation_de": "sich entscheiden für + Akkusativ.",
-    "explanation_en": "sich entscheiden für + accusative."
+    "explanation_en": "sich entscheiden für + accusative.",
+    "prompt_vi": "Tôi quyết định chọn chiếc quần màu đen.",
+    "explanation_vi": "sich entscheiden für + Akkusativ (quyết định chọn cái gì)."
   },
   {
     "id": "a2-refx-019",
@@ -2780,7 +3140,9 @@
     ],
     "correct": "bei",
     "explanation_de": "sich bedanken bei + Dativ.",
-    "explanation_en": "sich bedanken bei + dative."
+    "explanation_en": "sich bedanken bei + dative.",
+    "prompt_vi": "Tôi cảm ơn bạn.",
+    "explanation_vi": "sich bedanken bei + Dativ (cảm ơn ai)."
   },
   {
     "id": "a2-refx-020",
@@ -2798,7 +3160,9 @@
     ],
     "correct": "mit",
     "explanation_de": "sich unterhalten mit + Dativ.",
-    "explanation_en": "sich unterhalten mit + dative."
+    "explanation_en": "sich unterhalten mit + dative.",
+    "prompt_vi": "Tôi trò chuyện với bạn tôi về môn bóng gậy (cricket).",
+    "explanation_vi": "sich unterhalten mit + Dativ (trò chuyện cùng ai)."
   },
   {
     "id": "a2-refx-021",
@@ -2816,7 +3180,9 @@
     ],
     "correct": "um",
     "explanation_de": "sich kümmern um + Akkusativ.",
-    "explanation_en": "sich kümmern um + accusative."
+    "explanation_en": "sich kümmern um + accusative.",
+    "prompt_vi": "Tôi chăm sóc mẹ tôi.",
+    "explanation_vi": "sich kümmern um + Akkusativ (chăm sóc/lo liệu việc gì)."
   },
   {
     "id": "a2-refx-022",
@@ -2834,7 +3200,9 @@
     ],
     "correct": "auf",
     "explanation_de": "sich vorbereiten auf + Akkusativ.",
-    "explanation_en": "sich vorbereiten auf + accusative."
+    "explanation_en": "sich vorbereiten auf + accusative.",
+    "prompt_vi": "Tôi chuẩn bị cho kỳ thi.",
+    "explanation_vi": "sich vorbereiten auf + Akkusativ (chuẩn bị cho việc gì)."
   },
   {
     "id": "a2-refx-023",
@@ -2852,7 +3220,9 @@
     ],
     "correct": "über",
     "explanation_de": "sich beschweren über + Akkusativ.",
-    "explanation_en": "sich beschweren über + accusative."
+    "explanation_en": "sich beschweren über + accusative.",
+    "prompt_vi": "Bà Morena phàn nàn về tiếng ồn ào.",
+    "explanation_vi": "sich beschweren über + Akkusativ (than phiền/khiếu nại về điều gì)."
   },
   {
     "id": "a2-modp-001",
@@ -2864,7 +3234,9 @@
     "prompt_en": "I could not work yesterday.",
     "correct": "konnte",
     "explanation_de": "können → konnte.",
-    "explanation_en": "können → konnte."
+    "explanation_en": "können → konnte.",
+    "prompt_vi": "Hôm qua tôi không thể làm việc được.",
+    "explanation_vi": "Thì Präteritum của können → konnte."
   },
   {
     "id": "a2-modp-002",
@@ -2876,7 +3248,9 @@
     "prompt_en": "I was not allowed to smoke here.",
     "correct": "durfte",
     "explanation_de": "dürfen → durfte.",
-    "explanation_en": "dürfen → durfte."
+    "explanation_en": "dürfen → durfte.",
+    "prompt_vi": "Tôi đã không được phép hút thuốc ở đây.",
+    "explanation_vi": "Thì Präteritum của dürfen → durfte."
   },
   {
     "id": "a2-modp-003",
@@ -2888,7 +3262,9 @@
     "prompt_en": "He had to get up early.",
     "correct": "musste",
     "explanation_de": "müssen → musste.",
-    "explanation_en": "müssen → musste."
+    "explanation_en": "müssen → musste.",
+    "prompt_vi": "Anh ấy đã phải thức dậy sớm.",
+    "explanation_vi": "Thì Präteritum của müssen → musste."
   },
   {
     "id": "a2-modp-004",
@@ -2900,7 +3276,9 @@
     "prompt_en": "I was supposed to learn German.",
     "correct": "sollte",
     "explanation_de": "sollen → sollte.",
-    "explanation_en": "sollen → sollte."
+    "explanation_en": "sollen → sollte.",
+    "prompt_vi": "Tôi đã phải / được yêu cầu học tiếng Đức.",
+    "explanation_vi": "Thì Präteritum của sollen → sollte."
   },
   {
     "id": "a2-modp-005",
@@ -2912,7 +3290,9 @@
     "prompt_en": "You wanted to drink tea.",
     "correct": "wolltest",
     "explanation_de": "wollen → du wolltest.",
-    "explanation_en": "wollen → du wolltest."
+    "explanation_en": "wollen → du wolltest.",
+    "prompt_vi": "Bạn đã muốn uống trà.",
+    "explanation_vi": "Thì Präteritum của wollen: du wolltest."
   },
   {
     "id": "a2-modp-006",
@@ -2924,7 +3304,9 @@
     "prompt_en": "You (all) wanted to go to the cinema.",
     "correct": "wolltet",
     "explanation_de": "wollen → ihr wolltet.",
-    "explanation_en": "wollen → ihr wolltet."
+    "explanation_en": "wollen → ihr wolltet.",
+    "prompt_vi": "Các bạn đã muốn đi xem phim.",
+    "explanation_vi": "Thì Präteritum của wollen: ihr wolltet."
   },
   {
     "id": "a2-modp-007",
@@ -2942,7 +3324,9 @@
     ],
     "correct": "konnte",
     "explanation_de": "Geschichte in der Vergangenheit → konnte.",
-    "explanation_en": "Story in the past → konnte."
+    "explanation_en": "Story in the past → konnte.",
+    "prompt_vi": "Tôi từng muốn học ngành thể thao nhưng tôi đã không thể.",
+    "explanation_vi": "Kể lại một sự việc trong quá khứ → dùng thì Präteritum: konnte."
   },
   {
     "id": "a2-werd-001",
@@ -2954,7 +3338,9 @@
     "prompt_en": "I am becoming a doctor.",
     "correct": "werde",
     "explanation_de": "ich werde.",
-    "explanation_en": "ich werde."
+    "explanation_en": "ich werde.",
+    "prompt_vi": "Tôi sẽ trở thành bác sĩ.",
+    "explanation_vi": "ngôi ich werde."
   },
   {
     "id": "a2-werd-002",
@@ -2966,7 +3352,9 @@
     "prompt_en": "You are becoming an engineer.",
     "correct": "wirst",
     "explanation_de": "du wirst (nicht „werdest“).",
-    "explanation_en": "du wirst (not \"werdest\")."
+    "explanation_en": "du wirst (not \"werdest\").",
+    "prompt_vi": "Bạn sẽ trở thành kỹ sư.",
+    "explanation_vi": "du wirst (bất quy tắc, không phải „werdest“)."
   },
   {
     "id": "a2-werd-003",
@@ -2978,7 +3366,9 @@
     "prompt_en": "It is getting colder.",
     "correct": "wird",
     "explanation_de": "es wird.",
-    "explanation_en": "es wird."
+    "explanation_en": "es wird.",
+    "prompt_vi": "Trời đang trở nên lạnh hơn.",
+    "explanation_vi": "ngôi es: wird."
   },
   {
     "id": "a2-werd-004",
@@ -2990,7 +3380,9 @@
     "prompt_en": "You (all) are getting tired.",
     "correct": "werdet",
     "explanation_de": "ihr werdet.",
-    "explanation_en": "ihr werdet."
+    "explanation_en": "ihr werdet.",
+    "prompt_vi": "Các bạn đang cảm thấy mệt mỏi dần.",
+    "explanation_vi": "ngôi ihr: werdet."
   },
   {
     "id": "a2-werd-005",
@@ -3002,7 +3394,9 @@
     "prompt_en": "I became a doctor.",
     "correct": "wurde",
     "explanation_de": "Präteritum: ich wurde.",
-    "explanation_en": "Simple past: ich wurde."
+    "explanation_en": "Simple past: ich wurde.",
+    "prompt_vi": "Tôi đã trở thành bác sĩ.",
+    "explanation_vi": "Thì Präteritum: ich wurde."
   },
   {
     "id": "a2-werd-006",
@@ -3014,7 +3408,9 @@
     "prompt_en": "He became a senior physician.",
     "correct": "geworden",
     "explanation_de": "Perfekt mit sein: ist geworden.",
-    "explanation_en": "Perfekt with sein: ist geworden."
+    "explanation_en": "Perfekt with sein: ist geworden.",
+    "prompt_vi": "Anh ấy đã trở thành bác sĩ trưởng khoa.",
+    "explanation_vi": "Thì Perfekt đi với sein: ist geworden."
   },
   {
     "id": "a2-werd-007",
@@ -3026,7 +3422,9 @@
     "prompt_en": "Today is my birthday. I am turning 30.",
     "correct": "werde",
     "explanation_de": "werden + Altersangabe.",
-    "explanation_en": "werden + age."
+    "explanation_en": "werden + age.",
+    "prompt_vi": "Hôm nay là sinh nhật tôi. Tôi bước sang tuổi 30.",
+    "explanation_vi": "werden + số tuổi (bước sang độ tuổi mới)."
   },
   {
     "id": "a2-werd-008",
@@ -3044,7 +3442,9 @@
     ],
     "correct": "bekomme",
     "explanation_de": "„bekommen“ = erhalten; „werden“ = to become.",
-    "explanation_en": "\"bekommen\" = to receive; \"werden\" = to become."
+    "explanation_en": "\"bekommen\" = to receive; \"werden\" = to become.",
+    "prompt_vi": "Tôi nhận được một món quà.",
+    "explanation_vi": "„bekommen“ = nhận được; còn „werden“ = trở thành / trở nên."
   },
   {
     "id": "a2-kii-001",
@@ -3056,7 +3456,9 @@
     "prompt_en": "If I had money, I would buy a car.",
     "correct": "hätte",
     "explanation_de": "haben → hätte.",
-    "explanation_en": "haben → hätte."
+    "explanation_en": "haben → hätte.",
+    "prompt_vi": "Nếu tôi có tiền, tôi sẽ mua một chiếc ô tô.",
+    "explanation_vi": "haben → thể Konjunktiv II: hätte."
   },
   {
     "id": "a2-kii-002",
@@ -3068,7 +3470,9 @@
     "prompt_en": "If I were a doctor, I would help the sick.",
     "correct": "wäre",
     "explanation_de": "sein → wäre.",
-    "explanation_en": "sein → wäre."
+    "explanation_en": "sein → wäre.",
+    "prompt_vi": "Nếu tôi là bác sĩ, tôi sẽ giúp đỡ những người bệnh.",
+    "explanation_vi": "sein → thể Konjunktiv II: wäre."
   },
   {
     "id": "a2-kii-003",
@@ -3080,7 +3484,9 @@
     "prompt_en": "If you had time, we could go to the cinema.",
     "correct": "hättest",
     "explanation_de": "du hättest.",
-    "explanation_en": "du hättest."
+    "explanation_en": "du hättest.",
+    "prompt_vi": "Nếu bạn có thời gian, chúng ta có thể đi xem phim.",
+    "explanation_vi": "ngôi du: hättest."
   },
   {
     "id": "a2-kii-004",
@@ -3092,7 +3498,9 @@
     "prompt_en": "If we had a house, we would not live in a flat.",
     "correct": "hätten",
     "explanation_de": "wir hätten.",
-    "explanation_en": "wir hätten."
+    "explanation_en": "wir hätten.",
+    "prompt_vi": "Nếu chúng tôi có một ngôi nhà riêng, chúng tôi sẽ không ở trong căn hộ chung cư.",
+    "explanation_vi": "ngôi wir: hätten."
   },
   {
     "id": "a2-kii-005",
@@ -3104,7 +3512,9 @@
     "prompt_en": "If we were doctors, we would help the sick.",
     "correct": "wären",
     "explanation_de": "wir wären.",
-    "explanation_en": "wir wären."
+    "explanation_en": "wir wären.",
+    "prompt_vi": "Nếu chúng tôi là bác sĩ, chúng tôi sẽ giúp đỡ người bệnh.",
+    "explanation_vi": "ngôi wir: wären."
   },
   {
     "id": "a2-kii-006",
@@ -3116,7 +3526,9 @@
     "prompt_en": "If I had money, I would buy a bike.",
     "correct": "würde",
     "explanation_de": "würde + Infinitiv.",
-    "explanation_en": "würde + infinitive."
+    "explanation_en": "würde + infinitive.",
+    "prompt_vi": "Nếu tôi có tiền, tôi sẽ mua một chiếc xe đạp.",
+    "explanation_vi": "würde + động từ nguyên thể (kaufen)."
   },
   {
     "id": "a2-kii-007",
@@ -3128,7 +3540,9 @@
     "prompt_en": "If he had a car, he would not walk.",
     "correct": "würde",
     "explanation_de": "er würde.",
-    "explanation_en": "er würde."
+    "explanation_en": "er würde.",
+    "prompt_vi": "Nếu anh ấy có một chiếc ô tô, anh ấy sẽ không phải đi bộ.",
+    "explanation_vi": "ngôi er: würde."
   },
   {
     "id": "a2-kii-008",
@@ -3159,7 +3573,9 @@
       "kaufen"
     ],
     "explanation_de": "Nebensatz mit Verb am Ende, dann Hauptsatz mit Verb direkt nach dem Komma.",
-    "explanation_en": "Subordinate clause with verb at the end, then the main clause with the verb right after the comma."
+    "explanation_en": "Subordinate clause with verb at the end, then the main clause with the verb right after the comma.",
+    "prompt_vi": "Sắp xếp từ: (Nếu / tôi / tiền / có / sẽ / tôi / một chiếc ô tô / mua)",
+    "explanation_vi": "Mệnh đề phụ có động từ ở cuối câu (hätte), tiếp theo là mệnh đề chính có động từ đứng ngay sau dấu phẩy (würde ich...)."
   },
   {
     "id": "a2-kii-009",
@@ -3171,7 +3587,9 @@
     "prompt_en": "Could I please make a call on your phone?",
     "correct": "Könnte",
     "explanation_de": "ich → könnte.",
-    "explanation_en": "ich → könnte."
+    "explanation_en": "ich → könnte.",
+    "prompt_vi": "Tôi có thể gọi nhờ điện thoại của bạn được không?",
+    "explanation_vi": "Yêu cầu lịch sự: ngôi ich → könnte."
   },
   {
     "id": "a2-kii-010",
@@ -3183,7 +3601,9 @@
     "prompt_en": "Could you (all) help me please?",
     "correct": "Könntet",
     "explanation_de": "ihr → könntet.",
-    "explanation_en": "ihr → könntet."
+    "explanation_en": "ihr → könntet.",
+    "prompt_vi": "Các bạn có thể giúp tôi được không?",
+    "explanation_vi": "Yêu cầu lịch sự: ngôi ihr → könntet."
   },
   {
     "id": "a2-kii-011",
@@ -3195,7 +3615,9 @@
     "prompt_en": "Could you please give me the book?",
     "correct": "Könnten",
     "explanation_de": "Sie → könnten.",
-    "explanation_en": "Sie → könnten."
+    "explanation_en": "Sie → könnten.",
+    "prompt_vi": "Ngài có thể vui lòng đưa cho tôi quyển sách được không?",
+    "explanation_vi": "Yêu cầu lịch sự: ngôi Sie → könnten."
   },
   {
     "id": "a2-kii-012",
@@ -3207,7 +3629,9 @@
     "prompt_en": "I would like a coffee.",
     "correct": "hätte",
     "explanation_de": "Ich hätte gern + Akkusativ.",
-    "explanation_en": "Ich hätte gern + accusative."
+    "explanation_en": "Ich hätte gern + accusative.",
+    "prompt_vi": "Tôi muốn dùng một ly cà phê.",
+    "explanation_vi": "Diễn tả ước muốn: Ich hätte gern + Akkusativ."
   },
   {
     "id": "a2-kii-013",
@@ -3219,7 +3643,9 @@
     "prompt_en": "Saskia would like to travel more often.",
     "correct": "würde",
     "explanation_de": "würde gern + Infinitiv.",
-    "explanation_en": "würde gern + infinitive."
+    "explanation_en": "würde gern + infinitive.",
+    "prompt_vi": "Saskia muốn được đi du lịch thường xuyên hơn.",
+    "explanation_vi": "würde gern + động từ nguyên thể (verreisen)."
   },
   {
     "id": "a2-kii-014",
@@ -3231,7 +3657,9 @@
     "prompt_en": "Dennis would like to be more athletic.",
     "correct": "wäre",
     "explanation_de": "wäre gern + Adjektiv.",
-    "explanation_en": "wäre gern + adjective."
+    "explanation_en": "wäre gern + adjective.",
+    "prompt_vi": "Dennis muốn mình năng động, thể thao hơn.",
+    "explanation_vi": "wäre gern + tính từ (sportlicher)."
   },
   {
     "id": "a2-kii-015",
@@ -3243,7 +3671,9 @@
     "prompt_en": "Antonia would like to have more time for hobbies.",
     "correct": "hätte",
     "explanation_de": "hätte gern + Akkusativ.",
-    "explanation_en": "hätte gern + accusative."
+    "explanation_en": "hätte gern + accusative.",
+    "prompt_vi": "Antonia muốn có nhiều thời gian hơn cho các sở thích của mình.",
+    "explanation_vi": "hätte gern + Akkusativ: mehr Zeit."
   },
   {
     "id": "a2-kii-016",
@@ -3255,7 +3685,9 @@
     "prompt_en": "You should take breaks.",
     "correct": "solltest",
     "explanation_de": "du solltest.",
-    "explanation_en": "du solltest."
+    "explanation_en": "du solltest.",
+    "prompt_vi": "Bạn nên nghỉ ngơi giải lao.",
+    "explanation_vi": "Lời khuyên: du solltest."
   },
   {
     "id": "a2-kii-017",
@@ -3267,7 +3699,9 @@
     "prompt_en": "We should do our homework.",
     "correct": "sollten",
     "explanation_de": "wir sollten.",
-    "explanation_en": "wir sollten."
+    "explanation_en": "wir sollten.",
+    "prompt_vi": "Chúng ta nên làm bài tập về nhà.",
+    "explanation_vi": "Lời khuyên: wir sollten."
   },
   {
     "id": "a2-kii-018",
@@ -3279,7 +3713,9 @@
     "prompt_en": "You (all) should go to bed earlier.",
     "correct": "solltet",
     "explanation_de": "ihr solltet.",
-    "explanation_en": "ihr solltet."
+    "explanation_en": "ihr solltet.",
+    "prompt_vi": "Các bạn nên đi ngủ sớm hơn.",
+    "explanation_vi": "Lời khuyên: ihr solltet."
   },
   {
     "id": "a2-kii-019",
@@ -3291,7 +3727,9 @@
     "prompt_en": "One should plan free time.",
     "correct": "sollte",
     "explanation_de": "man sollte.",
-    "explanation_en": "man sollte."
+    "explanation_en": "man sollte.",
+    "prompt_vi": "Người ta nên lên kế hoạch cho thời gian rảnh rỗi.",
+    "explanation_vi": "Lời khuyên chung: man sollte."
   },
   {
     "id": "a2-kii-020",
@@ -3303,7 +3741,9 @@
     "prompt_en": "In your place I would talk to the boss.",
     "correct": "würde",
     "explanation_de": "An deiner Stelle würde ich …",
-    "explanation_en": "An deiner Stelle würde ich …"
+    "explanation_en": "An deiner Stelle würde ich …",
+    "prompt_vi": "Nếu ở vị trí của bạn, tôi sẽ nói chuyện với sếp.",
+    "explanation_vi": "Cấu trúc đưa ra lời khuyên: An deiner Stelle würde ich …"
   },
   {
     "id": "a2-kii-021",
@@ -3321,7 +3761,9 @@
     ],
     "correct": "hätte",
     "explanation_de": "Wunsch: hätte gern.",
-    "explanation_en": "Wish: hätte gern."
+    "explanation_en": "Wish: hätte gern.",
+    "prompt_vi": "Dạng nào sau đây là đúng? Tôi muốn có nhiều thời gian hơn.",
+    "explanation_vi": "Diễn tả ước muốn: hätte gern."
   },
   {
     "id": "a2-indx-001",
@@ -3339,7 +3781,9 @@
     ],
     "correct": "wie",
     "explanation_de": "W-Frage → dasselbe Fragewort.",
-    "explanation_en": "W-question → same question word."
+    "explanation_en": "W-question → same question word.",
+    "prompt_vi": "Xin vui lòng cho tôi biết bạn tên là gì.",
+    "explanation_vi": "Câu hỏi có từ để hỏi (W-Frage) → giữ nguyên từ để hỏi: wie."
   },
   {
     "id": "a2-indx-002",
@@ -3357,7 +3801,9 @@
     ],
     "correct": "ob",
     "explanation_de": "Ja/Nein-Frage → ob.",
-    "explanation_en": "Yes/no question → ob."
+    "explanation_en": "Yes/no question → ob.",
+    "prompt_vi": "Xin vui lòng cho tôi biết liệu bạn có sống ở Đức hay không.",
+    "explanation_vi": "Câu hỏi Yes/No chuyển sang câu gián tiếp → dùng liên từ 'ob' (liệu rằng... có hay không)."
   },
   {
     "id": "a2-indx-003",
@@ -3369,7 +3815,9 @@
     "prompt_en": "Please tell me whether you drink cola.",
     "correct": "ob",
     "explanation_de": "Ja/Nein-Frage → ob + Verb am Ende.",
-    "explanation_en": "Yes/no question → ob + verb at the end."
+    "explanation_en": "Yes/no question → ob + verb at the end.",
+    "prompt_vi": "Hãy nói cho tôi biết liệu bạn có uống coca không.",
+    "explanation_vi": "Câu hỏi Yes/No → ob + động từ đứng ở cuối câu."
   },
   {
     "id": "a2-indx-004",
@@ -3381,7 +3829,9 @@
     "prompt_en": "Can you tell me where one can buy tickets?",
     "correct": "kann",
     "explanation_de": "Verb am Ende: … kaufen kann.",
-    "explanation_en": "Verb at the end: … kaufen kann."
+    "explanation_en": "Verb at the end: … kaufen kann.",
+    "prompt_vi": "Bạn có thể chỉ cho tôi biết nơi nào có thể mua vé được không?",
+    "explanation_vi": "Động từ chia đứng ở cuối câu: … kaufen kann."
   },
   {
     "id": "a2-indx-005",
@@ -3393,7 +3843,9 @@
     "prompt_en": "Excuse me, do you know when the train from Hamburg arrives?",
     "correct": "ankommt",
     "explanation_de": "Im Nebensatz zusammen: ankommt.",
-    "explanation_en": "In the subordinate clause together: ankommt."
+    "explanation_en": "In the subordinate clause together: ankommt.",
+    "prompt_vi": "Xin lỗi, bạn có biết khi nào đoàn tàu từ Hamburg sẽ đến không?",
+    "explanation_vi": "Trong mệnh đề phụ, động từ tách viết liền nhau ở cuối câu: ankommt."
   },
   {
     "id": "a2-indx-006",
@@ -3405,7 +3857,9 @@
     "prompt_en": "A man asks why the train does not continue.",
     "correct": "weiterfährt",
     "explanation_de": "weiterfahren → weiterfährt (am Ende).",
-    "explanation_en": "weiterfahren → weiterfährt (at the end)."
+    "explanation_en": "weiterfahren → weiterfährt (at the end).",
+    "prompt_vi": "Một người đàn ông hỏi tại sao đoàn tàu không tiếp tục chạy.",
+    "explanation_vi": "weiterfahren → weiterfährt (viết liền ở cuối câu)."
   },
   {
     "id": "a2-indx-007",
@@ -3417,7 +3871,9 @@
     "prompt_en": "I would like to know whether you rode an e-scooter.",
     "correct": "bist",
     "explanation_de": "Perfekt im Nebensatz: … gefahren bist.",
-    "explanation_en": "Perfekt in a subordinate clause: … gefahren bist."
+    "explanation_en": "Perfekt in a subordinate clause: … gefahren bist.",
+    "prompt_vi": "Tôi muốn biết liệu bạn đã từng đi xe scooter điện chưa.",
+    "explanation_vi": "Thì Perfekt trong mệnh đề phụ: trợ động từ đứng ở cuối câu (… gefahren bist)."
   },
   {
     "id": "a2-indx-008",
@@ -3442,7 +3898,9 @@
       "kann"
     ],
     "explanation_de": "Fragewort zuerst, konjugiertes Verb am Ende.",
-    "explanation_en": "Question word first, conjugated verb at the end."
+    "explanation_en": "Question word first, conjugated verb at the end.",
+    "prompt_vi": "Bạn có thể cho tôi biết … (nơi / người ta / vé / mua / có thể) không?",
+    "explanation_vi": "Từ để hỏi đứng đầu mệnh đề phụ, động từ đã chia đứng ở cuối câu."
   },
   {
     "id": "a2-indx-009",
@@ -3467,7 +3925,9 @@
       "kann"
     ],
     "explanation_de": "Fragewort – Subjekt – Rest – Infinitiv – Modalverb.",
-    "explanation_en": "Question word – subject – rest – infinitive – modal verb."
+    "explanation_en": "Question word – subject – rest – infinitive – modal verb.",
+    "prompt_vi": "Bạn có biết … (tôi / nơi / một ly cà phê / mua / có thể) không?",
+    "explanation_vi": "Từ để hỏi – Chủ ngữ – Thành phần phụ – Động từ nguyên thể – Động từ khuyết thiếu ở cuối câu."
   },
   {
     "id": "a2-impx-001",
@@ -3482,7 +3942,9 @@
       "Kommen"
     ],
     "explanation_de": "Sie-Form: kommen Sie.",
-    "explanation_en": "Sie form: kommen Sie."
+    "explanation_en": "Sie form: kommen Sie.",
+    "prompt_vi": "Xin mời ngài lại đây!",
+    "explanation_vi": "Câu mệnh lệnh thể lịch sự (Sie): kommen Sie!"
   },
   {
     "id": "a2-impx-002",
@@ -3497,7 +3959,9 @@
       "sage"
     ],
     "explanation_de": "du-Form: sag!",
-    "explanation_en": "du form: sag!"
+    "explanation_en": "du form: sag!",
+    "prompt_vi": "Hãy nói cho tôi biết đi!",
+    "explanation_vi": "Câu mệnh lệnh thể du: sag!"
   },
   {
     "id": "a2-impx-003",
@@ -3509,7 +3973,9 @@
     "prompt_en": "Please come here!",
     "correct": "kommt",
     "explanation_de": "ihr-Form: kommt!",
-    "explanation_en": "ihr form: kommt!"
+    "explanation_en": "ihr form: kommt!",
+    "prompt_vi": "Các bạn hãy lại đây nào!",
+    "explanation_vi": "Câu mệnh lệnh thể ihr: kommt!"
   },
   {
     "id": "a2-impx-004",
@@ -3524,7 +3990,9 @@
       "Trinke"
     ],
     "explanation_de": "du-Form ohne -st: Trink!",
-    "explanation_en": "du form without -st: Trink!"
+    "explanation_en": "du form without -st: Trink!",
+    "prompt_vi": "Hãy uống nhiều nước vào!",
+    "explanation_vi": "Câu mệnh lệnh thể du bỏ đuôi -st: Trink!"
   },
   {
     "id": "a2-vv-001",
@@ -3545,7 +4013,9 @@
       "einkaufen"
     ],
     "explanation_de": "gehen + Infinitiv am Ende.",
-    "explanation_en": "gehen + infinitive at the end."
+    "explanation_en": "gehen + infinitive at the end.",
+    "prompt_vi": "Sắp xếp từ: (tôi / mua sắm / đi)",
+    "explanation_vi": "Cấu trúc gehen + động từ nguyên thể đứng ở cuối câu (gehen einkaufen)."
   },
   {
     "id": "a2-vv-002",
@@ -3568,7 +4038,9 @@
       "spielen"
     ],
     "explanation_de": "Er geht Fußball spielen.",
-    "explanation_en": "Er geht Fußball spielen."
+    "explanation_en": "Er geht Fußball spielen.",
+    "prompt_vi": "Sắp xếp từ: (bóng đá / anh ấy / chơi / đi)",
+    "explanation_vi": "Er geht Fußball spielen (Anh ấy đi đá bóng)."
   },
   {
     "id": "a2-vv-003",
@@ -3580,7 +4052,9 @@
     "prompt_en": "We are learning to play the guitar.",
     "correct": "spielen",
     "explanation_de": "lernen + Infinitiv am Ende.",
-    "explanation_en": "lernen + infinitive at the end."
+    "explanation_en": "lernen + infinitive at the end.",
+    "prompt_vi": "Chúng tôi đang học chơi đàn ghi-ta.",
+    "explanation_vi": "lernen + động từ nguyên thể đứng ở cuối câu (Gitarre spielen)."
   },
   {
     "id": "a2-kompx-001",
@@ -3592,7 +4066,9 @@
     "prompt_en": "Mazda is cheaper than Toyota.",
     "correct": "billiger",
     "explanation_de": "billig → billiger.",
-    "explanation_en": "billig → billiger."
+    "explanation_en": "billig → billiger.",
+    "prompt_vi": "Xe Mazda rẻ hơn xe Toyota.",
+    "explanation_vi": "So sánh hơn: billig → billiger."
   },
   {
     "id": "a2-kompx-002",
@@ -3604,7 +4080,9 @@
     "prompt_en": "KIA is the cheapest.",
     "correct": "billigsten",
     "explanation_de": "am billigsten.",
-    "explanation_en": "am billigsten."
+    "explanation_en": "am billigsten.",
+    "prompt_vi": "Xe KIA là rẻ nhất.",
+    "explanation_vi": "So sánh nhất vị ngữ: am billigsten."
   },
   {
     "id": "a2-kompx-003",
@@ -3616,7 +4094,9 @@
     "prompt_en": "He is more intelligent than his brother.",
     "correct": "intelligenter",
     "explanation_de": "intelligent → intelligenter.",
-    "explanation_en": "intelligent → intelligenter."
+    "explanation_en": "intelligent → intelligenter.",
+    "prompt_vi": "Anh ấy thông minh hơn anh trai mình.",
+    "explanation_vi": "So sánh hơn: intelligent → intelligenter."
   },
   {
     "id": "a2-kompx-004",
@@ -3628,7 +4108,9 @@
     "prompt_en": "She is the most intelligent.",
     "correct": "intelligentesten",
     "explanation_de": "Endung -t: am intelligentesten.",
-    "explanation_en": "Ending -t: am intelligentesten."
+    "explanation_en": "Ending -t: am intelligentesten.",
+    "prompt_vi": "Cô ấy là người thông minh nhất.",
+    "explanation_vi": "Gốc từ kết thúc bằng -t: thêm -est- → am intelligentesten."
   },
   {
     "id": "a2-kompx-005",
@@ -3640,7 +4122,9 @@
     "prompt_en": "The BMW is more expensive than the VW.",
     "correct": "teurer",
     "explanation_de": "teuer → teurer (ohne -e-).",
-    "explanation_en": "teuer → teurer (no -e-)."
+    "explanation_en": "teuer → teurer (no -e-).",
+    "prompt_vi": "Xe BMW đắt hơn xe Volkswagen (VW).",
+    "explanation_vi": "teuer → teurer (lược bỏ chữ -e- trong gốc từ)."
   },
   {
     "id": "a2-kompx-006",
@@ -3652,7 +4136,9 @@
     "prompt_en": "This car is the most expensive.",
     "correct": "teuersten",
     "explanation_de": "am teuersten.",
-    "explanation_en": "am teuersten."
+    "explanation_en": "am teuersten.",
+    "prompt_vi": "Chiếc xe này đắt nhất.",
+    "explanation_vi": "So sánh nhất: am teuersten."
   },
   {
     "id": "a2-kompx-007",
@@ -3664,7 +4150,9 @@
     "prompt_en": "The weather is the worst today.",
     "correct": "schlechtesten",
     "explanation_de": "Endung -t: am schlechtesten.",
-    "explanation_en": "Ending -t: am schlechtesten."
+    "explanation_en": "Ending -t: am schlechtesten.",
+    "prompt_vi": "Thời tiết hôm nay tồi tệ nhất.",
+    "explanation_vi": "Gốc từ kết thúc bằng -t: thêm -est- → am schlechtesten."
   },
   {
     "id": "a2-kompx-008",
@@ -3682,7 +4170,9 @@
     ],
     "correct": "wie",
     "explanation_de": "genauso … wie = gleich.",
-    "explanation_en": "genauso … wie = equal."
+    "explanation_en": "genauso … wie = equal.",
+    "prompt_vi": "Xe Toyota tốt ngang như xe Mazda.",
+    "explanation_vi": "genauso … wie = so sánh bằng (như nhau)."
   },
   {
     "id": "a2-kompx-009",
@@ -3700,7 +4190,9 @@
     ],
     "correct": "als",
     "explanation_de": "Komparativ + als.",
-    "explanation_en": "Comparative + als."
+    "explanation_en": "Comparative + als.",
+    "prompt_vi": "Tôi thích uống cà phê hơn trà.",
+    "explanation_vi": "So sánh hơn đi với 'als': lieber als."
   },
   {
     "id": "a2-kompx-010",
@@ -3712,7 +4204,9 @@
     "prompt_en": "I like drinking cola the most.",
     "correct": "liebsten",
     "explanation_de": "gern – lieber – am liebsten.",
-    "explanation_en": "gern – lieber – am liebsten."
+    "explanation_en": "gern – lieber – am liebsten.",
+    "prompt_vi": "Tôi thích uống coca nhất.",
+    "explanation_vi": "Cấp độ so sánh bất quy tắc: gern – lieber – am liebsten."
   },
   {
     "id": "a2-kompx-011",
@@ -3724,7 +4218,9 @@
     "prompt_en": "He eats more than I do.",
     "correct": "mehr",
     "explanation_de": "viel – mehr – am meisten.",
-    "explanation_en": "viel – mehr – am meisten."
+    "explanation_en": "viel – mehr – am meisten.",
+    "prompt_vi": "Anh ấy ăn nhiều hơn tôi.",
+    "explanation_vi": "Cấp độ so sánh bất quy tắc: viel – mehr – am meisten."
   },
   {
     "id": "a2-wasf-001",
@@ -3736,7 +4232,9 @@
     "prompt_en": "What kind of book is it?",
     "correct": "ein",
     "explanation_de": "Nominativ Neutrum: ein.",
-    "explanation_en": "Nominative neuter: ein."
+    "explanation_en": "Nominative neuter: ein.",
+    "prompt_vi": "Đó là loại sách gì vậy?",
+    "explanation_vi": "Nominativ giống trung: ein (das Buch)."
   },
   {
     "id": "a2-wasf-002",
@@ -3748,7 +4246,9 @@
     "prompt_en": "What kind of pen are you buying?",
     "correct": "einen",
     "explanation_de": "Akkusativ maskulin: einen.",
-    "explanation_en": "Accusative masculine: einen."
+    "explanation_en": "Accusative masculine: einen.",
+    "prompt_vi": "Bạn mua loại bút nào thế?",
+    "explanation_vi": "Akkusativ giống đực: einen (der Kuli)."
   },
   {
     "id": "a2-wasf-003",
@@ -3760,7 +4260,9 @@
     "prompt_en": "With what kind of app have you learned?",
     "correct": "einer",
     "explanation_de": "Dativ feminin: einer.",
-    "explanation_en": "Dative feminine: einer."
+    "explanation_en": "Dative feminine: einer.",
+    "prompt_vi": "Bạn đã học với loại ứng dụng nào thế?",
+    "explanation_vi": "Dativ giống cái: einer (mit was für einer App)."
   },
   {
     "id": "a2-wasf-004",
@@ -3778,7 +4280,9 @@
     ],
     "correct": "Welches",
     "explanation_de": "Neutrum: welches.",
-    "explanation_en": "Neuter: welches."
+    "explanation_en": "Neuter: welches.",
+    "prompt_vi": "Bạn mua quyển sách nào thế?",
+    "explanation_vi": "Giống trung (das Buch): welches."
   },
   {
     "id": "a2-wasf-005",
@@ -3796,7 +4300,9 @@
     ],
     "correct": "Welchen",
     "explanation_de": "Akkusativ maskulin: welchen.",
-    "explanation_en": "Accusative masculine: welchen."
+    "explanation_en": "Accusative masculine: welchen.",
+    "prompt_vi": "Bạn mua cây bút nào thế?",
+    "explanation_vi": "Akkusativ giống đực: welchen (der Kuli)."
   },
   {
     "id": "a2-wasf-006",
@@ -3814,7 +4320,9 @@
     ],
     "correct": "welcher",
     "explanation_de": "Dativ feminin: welcher.",
-    "explanation_en": "Dative feminine: welcher."
+    "explanation_en": "Dative feminine: welcher.",
+    "prompt_vi": "Bạn sống ở thành phố nào?",
+    "explanation_vi": "Dativ giống cái: welcher (in welcher Stadt)."
   },
   {
     "id": "a2-wasf-007",
@@ -3832,7 +4340,9 @@
     ],
     "correct": "welchem",
     "explanation_de": "Dativ maskulin: welchem.",
-    "explanation_en": "Dative masculine: welchem."
+    "explanation_en": "Dative masculine: welchem.",
+    "prompt_vi": "Bạn đi tuyến xe buýt nào?",
+    "explanation_vi": "Dativ giống đực: welchem (mit welchem Bus)."
   },
   {
     "id": "a2-wasf-008",
@@ -3850,7 +4360,9 @@
     ],
     "correct": "die Art / Sorte",
     "explanation_de": "„Was für ein“ fragt nach der Art; „welcher“ nach einer Auswahl.",
-    "explanation_en": "\"Was für ein\" asks about the kind; \"welcher\" asks about a choice."
+    "explanation_en": "\"Was für ein\" asks about the kind; \"welcher\" asks about a choice.",
+    "prompt_vi": "Câu hỏi „Was für ein Hemd suchen Sie?“ dùng để hỏi về điều gì?",
+    "explanation_vi": "„Was für ein“ hỏi về chủng loại/đặc điểm; còn „welcher“ hỏi về sự lựa chọn cụ thể giữa nhiều cái."
   },
   {
     "id": "a2-relx-001",
@@ -3862,7 +4374,9 @@
     "prompt_en": "This is the man who works at Siemens.",
     "correct": "der",
     "explanation_de": "Nominativ maskulin: der.",
-    "explanation_en": "Nominative masculine: der."
+    "explanation_en": "Nominative masculine: der.",
+    "prompt_vi": "Đây là người đàn ông làm việc tại Siemens.",
+    "explanation_vi": "Đại từ quan hệ Nominativ giống đực: der."
   },
   {
     "id": "a2-relx-002",
@@ -3874,7 +4388,9 @@
     "prompt_en": "This is the woman who works at Siemens.",
     "correct": "die",
     "explanation_de": "Nominativ feminin: die.",
-    "explanation_en": "Nominative feminine: die."
+    "explanation_en": "Nominative feminine: die.",
+    "prompt_vi": "Đây là người phụ nữ làm việc tại Siemens.",
+    "explanation_vi": "Đại từ quan hệ Nominativ giống cái: die."
   },
   {
     "id": "a2-relx-003",
@@ -3886,7 +4402,9 @@
     "prompt_en": "This is the child who is playing in the garden.",
     "correct": "das",
     "explanation_de": "Nominativ Neutrum: das.",
-    "explanation_en": "Nominative neuter: das."
+    "explanation_en": "Nominative neuter: das.",
+    "prompt_vi": "Đây là đứa trẻ đang chơi trong vườn.",
+    "explanation_vi": "Đại từ quan hệ Nominativ giống trung: das."
   },
   {
     "id": "a2-relx-004",
@@ -3898,7 +4416,9 @@
     "prompt_en": "These are the people who come from Pakistan.",
     "correct": "die",
     "explanation_de": "Nominativ Plural: die.",
-    "explanation_en": "Nominative plural: die."
+    "explanation_en": "Nominative plural: die.",
+    "prompt_vi": "Đây là những người đến từ Pakistan.",
+    "explanation_vi": "Đại từ quan hệ Nominativ số nhiều: die."
   },
   {
     "id": "a2-relx-005",
@@ -3910,7 +4430,9 @@
     "prompt_en": "This is the man whom I do not know.",
     "correct": "den",
     "explanation_de": "Akkusativ maskulin: den.",
-    "explanation_en": "Accusative masculine: den."
+    "explanation_en": "Accusative masculine: den.",
+    "prompt_vi": "Đây là người đàn ông mà tôi không quen biết.",
+    "explanation_vi": "Đại từ quan hệ Akkusativ giống đực: den."
   },
   {
     "id": "a2-relx-006",
@@ -3922,7 +4444,9 @@
     "prompt_en": "This is the woman whom I do not know.",
     "correct": "die",
     "explanation_de": "Akkusativ feminin: die.",
-    "explanation_en": "Accusative feminine: die."
+    "explanation_en": "Accusative feminine: die.",
+    "prompt_vi": "Đây là người phụ nữ mà tôi không quen biết.",
+    "explanation_vi": "Đại từ quan hệ Akkusativ giống cái: die."
   },
   {
     "id": "a2-relx-007",
@@ -3934,7 +4458,9 @@
     "prompt_en": "This is the child whom I ask.",
     "correct": "das",
     "explanation_de": "Akkusativ Neutrum: das.",
-    "explanation_en": "Accusative neuter: das."
+    "explanation_en": "Accusative neuter: das.",
+    "prompt_vi": "Đây là đứa trẻ mà tôi hỏi chuyện.",
+    "explanation_vi": "Đại từ quan hệ Akkusativ giống trung: das."
   },
   {
     "id": "a2-relx-008",
@@ -3946,7 +4472,9 @@
     "prompt_en": "This is my friend to whom I give a book.",
     "correct": "dem",
     "explanation_de": "Dativ maskulin: dem.",
-    "explanation_en": "Dative masculine: dem."
+    "explanation_en": "Dative masculine: dem.",
+    "prompt_vi": "Đây là bạn tôi, người mà tôi tặng một quyển sách.",
+    "explanation_vi": "Đại từ quan hệ Dativ giống đực: dem."
   },
   {
     "id": "a2-relx-009",
@@ -3958,7 +4486,9 @@
     "prompt_en": "This is my mother to whom I give a car.",
     "correct": "der",
     "explanation_de": "Dativ feminin: der.",
-    "explanation_en": "Dative feminine: der."
+    "explanation_en": "Dative feminine: der.",
+    "prompt_vi": "Đây là mẹ tôi, người mà tôi tặng một chiếc ô tô.",
+    "explanation_vi": "Đại từ quan hệ Dativ giống cái: der."
   },
   {
     "id": "a2-relx-010",
@@ -3970,7 +4500,9 @@
     "prompt_en": "These are the people to whom I give money.",
     "correct": "denen",
     "explanation_de": "Dativ Plural: denen.",
-    "explanation_en": "Dative plural: denen."
+    "explanation_en": "Dative plural: denen.",
+    "prompt_vi": "Đây là những người mà tôi cho tiền.",
+    "explanation_vi": "Đại từ quan hệ Dativ số nhiều: denen."
   },
   {
     "id": "a2-relx-011",
@@ -3988,7 +4520,9 @@
     ],
     "correct": "das",
     "explanation_de": "Neutrum Akkusativ: das.",
-    "explanation_en": "Neuter accusative: das."
+    "explanation_en": "Neuter accusative: das.",
+    "prompt_vi": "Đây là con tôi, đứa bé mà tôi hỏi chuyện.",
+    "explanation_vi": "Đại từ quan hệ Akkusativ giống trung: das."
   },
   {
     "id": "a2-relx-012",
@@ -4006,7 +4540,9 @@
     ],
     "correct": "Dativ (dem, der, denen)",
     "explanation_de": "Relativpronomen entsprechen den bestimmten Artikeln; im Dativ weichen sie vom Personalpronomen ab.",
-    "explanation_en": "Relative pronouns match the definite articles; in the dative they differ from the personal pronouns."
+    "explanation_en": "Relative pronouns match the definite articles; in the dative they differ from the personal pronouns.",
+    "prompt_vi": "Đại từ quan hệ nào có hình thức khác biệt so với các dạng quán từ/đại từ thông thường?",
+    "explanation_vi": "Đại từ quan hệ cơ bản giống quán từ xác định, riêng ở cách Dativ số nhiều thì biến đổi thành 'denen'."
   },
   {
     "id": "a2-relx-013",
@@ -4027,7 +4563,9 @@
       "arbeitet"
     ],
     "explanation_de": "Im Relativsatz steht das Verb am Ende.",
-    "explanation_en": "In the relative clause the verb is at the end."
+    "explanation_en": "In the relative clause the verb is at the end.",
+    "prompt_vi": "Sắp xếp từ: Đây là người đàn ông, … (tại Siemens / người mà / làm việc)",
+    "explanation_vi": "Trong mệnh đề quan hệ, động từ luôn đứng ở cuối câu."
   },
   {
     "id": "a2-relx-014",
@@ -4050,7 +4588,9 @@
       "kenne"
     ],
     "explanation_de": "Relativpronomen zuerst, Verb am Ende.",
-    "explanation_en": "Relative pronoun first, verb at the end."
+    "explanation_en": "Relative pronoun first, verb at the end.",
+    "prompt_vi": "Sắp xếp từ: Đây là người phụ nữ, … (tôi / quen biết / người mà / không)",
+    "explanation_vi": "Đại từ quan hệ đứng đầu mệnh đề quan hệ, động từ chia đứng ở cuối câu."
   },
   {
     "id": "a2-gen-001",
@@ -4062,7 +4602,9 @@
     "prompt_en": "Zahir’s car",
     "correct": "von",
     "explanation_de": "von + Dativ ersetzt den Genitiv.",
-    "explanation_en": "von + dative replaces the genitive."
+    "explanation_en": "von + dative replaces the genitive.",
+    "prompt_vi": "Chiếc xe ô tô của Zahir",
+    "explanation_vi": "von + Dativ được dùng để thay thế cho cách Genitiv."
   },
   {
     "id": "a2-gen-002",
@@ -4074,7 +4616,9 @@
     "prompt_en": "Babar’s house",
     "correct": "Babars",
     "explanation_de": "Bei Namen: Name + -s.",
-    "explanation_en": "With names: name + -s."
+    "explanation_en": "With names: name + -s.",
+    "prompt_vi": "Ngôi nhà của Babar",
+    "explanation_vi": "Sở hữu cách với tên riêng: Tên + đuôi -s (Babars Haus)."
   },
   {
     "id": "a2-gen-003",
@@ -4092,7 +4636,9 @@
     ],
     "correct": "von",
     "explanation_de": "von Wahab (oder Wahabs Uhr).",
-    "explanation_en": "von Wahab (or Wahabs Uhr)."
+    "explanation_en": "von Wahab (or Wahabs Uhr).",
+    "prompt_vi": "Đồng hồ của Wahab",
+    "explanation_vi": "von Wahab (hoặc Wahabs Uhr)."
   },
   {
     "id": "a2-wost-001",
@@ -4129,7 +4675,9 @@
       ]
     ],
     "explanation_de": "Das Verb bleibt auf Position 2.",
-    "explanation_en": "The verb stays in position 2."
+    "explanation_en": "The verb stays in position 2.",
+    "prompt_vi": "Sắp xếp từ: (vào thứ Bảy / tôi / làm việc / tại Siemens)",
+    "explanation_vi": "Động từ luôn giữ vị trí thứ 2 trong câu trần thuật."
   },
   {
     "id": "a2-wost-002",
@@ -4160,7 +4708,9 @@
       ]
     ],
     "explanation_de": "Perfekt: Hilfsverb Position 2, Partizip am Ende.",
-    "explanation_en": "Perfekt: auxiliary in position 2, participle at the end."
+    "explanation_en": "Perfekt: auxiliary in position 2, participle at the end.",
+    "prompt_vi": "Sắp xếp từ: (bài tập về nhà / đã / tôi / làm xong)",
+    "explanation_vi": "Thì Perfekt: trợ động từ ở vị trí 2, Partizip II đứng ở cuối câu."
   },
   {
     "id": "a2-wost-003",
@@ -4178,7 +4728,9 @@
     ],
     "correct": "Bei Siemens arbeite ich am Samstag.",
     "explanation_de": "Das Verb steht immer an Position 2.",
-    "explanation_en": "The verb is always in position 2."
+    "explanation_en": "The verb is always in position 2.",
+    "prompt_vi": "Câu nào sau đây là đúng ngữ pháp?",
+    "explanation_vi": "Trong câu chính, động từ chia luôn đứng ở vị trí 2: Bei Siemens arbeite ich am Samstag."
   },
   {
     "id": "a2-adjx-001",
@@ -4190,7 +4742,9 @@
     "prompt_en": "Good pens are expensive.",
     "correct": "Guter",
     "explanation_de": "ohne Artikel, Nom. maskulin: -er.",
-    "explanation_en": "no article, nom. masculine: -er."
+    "explanation_en": "no article, nom. masculine: -er.",
+    "prompt_vi": "Bút tốt thì đắt tiền.",
+    "explanation_vi": "Không có quán từ, Nominativ giống đực: tính từ mang đuôi -er (Guter Kuli)."
   },
   {
     "id": "a2-adjx-002",
@@ -4202,7 +4756,9 @@
     "prompt_en": "I buy a good watch.",
     "correct": "gute",
     "explanation_de": "ohne Artikel, Akk. feminin: -e.",
-    "explanation_en": "no article, acc. feminine: -e."
+    "explanation_en": "no article, acc. feminine: -e.",
+    "prompt_vi": "Tôi mua một chiếc đồng hồ tốt.",
+    "explanation_vi": "Không có quán từ, Akkusativ giống cái: đuôi -e (gute Uhr)."
   },
   {
     "id": "a2-adjx-003",
@@ -4214,7 +4770,9 @@
     "prompt_en": "I am satisfied with a good book.",
     "correct": "gutem",
     "explanation_de": "ohne Artikel, Dativ Neutrum: -em.",
-    "explanation_en": "no article, dative neuter: -em."
+    "explanation_en": "no article, dative neuter: -em.",
+    "prompt_vi": "Tôi hài lòng với một cuốn sách hay.",
+    "explanation_vi": "Không có quán từ, Dativ giống trung: đuôi -em (gutem Buch)."
   },
   {
     "id": "a2-adjx-004",
@@ -4226,7 +4784,9 @@
     "prompt_en": "I am satisfied with good books.",
     "correct": "guten",
     "explanation_de": "ohne Artikel, Dativ Plural: -en.",
-    "explanation_en": "no article, dative plural: -en."
+    "explanation_en": "no article, dative plural: -en.",
+    "prompt_vi": "Tôi hài lòng với những cuốn sách hay.",
+    "explanation_vi": "Không có quán từ, Dativ số nhiều: đuôi -en (guten Büchern)."
   },
   {
     "id": "a2-adjx-005",
@@ -4238,7 +4798,9 @@
     "prompt_en": "I buy a good pen.",
     "correct": "guten",
     "explanation_de": "ein-Wort, Akk. maskulin: -en.",
-    "explanation_en": "ein-word, acc. masculine: -en."
+    "explanation_en": "ein-word, acc. masculine: -en.",
+    "prompt_vi": "Tôi mua một cây bút tốt.",
+    "explanation_vi": "Quán từ không xác định (ein-Wort), Akkusativ giống đực: đuôi -en (einen guten Kuli)."
   },
   {
     "id": "a2-adjx-006",
@@ -4250,7 +4812,9 @@
     "prompt_en": "That is a good book.",
     "correct": "gutes",
     "explanation_de": "ein-Wort, Nom. Neutrum: -es.",
-    "explanation_en": "ein-word, nom. neuter: -es."
+    "explanation_en": "ein-word, nom. neuter: -es.",
+    "prompt_vi": "Đó là một cuốn sách hay.",
+    "explanation_vi": "Quán từ không xác định (ein-Wort), Nominativ giống trung: đuôi -es (ein gutes Buch)."
   },
   {
     "id": "a2-adjx-007",
@@ -4262,7 +4826,9 @@
     "prompt_en": "I am satisfied with a good watch.",
     "correct": "guten",
     "explanation_de": "ein-Wort, Dativ feminin: -en.",
-    "explanation_en": "ein-word, dative feminine: -en."
+    "explanation_en": "ein-word, dative feminine: -en.",
+    "prompt_vi": "Tôi hài lòng với một chiếc đồng hồ tốt.",
+    "explanation_vi": "Quán từ không xác định, Dativ giống cái: đuôi -en (einer guten Uhr)."
   },
   {
     "id": "a2-adjx-008",
@@ -4274,7 +4840,9 @@
     "prompt_en": "A good watch is expensive.",
     "correct": "gute",
     "explanation_de": "ein-Wort, Nom. feminin: -e.",
-    "explanation_en": "ein-word, nom. feminine: -e."
+    "explanation_en": "ein-word, nom. feminine: -e.",
+    "prompt_vi": "Một chiếc đồng hồ tốt thì đắt tiền.",
+    "explanation_vi": "Quán từ không xác định, Nominativ giống cái: đuôi -e (eine gute Uhr)."
   },
   {
     "id": "a2-adjx-009",
@@ -4286,7 +4854,9 @@
     "prompt_en": "The good pen is expensive.",
     "correct": "gute",
     "explanation_de": "Nom. maskulin nach der: -e.",
-    "explanation_en": "nom. masculine after der: -e."
+    "explanation_en": "nom. masculine after der: -e.",
+    "prompt_vi": "Cây bút tốt đó rất đắt.",
+    "explanation_vi": "Nominativ giống đực sau 'der': đuôi -e (der gute Kuli)."
   },
   {
     "id": "a2-adjx-010",
@@ -4298,7 +4868,9 @@
     "prompt_en": "I buy the good pen.",
     "correct": "guten",
     "explanation_de": "Akk. maskulin nach den: -en.",
-    "explanation_en": "acc. masculine after den: -en."
+    "explanation_en": "acc. masculine after den: -en.",
+    "prompt_vi": "Tôi mua cây bút tốt đó.",
+    "explanation_vi": "Akkusativ giống đực sau 'den': đuôi -en (den guten Kuli)."
   },
   {
     "id": "a2-adjx-011",
@@ -4310,7 +4882,9 @@
     "prompt_en": "I buy the good book.",
     "correct": "gute",
     "explanation_de": "Akk. Neutrum nach das: -e.",
-    "explanation_en": "acc. neuter after das: -e."
+    "explanation_en": "acc. neuter after das: -e.",
+    "prompt_vi": "Tôi mua cuốn sách hay đó.",
+    "explanation_vi": "Akkusativ giống trung sau 'das': đuôi -e (das gute Buch)."
   },
   {
     "id": "a2-adjx-012",
@@ -4322,7 +4896,9 @@
     "prompt_en": "I am satisfied with the good watch.",
     "correct": "guten",
     "explanation_de": "Dativ feminin nach der: -en.",
-    "explanation_en": "dative feminine after der: -en."
+    "explanation_en": "dative feminine after der: -en.",
+    "prompt_vi": "Tôi hài lòng với chiếc đồng hồ tốt đó.",
+    "explanation_vi": "Dativ giống cái sau 'der': đuôi -en (der guten Uhr)."
   },
   {
     "id": "a2-adjx-013",
@@ -4334,7 +4910,9 @@
     "prompt_en": "The good books are expensive.",
     "correct": "guten",
     "explanation_de": "Plural nach die: -en.",
-    "explanation_en": "plural after die: -en."
+    "explanation_en": "plural after die: -en.",
+    "prompt_vi": "Những cuốn sách hay đó rất đắt.",
+    "explanation_vi": "Số nhiều sau quán từ xác định 'die': đuôi -en (die guten Bücher)."
   },
   {
     "id": "a2-adjx-014",
@@ -4352,7 +4930,9 @@
     ],
     "correct": "der guten",
     "explanation_de": "Dativ feminin: der guten Uhr.",
-    "explanation_en": "Dative feminine: der guten Uhr."
+    "explanation_en": "Dative feminine: der guten Uhr.",
+    "prompt_vi": "Tôi đưa chiếc đồng hồ tốt.",
+    "explanation_vi": "Dativ giống cái: der guten Uhr."
   },
   {
     "id": "a2-adjx-015",
@@ -4370,7 +4950,9 @@
     ],
     "correct": "-en",
     "explanation_de": "Plural nach bestimmtem Artikel: immer -en.",
-    "explanation_en": "Plural after the definite article: always -en."
+    "explanation_en": "Plural after the definite article: always -en.",
+    "prompt_vi": "Sau quán từ xác định: Tính từ ở số nhiều mang đuôi gì?",
+    "explanation_vi": "Số nhiều sau quán từ xác định: luôn mang đuôi -en."
   },
   {
     "id": "a2-adjx-016",
@@ -4388,7 +4970,9 @@
     ],
     "correct": "-em",
     "explanation_de": "Ohne Artikel trägt das Adjektiv die Endung des bestimmten Artikels: dem → -em.",
-    "explanation_en": "Without an article the adjective carries the definite article’s ending: dem → -em."
+    "explanation_en": "Without an article the adjective carries the definite article’s ending: dem → -em.",
+    "prompt_vi": "Khi không có quán từ, Dativ giống đực: tính từ mang đuôi gì?",
+    "explanation_vi": "Không có quán từ: tính từ mang đuôi của quán từ xác định: dem → đuôi -em."
   },
   {
     "id": "a2-amt-001",
@@ -4400,7 +4984,9 @@
     "prompt_en": "I would like to apply for an ID card.",
     "correct": "beantragen",
     "explanation_de": "einen Personalausweis beantragen.",
-    "explanation_en": "einen Personalausweis beantragen."
+    "explanation_en": "einen Personalausweis beantragen.",
+    "prompt_vi": "Tôi muốn làm đơn xin cấp chứng minh nhân dân / thẻ căn cước.",
+    "explanation_vi": "Cụm từ: einen Personalausweis beantragen (xin cấp căn cước công dân)."
   },
   {
     "id": "a2-amt-002",
@@ -4412,7 +4998,9 @@
     "prompt_en": "I would like to transfer an amount.",
     "correct": "überweisen",
     "explanation_de": "einen Betrag überweisen.",
-    "explanation_en": "einen Betrag überweisen."
+    "explanation_en": "einen Betrag überweisen.",
+    "prompt_vi": "Tôi muốn chuyển một khoản tiền.",
+    "explanation_vi": "Cụm từ: einen Betrag überweisen (chuyển một số tiền qua tài khoản ngân hàng)."
   },
   {
     "id": "a2-amt-003",
@@ -4424,7 +5012,9 @@
     "prompt_en": "I would like to open an account.",
     "correct": "eröffnen",
     "explanation_de": "ein Konto eröffnen.",
-    "explanation_en": "ein Konto eröffnen."
+    "explanation_en": "ein Konto eröffnen.",
+    "prompt_vi": "Tôi muốn mở một tài khoản.",
+    "explanation_vi": "Cụm từ: ein Konto eröffnen (mở tài khoản)."
   },
   {
     "id": "a2-amt-004",
@@ -4436,7 +5026,9 @@
     "prompt_en": "I would like to report a theft.",
     "correct": "melden",
     "explanation_de": "einen Diebstahl melden.",
-    "explanation_en": "einen Diebstahl melden."
+    "explanation_en": "einen Diebstahl melden.",
+    "prompt_vi": "Tôi muốn trình báo một vụ trộm cắp.",
+    "explanation_vi": "Cụm từ: einen Diebstahl melden (trình báo vụ mất trộm)."
   },
   {
     "id": "a2-amt-005",
@@ -4454,7 +5046,9 @@
     ],
     "correct": "verlängern",
     "explanation_de": "den Pass verlängern.",
-    "explanation_en": "den Pass verlängern."
+    "explanation_en": "den Pass verlängern.",
+    "prompt_vi": "Xin vui lòng gia hạn hộ chiếu.",
+    "explanation_vi": "Cụm từ: den Pass verlängern (gia hạn hộ chiếu)."
   },
   {
     "id": "a2-amt-006",
@@ -4472,7 +5066,9 @@
     ],
     "correct": "Einbürgerung",
     "explanation_de": "Dokumente für die Einbürgerung abgeben.",
-    "explanation_en": "Dokumente für die Einbürgerung abgeben."
+    "explanation_en": "Dokumente für die Einbürgerung abgeben.",
+    "prompt_vi": "Tôi muốn nộp hồ sơ xin nhập quốc tịch.",
+    "explanation_vi": "Cụm từ: Dokumente für die Einbürgerung abgeben (nộp giấy tờ nhập quốc tịch)."
   },
   {
     "id": "a2-verk-001",
@@ -4484,7 +5080,9 @@
     "prompt_en": "I go by bike.",
     "correct": "mit",
     "explanation_de": "mit + Dativ.",
-    "explanation_en": "mit + dative."
+    "explanation_en": "mit + dative.",
+    "prompt_vi": "Tôi đi bằng xe đạp.",
+    "explanation_vi": "Đi bằng phương tiện: mit + Dativ (mit dem Fahrrad)."
   },
   {
     "id": "a2-verk-002",
@@ -4496,7 +5094,9 @@
     "prompt_en": "I take the bus.",
     "correct": "den",
     "explanation_de": "nehmen + Akkusativ: den Bus.",
-    "explanation_en": "nehmen + accusative: den Bus."
+    "explanation_en": "nehmen + accusative: den Bus.",
+    "prompt_vi": "Tôi đón xe buýt.",
+    "explanation_vi": "nehmen + Akkusativ: den Bus (đón / đi tuyến xe buýt)."
   },
   {
     "id": "a2-verk-003",
@@ -4508,7 +5108,9 @@
     "prompt_en": "I go on foot.",
     "correct": "Fuß",
     "explanation_de": "zu Fuß gehen.",
-    "explanation_en": "zu Fuß gehen."
+    "explanation_en": "zu Fuß gehen.",
+    "prompt_vi": "Tôi đi bộ.",
+    "explanation_vi": "Cụm cố định: zu Fuß gehen (đi bộ)."
   },
   {
     "id": "a2-verk-004",
@@ -4520,7 +5122,9 @@
     "prompt_en": "I change in Frankfurt.",
     "correct": "um",
     "explanation_de": "umsteigen → Ich steige … um.",
-    "explanation_en": "umsteigen → Ich steige … um."
+    "explanation_en": "umsteigen → Ich steige … um.",
+    "prompt_vi": "Tôi đổi tàu / xe ở Frankfurt.",
+    "explanation_vi": "umsteigen (động từ tách: đổi tàu/xe) → Ich steige … um."
   },
   {
     "id": "a2-verk-005",
@@ -4532,7 +5136,9 @@
     "prompt_en": "I am stuck in traffic.",
     "correct": "Stau",
     "explanation_de": "im Stau stehen.",
-    "explanation_en": "im Stau stehen."
+    "explanation_en": "im Stau stehen.",
+    "prompt_vi": "Tôi đang bị kẹt xe / tắc đường.",
+    "explanation_vi": "Cụm từ: im Stau stehen (bị kẹt xe, tắc đường)."
   },
   {
     "id": "a2-verk-006",
@@ -4544,7 +5150,9 @@
     "prompt_en": "I am delayed.",
     "correct": "Verspätung",
     "explanation_de": "Verspätung haben.",
-    "explanation_en": "Verspätung haben."
+    "explanation_en": "Verspätung haben.",
+    "prompt_vi": "Tôi bị trễ / muộn giờ.",
+    "explanation_vi": "Cụm từ: Verspätung haben (bị đến muộn / trễ giờ)."
   },
   {
     "id": "a2-verk-007",
@@ -4556,7 +5164,9 @@
     "prompt_en": "I missed the connection.",
     "correct": "verpasst",
     "explanation_de": "verpassen → verpasst.",
-    "explanation_en": "verpassen → verpasst."
+    "explanation_en": "verpassen → verpasst.",
+    "prompt_vi": "Tôi đã bị lỡ chuyến tàu / xe nối chuyến.",
+    "explanation_vi": "verpassen (lỡ chuyến) → thì Perfekt: habe verpasst."
   },
   {
     "id": "a2-verk-008",
@@ -4568,7 +5178,9 @@
     "prompt_en": "When does the train to Frankfurt depart?",
     "correct": "ab",
     "explanation_de": "abfahren → fährt … ab.",
-    "explanation_en": "abfahren → fährt … ab."
+    "explanation_en": "abfahren → fährt … ab.",
+    "prompt_vi": "Khi nào thì đoàn tàu đi Frankfurt khởi hành?",
+    "explanation_vi": "abfahren (khởi hành) → fährt … ab."
   },
   {
     "id": "a2-verk-009",
@@ -4580,7 +5192,9 @@
     "prompt_en": "The train arrives in Frankfurt at 8 pm.",
     "correct": "an",
     "explanation_de": "ankommen → kommt … an.",
-    "explanation_en": "ankommen → kommt … an."
+    "explanation_en": "ankommen → kommt … an.",
+    "prompt_vi": "Đoàn tàu sẽ đến Frankfurt lúc 20 giờ.",
+    "explanation_vi": "ankommen (đến nơi) → kommt … an."
   },
   {
     "id": "a2-verk-010",
@@ -4598,7 +5212,9 @@
     ],
     "correct": "Bahnsteig",
     "explanation_de": "der Bahnsteig = das Gleis.",
-    "explanation_en": "der Bahnsteig = platform."
+    "explanation_en": "der Bahnsteig = platform.",
+    "prompt_vi": "___ là nơi tàu dừng đỗ cho khách lên xuống.",
+    "explanation_vi": "der Bahnsteig = sân ga / đường ke tàu dừng đỗ (das Gleis)."
   },
   {
     "id": "a2-verk-011",
@@ -4616,7 +5232,9 @@
     ],
     "correct": "a return ticket",
     "explanation_de": "hin und zurück = Rückfahrkarte.",
-    "explanation_en": "hin und zurück = return ticket."
+    "explanation_en": "hin und zurück = return ticket.",
+    "prompt_vi": "Vé \"hin und zurück\" có nghĩa là gì?",
+    "explanation_vi": "hin und zurück = vé khứ hồi (Rückfahrkarte)."
   },
   {
     "id": "a2-verk-012",
@@ -4634,7 +5252,9 @@
     ],
     "correct": "Ankunft",
     "explanation_de": "Abfahrt = departure; Ankunft = arrival.",
-    "explanation_en": "Abfahrt = departure; Ankunft = arrival."
+    "explanation_en": "Abfahrt = departure; Ankunft = arrival.",
+    "prompt_vi": "sự khởi hành (die Abfahrt) ≠ ___",
+    "explanation_vi": "die Abfahrt = khởi hành; die Ankunft = đến nơi (cặp từ trái nghĩa)."
   },
   {
     "id": "a2-pass-001",
@@ -4646,7 +5266,9 @@
     "prompt_en": "That is written in.",
     "correct": "wird",
     "explanation_de": "Passiv: werden + Partizip II.",
-    "explanation_en": "Passive: werden + past participle."
+    "explanation_en": "Passive: werden + past participle.",
+    "prompt_vi": "Cái đó được ghi / điền vào.",
+    "explanation_vi": "Thể bị động (Passiv): werden + Partizip II (wird reingeschrieben)."
   },
   {
     "id": "a2-pass-002",
@@ -4658,7 +5280,9 @@
     "prompt_en": "The documents are submitted.",
     "correct": "werden",
     "explanation_de": "Plural: werden.",
-    "explanation_en": "Plural: werden."
+    "explanation_en": "Plural: werden.",
+    "prompt_vi": "Các tài liệu được nộp.",
+    "explanation_vi": "Số nhiều (die Dokumente): dùng trợ động từ werden."
   },
   {
     "id": "a2-pass-003",
@@ -4670,7 +5294,9 @@
     "prompt_en": "The homework is done.",
     "correct": "gemacht",
     "explanation_de": "Partizip II am Ende.",
-    "explanation_en": "Past participle at the end."
+    "explanation_en": "Past participle at the end.",
+    "prompt_vi": "Bài tập về nhà được hoàn thành.",
+    "explanation_vi": "Trong câu bị động, Partizip II đứng ở cuối câu: gemacht."
   },
   {
     "id": "a2-pass-004",
@@ -4688,7 +5314,9 @@
     ],
     "correct": "wird",
     "explanation_de": "Passiv shifts focus to the action/object.",
-    "explanation_en": "The passive shifts the focus to the action/object."
+    "explanation_en": "The passive shifts the focus to the action/object.",
+    "prompt_vi": "Người ta ghi cái đó vào. = Cái đó được ghi vào.",
+    "explanation_vi": "Thể bị động chuyển trọng tâm câu sang hành động/đối tượng tiếp nhận: wird reingeschrieben."
   },
   {
     "id": "a2-lass-001",
@@ -4700,7 +5328,9 @@
     "prompt_en": "I have the passport renewed.",
     "correct": "lasse",
     "explanation_de": "ich lasse.",
-    "explanation_en": "ich lasse."
+    "explanation_en": "ich lasse.",
+    "prompt_vi": "Tôi đi làm thủ tục gia hạn hộ chiếu.",
+    "explanation_vi": "Chia động từ lassen theo ngôi ich: lasse."
   },
   {
     "id": "a2-lass-002",
@@ -4712,7 +5342,9 @@
     "prompt_en": "You have the tyres changed.",
     "correct": "lässt",
     "explanation_de": "du lässt.",
-    "explanation_en": "du lässt."
+    "explanation_en": "du lässt.",
+    "prompt_vi": "Bạn đem xe đi thay lốp.",
+    "explanation_vi": "Chia động từ lassen theo ngôi du: lässt."
   },
   {
     "id": "a2-lass-003",
@@ -4724,7 +5356,9 @@
     "prompt_en": "She has her account checked.",
     "correct": "lässt",
     "explanation_de": "sie lässt.",
-    "explanation_en": "sie lässt."
+    "explanation_en": "sie lässt.",
+    "prompt_vi": "Cô ấy nhờ kiểm tra tài khoản của mình.",
+    "explanation_vi": "Chia động từ lassen theo ngôi sie (cô ấy): lässt."
   },
   {
     "id": "a2-lass-004",
@@ -4736,7 +5370,9 @@
     "prompt_en": "You (all) have the car repaired.",
     "correct": "lasst",
     "explanation_de": "ihr lasst.",
-    "explanation_en": "ihr lasst."
+    "explanation_en": "ihr lasst.",
+    "prompt_vi": "Các bạn đem ô tô đi sửa chữa.",
+    "explanation_vi": "Chia động từ lassen theo ngôi ihr: lasst."
   },
   {
     "id": "a2-wbild-001",
@@ -4748,7 +5384,9 @@
     "prompt_en": "work → without work",
     "correct": "arbeitslos",
     "explanation_de": "Nomen + -los.",
-    "explanation_en": "noun + -los."
+    "explanation_en": "noun + -los.",
+    "prompt_vi": "việc làm → thất nghiệp (không có việc)",
+    "explanation_vi": "Danh từ + hậu tố -los (mang nghĩa không có, thiếu vắng): arbeitslos."
   },
   {
     "id": "a2-wbild-002",
@@ -4760,7 +5398,9 @@
     "prompt_en": "storm → stormy",
     "correct": "stürmisch",
     "explanation_de": "Nomen + -isch.",
-    "explanation_en": "noun + -isch."
+    "explanation_en": "noun + -isch.",
+    "prompt_vi": "cơn bão → bão bùng / dữ dội",
+    "explanation_vi": "Danh từ + hậu tố -isch: stürmisch."
   },
   {
     "id": "a2-wbild-003",
@@ -4772,7 +5412,9 @@
     "prompt_en": "use → usable",
     "correct": "benutzbar",
     "explanation_de": "Verb + -bar.",
-    "explanation_en": "verb + -bar."
+    "explanation_en": "verb + -bar.",
+    "prompt_vi": "sử dụng → có thể sử dụng được",
+    "explanation_vi": "Động từ + hậu tố -bar (chỉ khả năng có thể làm được): benutzbar."
   },
   {
     "id": "a2-wbild-004",
@@ -4784,7 +5426,9 @@
     "prompt_en": "thank → grateful",
     "correct": "dankbar",
     "explanation_de": "Verb + -bar.",
-    "explanation_en": "verb + -bar."
+    "explanation_en": "verb + -bar.",
+    "prompt_vi": "cảm ơn → biết ơn",
+    "explanation_vi": "Động từ + hậu tố -bar: dankbar (biết ơn)."
   },
   {
     "id": "a2-wbild-005",
@@ -4796,7 +5440,9 @@
     "prompt_en": "pleasant → unpleasant",
     "correct": "unangenehm",
     "explanation_de": "un- macht das Gegenteil.",
-    "explanation_en": "un- forms the opposite."
+    "explanation_en": "un- forms the opposite.",
+    "prompt_vi": "dễ chịu → khó chịu",
+    "explanation_vi": "Tiền tố un- tạo từ trái nghĩa: unangenehm."
   },
   {
     "id": "a2-wbild-006",
@@ -4808,7 +5454,9 @@
     "prompt_en": "work + colleague",
     "correct": "Arbeitskollege",
     "explanation_de": "Nomen + Nomen; Fugen-s.",
-    "explanation_en": "noun + noun; linking -s."
+    "explanation_en": "noun + noun; linking -s.",
+    "prompt_vi": "công việc + đồng nghiệp",
+    "explanation_vi": "Từ ghép Danh từ + Danh từ có âm nối -s: Arbeitskollege."
   },
   {
     "id": "a2-wbild-007",
@@ -4820,7 +5468,9 @@
     "prompt_en": "partner (m) → partner (f)",
     "correct": "Partnerin",
     "explanation_de": "-in für weibliche Form.",
-    "explanation_en": "-in for the feminine form."
+    "explanation_en": "-in for the feminine form.",
+    "prompt_vi": "đối tác/bạn đời (nam) → đối tác/bạn đời (nữ)",
+    "explanation_vi": "Thêm hậu tố -in để chỉ giống cái / phụ nữ: Partnerin."
   },
   {
     "id": "a2-wbild-008",
@@ -4832,7 +5482,9 @@
     "prompt_en": "smoke → smoker",
     "correct": "Raucher",
     "explanation_de": "Verb → Nomen mit -er.",
-    "explanation_en": "verb → noun with -er."
+    "explanation_en": "verb → noun with -er.",
+    "prompt_vi": "hút thuốc → người hút thuốc",
+    "explanation_vi": "Động từ chuyển thành danh từ chỉ người làm hành động đó với đuôi -er: Raucher."
   },
   {
     "id": "a2-wbild-009",
@@ -4844,7 +5496,9 @@
     "prompt_en": "ask → survey",
     "correct": "Befragung",
     "explanation_de": "Verb → Nomen mit -ung.",
-    "explanation_en": "verb → noun with -ung."
+    "explanation_en": "verb → noun with -ung.",
+    "prompt_vi": "hỏi/khảo sát → cuộc khảo sát",
+    "explanation_vi": "Động từ chuyển thành danh từ hành động với đuôi -ung: die Befragung."
   },
   {
     "id": "a2-wbild-010",
@@ -4856,7 +5510,9 @@
     "prompt_en": "fly + thing = airplane",
     "correct": "Flugzeug",
     "explanation_de": "Verbstamm + -zeug = Gerät.",
-    "explanation_en": "verb stem + -zeug = device."
+    "explanation_en": "verb stem + -zeug = device.",
+    "prompt_vi": "bay + đồ dùng = máy bay",
+    "explanation_vi": "Gốc động từ + hậu tố -zeug (dụng cụ, phương tiện): das Flugzeug."
   },
   {
     "id": "a2-wbild-011",
@@ -4868,7 +5524,9 @@
     "prompt_en": "play + thing = toy",
     "correct": "Spielzeug",
     "explanation_de": "Verbstamm + -zeug.",
-    "explanation_en": "verb stem + -zeug."
+    "explanation_en": "verb stem + -zeug.",
+    "prompt_vi": "chơi + đồ dùng = đồ chơi",
+    "explanation_vi": "Gốc động từ + hậu tố -zeug: das Spielzeug."
   },
   {
     "id": "a2-indef-001",
@@ -4880,7 +5538,9 @@
     "prompt_en": "Is there an espresso here? — No, there is none.",
     "correct": "keiner",
     "explanation_de": "der Espresso → keiner.",
-    "explanation_en": "der Espresso → keiner."
+    "explanation_en": "der Espresso → keiner.",
+    "prompt_vi": "Ở đây có cà phê espresso không? — Không, ở đây chẳng có ly nào cả.",
+    "explanation_vi": "der Espresso (giống đực) → đại từ bất định thay thế: keiner."
   },
   {
     "id": "a2-indef-002",
@@ -4892,7 +5552,9 @@
     "prompt_en": "Do you need a knife? — Yes, I need one.",
     "correct": "eins",
     "explanation_de": "das Messer → eins.",
-    "explanation_en": "das Messer → eins."
+    "explanation_en": "das Messer → eins.",
+    "prompt_vi": "Bạn có cần một con dao không? — Có, tôi cần một con dao.",
+    "explanation_vi": "das Messer (giống trung) → đại từ bất định thay thế: eins."
   },
   {
     "id": "a2-indef-003",
@@ -4904,7 +5566,9 @@
     "prompt_en": "Would you like a spoon? — Yes, I’ll take one.",
     "correct": "einen",
     "explanation_de": "Akkusativ maskulin: einen.",
-    "explanation_en": "Accusative masculine: einen."
+    "explanation_en": "Accusative masculine: einen.",
+    "prompt_vi": "Bạn có muốn lấy một chiếc thìa không? — Có, tôi sẽ lấy một chiếc.",
+    "explanation_vi": "Akkusativ giống đực (der Löffel): einen."
   },
   {
     "id": "a2-indef-004",
@@ -4916,7 +5580,9 @@
     "prompt_en": "Do you have spoons? — Yes, I have some.",
     "correct": "welche",
     "explanation_de": "Plural ohne Artikel: welche.",
-    "explanation_en": "Plural without article: welche."
+    "explanation_en": "Plural without article: welche.",
+    "prompt_vi": "Bạn có thìa không? — Có, tôi có vài chiếc.",
+    "explanation_vi": "Số nhiều không có quán từ: dùng đại từ thay thế 'welche' (vài cái)."
   },
   {
     "id": "a2-indef-005",
@@ -4934,7 +5600,9 @@
     ],
     "correct": "Niemand",
     "explanation_de": "niemand = Person.",
-    "explanation_en": "niemand = person."
+    "explanation_en": "niemand = person.",
+    "prompt_vi": "Không có ai gọi điện cả.",
+    "explanation_vi": "niemand = không một ai (chỉ người)."
   },
   {
     "id": "a2-indef-006",
@@ -4952,7 +5620,9 @@
     ],
     "correct": "nichts",
     "explanation_de": "nichts = Sache.",
-    "explanation_en": "nichts = thing."
+    "explanation_en": "nichts = thing.",
+    "prompt_vi": "Chẳng có gì được viết trên các tấm thẻ cả.",
+    "explanation_vi": "nichts = không có gì / chẳng thứ gì (chỉ sự vật)."
   },
   {
     "id": "a2-indef-007",
@@ -4970,7 +5640,9 @@
     ],
     "correct": "jemanden",
     "explanation_de": "jemand(en) = Person.",
-    "explanation_en": "jemand(en) = person."
+    "explanation_en": "jemand(en) = person.",
+    "prompt_vi": "Bạn đã tìm thấy ai đó chưa?",
+    "explanation_vi": "jemand(en) = ai đó (người nào đó, Akkusativ)."
   },
   {
     "id": "a2-dir-001",
@@ -4988,7 +5660,9 @@
     ],
     "correct": "dahin",
     "explanation_de": "Wohin? → dahin / dorthin / hierhin.",
-    "explanation_en": "Wohin? → dahin / dorthin / hierhin."
+    "explanation_en": "Wohin? → dahin / dorthin / hierhin.",
+    "prompt_vi": "Hãy đặt cái thang vào chỗ kia kìa.",
+    "explanation_vi": "Wohin? (vào đâu) → phó từ chỉ hướng chuyển động: dahin / dorthin / hierhin."
   },
   {
     "id": "a2-dir-002",
@@ -5006,7 +5680,9 @@
     ],
     "correct": "runter",
     "explanation_de": "runter = nach unten.",
-    "explanation_en": "runter = downwards."
+    "explanation_en": "runter = downwards.",
+    "prompt_vi": "Đừng để bị ngã xuống dưới đấy nhé!",
+    "explanation_vi": "runter = xuống dưới (hướng chuyển động)."
   },
   {
     "id": "a2-dir-003",
@@ -5024,7 +5700,9 @@
     ],
     "correct": "dort",
     "explanation_de": "Wo? → hier / da / dort.",
-    "explanation_en": "Wo? → hier / da / dort."
+    "explanation_en": "Wo? → hier / da / dort.",
+    "prompt_vi": "Anh ấy ở đâu thế? — Anh ấy đang ở đằng kia.",
+    "explanation_vi": "Wo? (ở đâu - vị trí cố định) → hier / da / dort."
   },
   {
     "id": "a2-dakomp-001",
@@ -5036,7 +5714,9 @@
     "prompt_en": "I look forward to the party. → I look forward to it.",
     "correct": "darauf",
     "explanation_de": "sich freuen auf → darauf.",
-    "explanation_en": "sich freuen auf → darauf."
+    "explanation_en": "sich freuen auf → darauf.",
+    "prompt_vi": "Tôi rất mong chờ bữa tiệc. → Tôi rất mong chờ nó.",
+    "explanation_vi": "sich freuen auf + vật → thay bằng phó từ liên kết: darauf."
   },
   {
     "id": "a2-dakomp-002",
@@ -5048,7 +5728,9 @@
     "prompt_en": "I am interested in music. → I am interested in it.",
     "correct": "dafür",
     "explanation_de": "sich interessieren für → dafür.",
-    "explanation_en": "sich interessieren für → dafür."
+    "explanation_en": "sich interessieren für → dafür.",
+    "prompt_vi": "Tôi quan tâm đến âm nhạc. → Tôi có hứng thú với nó.",
+    "explanation_vi": "sich interessieren für + vật → thay bằng phó từ liên kết: dafür."
   },
   {
     "id": "a2-dakomp-003",
@@ -5060,7 +5742,9 @@
     "prompt_en": "I remember school. → I remember it.",
     "correct": "daran",
     "explanation_de": "sich erinnern an → daran.",
-    "explanation_en": "sich erinnern an → daran."
+    "explanation_en": "sich erinnern an → daran.",
+    "prompt_vi": "Tôi nhớ về trường học. → Tôi nhớ về điều đó.",
+    "explanation_vi": "sich erinnern an + vật → thay bằng phó từ liên kết: daran (thêm -r- vì 'an' bắt đầu bằng nguyên âm)."
   },
   {
     "id": "a2-dakomp-004",
@@ -5072,7 +5756,9 @@
     "prompt_en": "I am annoyed about the noise. → I am annoyed about it.",
     "correct": "darüber",
     "explanation_de": "sich ärgern über → darüber.",
-    "explanation_en": "sich ärgern über → darüber."
+    "explanation_en": "sich ärgern über → darüber.",
+    "prompt_vi": "Tôi bực mình vì tiếng ồn. → Tôi bực mình về điều đó.",
+    "explanation_vi": "sich ärgern über + vật → thay bằng: darüber (thêm -r- vì 'über' bắt đầu bằng nguyên âm)."
   },
   {
     "id": "a2-dakomp-005",
@@ -5084,7 +5770,9 @@
     "prompt_en": "I am satisfied with the result. → I am satisfied with it.",
     "correct": "damit",
     "explanation_de": "zufrieden sein mit → damit.",
-    "explanation_en": "zufrieden sein mit → damit."
+    "explanation_en": "zufrieden sein mit → damit.",
+    "prompt_vi": "Tôi hài lòng với kết quả. → Tôi hài lòng với nó.",
+    "explanation_vi": "zufrieden sein mit + vật → thay bằng: damit."
   },
   {
     "id": "a2-dakomp-006",
@@ -5096,7 +5784,9 @@
     "prompt_en": "I dream of a holiday. → I dream of it.",
     "correct": "davon",
     "explanation_de": "träumen von → davon.",
-    "explanation_en": "träumen von → davon."
+    "explanation_en": "träumen von → davon.",
+    "prompt_vi": "Tôi mơ về một kỳ nghỉ. → Tôi mơ về điều đó.",
+    "explanation_vi": "träumen von + vật → thay bằng: davon."
   },
   {
     "id": "a2-dakomp-007",
@@ -5108,7 +5798,9 @@
     "prompt_en": "What do you feel like doing?",
     "correct": "Worauf",
     "explanation_de": "wo(r) + Präposition für Dinge.",
-    "explanation_en": "wo(r) + preposition for things."
+    "explanation_en": "wo(r) + preposition for things.",
+    "prompt_vi": "Bạn đang có hứng làm gì thế?",
+    "explanation_vi": "wo(r) + giới từ dùng để hỏi về sự vật/sự việc: worauf."
   },
   {
     "id": "a2-dakomp-008",
@@ -5120,7 +5812,9 @@
     "prompt_en": "What is Milan annoyed about?",
     "correct": "Worüber",
     "explanation_de": "Präposition mit Vokal → r einfügen: worüber.",
-    "explanation_en": "Preposition starting with a vowel → insert r: worüber."
+    "explanation_en": "Preposition starting with a vowel → insert r: worüber.",
+    "prompt_vi": "Milan đang bực mình về chuyện gì vậy?",
+    "explanation_vi": "Giới từ bắt đầu bằng nguyên âm (über) → chèn thêm 'r': worüber."
   },
   {
     "id": "a2-dakomp-009",
@@ -5132,7 +5826,9 @@
     "prompt_en": "What are you interested in?",
     "correct": "Wofür",
     "explanation_de": "wo + für = wofür.",
-    "explanation_en": "wo + für = wofür."
+    "explanation_en": "wo + für = wofür.",
+    "prompt_vi": "Bạn quan tâm / hứng thú với điều gì?",
+    "explanation_vi": "Hỏi về sự vật: wo + für = wofür."
   },
   {
     "id": "a2-dakomp-010",
@@ -5150,7 +5846,9 @@
     ],
     "correct": "Über wen",
     "explanation_de": "Bei Personen: Präposition + Fragewort.",
-    "explanation_en": "For people: preposition + question word."
+    "explanation_en": "For people: preposition + question word.",
+    "prompt_vi": "Milan đang bực mình với ai thế? — Với thầy giáo.",
+    "explanation_vi": "Khi hỏi về người: dùng Giới từ + Từ để hỏi (Über wen)."
   },
   {
     "id": "a2-dakomp-011",
@@ -5168,7 +5866,9 @@
     ],
     "correct": "Womit",
     "explanation_de": "Bei Sachen: wo(r) + Präposition.",
-    "explanation_en": "For things: wo(r) + preposition."
+    "explanation_en": "For things: wo(r) + preposition.",
+    "prompt_vi": "Bạn hài lòng với điều gì? — Với kết quả đạt được.",
+    "explanation_vi": "Khi hỏi về sự vật: wo(r) + giới từ → Womit."
   },
   {
     "id": "a2-vtab-001",
@@ -5180,7 +5880,9 @@
     "prompt_en": "drive: simple past (he/she/it)",
     "correct": "fuhr",
     "explanation_de": "fahren: fährt – fuhr – ist gefahren.",
-    "explanation_en": "fahren: fährt – fuhr – ist gefahren."
+    "explanation_en": "fahren: fährt – fuhr – ist gefahren.",
+    "prompt_vi": "fahren: quá khứ đơn (Präteritum) với ngôi er/sie/es",
+    "explanation_vi": "Bảng động từ fahren: fährt – fuhr – ist gefahren."
   },
   {
     "id": "a2-vtab-002",
@@ -5192,7 +5894,9 @@
     "prompt_en": "go: simple past (he/she/it)",
     "correct": "ging",
     "explanation_de": "gehen: geht – ging – ist gegangen.",
-    "explanation_en": "gehen: geht – ging – ist gegangen."
+    "explanation_en": "gehen: geht – ging – ist gegangen.",
+    "prompt_vi": "gehen: quá khứ đơn (Präteritum) với ngôi er/sie/es",
+    "explanation_vi": "Bảng động từ gehen: geht – ging – ist gegangen."
   },
   {
     "id": "a2-vtab-003",
@@ -5204,7 +5908,9 @@
     "prompt_en": "see: simple past (he/she/it)",
     "correct": "sah",
     "explanation_de": "sehen: sieht – sah – hat gesehen.",
-    "explanation_en": "sehen: sieht – sah – hat gesehen."
+    "explanation_en": "sehen: sieht – sah – hat gesehen.",
+    "prompt_vi": "sehen: quá khứ đơn (Präteritum) với ngôi er/sie/es",
+    "explanation_vi": "Bảng động từ sehen: sieht – sah – hat gesehen."
   },
   {
     "id": "a2-vtab-004",
@@ -5216,7 +5922,9 @@
     "prompt_en": "eat: simple past (he/she/it)",
     "correct": "aß",
     "explanation_de": "essen: isst – aß – hat gegessen.",
-    "explanation_en": "essen: isst – aß – hat gegessen."
+    "explanation_en": "essen: isst – aß – hat gegessen.",
+    "prompt_vi": "essen: quá khứ đơn (Präteritum) với ngôi er/sie/es",
+    "explanation_vi": "Bảng động từ essen: isst – aß – hat gegessen."
   },
   {
     "id": "a2-vtab-005",
@@ -5228,7 +5936,9 @@
     "prompt_en": "write: simple past (he/she/it)",
     "correct": "schrieb",
     "explanation_de": "schreiben: schreibt – schrieb – hat geschrieben.",
-    "explanation_en": "schreiben: schreibt – schrieb – hat geschrieben."
+    "explanation_en": "schreiben: schreibt – schrieb – hat geschrieben.",
+    "prompt_vi": "schreiben: quá khứ đơn (Präteritum) với ngôi er/sie/es",
+    "explanation_vi": "Bảng động từ schreiben: schreibt – schrieb – hat geschrieben."
   },
   {
     "id": "a2-vtab-006",
@@ -5240,7 +5950,9 @@
     "prompt_en": "stay: simple past (he/she/it)",
     "correct": "blieb",
     "explanation_de": "bleiben: bleibt – blieb – ist geblieben.",
-    "explanation_en": "bleiben: bleibt – blieb – ist geblieben."
+    "explanation_en": "bleiben: bleibt – blieb – ist geblieben.",
+    "prompt_vi": "bleiben: quá khứ đơn (Präteritum) với ngôi er/sie/es",
+    "explanation_vi": "Bảng động từ bleiben: bleibt – blieb – ist geblieben."
   },
   {
     "id": "a2-vtab-007",
@@ -5252,7 +5964,9 @@
     "prompt_en": "take: simple past (he/she/it)",
     "correct": "nahm",
     "explanation_de": "nehmen: nimmt – nahm – hat genommen.",
-    "explanation_en": "nehmen: nimmt – nahm – hat genommen."
+    "explanation_en": "nehmen: nimmt – nahm – hat genommen.",
+    "prompt_vi": "nehmen: quá khứ đơn (Präteritum) với ngôi er/sie/es",
+    "explanation_vi": "Bảng động từ nehmen: nimmt – nahm – hat genommen."
   },
   {
     "id": "a2-vtab-008",
@@ -5264,7 +5978,9 @@
     "prompt_en": "find: simple past (he/she/it)",
     "correct": "fand",
     "explanation_de": "finden: findet – fand – hat gefunden.",
-    "explanation_en": "finden: findet – fand – hat gefunden."
+    "explanation_en": "finden: findet – fand – hat gefunden.",
+    "prompt_vi": "finden: quá khứ đơn (Präteritum) với ngôi er/sie/es",
+    "explanation_vi": "Bảng động từ finden: findet – fand – hat gefunden."
   },
   {
     "id": "a2-vtab-009",
@@ -5276,7 +5992,9 @@
     "prompt_en": "sleep: simple past (he/she/it)",
     "correct": "schlief",
     "explanation_de": "schlafen: schläft – schlief – hat geschlafen.",
-    "explanation_en": "schlafen: schläft – schlief – hat geschlafen."
+    "explanation_en": "schlafen: schläft – schlief – hat geschlafen.",
+    "prompt_vi": "schlafen: quá khứ đơn (Präteritum) với ngôi er/sie/es",
+    "explanation_vi": "Bảng động từ schlafen: schläft – schlief – hat geschlafen."
   },
   {
     "id": "a2-vtab-010",
@@ -5288,7 +6006,9 @@
     "prompt_en": "help: simple past (he/she/it)",
     "correct": "half",
     "explanation_de": "helfen: hilft – half – hat geholfen.",
-    "explanation_en": "helfen: hilft – half – hat geholfen."
+    "explanation_en": "helfen: hilft – half – hat geholfen.",
+    "prompt_vi": "helfen: quá khứ đơn (Präteritum) với ngôi er/sie/es",
+    "explanation_vi": "Bảng động từ helfen: hilft – half – hat geholfen."
   },
   {
     "id": "a2-vtab-011",
@@ -5300,7 +6020,9 @@
     "prompt_en": "bring: simple past (he/she/it)",
     "correct": "brachte",
     "explanation_de": "bringen: bringt – brachte – hat gebracht.",
-    "explanation_en": "bringen: bringt – brachte – hat gebracht."
+    "explanation_en": "bringen: bringt – brachte – hat gebracht.",
+    "prompt_vi": "bringen: quá khứ đơn (Präteritum) với ngôi er/sie/es",
+    "explanation_vi": "Bảng động từ bringen: bringt – brachte – hat gebracht."
   },
   {
     "id": "a2-vtab-012",
@@ -5312,7 +6034,9 @@
     "prompt_en": "What happened? — It happened.",
     "correct": "ist",
     "explanation_de": "passieren bildet das Perfekt mit sein.",
-    "explanation_en": "passieren forms the Perfekt with sein."
+    "explanation_en": "passieren forms the Perfekt with sein.",
+    "prompt_vi": "Có chuyện gì đã xảy ra vậy? — Nó đã xảy ra rồi.",
+    "explanation_vi": "Động từ 'passieren' (chỉ sự biến đổi tình thế) tạo thì Perfekt với trợ động từ 'sein': ist passiert."
   },
   {
     "id": "a2-vtab-013",
@@ -5330,7 +6054,9 @@
     ],
     "correct": "bin",
     "explanation_de": "joggen (Bewegung) → sein.",
-    "explanation_en": "joggen (movement) → sein."
+    "explanation_en": "joggen (movement) → sein.",
+    "prompt_vi": "Hôm qua tôi đã chạy bộ.",
+    "explanation_vi": "joggen (chuyển động) → thì Perfekt đi với trợ động từ sein (bin gejoggt)."
   },
   {
     "id": "a2-vtab-014",
@@ -5348,7 +6074,9 @@
     ],
     "correct": "ist",
     "explanation_de": "fliegen → sein.",
-    "explanation_en": "fliegen → sein."
+    "explanation_en": "fliegen → sein.",
+    "prompt_vi": "Anh ấy đã bay đi nghỉ dưỡng.",
+    "explanation_vi": "fliegen (chuyển động) → thì Perfekt đi với trợ động từ sein (ist geflogen)."
   },
   {
     "id": "a2-vtab-015",
@@ -5366,7 +6094,9 @@
     ],
     "correct": "ist",
     "explanation_de": "aufwachen (Zustandsänderung) → sein.",
-    "explanation_en": "aufwachen (change of state) → sein."
+    "explanation_en": "aufwachen (change of state) → sein.",
+    "prompt_vi": "Hôm nay anh ấy đã thức giấc từ sớm.",
+    "explanation_vi": "aufwachen (biến đổi trạng thái thức/ngủ) → thì Perfekt đi với trợ động từ sein (ist aufgewacht)."
   },
   {
     "id": "a2-vtab-016",
@@ -5384,7 +6114,9 @@
     ],
     "correct": "hat",
     "explanation_de": "lachen → haben.",
-    "explanation_en": "lachen → haben."
+    "explanation_en": "lachen → haben.",
+    "prompt_vi": "Cô ấy đã cười rất nhiều.",
+    "explanation_vi": "lachen (không chỉ chuyển động hay đổi trạng thái) → thì Perfekt đi với haben (hat gelacht)."
   },
   {
     "id": "a2-vor-001",
@@ -5396,7 +6128,9 @@
     "prompt_en": "I have a suggestion: we could go to the theatre.",
     "correct": "Vorschlag",
     "explanation_de": "einen Vorschlag machen.",
-    "explanation_en": "einen Vorschlag machen."
+    "explanation_en": "einen Vorschlag machen.",
+    "prompt_vi": "Tôi có một gợi ý này: chúng ta có thể đi nhà hát.",
+    "explanation_vi": "Cụm từ: einen Vorschlag machen (đưa ra một lời đề xuất / gợi ý)."
   },
   {
     "id": "a2-vor-002",
@@ -5408,7 +6142,9 @@
     "prompt_en": "What do you think, shall we do a quiz?",
     "correct": "sollen",
     "explanation_de": "Was denkst du, sollen wir …?",
-    "explanation_en": "Was denkst du, sollen wir …?"
+    "explanation_en": "Was denkst du, sollen wir …?",
+    "prompt_vi": "Bạn thấy sao, chúng mình cùng làm một câu đố vui nhé?",
+    "explanation_vi": "Mẫu câu hỏi ý kiến: Was denkst du, sollen wir …?"
   },
   {
     "id": "a2-vor-003",
@@ -5420,7 +6156,9 @@
     "prompt_en": "I agree.",
     "correct": "zu",
     "explanation_de": "zustimmen → Ich stimme … zu.",
-    "explanation_en": "zustimmen → Ich stimme … zu."
+    "explanation_en": "zustimmen → Ich stimme … zu.",
+    "prompt_vi": "Tôi đồng ý.",
+    "explanation_vi": "zustimmen (đồng tình, tán thành) → động từ tách: Ich stimme … zu."
   },
   {
     "id": "a2-vor-004",
@@ -5432,7 +6170,9 @@
     "prompt_en": "I decline.",
     "correct": "lehne",
     "explanation_de": "ablehnen → Ich lehne … ab.",
-    "explanation_en": "ablehnen → Ich lehne … ab."
+    "explanation_en": "ablehnen → Ich lehne … ab.",
+    "prompt_vi": "Tôi từ chối.",
+    "explanation_vi": "ablehnen (từ chối, bác bỏ) → động từ tách: Ich lehne … ab."
   },
   {
     "id": "a2-vor-005",
@@ -5450,7 +6190,9 @@
     ],
     "correct": "Tut mir leid, ich habe keine Lust.",
     "explanation_de": "Ablehnen: Tut mir leid … / Leider geht es nicht.",
-    "explanation_en": "Declining: Tut mir leid … / Leider geht es nicht."
+    "explanation_en": "Declining: Tut mir leid … / Leider geht es nicht.",
+    "prompt_vi": "Câu nào dưới đây thể hiện sự từ chối?",
+    "explanation_vi": "Cách từ chối: Tut mir leid … (Tôi rất tiếc...) / Leider geht es nicht."
   },
   {
     "id": "a2-vor-006",
@@ -5468,7 +6210,9 @@
     ],
     "correct": "to suggest",
     "explanation_de": "vorschlagen = to suggest / propose.",
-    "explanation_en": "vorschlagen = to suggest / propose."
+    "explanation_en": "vorschlagen = to suggest / propose.",
+    "prompt_vi": "Từ \"vorschlagen\" có nghĩa là gì?",
+    "explanation_vi": "vorschlagen = gợi ý, đề xuất (to suggest / propose)."
   },
   {
     "id": "a2-vor-007",
@@ -5486,7 +6230,9 @@
     ],
     "correct": "to lend / to borrow",
     "explanation_de": "leihen = to lend / borrow (nicht mieten).",
-    "explanation_en": "leihen = to lend / borrow (not mieten)."
+    "explanation_en": "leihen = to lend / borrow (not mieten).",
+    "prompt_vi": "Từ \"leihen\" có nghĩa là gì?",
+    "explanation_vi": "leihen = mượn hoặc cho mượn (khác với mieten là thuê có trả phí)."
   },
   {
     "id": "a2-zus-001",
@@ -5498,7 +6244,9 @@
     "prompt_en": "I am missing the certificate.",
     "correct": "Mir",
     "explanation_de": "fehlen + Dativ (Person).",
-    "explanation_en": "fehlen + dative (person)."
+    "explanation_en": "fehlen + dative (person).",
+    "prompt_vi": "Tôi bị thiếu mất tờ chứng chỉ.",
+    "explanation_vi": "fehlen + Dativ (chỉ người bị thiếu cái gì: Mir fehlt...)."
   },
   {
     "id": "a2-zus-002",
@@ -5510,7 +6258,9 @@
     "prompt_en": "The shirt suits you very well.",
     "correct": "Dir",
     "explanation_de": "stehen + Dativ.",
-    "explanation_en": "stehen + dative."
+    "explanation_en": "stehen + dative.",
+    "prompt_vi": "Chiếc áo sơ mi rất hợp với bạn.",
+    "explanation_vi": "stehen + Dativ (hợp với ai về trang phục, ngoại hình: Dir steht...)."
   },
   {
     "id": "a2-zus-003",
@@ -5522,7 +6272,9 @@
     "prompt_en": "The shirt fits you well.",
     "correct": "dir",
     "explanation_de": "passen + Dativ.",
-    "explanation_en": "passen + dative."
+    "explanation_en": "passen + dative.",
+    "prompt_vi": "Chiếc áo sơ mi vừa vặn với bạn.",
+    "explanation_vi": "passen + Dativ (vừa vặn với ai về kích thước: passt dir)."
   },
   {
     "id": "a2-zus-004",
@@ -5534,7 +6286,9 @@
     "prompt_en": "I like your car.",
     "correct": "Mir",
     "explanation_de": "gefallen + Dativ.",
-    "explanation_en": "gefallen + dative."
+    "explanation_en": "gefallen + dative.",
+    "prompt_vi": "Tôi rất thích chiếc ô tô của bạn.",
+    "explanation_vi": "gefallen + Dativ (ai thấy thích cái gì: Mir gefällt...)."
   },
   {
     "id": "a2-zus-005",
@@ -5546,7 +6300,9 @@
     "prompt_en": "Could you do me a favour?",
     "correct": "Gefallen",
     "explanation_de": "jemandem einen Gefallen tun.",
-    "explanation_en": "to do someone a favour."
+    "explanation_en": "to do someone a favour.",
+    "prompt_vi": "Bạn có thể giúp tôi một việc được không?",
+    "explanation_vi": "Cụm từ: jemandem einen Gefallen tun (giúp đỡ ai một việc / làm ơn giúp ai)."
   },
   {
     "id": "a2-zus-006",
@@ -5558,7 +6314,9 @@
     "prompt_en": "I would like to live in a tiny house.",
     "correct": "einem",
     "explanation_de": "leben in + Dativ (Ort): einem.",
-    "explanation_en": "leben in + dative (place): einem."
+    "explanation_en": "leben in + dative (place): einem.",
+    "prompt_vi": "Tôi muốn sống trong một ngôi nhà nhỏ tiện ích (tiny house).",
+    "explanation_vi": "leben in + Dativ (nơi chốn, giống trung das Tiny House) → một ngôi nhà nhỏ: einem Tiny House."
   },
   {
     "id": "a2-lern-001",
@@ -5570,7 +6328,9 @@
     "prompt_en": "I cannot remember the material.",
     "correct": "merken",
     "explanation_de": "sich etwas merken.",
-    "explanation_en": "sich etwas merken."
+    "explanation_en": "sich etwas merken.",
+    "prompt_vi": "Tôi không tài nào nhớ nổi kiến thức bài học.",
+    "explanation_vi": "Cụm từ: sich (Dativ) etwas merken (ghi nhớ điều gì vào đầu)."
   },
   {
     "id": "a2-lern-002",
@@ -5582,7 +6342,9 @@
     "prompt_en": "I practised too little.",
     "correct": "geübt",
     "explanation_de": "üben → geübt.",
-    "explanation_en": "üben → geübt."
+    "explanation_en": "üben → geübt.",
+    "prompt_vi": "Tôi đã luyện tập quá ít.",
+    "explanation_vi": "üben → thì Perfekt: habe geübt."
   },
   {
     "id": "a2-lern-003",
@@ -5594,7 +6356,9 @@
     "prompt_en": "One should not be afraid of mistakes.",
     "correct": "Angst",
     "explanation_de": "Angst haben vor + Dativ.",
-    "explanation_en": "Angst haben vor + dative."
+    "explanation_en": "Angst haben vor + dative.",
+    "prompt_vi": "Người ta không nên sợ mắc lỗi.",
+    "explanation_vi": "Cấu trúc: Angst haben vor + Dativ (sợ hãi điều gì)."
   },
   {
     "id": "a2-ber-001",
@@ -5612,7 +6376,9 @@
     ],
     "correct": "Gebärdendolmetscher",
     "explanation_de": "Tom Dahl ist Gebärdendolmetscher.",
-    "explanation_en": "Tom Dahl is a sign-language interpreter."
+    "explanation_en": "Tom Dahl is a sign-language interpreter.",
+    "prompt_vi": "Tom Dahl làm nghề gì?",
+    "explanation_vi": "Tom Dahl là một thông dịch viên ngôn ngữ ký hiệu (Gebärdendolmetscher)."
   },
   {
     "id": "a2-ber-002",
@@ -5624,7 +6390,9 @@
     "prompt_en": "The woman translates documents. She is a translator.",
     "correct": "Übersetzerin",
     "explanation_de": "der Übersetzer → die Übersetzerin.",
-    "explanation_en": "der Übersetzer → die Übersetzerin."
+    "explanation_en": "der Übersetzer → die Übersetzerin.",
+    "prompt_vi": "Người phụ nữ này dịch các tài liệu. Cô ấy là một nữ biên dịch viên.",
+    "explanation_vi": "Danh từ chỉ nghề nghiệp nữ: der Übersetzer → die Übersetzerin."
   },
   {
     "id": "a2-ber-003",
@@ -5636,7 +6404,9 @@
     "prompt_en": "I sign the contract.",
     "correct": "unterschreibe",
     "explanation_de": "unterschreiben → ich unterschreibe.",
-    "explanation_en": "unterschreiben → ich unterschreibe."
+    "explanation_en": "unterschreiben → ich unterschreibe.",
+    "prompt_vi": "Tôi ký tên vào hợp đồng.",
+    "explanation_vi": "unterschreiben (tiền tố không tách) → chia ngôi ich: unterschreibe."
   },
   {
     "id": "a2-spr-001",
@@ -5648,7 +6418,9 @@
     "prompt_en": "When I go out in the evening, I mostly go out to eat.",
     "correct": "essen",
     "explanation_de": "gehen + Infinitiv: essen gehen.",
-    "explanation_en": "gehen + infinitive: essen gehen."
+    "explanation_en": "gehen + infinitive: essen gehen.",
+    "prompt_vi": "Mỗi khi ra ngoài vào buổi tối, tôi thường đi ăn.",
+    "explanation_vi": "Cấu trúc gehen + động từ nguyên thể: essen gehen (đi ăn)."
   },
   {
     "id": "a2-spr-002",
@@ -5660,7 +6432,9 @@
     "prompt_en": "Last week I took the train to Munich.",
     "correct": "gefahren",
     "explanation_de": "Perfekt mit sein: bin … gefahren.",
-    "explanation_en": "Perfekt with sein: bin … gefahren."
+    "explanation_en": "Perfekt with sein: bin … gefahren.",
+    "prompt_vi": "Tuần trước tôi đã đi tàu hỏa đến Munich.",
+    "explanation_vi": "Thì Perfekt chuyển động đi với sein: bin … gefahren."
   },
   {
     "id": "a2-spr-003",
@@ -5672,7 +6446,9 @@
     "prompt_en": "I do not know whether I will go by bike tomorrow.",
     "correct": "ob",
     "explanation_de": "ob bei Ja/Nein-Frage.",
-    "explanation_en": "ob for yes/no questions."
+    "explanation_en": "ob for yes/no questions.",
+    "prompt_vi": "Tôi không biết liệu ngày mai tôi có đi bằng xe đạp hay không.",
+    "explanation_vi": "Dùng liên từ 'ob' cho câu hỏi gián tiếp Yes/No (liệu có... hay không)."
   },
   {
     "id": "a2-route-001",
@@ -5684,7 +6460,9 @@
     "prompt_en": "I walk past the cinema.",
     "correct": "vorbei",
     "explanation_de": "an … vorbei + Dativ.",
-    "explanation_en": "an … vorbei + dative."
+    "explanation_en": "an … vorbei + dative.",
+    "prompt_vi": "Tôi đi bộ ngang qua rạp chiếu phim.",
+    "explanation_vi": "an … vorbei + Dativ (đi ngang qua đâu đó)."
   },
   {
     "id": "a2-route-002",
@@ -5696,7 +6474,9 @@
     "prompt_en": "I walk as far as the supermarket.",
     "correct": "bis",
     "explanation_de": "bis zu + Dativ.",
-    "explanation_en": "bis zu + dative."
+    "explanation_en": "bis zu + dative.",
+    "prompt_vi": "Tôi đi bộ tới tận siêu thị.",
+    "explanation_vi": "bis zu + Dativ (cho tới tận đâu đó: bis zum Supermarkt)."
   },
   {
     "id": "a2-route-003",
@@ -5708,7 +6488,9 @@
     "prompt_en": "The cinema is opposite the post office.",
     "correct": "gegenüber",
     "explanation_de": "gegenüber von + Dativ.",
-    "explanation_en": "gegenüber von + dative."
+    "explanation_en": "gegenüber von + dative.",
+    "prompt_vi": "Rạp chiếu phim nằm ở phía đối diện bưu điện.",
+    "explanation_vi": "gegenüber von + Dativ (ở đối diện với)."
   },
   {
     "id": "a2-route-004",
@@ -5720,7 +6502,9 @@
     "prompt_en": "I am of the opinion that education in Germany is very good.",
     "correct": "Meinung",
     "explanation_de": "der Meinung sein, dass …",
-    "explanation_en": "der Meinung sein, dass …"
+    "explanation_en": "der Meinung sein, dass …",
+    "prompt_vi": "Tôi cho rằng chất lượng giáo dục ở Đức rất tốt.",
+    "explanation_vi": "Mẫu câu nêu quan điểm: der Meinung sein, dass … (có quan điểm/ý kiến rằng...)."
   },
   {
     "id": "a2-lebl-001",
@@ -5732,6 +6516,8 @@
     "prompt_en": "At 22 he studied and got married.",
     "correct": "hat",
     "explanation_de": "Perfekt mit haben: hat studiert, hat geheiratet.",
-    "explanation_en": "Perfekt with haben: hat studiert, hat geheiratet."
+    "explanation_en": "Perfekt with haben: hat studiert, hat geheiratet.",
+    "prompt_vi": "Vào năm 22 tuổi, anh ấy đã theo học đại học và lập gia đình.",
+    "explanation_vi": "Thì Perfekt đi với haben: hat studiert, hat geheiratet."
   }
 ]

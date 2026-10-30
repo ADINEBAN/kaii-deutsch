@@ -37,6 +37,15 @@ import unicodedata
 from collections import OrderedDict, defaultdict
 from pathlib import Path
 
+if sys.platform == "win32":
+    try:
+        if hasattr(sys.stdout, "reconfigure"):
+            sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+        if hasattr(sys.stderr, "reconfigure"):
+            sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
 LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"]
 LEVEL_COLORS = {"A1": "#16a34a", "A2": "#2563eb", "B1": "#7c3aed",
                 "B2": "#ea580c", "C1": "#dc2626", "C2": "#0d9488"}
@@ -248,11 +257,10 @@ def letter_page(tpl, pages, page, base_url, counts_total):
     part_txt = "" if page["parts"] == 1 else " (Teil %d/%d)" % (page["part"], page["parts"])
     letter_total = sum(len(p["items"]) for p in pages if p["letter"] == L)
     samples = ", ".join(re.sub(r"[\u2060\u200b]", "", e["disp"].split(",")[0]).strip() for e in page["items"][:3])
-    starting = "starting with a number or symbol (#)" if L == "#" else "starting with %s" % label
-    title = "German Words %s%s – Deutsch Wörterbuch A1–C2 | WordFeather" % (starting[0].upper() + starting[1:], part_txt)
-    desc = ("%d German word%s %s (e.g. %s) with English translations, example sentences and collocations. "
-            "Deutsch–Englisch Wörterbuch for Goethe and telc exam preparation, levels A1–C2." %
-            (letter_total, "" if letter_total == 1 else "s", starting, samples))
+    starting_vi = "bắt đầu bằng ký tự hoặc số (#)" if L == "#" else "bắt đầu bằng chữ %s" % label
+    title = "Từ vựng tiếng Đức %s%s – Từ điển Đức - Việt A1–C2 | WordFeather" % (starting_vi, part_txt)
+    desc = ("%d từ vựng tiếng Đức %s (ví dụ: %s) kèm bản dịch tiếng Việt thực tế, câu ví dụ và kết hợp từ cho kỳ thi Goethe và telc A1–C2." %
+            (letter_total, starting_vi, samples))
     url = "%s/%s" % (base_url, page["file"])
 
     s = set_head(tpl["before"], title, desc, url)
@@ -268,30 +276,34 @@ def letter_page(tpl, pages, page, base_url, counts_total):
                    lambda m: '<script type="application/ld+json">%s</script>' % crumb, s, count=1, flags=re.S)
 
     # visible headline + counts
-    s = s.replace("📖 Wörterbuch / Dictionary</h1>",
-                  "📖 German Words %s%s – Deutsch Wörterbuch</h1>" % (starting[0].upper() + starting[1:], part_txt), 1)
-    intro = ('<p class="mb-3">%d German word%s %s, each with its English translation, an example sentence with '
-             'translation and common collocations – graded from A1 to C2 for Goethe and telc exam preparation. '
-             'Deutsche Wörter mit englischer Übersetzung und Beispielsätzen. '
-             '<a href="dictionary.html">Back to the full dictionary</a>.</p>\n' % (letter_total, "" if letter_total == 1 else "s", starting))
+    s = s.replace("📖 Wörterbuch / Từ điển</h1>",
+                  "📖 Từ vựng tiếng Đức %s%s – Từ điển Đức - Việt</h1>" % (starting_vi, part_txt), 1)
+    intro = ('<p class="mb-3">%d từ vựng tiếng Đức %s, mỗi từ đều có bản dịch tiếng Việt thực tế, câu ví dụ và cụm từ kết hợp — phân cấp A1 đến C2 phục vụ ôn thi Goethe và telc. '
+             '<a href="dictionary.html">← Quay lại trang tra cứu đầy đủ</a>.</p>\n' % (letter_total, starting_vi))
     s = s.replace('<p class="info-line mb-3">', intro + '<p class="info-line mb-3">', 1)
     s, k = re.subn(r"\d+ exam-relevant words from A1–C2",
                    "%d word%s beginning with %s · A1–C2" % (letter_total, "" if letter_total == 1 else "s", label), s, count=1)
     s = re.sub(r'(<span class="stats" id="wordCount">)[^<]*(</span>)',
                lambda m: "%s%d %s%s" % (m.group(1), n_page, "Wort" if n_page == 1 else "Wörter", m.group(2)), s, count=1)
-    s = s.replace('<li class="breadcrumb-item active" aria-current="page">Wörterbuch / Dictionary</li>',
-                  '<li class="breadcrumb-item"><a href="dictionary.html">Wörterbuch / Dictionary</a></li>'
+    s = s.replace('<li class="breadcrumb-item active" aria-current="page">Wörterbuch / Từ điển</li>',
+                  '<li class="breadcrumb-item"><a href="dictionary.html">Wörterbuch / Từ điển</a></li>'
                   '<li class="breadcrumb-item active" aria-current="page">%s%s</li>' % (label, part_txt), 1)
 
-    extra_css = ("<style>.word-card{scroll-margin-top:7rem}.word-card:target{outline:2px solid #1d4ed8;"
-                 "outline-offset:2px;border-radius:.5rem}.letter-pager{display:flex;justify-content:space-between;"
-                 "gap:1rem;flex-wrap:wrap;padding:1.25rem 0 0;font-weight:600}"
-                 ".search-scope{font-size:.8rem;color:var(--muted,#64748b)}</style>\n")
+    extra_css = ("<style>.word-card{scroll-margin-top:7rem}.word-card:target{outline:2.5px solid #3b82f6;"
+                 "outline-offset:3px;border-radius:1rem}.letter-pager{display:flex;justify-content:space-between;"
+                 "gap:1rem;flex-wrap:wrap;padding:1.25rem 0 0;font-weight:700}"
+                 ".letter-pager a{display:inline-flex;align-items:center;padding:0.45rem 1.1rem;background:rgba(255,255,255,0.7);"
+                 "border:1px solid var(--word-border);border-radius:999px;backdrop-filter:blur(10px);text-decoration:none;"
+                 "color:#2563eb;transition:all .2s ease;box-shadow:0 2px 8px rgba(0,0,0,0.03)}"
+                 ".letter-pager a:hover{transform:translateY(-2px);background:#2563eb;color:#fff;box-shadow:0 6px 18px rgba(37,99,235,0.3)}"
+                 "[data-bs-theme=\"dark\"] .letter-pager a{background:rgba(30,41,59,0.7);color:#93c5fd;border-color:rgba(255,255,255,0.1)}"
+                 "[data-bs-theme=\"dark\"] .letter-pager a:hover{background:#3b82f6;color:#fff}"
+                 ".search-scope{font-size:.82rem;color:var(--muted,#64748b)}</style>\n")
     s = s.replace("</head>", extra_css + "</head>", 1)
 
     # search box is now per-letter: say so, link to the global search on the hub
-    scope = ('<p class="search-scope mb-2">Search and filters apply to this page (%s). '
-             '<a href="dictionary.html" id="hubFilterLink">Search all %d words →</a></p>\n' % (label, counts_total))
+    scope = ('<p class="search-scope mb-2">Tìm kiếm và bộ lọc áp dụng cho trang này (%s). '
+             '<a href="dictionary.html" id="hubFilterLink">Tìm kiếm trên toàn bộ %d từ vựng →</a></p>\n' % (label, counts_total))
     s = s.replace('<div class="search-wrap mb-2">', scope + '<div class="search-wrap mb-2">', 1)
 
     # cards
@@ -330,26 +342,34 @@ def letter_page(tpl, pages, page, base_url, counts_total):
 
 # --------------------------------------------------------------------------- hub
 HUB_CSS = """<style>
-.letter-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:.6rem;margin:.25rem 0 1.5rem}
-.letter-tile{display:flex;flex-direction:column;align-items:center;gap:.1rem;padding:.7rem .4rem;border:1.5px solid var(--word-border,#e5e7eb);
- border-radius:.75rem;text-decoration:none;background:var(--card-bg,#fff);color:inherit}
-.letter-tile:hover{border-color:#1d4ed8;box-shadow:var(--card-shadow,0 .25rem .75rem rgba(0,0,0,.08))}
-.letter-tile strong{font-size:1.5rem;line-height:1.1;color:#1d4ed8}
-[data-bs-theme="dark"] .letter-tile strong{color:#818cf8}
-.letter-tile span{font-size:.75rem;color:var(--muted,#64748b)}
-.hub-result{display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap;padding:.55rem .25rem;border-bottom:1px solid var(--word-border,#e5e7eb);text-decoration:none;color:inherit}
-.hub-result:hover{background:rgba(29,78,216,.06)}
-.hub-result .hub-de{font-weight:700;font-size:1.05rem}
-.hub-result .hub-en{color:var(--muted,#64748b)}
-.hub-result .hub-ex{flex-basis:100%;font-size:.85rem;color:var(--muted,#64748b)}
+.letter-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:.75rem;margin:.4rem 0 1.5rem}
+.letter-tile{display:flex;flex-direction:column;align-items:center;gap:.2rem;padding:.85rem .5rem;border:1px solid var(--word-border,rgba(255,255,255,0.8));
+ border-radius:1rem;text-decoration:none;background:var(--card-bg,rgba(255,255,255,0.7));backdrop-filter:var(--glass-blur,blur(16px));
+ color:inherit;box-shadow:0 4px 14px rgba(37,99,235,0.06), inset 0 1px 1px rgba(255,255,255,0.85);transition:all .22s cubic-bezier(0.16,1,0.3,1)}
+.letter-tile:hover{border-color:#3b82f6;transform:translateY(-3px) scale(1.03);box-shadow:0 12px 28px -4px rgba(37,99,235,0.18), inset 0 1px 1px #fff;color:inherit}
+[data-bs-theme="dark"] .letter-tile{background:rgba(15,23,42,0.65);border-color:rgba(255,255,255,0.1);box-shadow:0 4px 14px rgba(0,0,0,0.4), inset 0 1px 1px rgba(255,255,255,0.08)}
+[data-bs-theme="dark"] .letter-tile:hover{border-color:#60a5fa;box-shadow:0 12px 28px -4px rgba(59,130,246,0.3)}
+.letter-tile strong{font-size:1.6rem;line-height:1.1;background:linear-gradient(135deg,#1d4ed8,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+[data-bs-theme="dark"] .letter-tile strong{background:linear-gradient(135deg,#93c5fd,#c084fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.letter-tile span{font-size:.78rem;font-weight:600;color:var(--muted,#64748b)}
+.hub-result{display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap;padding:.75rem 1rem;margin-bottom:.45rem;border:1px solid var(--word-border,rgba(255,255,255,0.7));
+ border-radius:1rem;background:rgba(255,255,255,0.45);backdrop-filter:blur(8px);text-decoration:none;color:inherit;transition:all .2s cubic-bezier(0.16,1,0.3,1)}
+.hub-result:hover{background:var(--word-hover,rgba(255,255,255,0.85));border-color:#93c5fd;transform:translateY(-2px);box-shadow:0 8px 24px -4px rgba(29,78,216,0.1)}
+[data-bs-theme="dark"] .hub-result{background:rgba(17,24,39,0.5);border-color:rgba(255,255,255,0.08)}
+[data-bs-theme="dark"] .hub-result:hover{background:rgba(30,41,59,0.85);border-color:#60a5fa;box-shadow:0 8px 24px -4px rgba(0,0,0,0.5)}
+.hub-result .hub-de{font-weight:800;font-size:1.1rem;letter-spacing:-0.01em}
+.hub-result .hub-en{color:var(--muted,#64748b);font-weight:500}
+.hub-result .hub-ex{flex-basis:100%;font-size:.86rem;color:var(--muted,#64748b);margin-top:.25rem}
 .hub-msg{padding:1.5rem .25rem;color:var(--muted,#64748b)}
 .az-link.active{font-weight:800;color:#1d4ed8}
-.letter-tile.active{border-color:#1d4ed8;box-shadow:0 0 0 2px #1d4ed8 inset}
-.letter-chip{display:inline-flex;align-items:center;gap:.4rem;border:1.5px solid #1d4ed8;background:#1d4ed8;color:#fff;
- border-radius:2rem;padding:.2rem .35rem .2rem .75rem;font-size:.78rem;font-weight:600;margin:0 0 .6rem}
+.letter-tile.active{border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,0.3) inset}
+.letter-chip{display:inline-flex;align-items:center;gap:.4rem;border:1.5px solid #2563eb;background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff;
+ border-radius:2rem;padding:.25rem .45rem .25rem .85rem;font-size:.82rem;font-weight:700;margin:0 0 .6rem;box-shadow:0 4px 12px rgba(37,99,235,0.25)}
 .letter-chip button{all:unset;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;
  width:1.2rem;height:1.2rem;border-radius:50%;background:rgba(255,255,255,.25);font-size:.7rem;line-height:1}
 .letter-chip button:hover{background:rgba(255,255,255,.4)}
+.word-vi{font-size:.88rem;color:var(--muted,#64748b);width:100%;flex-basis:100%;margin-top:.2rem;line-height:1.45;font-weight:500}
+.ex-vi{font-size:.85rem;color:var(--muted,#64748b);display:block;margin-top:.2rem;line-height:1.45;font-style:normal;opacity:0.9}
 </style>
 """
 
@@ -378,7 +398,7 @@ HUB_JS = r"""        // ---- hub search (uses dictionary-index.json, loaded on f
                     .then(function (r) { if (!r.ok) throw new Error('index'); return r.json(); })
                     .then(function (j) {
                         j.w.forEach(function (r) {
-                            r.f = [foldGerman(r[0].toLowerCase()), foldGerman(r[1].toLowerCase()), foldGerman(r[6].toLowerCase())];
+                            r.f = [foldGerman(r[0].toLowerCase()), foldGerman(r[1].toLowerCase()), foldGerman(r[6].toLowerCase()), (r[9] || '').toLowerCase()];
                         });
                         index = j;
                         return j;
@@ -413,7 +433,7 @@ HUB_JS = r"""        // ---- hub search (uses dictionary-index.json, loaded on f
                         (activePOS === 'irregular' && r[4] === 1) ||
                         (activePOS === 'other' && OTHER_POS.indexOf(r[3]) > -1))) return false;
                     if (cat && j.c[r[5]] !== cat) return false;
-                    return !q || r.f[0].indexOf(q) > -1 || r.f[1].indexOf(q) > -1 || r.f[2].indexOf(q) > -1;
+                    return !q || r.f[0].indexOf(q) > -1 || r.f[1].indexOf(q) > -1 || r.f[2].indexOf(q) > -1 || (r.f[3] && r.f[3].indexOf(q) > -1);
                 });
                 shown = PAGE;
                 render(j);
@@ -448,9 +468,13 @@ HUB_JS = r"""        // ---- hub search (uses dictionary-index.json, loaded on f
             b.title = lang === 'de-DE' ? 'Anhören' : 'Listen';
             b.onclick = function (e) {
                 e.preventDefault(); e.stopPropagation();
+                if (window.WordFeatherTTS) {
+                    WordFeatherTTS.speak(text, lang, b);
+                    return;
+                }
                 if (!('speechSynthesis' in window) || !text) return;
                 var synth = window.speechSynthesis; synth.cancel();
-                var clean = text.replace(/\s*[,]\s*-\w+/g, '').replace(/[—–]/g, '').replace(/\(.*?\)/g, '').replace(/\s+/g, ' ').trim();
+                var clean = text.replace(/\s*[,]\s*-[^\s,()]+/g, '').replace(/[—–]/g, ' ').replace(/\(.*?\)/g, '').replace(/\s+/g, ' ').trim();
                 if (!clean) return;
                 var u = new SpeechSynthesisUtterance(clean); u.lang = lang; u.rate = 0.9;
                 synth.speak(u);
@@ -671,12 +695,10 @@ __CATEGORY_EN__
 
 def hub_page(tpl, pages, base_url, total, counts_by_letter, counts_by_level):
     s = tpl["before"]
-    title = "German Dictionary A1–C2: {:,} Words – Deutsch Wörterbuch & Wortschatz | WordFeather".format(total)
-    desc = ("Free German–English dictionary with {:,} exam-relevant words and phrases, graded A1 to C2, with translations, "
-            "example sentences and collocations for Goethe and telc. Deutsch–Englisch Wörterbuch und Wortschatz: "
-            "durchsuchen oder nach Buchstaben blättern.".format(total))
+    title = "Từ điển tiếng Đức A1–C2: {:,} từ vựng – Từ điển Đức - Việt | WordFeather".format(total)
+    desc = ("Từ điển tiếng Đức - tiếng Việt với {:,} từ vựng và cụm từ chuẩn thi Goethe và telc từ A1 đến C2, kèm bản dịch tiếng Việt thực tế, câu ví dụ và kết hợp từ.".format(total))
     s = set_head(s, title, desc, base_url + "/dictionary.html")
-    s = s.replace("📖 Wörterbuch / Dictionary</h1>", "📖 German Dictionary — Deutsch Wörterbuch & Wortschatz</h1>", 1)
+    s = s.replace("📖 Wörterbuch / Từ điển</h1>", "📖 Từ điển tiếng Đức — Tra cứu từ vựng Đức - Việt</h1>", 1)
     levels = " · ".join('<a href="%s/">%s</a>' % (l, l) for l in LEVELS)
     intro = ('<p class="mb-3">A free German–English dictionary with {:,} words and phrases from A1 to C2. Every entry has an '
              'English translation, an example sentence with translation, collocations and audio pronunciation, '
@@ -697,7 +719,7 @@ def hub_page(tpl, pages, base_url, total, counts_by_letter, counts_by_level):
         '<a class="letter-tile az-link" href="%s"><strong>%s</strong><span>%d Wörter</span></a>' %
         (f, L, counts_by_letter[L]) for L, f in firsts.items())
     lv = " · ".join("%s: %d" % (l, counts_by_level.get(l, 0)) for l in LEVELS)
-    grid = ('<div id="letterGrid">\n<h2 class="h5 mb-2">Nach Buchstaben blättern / Browse A–Z</h2>\n'
+    grid = ('<div id="letterGrid">\n<h2 class="h5 mb-2">Tra cứu theo chữ cái (A–Z)</h2>\n'
             '<div class="letter-grid">%s</div>\n<p class="info-line">%s</p>\n</div>\n'
             '<div id="hubResults" style="display:none"></div>\n' % (tiles, lv))
     middle = ('<div class="dict-layout">\n%s\n<div id="wordList">\n%s%s' %
@@ -834,7 +856,7 @@ def split_dictionary(src_text, out_dir=".", base="https://wordfeather.com", max_
         for e in p["items"]:
             rows.append([e["disp"], e.get("en", ""), e["level"], e.get("pos", ""),
                          1 if e.get("irregular") == "true" else 0, cats.index(e.get("category", "")),
-                         e.get("ex", ""), pi, e["slug"]])
+                         e.get("ex", ""), pi, e["slug"], e.get("vi", "")])
     (out / "dictionary-index.json").write_text(
         json.dumps({"p": page_names, "c": cats, "w": rows}, ensure_ascii=False, separators=(",", ":")),
         encoding="utf-8")

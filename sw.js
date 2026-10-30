@@ -1,7 +1,7 @@
 // WordFeather - Service Worker
 // CACHE_NAME below is auto-updated by build.py on every run — do not edit by hand.
 // AUTO-CACHE-VERSION-START
-const CACHE_NAME = 'deutsch-lernen-v20261016-075436';
+const CACHE_NAME = 'deutsch-lernen-v20261030-132710';
 // AUTO-CACHE-VERSION-END
 const BASE = '/';
 
@@ -38,16 +38,28 @@ self.addEventListener('activate', function(event) {
 // Fetch strategy:
 // HTML pages: network-first (always get latest, cache as offline fallback)
 // Static assets: cache-first (fast loading)
+// Dynamic API endpoints: NEVER intercept or cache
 self.addEventListener('fetch', function(event) {
   var request = event.request;
+
+  // Never intercept non-GET requests (e.g. POST /api/tts)
+  if (request.method !== 'GET') {
+    return;
+  }
+
   var url = new URL(request.url);
+
+  // Never intercept API endpoints (always hit network directly)
+  if (url.pathname.startsWith('/api/')) {
+    return;
+  }
 
   // HTML pages and own assets: network-first
   if (request.mode === 'navigate' ||
       (url.origin === self.location.origin && url.pathname.startsWith(BASE))) {
     event.respondWith(
       fetch(request).then(function(networkResponse) {
-        if (networkResponse && networkResponse.status === 200) {
+        if (networkResponse && networkResponse.status === 200 && request.method === 'GET') {
           var responseClone = networkResponse.clone();
           caches.open(CACHE_NAME).then(function(cache) {
             cache.put(request, responseClone);
@@ -68,7 +80,7 @@ self.addEventListener('fetch', function(event) {
     caches.match(request).then(function(cachedResponse) {
       if (cachedResponse) { return cachedResponse; }
       return fetch(request).then(function(networkResponse) {
-        if (networkResponse && networkResponse.status === 200) {
+        if (networkResponse && networkResponse.status === 200 && request.method === 'GET') {
           var responseClone = networkResponse.clone();
           caches.open(CACHE_NAME).then(function(cache) {
             cache.put(request, responseClone);

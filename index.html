@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -38,52 +38,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --page-bg: #f0f4ff;
+            --page-bg: #f6f8fc;
             --page-text: #1e293b;
-            --muted-text: #475569;
+            --muted-text: #566069;
             --card-bg: #ffffff;
-            --card-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.07);
-            --hero-gradient: linear-gradient(135deg, #1d4ed8 0%, #6366f1 100%);
+            --card-border: rgba(226, 232, 240, 0.85);
+            --card-shadow: 0 8px 30px rgba(29, 78, 216, 0.06);
+            --hero-gradient: linear-gradient(135deg, rgba(29, 78, 216, 0.95) 0%, rgba(99, 102, 241, 0.95) 100%);
             --tab-active-bg: #1d4ed8;
             --tab-active-color: #ffffff;
-            --tab-inactive-bg: #e8eeff;
+            --tab-inactive-bg: rgba(232, 238, 255, 0.8);
             --tab-inactive-color: #1d4ed8;
-            --tab-hover-bg: #c7d2fe;
+            --tab-hover-bg: #dbeafe;
             --panel-bg: #f8faff;
-            --panel-border: #dbeafe;
-            --badge-a: #22c55e;
-            --badge-b: #f59e0b;
-            --badge-c: #8b5cf6;
+            --panel-border: rgba(219, 234, 254, 0.9);
+            --badge-a: #15803d;
+            --badge-b: #c2410c;
+            --badge-c: #0f766e;
             --info-border: #1d4ed8;
-            --info-bg: #eff6ff;
+            --info-bg: rgba(239, 246, 255, 0.8);
         }
 
         [data-bs-theme="dark"] {
-            --page-bg: #0b1121;
+            --page-bg: #0b1120;
             --page-text: #e2e8f0;
             --muted-text: #94a3b8;
             --card-bg: #111827;
-            --card-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.45);
-            --hero-gradient: linear-gradient(135deg, #1e3a8a 0%, #4338ca 100%);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+            --hero-gradient: linear-gradient(135deg, rgba(30, 58, 138, 0.95) 0%, rgba(67, 56, 202, 0.95) 100%);
             --tab-active-bg: #3b82f6;
             --tab-active-color: #ffffff;
-            --tab-inactive-bg: #1f2937;
+            --tab-inactive-bg: #1e293b;
             --tab-inactive-color: #93c5fd;
-            --tab-hover-bg: #273449;
-            --panel-bg: #1a2740;
-            --panel-border: #1e3a6e;
+            --tab-hover-bg: #283548;
+            --panel-bg: #162032;
+            --panel-border: #1e293b;
             --info-border: #3b82f6;
-            --info-bg: #172039;
+            --info-bg: rgba(23, 32, 57, 0.8);
         }
 
         .site-footer {
-            background: var(--page-bg, #f1f3f5);
-            color: var(--page-text, #1f2937);
+            background: var(--page-bg, #f6f8fc);
+            color: var(--page-text, #1e293b);
         }
         [data-bs-theme="dark"] .site-footer {
-            background: #1e293b !important;
+            background: #111827 !important;
             color: #e2e8f0;
-            border-color: #374151 !important;
+            border-color: rgba(255, 255, 255, 0.08) !important;
         }
         [data-bs-theme="dark"] .site-footer .text-secondary {
             color: #94a3b8 !important;
@@ -95,32 +97,6 @@
         [data-bs-theme="dark"] .site-footer .btn-outline-secondary:hover {
             background: #334155;
             color: #e2e8f0;
-        }
-
-        .star-cta {
-            text-align: center;
-            padding: 1.5rem;
-            margin-bottom: 1rem;
-            border-radius: 0.75rem;
-            background: linear-gradient(135deg, #fef3c7, #fde68a);
-            border: 1px solid #f59e0b;
-        }
-        [data-bs-theme="dark"] .star-cta {
-            background: linear-gradient(135deg, #78350f, #92400e);
-            border-color: #b45309;
-        }
-        .star-cta a {
-            display: inline-block;
-            margin-top: 0.5rem;
-            padding: 0.5rem 1.5rem;
-            background: #1f2937;
-            color: #fff;
-            border-radius: 0.5rem;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .star-cta a:hover {
-            background: #374151;
         }
 
         * { box-sizing: border-box; }
@@ -399,6 +375,113 @@
             outline: 3px solid #93c5fd;
             outline-offset: 2px;
         }
+
+        /* Home page layout: calmer spacing, clearer hierarchy, glass surfaces. */
+        body#top {
+            background:
+                radial-gradient(ellipse at 8% 12%, rgba(99, 102, 241, 0.10), transparent 34rem),
+                radial-gradient(ellipse at 92% 25%, rgba(14, 165, 233, 0.09), transparent 32rem),
+                var(--page-bg);
+        }
+        [data-bs-theme="dark"] body#top {
+            background:
+                radial-gradient(ellipse at 8% 12%, rgba(99, 102, 241, 0.15), transparent 34rem),
+                radial-gradient(ellipse at 92% 25%, rgba(14, 165, 233, 0.12), transparent 32rem),
+                var(--page-bg);
+        }
+        .hero-banner {
+            padding: clamp(3rem, 7vw, 5.8rem) 1.25rem clamp(2.7rem, 5vw, 4rem);
+            background: linear-gradient(130deg, #172554 0%, #3730a3 48%, #0369a1 100%);
+            isolation: isolate;
+        }
+        .hero-banner > *:not(.hero-canvas) { position: relative; z-index: 1; }
+        .hero-canvas {
+            position: absolute; inset: 0; width: 100%; height: 100%;
+            pointer-events: none; opacity: .72; mix-blend-mode: screen;
+        }
+        .hero-glass {
+            display: inline-flex; align-items: center; gap: .5rem; margin-top: 1.25rem;
+            padding: .55rem .9rem; border: 1px solid rgba(255,255,255,.25);
+            border-radius: 999px; background: rgba(255,255,255,.12);
+            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+            font-size: .82rem; font-weight: 600; color: rgba(255,255,255,.92);
+        }
+        .hero-banner::before {
+            background:
+                radial-gradient(ellipse at 18% 25%, rgba(255,255,255,.15), transparent 28%),
+                radial-gradient(ellipse at 82% 70%, rgba(56,189,248,.24), transparent 34%);
+            z-index: -1;
+        }
+        .hero-banner h1 { font-size: clamp(2.1rem, 5vw, 3.5rem); }
+        .hero-banner p { max-width: 620px; font-size: clamp(1rem, 2vw, 1.15rem); }
+        main.container { max-width: 1120px; }
+        .content-card {
+            border: 1px solid var(--card-border);
+            border-radius: 1.25rem;
+            overflow: hidden;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .level-panels { padding: clamp(1rem, 3vw, 2rem); }
+        .panel-header {
+            background: linear-gradient(120deg, var(--panel-bg), rgba(219,234,254,.36));
+            border-radius: 1rem;
+            padding: 1.2rem 1.4rem;
+        }
+        [data-bs-theme="dark"] .panel-header {
+            background: linear-gradient(120deg, var(--panel-bg), rgba(59,130,246,.08));
+        }
+        .topic-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: .8rem; }
+        .topic-link {
+            min-height: 3.35rem;
+            border-radius: .8rem;
+            background: color-mix(in srgb, var(--panel-bg) 84%, transparent);
+        }
+        .topic-link:hover { transform: translateY(-2px); }
+        .level-tabs-wrapper {
+            padding: .85rem 1rem 0;
+            background: linear-gradient(180deg, rgba(148,163,184,.08), transparent);
+        }
+        .level-tabs {
+            display: flex;
+            gap: .45rem;
+            padding: .35rem;
+            overflow-x: auto;
+            border: 1px solid var(--card-border);
+            border-radius: 999px;
+            background: var(--glass-surface, rgba(255,255,255,.7));
+            backdrop-filter: blur(14px) saturate(160%);
+            -webkit-backdrop-filter: blur(14px) saturate(160%);
+        }
+        .level-tab-btn {
+            flex: 1 0 3.5rem;
+            border: 0;
+            border-radius: 999px;
+            padding: .58rem .9rem;
+            font-weight: 700;
+            color: var(--tab-inactive-color);
+            background: transparent;
+            transition: background .18s ease, color .18s ease, box-shadow .18s ease;
+        }
+        .level-tab-btn:hover { background: var(--tab-hover-bg); }
+        .level-tab-btn.active {
+            color: var(--tab-active-color);
+            background: var(--tab-active-bg);
+            box-shadow: 0 4px 12px rgba(29,78,216,.22);
+        }
+        [data-bs-theme="dark"] .level-tabs { background: rgba(15,23,42,.72); }
+        [data-bs-theme="dark"] .topic-link { background: rgba(15,23,42,.5); }
+        @media (max-width: 575.98px) {
+            .hero-banner { padding-top: 2.6rem; }
+            .hero-banner h1 img { width: 40px; height: 40px; }
+            .level-panels { padding: 1rem; }
+            .panel-header { gap: .75rem; padding: 1rem; }
+            .topic-grid { grid-template-columns: 1fr; }
+            .extras-row { align-items: flex-start; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+        }
     </style>
 </head>
 <body id="top">
@@ -487,71 +570,13 @@
 
     <!-- ── Hero Banner ── -->
     <div class="hero-banner" role="region" aria-label="Willkommen / Welcome">
+        <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
         <h1><img src="/icons/64.png" width="48" height="48" alt="" class="rounded" style="vertical-align:-8px"> WordFeather</h1>
         <p>Complete A1–C2 materials for the Goethe-Zertifikat. Pick your level and start learning.</p>
+        <span class="hero-glass">✦ Learn at your pace · 6 levels · 100% free</span>
     </div>
 
     <!-- ── Main Content ── -->
-
-    <!-- App Install Banner -->
-    <div id="installBanner" class="install-banner-wrap" style="display:none;" role="region" aria-label="App installieren / Install the app">
-        <div class="container">
-            <div class="install-banner">
-                <div class="install-banner-bar">
-                    <span class="install-banner-icon">📱</span>
-                    <span class="install-banner-text">Install as a free app — works offline, no App Store needed</span>
-                </div>
-                <button type="button" id="installBannerClose" class="install-banner-close" aria-label="Dismiss install banner">✕</button>
-                <div id="installBannerPanel" class="install-banner-panel">
-                        <div class="row g-2">
-                            <div class="col-6 col-lg-3">
-                                <div class="install-banner-card"><div class="install-banner-card-title">🍎 iPhone/iPad</div><div>Safari → <strong>Share ⬆</strong> → Add to Home Screen</div></div>
-                            </div>
-                            <div class="col-6 col-lg-3">
-                                <div class="install-banner-card"><div class="install-banner-card-title">🤖 Android</div><div>Chrome → <strong>⋮ Menu</strong> or address bar → Install app</div></div>
-                            </div>
-                            <div class="col-6 col-lg-3">
-                                <div class="install-banner-card"><div class="install-banner-card-title">🖥️ macOS</div><div>Safari → <strong>File</strong> menu → Add to Dock</div></div>
-                            </div>
-                            <div class="col-6 col-lg-3">
-                                <div class="install-banner-card"><div class="install-banner-card-title">🪟 Windows</div><div>Chrome/Edge → <strong>⊕</strong> icon in address bar → Install</div></div>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <style>
-        .install-banner-wrap{background:linear-gradient(135deg,#1d4ed8 0%,#7c3aed 100%);color:#fff;}
-        .install-banner{position:relative;padding:.5rem 2.2rem .5rem .25rem;}
-        .install-banner-bar{display:flex;align-items:center;gap:.5rem;width:100%;padding:.2rem .25rem;font-size:.85rem;}
-        .install-banner-icon{font-size:1.1rem;line-height:1;}
-        .install-banner-text{font-weight:600;flex:1;}
-        .install-banner-close{position:absolute;top:.35rem;right:.35rem;background:none;border:none;color:#fff;opacity:.7;font-size:1rem;line-height:1;cursor:pointer;padding:.2rem .4rem;}
-        .install-banner-close:hover{opacity:1;}
-        .install-banner-panel{padding-top:.5rem;}
-        .install-banner-card{background:rgba(255,255,255,.15);border-radius:.6rem;padding:.5rem .7rem;font-size:.78rem;line-height:1.4;height:100%;}
-        .install-banner-card-title{font-weight:700;margin-bottom:.15rem;}
-    </style>
-    <script>
-    (function () {
-        var KEY = 'dlh_install_banner_dismissed';
-        var banner = document.getElementById('installBanner');
-        if (!banner) return;
-        var isStandalone = (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) || window.navigator.standalone === true;
-        var dismissed = false;
-        try { dismissed = localStorage.getItem(KEY) === '1'; } catch (e) {}
-        if (isStandalone || dismissed) return;
-        banner.style.display = 'block';
-        var closeBtn = document.getElementById('installBannerClose');
-        closeBtn.addEventListener('click', function (e) {
-            e.stopPropagation();
-            try { localStorage.setItem(KEY, '1'); } catch (e2) {}
-            banner.style.display = 'none';
-        });
-    })();
-    </script>
-    <!-- End App Install Banner -->
 <main class="container py-4 py-lg-5">
 
         <!-- Dictionary Banner -->
@@ -761,11 +786,6 @@
             </div>
         </div>
 
-        <!-- Star CTA -->
-        <div class="star-cta">
-            <p class="mb-0 fw-semibold">Found this helpful? Help other learners discover it!</p>
-            <a href="https://github.com/abdullahbutt/wordfeather" target="_blank" rel="noopener">⭐ Star on GitHub</a>
-        </div>
 
             <div id="footer-placeholder"></div>
     </main>
@@ -774,6 +794,31 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        // Lightweight, deferred Three.js accent: it never blocks first paint and
+        // is skipped for reduced-motion users or low-power devices.
+        (function () {
+            var canvas = document.getElementById('heroCanvas');
+            if (!canvas || window.matchMedia('(prefers-reduced-motion: reduce)').matches || navigator.hardwareConcurrency < 2) return;
+            var start = function () {
+                import('https://cdn.jsdelivr.net/npm/three@0.171.0/build/three.module.js').then(function (THREE) {
+                    var scene = new THREE.Scene();
+                    var camera = new THREE.PerspectiveCamera(55, 1, .1, 100); camera.position.z = 8;
+                    var renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true, antialias: true, powerPreference: 'low-power' });
+                    renderer.setPixelRatio(Math.min(devicePixelRatio, 1.5));
+                    var count = 90, positions = new Float32Array(count * 3);
+                    for (var i = 0; i < count * 3; i += 3) { positions[i] = (Math.random() - .5) * 15; positions[i + 1] = (Math.random() - .5) * 7; positions[i + 2] = (Math.random() - .5) * 5; }
+                    var geometry = new THREE.BufferGeometry(); geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+                    var points = new THREE.Points(geometry, new THREE.PointsMaterial({ color: 0x9bdcff, size: .045, transparent: true, opacity: .65 })); scene.add(points);
+                    function resize () { var w = canvas.clientWidth, h = canvas.clientHeight; renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix(); }
+                    resize(); window.addEventListener('resize', resize, { passive: true });
+                    var frame; function animate () { points.rotation.y += .00025; points.rotation.x = Math.sin(performance.now() * .00015) * .08; renderer.render(scene, camera); frame = requestAnimationFrame(animate); }
+                    animate();
+                    document.addEventListener('visibilitychange', function () { if (document.hidden) cancelAnimationFrame(frame); else animate(); });
+                }).catch(function () {});
+            };
+            if ('requestIdleCallback' in window) requestIdleCallback(start, { timeout: 1800 }); else setTimeout(start, 900);
+        })();
+
         // ── Theme toggle ──        root.setAttribute('data-bs-theme', preferredTheme);
         // ── Tab switching ──
         const tabButtons = document.querySelectorAll('.level-tab-btn');
@@ -801,8 +846,7 @@
         (function() {
             var path = window.location.pathname.replace(/\\/g, '/');
             var levelMatch = path.match(/\/(A1|A2|B1|B2|C1|C2)\//);
-            var prefix = levelMatch ? '../' : '';
-            var footerFallback = '<footer class="site-footer mt-5 py-4 border-top"><div class="container"><div class="row g-3 align-items-center"><div class="col-lg text-center text-lg-start"><p class="mb-1 fw-semibold">🪶 WordFeather — Goethe-Zertifikat A1 to C2</p><p class="mb-0 text-secondary small">Official certification materials for German language proficiency</p></div><div class="col-lg-auto"><div class="d-flex justify-content-center gap-2 flex-wrap"><a href="https://www.goethe.de" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener">Goethe-Institut ↗</a><a href="https://github.com/abdullahbutt/wordfeather" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener">⭐ Star on GitHub</a><a href="https://www.paypal.com/paypalme/abdullahbuttde" class="btn btn-sm fw-semibold" style="background:#ffdd00;border-color:#ffdd00;color:#1a1a1a;" target="_blank" rel="noopener">☕ Buy me a Coffee</a></div></div></div><hr class="my-3" style="opacity:0.15;"><div class="d-flex justify-content-center gap-3 flex-wrap small"><a href="privacy.html" class="text-secondary text-decoration-none">Privacy &amp; Impressum</a><span class="text-secondary">·</span><a href="https://github.com/abdullahbutt/wordfeather/issues" target="_blank" rel="noopener" class="text-secondary text-decoration-none">Contact (GitHub Issues)</a></div></div></footer>';
+            var footerFallback = '<footer class="site-footer mt-5 py-4 border-top"><div class="container text-center"><p class="mb-1 fw-semibold">🪶 WordFeather — Goethe-Zertifikat A1 bis C2</p><div class="d-flex justify-content-center gap-3 flex-wrap small text-secondary"><a href="' + prefix + 'privacy.html" class="text-secondary text-decoration-none">Privacy &amp; Impressum</a>·<a href="https://github.com/abdullahbutt/wordfeather/issues" target="_blank" rel="noopener" class="text-secondary text-decoration-none">Contact (GitHub Issues)</a></div><p class="text-secondary mb-0 mt-2 small">© 2026 Abdullah Butt · CC BY-NC 4.0</p></div></footer>';
             fetch(prefix + 'footer.html?v=' + Date.now())
                 .then(function(r) { return r.ok ? r.text() : Promise.reject(new Error('footer fetch failed')); })
                 .then(function(html) { html = html.replace(/BASE\//g, prefix); document.getElementById('footer-placeholder').innerHTML = html; })

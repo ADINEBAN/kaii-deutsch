@@ -15,7 +15,9 @@
     ],
     "correct": "des Notdienstplans",
     "explanation_de": "'Zwecks' (zum Zweck von) verlangt den Genitiv: <b>des Notdienstplans</b>.",
-    "explanation_en": "'Zwecks' (for the purpose of) governs the genitive: <b>des Notdienstplans</b>."
+    "explanation_en": "'Zwecks' (for the purpose of) governs the genitive: <b>des Notdienstplans</b>.",
+    "prompt_vi": "Ngoài giờ làm việc, vui lòng quay số để tra cứu lịch trực cấp cứu.",
+    "explanation_vi": "Giới từ 'Zwecks' (nhằm mục đích) đòi hỏi sở hữu cách (Genitiv): <b>des Notdienstplans</b>."
   },
   {
     "id": "c2-wortschatz-register-002",
@@ -33,7 +35,9 @@
     ],
     "correct": "festlich und elegant",
     "explanation_de": "'Festlich und elegant' passt zu einer formellen Gala; die anderen Optionen beschreiben unpassende Stile.",
-    "explanation_en": "'Festlich und elegant' fits a formal gala; the other options describe styles unsuited to such an event."
+    "explanation_en": "'Festlich und elegant' fits a formal gala; the other options describe styles unsuited to such an event.",
+    "prompt_vi": "Đối với buổi dạ hội, xin vui lòng tuân theo phong cách trang phục sau: trang trọng và lịch lãm.",
+    "explanation_vi": "'Festlich und elegant' (trang trọng và tao nhã) phù hợp với một buổi dạ hội trang trọng; các phương án khác miêu tả phong cách không phù hợp với sự kiện này."
   },
   {
     "id": "c2-wortschatz-adverb-formell-000",
@@ -51,7 +55,9 @@
     ],
     "correct": "entsprechend",
     "explanation_de": "'Entsprechend' (dementsprechend) impliziert eine gleichartige Reaktion.",
-    "explanation_en": "'Entsprechend' (correspondingly) implies a matching, in-kind reaction."
+    "explanation_en": "'Entsprechend' (correspondingly) implies a matching, in-kind reaction.",
+    "prompt_vi": "Các đồng nghiệp hoàn toàn không tin tưởng người sếp, và ông ta đã phản ứng lại một cách tương ứng.",
+    "explanation_vi": "'Entsprechend' (tương ứng / theo đó) ngụ ý một phản ứng đáp trả tương đương với thái độ nhận được."
   },
   {
     "id": "c2-wortschatz-redewendung-001",
@@ -69,7 +75,9 @@
     ],
     "correct": "gelangte/der Überzeugung",
     "explanation_de": "'Zu der Überzeugung gelangen' ist eine feste Kollokation.",
-    "explanation_en": "'Zu der Überzeugung gelangen' (to come to the conviction) is a fixed collocation."
+    "explanation_en": "'Zu der Überzeugung gelangen' (to come to the conviction) is a fixed collocation.",
+    "prompt_vi": "Sau hồi lâu đắn đo suy nghĩ, cô ấy đã đi đến niềm tin chắc chắn rằng mình nên chuyển nhà.",
+    "explanation_vi": "'Zu der Überzeugung gelangen' (đi đến niềm tin chắc chắn / xác tín rằng) là một kết hợp từ cố định (Kollokation)."
   },
   {
     "id": "c2-wortschatz-redewendung-005",
@@ -87,7 +95,9 @@
     ],
     "correct": "zur Sprache",
     "explanation_de": "'Zur Sprache kommen' (thematisiert werden) ist eine feste Redewendung.",
-    "explanation_en": "'Zur Sprache kommen' (to come up for discussion) is a fixed idiom."
+    "explanation_en": "'Zur Sprache kommen' (to come up for discussion) is a fixed idiom.",
+    "prompt_vi": "Chủ đề về việc tăng lương đã được đưa ra thảo luận.",
+    "explanation_vi": "'Zur Sprache kommen' (được đưa ra bàn luận / đề cập tới) là một cụm thành ngữ cố định."
   },
   {
     "id": "c2-wechselpraep-001",
@@ -105,7 +115,9 @@
     ],
     "correct": "ins/einer",
     "explanation_de": "'Ins Büro' (Bewegung, Akkusativ) ist korrekt; 'sich befinden in' drückt einen festen Ort aus (Dativ). 'Die Warteschlange' (fem.) im Dativ → <b>einer</b>. Richtig: <b>ins/einer</b>.",
-    "explanation_en": "'Ins Büro' (movement into, accusative) is correct; 'sich befinden in' expresses static location (dative). 'Die Warteschlange' (fem.) dative → <b>einer</b>. Correct: <b>ins/einer</b>."
+    "explanation_en": "'Ins Büro' (movement into, accusative) is correct; 'sich befinden in' expresses static location (dative). 'Die Warteschlange' (fem.) dative → <b>einer</b>. Correct: <b>ins/einer</b>.",
+    "prompt_vi": "Cô ấy đi vào trong văn phòng và thấy mình đang đứng giữa một hàng dài chờ đợi.",
+    "explanation_vi": "'Ins Büro' (chuyển động đi vào, đối cách Akkusativ) là chính xác; 'sich befinden in' diễn tả vị trí tĩnh (tặng cách Dativ). 'Die Warteschlange' (giống cái) ở Dativ → <b>einer</b>. Đáp án đúng: <b>ins/einer</b>."
   },
   {
     "id": "c2-rel-wechselpraep-001",
@@ -123,7 +135,9 @@
     ],
     "correct": "den/dem",
     "explanation_de": "'Stellen' (Bewegung) verlangt den Akkusativ: 'der Schrank' (mask.) → <b>den Schrank</b>. Der Relativsatz 'vor dem die Lampe steht' beschreibt einen festen Ort (Dativ): <b>dem</b>.",
-    "explanation_en": "'Stellen' (placement/movement) takes accusative: 'der Schrank' (masculine) → <b>den Schrank</b>. The relative clause 'vor dem die Lampe steht' describes a static location (dative): <b>dem</b>. Correct: <b>den/dem</b>."
+    "explanation_en": "'Stellen' (placement/movement) takes accusative: 'der Schrank' (masculine) → <b>den Schrank</b>. The relative clause 'vor dem die Lampe steht' describes a static location (dative): <b>dem</b>. Correct: <b>den/dem</b>.",
+    "prompt_vi": "Xin vui lòng đặt chiếc thùng các-tông ra phía trước chiếc tủ, nơi mà ngọn đèn đang đứng ở đằng trước.",
+    "explanation_vi": "'Stellen' (đặt để / chuyển động) đòi hỏi Akkusativ: 'der Schrank' (giống đực) → <b>den Schrank</b>. Mệnh đề quan hệ 'vor dem die Lampe steht' miêu tả vị trí tĩnh (Dativ): <b>dem</b>. Đáp án đúng: <b>den/dem</b>."
   },
   {
     "id": "c2-wortschatz-redewendung-006",
@@ -141,7 +155,9 @@
     ],
     "correct": "in der Pfanne verrückt",
     "explanation_de": "'Da wird der Hund in der Pfanne verrückt' ist eine feste Redewendung für starkes Erstaunen/Verärgerung.",
-    "explanation_en": "'Da wird der Hund in der Pfanne verrückt' is a fixed idiom expressing strong astonishment/exasperation."
+    "explanation_en": "'Da wird der Hund in der Pfanne verrückt' is a fixed idiom expressing strong astonishment/exasperation.",
+    "prompt_vi": "Thật là điên rồ hết chỗ nói / Thật không thể tin nổi (thành ngữ).",
+    "explanation_vi": "'Da wird der Hund in der Pfanne verrückt' là một thành ngữ cố định dùng để diễn tả sự kinh ngạc tột độ hoặc bực bội đến phát điên."
   },
   {
     "id": "c2-modal-epistemisch-002",
@@ -159,7 +175,9 @@
     ],
     "correct": "muss",
     "explanation_de": "'Es muss sich um... handeln' drückt eine logische Schlussfolgerung aus ('es muss so sein').",
-    "explanation_en": "'Es muss sich um... handeln' expresses logical deduction/certainty ('it must be')."
+    "explanation_en": "'Es muss sich um... handeln' expresses logical deduction/certainty ('it must be').",
+    "prompt_vi": "Tất cả các vị khách đều mặc trang phục lịch sử; ắt hẳn đây là một lễ hội.",
+    "explanation_vi": "'Es muss sich um... handeln' diễn tả một suy luận logic hoặc sự phỏng đoán chắc chắn ('chắc chắn đó phải là...')."
   },
   {
     "id": "c2-wortschatz-redewendung-007",
@@ -177,7 +195,9 @@
     ],
     "correct": "Standpunkt",
     "explanation_de": "'Vom Standpunkt...aus' ist eine feste Wendung mit der Bedeutung 'aus der Sicht von'.",
-    "explanation_en": "'Vom Standpunkt...aus' is a fixed phrase meaning 'from the standpoint of'."
+    "explanation_en": "'Vom Standpunkt...aus' is a fixed phrase meaning 'from the standpoint of'.",
+    "prompt_vi": "Người ta muốn bán một ngôi nhà. Bất động sản này nên hấp dẫn dưới góc nhìn của người mua.",
+    "explanation_vi": "'Vom Standpunkt...aus' là một cụm từ cố định mang nghĩa 'dưới góc nhìn của / trên quan điểm của'."
   },
   {
     "id": "c2-wortschatz-verb-formell-001",
@@ -195,7 +215,9 @@
     ],
     "correct": "entgegnete",
     "explanation_de": "'Entgegnen' bedeutet 'auf etwas [kritisch] antworten'.",
-    "explanation_en": "'Entgegnen' means 'to retort/reply [to a criticism]'."
+    "explanation_en": "'Entgegnen' means 'to retort/reply [to a criticism]'.",
+    "prompt_vi": "Trước điều này, nữ phát ngôn viên đã đáp trả rằng lời chỉ trích đó là vô căn cứ.",
+    "explanation_vi": "'Entgegnen' có nghĩa là 'đáp trả / phản bác lại [trước một lời chỉ trích]'."
   },
   {
     "id": "c2-wortschatz-diskurs-001",
@@ -213,7 +235,9 @@
     ],
     "correct": "nämlich",
     "explanation_de": "'Nämlich' liefert einen erläuternden Zusatz zum vorher Gesagten.",
-    "explanation_en": "'Nämlich' (namely) provides elaborating context."
+    "explanation_en": "'Nämlich' (namely) provides elaborating context.",
+    "prompt_vi": "Trên trường quốc tế, ZDF là một đài truyền hình nổi tiếng. Cụ thể là đài này cũng phát sóng các chương trình của mình ở nước ngoài.",
+    "explanation_vi": "'Nämlich' (cụ thể là / tức là) dùng để giải thích hoặc cung cấp thêm thông tin chi tiết làm rõ cho mệnh đề trước."
   },
   {
     "id": "c2-wortschatz-redewendung-008",
@@ -231,7 +255,9 @@
     ],
     "correct": "in Kauf nehmen",
     "explanation_de": "'Etwas in Kauf nehmen' bedeutet, etwas als Kompromiss zu akzeptieren.",
-    "explanation_en": "'Etwas in Kauf nehmen' means 'to accept something as a trade-off'."
+    "explanation_en": "'Etwas in Kauf nehmen' means 'to accept something as a trade-off'.",
+    "prompt_vi": "Sự tiến bộ đã mang lại cho chúng ta nhiều lợi ích, mà vì thế ta sẵn sàng chấp nhận một vài bất lợi.",
+    "explanation_vi": "'Etwas in Kauf nehmen' có nghĩa là 'chấp nhận điều gì như một sự đánh đổi / cam chịu thiệt thòi'."
   },
   {
     "id": "c2-wortschatz-redewendung-009",
@@ -249,7 +275,9 @@
     ],
     "correct": "unter sich",
     "explanation_de": "'Unter sich bleiben' ist eine feste Redewendung für 'nur unter Gleichgesinnten/derselben Gruppe bleiben'.",
-    "explanation_en": "'Unter sich bleiben' is a fixed idiom meaning 'to stay among themselves'."
+    "explanation_en": "'Unter sich bleiben' is a fixed idiom meaning 'to stay among themselves'.",
+    "prompt_vi": "Trong ngành công nghệ, nam giới thường chỉ co cụm trong nhóm của họ; trong khi đó phụ nữ lại chiếm đa số trong các ngành chăm sóc y tế.",
+    "explanation_vi": "'Unter sich bleiben' là một thành ngữ cố định mang nghĩa 'chỉ giao thiệp/co cụm trong nhóm của chính mình'."
   },
   {
     "id": "c2-wortschatz-verb-praep-001",
@@ -267,7 +295,9 @@
     ],
     "correct": "zählt zu",
     "explanation_de": "'Zählen zu' bedeutet 'gehören zu/eines von... sein'.",
-    "explanation_en": "'Zählen zu' means 'to count among/be one of'."
+    "explanation_en": "'Zählen zu' means 'to count among/be one of'.",
+    "prompt_vi": "Toyota nằm trong số những nhà sản xuất ô tô lớn nhất trên thế giới.",
+    "explanation_vi": "Cụm 'Zählen zu' có nghĩa là 'thuộc về / được xếp vào hàng ngũ / là một trong số'."
   },
   {
     "id": "c2-wortschatz-redewendung-010",
@@ -285,7 +315,9 @@
     ],
     "correct": "Ausschlag",
     "explanation_de": "'Den Ausschlag geben' ist eine feste Redewendung für 'den entscheidenden Faktor darstellen'.",
-    "explanation_en": "'Den Ausschlag geben' is a fixed idiom meaning 'to be the deciding factor/tip the scales'."
+    "explanation_en": "'Den Ausschlag geben' is a fixed idiom meaning 'to be the deciding factor/tip the scales'.",
+    "prompt_vi": "Những bằng chứng mới rõ ràng có tính chất quyết định. Điều này đã đóng vai trò then chốt cho phán quyết của tòa án.",
+    "explanation_vi": "'Den Ausschlag geben' là một thành ngữ cố định mang nghĩa 'đóng vai trò quyết định / tạo nên bước ngoặt ngã ngũ'."
   },
   {
     "id": "c2-konj-001",
@@ -296,7 +328,9 @@
     "prompt_en": "He acts as if he knew nothing.",
     "correct": "wüsste",
     "explanation_de": "Nach 'als ob' steht der Konjunktiv II: wüsste.",
-    "explanation_en": "Konjunktiv II follows 'als ob': wüsste."
+    "explanation_en": "Konjunktiv II follows 'als ob': wüsste.",
+    "prompt_vi": "Anh ấy làm như thể mình không biết gì cả.",
+    "explanation_vi": "Thể giả định II (Konjunktiv II) đứng sau liên từ 'als ob': wüsste."
   },
   {
     "id": "c2-konj-002",
@@ -307,7 +341,9 @@
     "prompt_en": "She looked as if she had been crying.",
     "correct": "hätte",
     "explanation_de": "Konjunktiv II Vergangenheit nach 'als ob': hätte geweint.",
-    "explanation_en": "Past subjunctive after 'als ob': hätte geweint."
+    "explanation_en": "Past subjunctive after 'als ob': hätte geweint.",
+    "prompt_vi": "Trông cô ấy như thể vừa mới khóc xong.",
+    "explanation_vi": "Thể giả định quá khứ đứng sau liên từ 'als ob': hätte geweint."
   },
   {
     "id": "c2-konj-003",
@@ -318,7 +354,9 @@
     "prompt_en": "If only it were already Friday!",
     "correct": "Wäre",
     "explanation_de": "Wunschsatz mit Konjunktiv II und Verbspitzenstellung: Wäre es doch...!",
-    "explanation_en": "Wish clause with Konjunktiv II and verb-first word order: Wäre es doch...!"
+    "explanation_en": "Wish clause with Konjunktiv II and verb-first word order: Wäre es doch...!",
+    "prompt_vi": "Giá như hôm nay đã là thứ Sáu rồi thì tốt biết mấy!",
+    "explanation_vi": "Mệnh đề ước muốn với thể giả định II (Konjunktiv II) và trật tự đảo động từ lên đầu câu: Wäre es doch...!"
   },
   {
     "id": "c2-gen-001",
@@ -332,7 +370,9 @@
       "der Opfer"
     ],
     "explanation_de": "'gedenken' verlangt Genitiv; Genitiv Plural: der Opfer.",
-    "explanation_en": "'gedenken' takes the genitive case; genitive plural: der Opfer."
+    "explanation_en": "'gedenken' takes the genitive case; genitive plural: der Opfer.",
+    "prompt_vi": "Gia đình đã tưởng niệm các nạn nhân của thảm họa.",
+    "explanation_vi": "Động từ 'gedenken' (tưởng nhớ) đòi hỏi sở hữu cách (Genitiv); Genitiv số nhiều: der Opfer."
   },
   {
     "id": "c2-gen-002",
@@ -346,7 +386,9 @@
       "der Gefahr"
     ],
     "explanation_de": "'sich bewusst sein' verlangt Genitiv; Genitiv feminin: der Gefahr.",
-    "explanation_en": "'sich bewusst sein' takes the genitive; genitive feminine: der Gefahr."
+    "explanation_en": "'sich bewusst sein' takes the genitive; genitive feminine: der Gefahr.",
+    "prompt_vi": "Anh ấy hoàn toàn nhận thức rõ về mối nguy hiểm.",
+    "explanation_vi": "Cụm 'sich bewusst sein' đi với sở hữu cách (Genitiv); Genitiv giống cái: der Gefahr."
   },
   {
     "id": "c2-gen-003",
@@ -357,7 +399,9 @@
     "prompt_en": "Despite the bad weather, we set off.",
     "correct": "des schlechten Wetters",
     "explanation_de": "'trotz' verlangt Genitiv; Genitiv neutrum: des schlechten Wetters.",
-    "explanation_en": "'trotz' takes the genitive; genitive neuter: des schlechten Wetters."
+    "explanation_en": "'trotz' takes the genitive; genitive neuter: des schlechten Wetters.",
+    "prompt_vi": "Bất chấp thời tiết xấu, chúng tôi vẫn lên đường.",
+    "explanation_vi": "Giới từ 'trotz' đòi hỏi sở hữu cách (Genitiv); Genitiv giống trung: des schlechten Wetters."
   },
   {
     "id": "c2-gen-004",
@@ -373,7 +417,9 @@
     ],
     "correct": "Wegen",
     "explanation_de": "'wegen' ist eine Genitivpräposition (+ Nomen), kein Nebensatz-Konnektor wie 'obwohl'.",
-    "explanation_en": "'wegen' is a genitive preposition (+ noun), not a subordinating conjunction like 'obwohl'."
+    "explanation_en": "'wegen' is a genitive preposition (+ noun), not a subordinating conjunction like 'obwohl'.",
+    "prompt_vi": "Do cơn bão, các con tàu đều ở lại trong bến cảng.",
+    "explanation_vi": "'wegen' là một giới từ đi với sở hữu cách Genitiv (+ danh từ), không phải là liên từ phụ thuộc như 'obwohl'."
   },
   {
     "id": "c2-gen-005",
@@ -387,7 +433,9 @@
       "einer Woche"
     ],
     "explanation_de": "'innerhalb' verlangt Genitiv; Genitiv feminin: einer Woche.",
-    "explanation_en": "'innerhalb' takes the genitive; genitive feminine: einer Woche."
+    "explanation_en": "'innerhalb' takes the genitive; genitive feminine: einer Woche.",
+    "prompt_vi": "Trong vòng một tuần, công việc phải được hoàn tất.",
+    "explanation_vi": "Giới từ 'innerhalb' đòi hỏi sở hữu cách (Genitiv); Genitiv giống cái: einer Woche."
   },
   {
     "id": "c2-passersatz-001",
@@ -398,7 +446,9 @@
     "prompt_en": "The problem is easy to solve.",
     "correct": "lösen",
     "explanation_de": "'sein + zu + Infinitiv' ist eine Passiv-Ersatzform: ist zu lösen = kann gelöst werden.",
-    "explanation_en": "'sein + zu + infinitive' is a passive-alternative construction: ist zu lösen = kann gelöst werden."
+    "explanation_en": "'sein + zu + infinitive' is a passive-alternative construction: ist zu lösen = kann gelöst werden.",
+    "prompt_vi": "Vấn đề này rất dễ giải quyết.",
+    "explanation_vi": "Cấu trúc 'sein + zu + động từ nguyên thể' là một dạng thay thế bị động: ist zu lösen = kann gelöst werden (có thể giải quyết được)."
   },
   {
     "id": "c2-passersatz-002",
@@ -409,7 +459,9 @@
     "prompt_en": "This question can easily be answered.",
     "correct": "lässt",
     "explanation_de": "'sich lassen + Infinitiv' ist eine weitere Passiv-Ersatzform: lässt sich beantworten = kann beantwortet werden.",
-    "explanation_en": "'sich lassen + infinitive' is another passive-alternative construction: lässt sich beantworten = kann beantwortet werden."
+    "explanation_en": "'sich lassen + infinitive' is another passive-alternative construction: lässt sich beantworten = kann beantwortet werden.",
+    "prompt_vi": "Câu hỏi này có thể được trả lời một cách dễ dàng.",
+    "explanation_vi": "Cấu trúc 'sich lassen + động từ nguyên thể' cũng là một dạng thay thế bị động: lässt sich beantworten = kann beantwortet werden (có thể được trả lời)."
   },
   {
     "id": "c2-stil-001",
@@ -425,7 +477,9 @@
     ],
     "correct": "seiner Ankunft",
     "explanation_de": "Nominalstil: Nebensatz wird zur Präposition + Nominalisierung; 'die Ankunft' ist feminin, nach 'nach' (Dativ): seiner Ankunft.",
-    "explanation_en": "Nominal style: a subordinate clause becomes preposition + nominalization; 'die Ankunft' is feminine, after 'nach' (dative): seiner Ankunft."
+    "explanation_en": "Nominal style: a subordinate clause becomes preposition + nominalization; 'die Ankunft' is feminine, after 'nach' (dative): seiner Ankunft.",
+    "prompt_vi": "Sau khi đến nơi, anh ấy đã gọi điện thoại.",
+    "explanation_vi": "Phong cách danh từ hóa (Nominalstil): một mệnh đề phụ được chuyển thành giới từ + danh từ; 'die Ankunft' là danh từ giống cái, đứng sau giới từ 'nach' (cách Dativ): seiner Ankunft."
   },
   {
     "id": "c2-stil-002",
@@ -451,7 +505,9 @@
       "gesehen"
     ],
     "explanation_de": "Bei vorangestelltem Negationswort (nie, kaum...) bleibt die Verb-Zweit-Stellung erhalten: Nie habe ich...",
-    "explanation_en": "When a negation word (nie, kaum...) is fronted, verb-second word order is preserved: Nie habe ich..."
+    "explanation_en": "When a negation word (nie, kaum...) is fronted, verb-second word order is preserved: Nie habe ich...",
+    "prompt_vi": "Sắp xếp các từ (bắt đầu bằng „Nie“): (Chưa bao giờ / có / tôi / điều như vậy / thấy)",
+    "explanation_vi": "Khi một từ phủ định (nie, kaum...) được đảo lên đầu câu, quy tắc động từ đứng ở vị trí thứ hai vẫn được bảo toàn: Nie habe ich..."
   },
   {
     "id": "c2-konj-004",
@@ -462,7 +518,9 @@
     "prompt_en": "The court ruled that the defendant was innocent.",
     "correct": "sei",
     "explanation_de": "Konjunktiv I ist im formellen/juristischen Kontext für indirekte Rede Standard: sei.",
-    "explanation_en": "Konjunktiv I is standard for indirect speech in formal/legal contexts: sei."
+    "explanation_en": "Konjunktiv I is standard for indirect speech in formal/legal contexts: sei.",
+    "prompt_vi": "Tòa án phán quyết rằng bị cáo vô tội.",
+    "explanation_vi": "Thể giả định I (Konjunktiv I) là chuẩn mực cho lời nói gián tiếp trong các văn cảnh pháp lý và hành chính trang trọng: sei."
   },
   {
     "id": "c2-konj-005",
@@ -473,7 +531,9 @@
     "prompt_en": "That is probably the biggest problem.",
     "correct": "dürfte",
     "explanation_de": "'dürfte' (Konjunktiv II von 'dürfen') drückt hier eine vorsichtige Vermutung aus, nicht Erlaubnis.",
-    "explanation_en": "'dürfte' (Konjunktiv II of 'dürfen') expresses a cautious assumption here, not permission."
+    "explanation_en": "'dürfte' (Konjunktiv II of 'dürfen') expresses a cautious assumption here, not permission.",
+    "prompt_vi": "Đó có lẽ là vấn đề nan giải lớn nhất.",
+    "explanation_vi": "'dürfte' (dạng Konjunktiv II của 'dürfen') ở đây diễn tả một phỏng đoán cẩn trọng, dè dặt, chứ không phải mang nghĩa xin phép."
   },
   {
     "id": "c2-gen-006",
@@ -487,7 +547,9 @@
       "einer gründlichen Analyse"
     ],
     "explanation_de": "'bedürfen' verlangt Genitiv; Genitiv feminin: einer gründlichen Analyse.",
-    "explanation_en": "'bedürfen' takes the genitive; genitive feminine: einer gründlichen Analyse."
+    "explanation_en": "'bedürfen' takes the genitive; genitive feminine: einer gründlichen Analyse.",
+    "prompt_vi": "Vấn đề này đòi hỏi phải có một phân tích kỹ lưỡng.",
+    "explanation_vi": "Động từ 'bedürfen' (đòi hỏi/cần) đi với sở hữu cách (Genitiv); Genitiv giống cái: einer gründlichen Analyse."
   },
   {
     "id": "c2-konj-006",
@@ -498,7 +560,9 @@
     "prompt_en": "However clever he may be, he is sometimes wrong.",
     "correct": "mag",
     "explanation_de": "'mag' + noch so + Adjektiv drückt in konzessiver Verwendung ein Zugeständnis aus.",
-    "explanation_en": "'mag' + noch so + adjective, used concessively, expresses a concession."
+    "explanation_en": "'mag' + noch so + adjective, used concessively, expresses a concession.",
+    "prompt_vi": "Dù anh ta có thông minh đến đâu đi chăng nữa, thì đôi khi anh ta vẫn mắc sai lầm.",
+    "explanation_vi": "Cấu trúc 'mag' + noch so + tính từ được dùng với sắc thái nhượng bộ ('dù có... đến mấy')."
   },
   {
     "id": "c2-passersatz-003",
@@ -514,7 +578,9 @@
     ],
     "correct": "einzuhalten",
     "explanation_de": "Bei trennbaren Verben steht 'zu' zwischen Präfix und Stamm: ein-zu-halten.",
-    "explanation_en": "With separable verbs, 'zu' goes between the prefix and the stem: ein-zu-halten."
+    "explanation_en": "With separable verbs, 'zu' goes between the prefix and the stem: ein-zu-halten.",
+    "prompt_vi": "Các quy định này phải được tuân thủ một cách nghiêm ngặt.",
+    "explanation_vi": "Đối với động từ tách, 'zu' được chèn vào giữa tiền tố và thân động từ: ein-zu-halten."
   },
   {
     "id": "c2-gen-007",
@@ -525,7 +591,9 @@
     "prompt_en": "She is sure of success.",
     "correct": "des Erfolgs",
     "explanation_de": "In gehobenem Stil kann 'sich sicher sein' mit Genitiv stehen; Genitiv maskulin: des Erfolgs.",
-    "explanation_en": "In elevated style, 'sich sicher sein' can take the genitive; genitive masculine: des Erfolgs."
+    "explanation_en": "In elevated style, 'sich sicher sein' can take the genitive; genitive masculine: des Erfolgs.",
+    "prompt_vi": "Cô ấy nắm chắc phần thắng trong tay.",
+    "explanation_vi": "Trong văn phong trang trọng, cụm 'sich sicher sein' có thể đi với sở hữu cách (Genitiv); Genitiv giống đực: des Erfolgs."
   },
   {
     "id": "c2-neben-001",
@@ -541,7 +609,9 @@
     ],
     "correct": "Wie auch immer",
     "explanation_de": "'Wie auch immer' leitet einen Konzessivsatz ein, unabhängig vom Ausgang.",
-    "explanation_en": "'Wie auch immer' introduces a concessive clause, independent of the outcome."
+    "explanation_en": "'Wie auch immer' introduces a concessive clause, independent of the outcome.",
+    "prompt_vi": "Dù quyết định có ra sao đi chăng nữa, chúng tôi cũng sẽ chấp nhận nó.",
+    "explanation_vi": "'Wie auch immer' dẫn dắt một mệnh đề nhượng bộ, không phụ thuộc vào kết quả cuối cùng ('dù thế nào đi chăng nữa')."
   },
   {
     "id": "c2-gen-008",
@@ -557,7 +627,9 @@
     ],
     "correct": "Mangels",
     "explanation_de": "'mangels' ist eine gehobene Genitivpräposition (= 'aus Mangel an').",
-    "explanation_en": "'mangels' is an elevated-register genitive preposition (= 'for lack of')."
+    "explanation_en": "'mangels' is an elevated-register genitive preposition (= 'for lack of').",
+    "prompt_vi": "Do thiếu chứng cứ rõ ràng, vụ án đã bị đình chỉ.",
+    "explanation_vi": "'mangels' là một giới từ đi với sở hữu cách (Genitiv) thuộc phong cách ngôn ngữ trang trọng (= 'do thiếu hụt')."
   },
   {
     "id": "c2-gen-praep-002",
@@ -571,7 +643,9 @@
       "der starken Regenfälle"
     ],
     "explanation_de": "'infolge' verlangt Genitiv; Genitiv Plural: <b>der starken</b> Regenfälle.",
-    "explanation_en": "'infolge' takes the genitive; genitive plural: <b>der starken</b> Regenfälle."
+    "explanation_en": "'infolge' takes the genitive; genitive plural: <b>der starken</b> Regenfälle.",
+    "prompt_vi": "Do hậu quả của những trận mưa lớn, tuyến đường đã bị phong tỏa.",
+    "explanation_vi": "Giới từ 'infolge' đòi hỏi sở hữu cách (Genitiv); Genitiv số nhiều: <b>der starken</b> Regenfälle."
   },
   {
     "id": "c2-gen-009",
@@ -585,7 +659,9 @@
       "des Betruges"
     ],
     "explanation_de": "Im formellen Stil steht nach 'anklagen/beschuldigen' der Genitiv der Tat; Genitiv maskulin: <b>des Betrugs</b>.",
-    "explanation_en": "In formal style, 'anklagen/beschuldigen' takes the genitive of the offence; genitive masculine: <b>des Betrugs</b>."
+    "explanation_en": "In formal style, 'anklagen/beschuldigen' takes the genitive of the offence; genitive masculine: <b>des Betrugs</b>.",
+    "prompt_vi": "Bị cáo bị truy tố về tội lừa đảo.",
+    "explanation_vi": "Trong văn phong pháp lý trang trọng, 'anklagen/beschuldigen' đòi hỏi sở hữu cách (Genitiv) cho tội danh bị cáo buộc; Genitiv giống đực: <b>des Betrugs</b>."
   },
   {
     "id": "c2-futur2-001",
@@ -596,7 +672,9 @@
     "prompt_en": "He has probably long since arrived home by now.",
     "correct": "wird",
     "explanation_de": "Futur II (werden + Partizip II + sein/haben) drückt oft eine Vermutung über die Vergangenheit aus: Er <b>wird</b> angekommen sein.",
-    "explanation_en": "Futur II (werden + past participle + sein/haben) often expresses an assumption about the past: Er <b>wird</b> angekommen sein."
+    "explanation_en": "Futur II (werden + past participle + sein/haben) often expresses an assumption about the past: Er <b>wird</b> angekommen sein.",
+    "prompt_vi": "Đến giờ này chắc hẳn anh ấy đã về đến nhà từ lâu rồi.",
+    "explanation_vi": "Thì tương lai II (Futur II: werden + phân từ II + sein/haben) thường diễn tả một phỏng đoán về một sự việc trong quá khứ: Er <b>wird</b> angekommen sein."
   },
   {
     "id": "c2-konj-007",
@@ -607,7 +685,9 @@
     "prompt_en": "The minister explained that he had travelled to Brussels yesterday.",
     "correct": "sei",
     "explanation_de": "Konjunktiv I der Vergangenheit: sei/habe + Partizip II. Bei 'reisen' (Bewegung): er <b>sei</b> gereist.",
-    "explanation_en": "Past-tense Konjunktiv I: sei/habe + past participle. With 'reisen' (motion): er <b>sei</b> gereist."
+    "explanation_en": "Past-tense Konjunktiv I: sei/habe + past participle. With 'reisen' (motion): er <b>sei</b> gereist.",
+    "prompt_vi": "Vị bộ trưởng giải thích rằng ông ấy đã lên đường đến Brussels vào ngày hôm qua.",
+    "explanation_vi": "Thể giả định I trong quá khứ: sei/habe + phân từ II. Với động từ chỉ sự di chuyển như 'reisen': er <b>sei</b> gereist."
   },
   {
     "id": "c2-konj-008",
@@ -618,7 +698,9 @@
     "prompt_en": "Without your help we would have failed.",
     "correct": "wären",
     "explanation_de": "Irrealer Bedingungssatz in der Vergangenheit: wären + Partizip II (scheitern bildet das Perfekt mit 'sein').",
-    "explanation_en": "Unreal past conditional: wären + past participle ('scheitern' forms its perfect with 'sein')."
+    "explanation_en": "Unreal past conditional: wären + past participle ('scheitern' forms its perfect with 'sein').",
+    "prompt_vi": "Nếu không có sự giúp đỡ của bạn thì chúng tôi đã thất bại rồi.",
+    "explanation_vi": "Câu điều kiện giả định quá khứ: wären + phân từ II ('scheitern' tạo thì hoàn thành với trợ động từ 'sein')."
   },
   {
     "id": "c2-inf-001",
@@ -629,7 +711,9 @@
     "prompt_en": "He doesn't seem to have noticed the mistake.",
     "correct": "zu",
     "explanation_de": "'scheinen' steht mit <b>zu</b> + Infinitiv (hier Infinitiv Perfekt): bemerkt zu haben.",
-    "explanation_en": "'scheinen' is used with <b>zu</b> + infinitive (here the perfect infinitive): bemerkt zu haben."
+    "explanation_en": "'scheinen' is used with <b>zu</b> + infinitive (here the perfect infinitive): bemerkt zu haben.",
+    "prompt_vi": "Có vẻ như anh ấy đã không nhận ra lỗi sai đó.",
+    "explanation_vi": "Động từ 'scheinen' đi cùng với <b>zu</b> + động từ nguyên thể (ở đây là nguyên thể hoàn thành): bemerkt zu haben."
   },
   {
     "id": "c2-konn-001",
@@ -640,7 +724,9 @@
     "prompt_en": "We'll start on time unless the train is delayed.",
     "correct": "sei",
     "explanation_de": "Feste Wendung: <b>es sei denn</b> (= außer wenn) mit Konjunktiv I von 'sein'.",
-    "explanation_en": "Fixed phrase: <b>es sei denn</b> (= unless) with the Konjunktiv I of 'sein'."
+    "explanation_en": "Fixed phrase: <b>es sei denn</b> (= unless) with the Konjunktiv I of 'sein'.",
+    "prompt_vi": "Chúng ta sẽ khởi hành đúng giờ trừ khi chuyến tàu bị trễ.",
+    "explanation_vi": "Cụm từ cố định: <b>es sei denn</b> (= trừ phi / ngoại trừ trường hợp) dùng dạng Konjunktiv I của 'sein'."
   },
   {
     "id": "c2-konn-002",
@@ -651,7 +737,9 @@
     "prompt_en": "He has hardly any time to eat, let alone to sleep.",
     "correct": "geschweige",
     "explanation_de": "Feste Wendung: <b>geschweige denn</b> (= und erst recht nicht).",
-    "explanation_en": "Fixed phrase: <b>geschweige denn</b> (= let alone)."
+    "explanation_en": "Fixed phrase: <b>geschweige denn</b> (= let alone).",
+    "prompt_vi": "Anh ấy hầu như chẳng có thời gian ăn uống, huống chi là ngủ.",
+    "explanation_vi": "Cụm từ cố định: <b>geschweige denn</b> (= huống hồ / nói chi đến)."
   },
   {
     "id": "c2-konn-003",
@@ -662,7 +750,9 @@
     "prompt_en": "We will decide that depending on how the situation develops.",
     "correct": "je",
     "explanation_de": "Feste Wendung: <b>je nachdem, wie/ob …</b> (= abhängig davon, wie/ob …).",
-    "explanation_en": "Fixed phrase: <b>je nachdem, wie/ob …</b> (= depending on how/whether …)."
+    "explanation_en": "Fixed phrase: <b>je nachdem, wie/ob …</b> (= depending on how/whether …).",
+    "prompt_vi": "Chúng tôi sẽ quyết định điều đó tùy thuộc vào diễn biến của tình hình.",
+    "explanation_vi": "Cụm từ cố định: <b>je nachdem, wie/ob …</b> (= tùy thuộc vào việc như thế nào / liệu rằng …)."
   },
   {
     "id": "c2-adj-gen-001",
@@ -673,7 +763,9 @@
     "prompt_en": "He spoke with the composure of an experienced politician.",
     "correct": "erfahrenen",
     "explanation_de": "Nach 'eines' (Genitiv maskulin) trägt das Adjektiv die schwache Endung <b>-en</b>: eines erfahrenen Politikers.",
-    "explanation_en": "After 'eines' (genitive masculine) the adjective takes the weak ending <b>-en</b>: eines erfahrenen Politikers."
+    "explanation_en": "After 'eines' (genitive masculine) the adjective takes the weak ending <b>-en</b>: eines erfahrenen Politikers.",
+    "prompt_vi": "Ông ấy phát biểu với sự điềm tĩnh của một chính khách lão luyện.",
+    "explanation_vi": "Đứng sau 'eines' (sở hữu cách Genitiv giống đực), tính từ nhận đuôi biến cách yếu <b>-en</b>: eines erfahrenen Politikers."
   },
   {
     "id": "c2-fvg-001",
@@ -690,7 +782,9 @@
     ],
     "correct": "Rechnung",
     "explanation_de": "Feste Wendung: <b>einer Sache Rechnung tragen</b> (= sie berücksichtigen).",
-    "explanation_en": "Fixed phrase: <b>einer Sache Rechnung tragen</b> (= to take something into account)."
+    "explanation_en": "Fixed phrase: <b>einer Sache Rechnung tragen</b> (= to take something into account).",
+    "prompt_vi": "Chính phủ cần phải lưu tâm thích đáng đến những mối lo ngại của người dân.",
+    "explanation_vi": "Cụm động từ cố định (Funktionsverbgefüge): <b>einer Sache Rechnung tragen</b> (= cân nhắc / tính đến / lưu tâm thích đáng đến điều gì)."
   },
   {
     "id": "c2-fvg-002",
@@ -707,7 +801,9 @@
     ],
     "correct": "Gewicht",
     "explanation_de": "Feste Wendung: <b>ins Gewicht fallen</b> (= wichtig sein, eine Rolle spielen).",
-    "explanation_en": "Fixed phrase: <b>ins Gewicht fallen</b> (= to carry weight, to matter)."
+    "explanation_en": "Fixed phrase: <b>ins Gewicht fallen</b> (= to carry weight, to matter).",
+    "prompt_vi": "Yếu tố này hầu như không có nhiều sức nặng trong quyết định.",
+    "explanation_vi": "Cụm từ cố định: <b>ins Gewicht fallen</b> (= có sức nặng / đóng vai trò quan trọng)."
   },
   {
     "id": "c2-wortschatz-redewendung-011",
@@ -724,7 +820,9 @@
     ],
     "correct": "Abstand",
     "explanation_de": "Feste Wendung: <b>von etwas Abstand nehmen</b> (= darauf verzichten).",
-    "explanation_en": "Fixed phrase: <b>von etwas Abstand nehmen</b> (= to refrain from something)."
+    "explanation_en": "Fixed phrase: <b>von etwas Abstand nehmen</b> (= to refrain from something).",
+    "prompt_vi": "Tôi kiềm chế không chỉ trích anh ấy một cách công khai.",
+    "explanation_vi": "Cụm từ cố định: <b>von etwas Abstand nehmen</b> (= kiềm chế / từ bỏ ý định làm điều gì)."
   },
   {
     "id": "c2-wortschatz-redewendung-012",
@@ -741,7 +839,9 @@
     ],
     "correct": "außer",
     "explanation_de": "Feste Wendung: <b>außer Frage stehen</b> (= nicht zu bezweifeln sein).",
-    "explanation_en": "Fixed phrase: <b>außer Frage stehen</b> (= to be beyond doubt)."
+    "explanation_en": "Fixed phrase: <b>außer Frage stehen</b> (= to be beyond doubt).",
+    "prompt_vi": "Năng lực chuyên môn của anh ấy là điều không cần phải bàn cãi.",
+    "explanation_vi": "Cụm từ cố định: <b>außer Frage stehen</b> (= không còn nghi ngờ gì nữa / không cần phải bàn cãi)."
   },
   {
     "id": "c2-gen-praep-zugunsten-001",
@@ -758,7 +858,9 @@
     ],
     "correct": "zugunsten",
     "explanation_de": "'zugunsten' steht vor einem Genitiv: zugunsten seines Bruders. ('zuliebe' steht nach dem Nomen im Dativ: seinem Bruder zuliebe.)",
-    "explanation_en": "'zugunsten' precedes a genitive: zugunsten seines Bruders. ('zuliebe' follows a dative noun: seinem Bruder zuliebe.)"
+    "explanation_en": "'zugunsten' precedes a genitive: zugunsten seines Bruders. ('zuliebe' follows a dative noun: seinem Bruder zuliebe.)",
+    "prompt_vi": "Anh ấy đã từ bỏ quyền thừa kế để nhường lại cho người anh trai của mình.",
+    "explanation_vi": "'zugunsten' đứng trước một danh từ ở sở hữu cách Genitiv: zugunsten seines Bruders. ('zuliebe' thì đứng sau danh từ ở tặng cách Dativ: seinem Bruder zuliebe.)"
   },
   {
     "id": "c2-stil-003",
@@ -775,7 +877,9 @@
     ],
     "correct": "Prüfung",
     "explanation_de": "Nominalstil: Der Nebensatz wird zu Präposition + Nomen: <b>Nach Prüfung</b> der Unterlagen (Nomen ohne Artikel, Genitivattribut).",
-    "explanation_en": "Nominal style: the subordinate clause becomes preposition + noun: <b>Nach Prüfung</b> der Unterlagen (noun without article, genitive attribute)."
+    "explanation_en": "Nominal style: the subordinate clause becomes preposition + noun: <b>Nach Prüfung</b> der Unterlagen (noun without article, genitive attribute).",
+    "prompt_vi": "Sau khi kiểm tra hồ sơ tài liệu, hợp đồng đã có thể được ký kết.",
+    "explanation_vi": "Phong cách danh từ hóa (Nominalstil): mệnh đề phụ biến thành giới từ + danh từ: <b>Nach Prüfung</b> der Unterlagen (danh từ không mạo từ + định ngữ sở hữu cách Genitiv)."
   },
   {
     "id": "c2-rel-002",
@@ -792,7 +896,9 @@
     ],
     "correct": "worauf",
     "explanation_de": "Nach unbestimmten Pronomen wie 'vieles' steht wo(r)- + Präposition: <b>worauf</b> sie stolz sein kann (stolz sein auf).",
-    "explanation_en": "After indefinite pronouns like 'vieles' wo(r)- + preposition is used: <b>worauf</b> sie stolz sein kann (stolz sein auf)."
+    "explanation_en": "After indefinite pronouns like 'vieles' wo(r)- + preposition is used: <b>worauf</b> sie stolz sein kann (stolz sein auf).",
+    "prompt_vi": "Cô ấy đã đạt được nhiều điều mà cô có thể tự hào về chúng.",
+    "explanation_vi": "Đứng sau đại từ bất định như 'vieles', người ta dùng kết hợp wo(r)- + giới từ: <b>worauf</b> sie stolz sein kann (bắt nguồn từ cấu trúc stolz sein auf)."
   },
   {
     "id": "c2-wortschatz-verb-formell-002",
@@ -809,7 +915,9 @@
     ],
     "correct": "stattgegeben",
     "explanation_de": "'stattgeben' (+ Dativ) ist trennbar; das Partizip II wird als ein Wort geschrieben: hat dem Antrag <b>stattgegeben</b>.",
-    "explanation_en": "'stattgeben' (+ dative) is separable; its past participle is written as one word: hat dem Antrag <b>stattgegeben</b>."
+    "explanation_en": "'stattgeben' (+ dative) is separable; its past participle is written as one word: hat dem Antrag <b>stattgegeben</b>.",
+    "prompt_vi": "Cơ quan có thẩm quyền đã phê duyệt đơn đề nghị.",
+    "explanation_vi": "'stattgeben' (+ cách Dativ) là động từ tách; dạng phân từ II của nó được viết liền thành một từ: hat dem Antrag <b>stattgegeben</b>."
   },
   {
     "id": "c2-wortschatz-verb-formell-003",
@@ -826,7 +934,9 @@
     ],
     "correct": "schwanken",
     "explanation_de": "'Schwanken' bedeutet 'mal höher, mal niedriger werden' – das passt zu 'mal hoch, mal niedrig'.",
-    "explanation_en": "'Schwanken' means 'to fluctuate' – this fits 'sometimes high, sometimes low'."
+    "explanation_en": "'Schwanken' means 'to fluctuate' – this fits 'sometimes high, sometimes low'.",
+    "prompt_vi": "Giá cả biến động rất mạnh tùy theo mùa: khi thì lên cao, khi lại xuống thấp.",
+    "explanation_vi": "'Schwanken' có nghĩa là 'dao động / biến động' – phù hợp với ý 'khi thì cao, lúc lại thấp'."
   },
   {
     "id": "c2-konz-001",
@@ -843,7 +953,9 @@
     ],
     "correct": "bemühte",
     "explanation_de": "'Sosehr … auch' leitet einen Konzessivsatz ein (Nebensatz): Das konjugierte Verb steht am Ende, hier im Präteritum: er <b>bemühte</b> sich.",
-    "explanation_en": "'Sosehr … auch' introduces a concessive (subordinate) clause: the conjugated verb goes to the end, here in the Präteritum: er <b>bemühte</b> sich."
+    "explanation_en": "'Sosehr … auch' introduces a concessive (subordinate) clause: the conjugated verb goes to the end, here in the Präteritum: er <b>bemühte</b> sich.",
+    "prompt_vi": "Dù anh ấy có nỗ lực đến đâu chăng nữa, anh ấy vẫn không tìm ra giải pháp.",
+    "explanation_vi": "Cấu trúc 'Sosehr … auch' dẫn dắt một mệnh đề phụ nhượng bộ: động từ chia đứng ở cuối câu, ở đây chia ở thì quá khứ đơn (Präteritum): er <b>bemühte</b> sich."
   },
   {
     "id": "c2-wo-kaum-001",
@@ -871,7 +983,9 @@
       "das Telefon"
     ],
     "explanation_de": "Nach vorangestelltem 'kaum' gilt Inversion (Verb vor Subjekt): Kaum war er zu Hause, da klingelte das Telefon.",
-    "explanation_en": "With 'kaum' at the start, inversion applies (verb before subject): Kaum war er zu Hause, da klingelte das Telefon."
+    "explanation_en": "With 'kaum' at the start, inversion applies (verb before subject): Kaum war er zu Hause, da klingelte das Telefon.",
+    "prompt_vi": "Sắp xếp các từ: (vừa mới / đã / anh ấy / về đến nhà / thì / reo / chuông điện thoại)",
+    "explanation_vi": "Khi từ 'kaum' đứng ở đầu câu, hiện tượng đảo ngữ xảy ra (động từ đứng trước chủ ngữ): Kaum war er zu Hause, da klingelte das Telefon."
   },
   {
     "id": "c2-wo-rel-001",
@@ -893,7 +1007,9 @@
       "gekündigt hat"
     ],
     "explanation_de": "Im Relativsatz steht die Präposition vor dem Relativpronomen ('aus dem'), das konjugierte Verb ('hat') am Ende.",
-    "explanation_en": "In the relative clause the preposition comes before the relative pronoun ('aus dem') and the conjugated verb ('hat') goes to the end."
+    "explanation_en": "In the relative clause the preposition comes before the relative pronoun ('aus dem') and the conjugated verb ('hat') goes to the end.",
+    "prompt_vi": "Sắp xếp các từ: (đó là lý do / vì điều đó / anh ấy / đã từ chức)",
+    "explanation_vi": "Trong mệnh đề quan hệ, giới từ đứng trước đại từ quan hệ ('aus dem') và động từ chia ('hat') đứng ở cuối câu."
   },
   {
     "id": "c2-wo-soll-001",
@@ -926,7 +1042,9 @@
       ]
     ],
     "explanation_de": "'sollen' + Infinitiv Perfekt (geschrieben haben) gibt ein Gerücht über die Vergangenheit wieder; 'soll' auf Position 2, der Doppelinfinitiv am Ende.",
-    "explanation_en": "'sollen' + perfect infinitive (geschrieben haben) reports hearsay about the past; 'soll' in position 2, the double infinitive at the end."
+    "explanation_en": "'sollen' + perfect infinitive (geschrieben haben) reports hearsay about the past; 'soll' in position 2, the double infinitive at the end.",
+    "prompt_vi": "Sắp xếp các từ: (anh ấy / được cho là / bức thư / đã viết / xong)",
+    "explanation_vi": "'sollen' + nguyên thể hoàn thành (geschrieben haben) dùng để thuật lại tin đồn về quá khứ; 'soll' đứng ở vị trí thứ hai, cụm nguyên thể kép đứng ở cuối câu."
   },
   {
     "id": "c2-placementstyle-001",
@@ -943,7 +1061,9 @@
     ],
     "correct": "habe",
     "explanation_de": "Indirekte Rede: Konjunktiv I – er habe.",
-    "explanation_en": "Indirect speech: Konjunktiv I – er habe."
+    "explanation_en": "Indirect speech: Konjunktiv I – er habe.",
+    "prompt_vi": "Vị bộ trưởng tuyên bố rằng ông chưa đọc bản báo cáo.",
+    "explanation_vi": "Lời nói gián tiếp: thể giả định I (Konjunktiv I) – er habe."
   },
   {
     "id": "c2-placementstyle-002",
@@ -960,7 +1080,9 @@
     ],
     "correct": "leisten",
     "explanation_de": "Feste Verbindung: einen Beitrag leisten.",
-    "explanation_en": "Fixed collocation: einen Beitrag leisten."
+    "explanation_en": "Fixed collocation: einen Beitrag leisten.",
+    "prompt_vi": "Ai cũng có thể đóng góp một phần vào việc bảo vệ môi trường.",
+    "explanation_vi": "Cụm từ kết hợp cố định: einen Beitrag leisten (đóng góp phần mình)."
   },
   {
     "id": "c2-placementstyle-003",
@@ -977,7 +1099,9 @@
     ],
     "correct": "Angesichts",
     "explanation_de": "„angesichts“ + Genitiv = in Anbetracht von.",
-    "explanation_en": "\"angesichts\" + genitive = in view of."
+    "explanation_en": "\"angesichts\" + genitive = in view of.",
+    "prompt_vi": "Trước tình hình vật giá leo thang, nhiều gia đình đã thắt chặt chi tiêu.",
+    "explanation_vi": "Giới từ „angesichts“ + sở hữu cách (Genitiv) = trước bối cảnh / xét thấy."
   },
   {
     "id": "c2-placementstyle-004",
@@ -994,7 +1118,9 @@
     ],
     "correct": "Köpfen",
     "explanation_de": "„Nägel mit Köpfen machen“ = etwas gründlich und richtig tun.",
-    "explanation_en": "\"Nägel mit Köpfen machen\" = to do something thoroughly and properly."
+    "explanation_en": "\"Nägel mit Köpfen machen\" = to do something thoroughly and properly.",
+    "prompt_vi": "Anh ấy đã làm việc một cách bài bản, dứt khoát trong dự án đó.",
+    "explanation_vi": "Thành ngữ „Nägel mit Köpfen machen“ = làm việc gì đó một cách triệt để, dứt khoát và đến nơi đến chốn."
   },
   {
     "id": "c2-placementstyle-005",
@@ -1011,7 +1137,9 @@
     ],
     "correct": "indem",
     "explanation_de": "„indem“ nennt das Mittel: dadurch, dass …",
-    "explanation_en": "\"indem\" names the means: by doing …"
+    "explanation_en": "\"indem\" names the means: by doing …",
+    "prompt_vi": "Cô ấy đã giải quyết vấn đề bằng cách mời tất cả các bên liên quan cùng ngồi vào bàn đàm phán.",
+    "explanation_vi": "Liên từ „indem“ chỉ phương tiện/cách thức: bằng việc làm gì..."
   },
   {
     "id": "c2-placementstyle-006",
@@ -1028,7 +1156,9 @@
     ],
     "correct": "verbleibende",
     "explanation_de": "Partizip I + -e (Nom. feminin nach „die“).",
-    "explanation_en": "Present participle + -e (nom. feminine after \"die\")."
+    "explanation_en": "Present participle + -e (nom. feminine after \"die\").",
+    "prompt_vi": "Khoảng thời gian còn lại là vô cùng quý giá.",
+    "explanation_vi": "Phân từ I (Partizip I) + đuôi tính từ -e (Nominativ giống cái sau mạo từ xác định „die“)."
   },
   {
     "id": "c2-placementstyle-007",
@@ -1045,7 +1175,9 @@
     ],
     "correct": "bewilligt",
     "explanation_de": "Ein Antrag wird bewilligt oder abgelehnt.",
-    "explanation_en": "An application is approved or rejected."
+    "explanation_en": "An application is approved or rejected.",
+    "prompt_vi": "Sau khi xem xét kỹ lưỡng, lá đơn đề nghị đã được chấp thuận.",
+    "explanation_vi": "Một lá đơn yêu cầu/đề nghị sẽ được phê duyệt (bewilligt) hoặc bị từ chối (abgelehnt)."
   },
   {
     "id": "c2-placementstyle-008",
@@ -1062,6 +1194,8 @@
     ],
     "correct": "hätte",
     "explanation_de": "Inversion statt „wenn“: … hätte ich … entschieden.",
-    "explanation_en": "Inversion instead of \"wenn\": … hätte ich … entschieden."
+    "explanation_en": "Inversion instead of \"wenn\": … hätte ich … entschieden.",
+    "prompt_vi": "Giá mà tôi biết điều đó thì tôi đã quyết định khác rồi.",
+    "explanation_vi": "Đảo ngữ thay thế cho mệnh đề „wenn“: … hätte ich … entschieden."
   }
 ]

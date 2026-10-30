@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de" data-bs-theme="light">
+<html lang="vi" data-bs-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,47 +11,119 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/icons/192.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/icons/180.png">
 <link rel="manifest" href="/manifest.json">
-<meta name="apple-mobile-web-app-title" content="WordFeather">
-<title>Vokabel-Quiz — WordFeather</title>
+<meta name="apple-mobile-web-app-title" content="KAII">
+<title>Luyện tập Từ vựng — KAII</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="/wf-lang.js"></script>
 <script src="/wf-a11y.js"></script>
+<script src="/tts.js?v=9"></script>
 <style>
-  :root {
-    --accent: #1d4ed8;
-    --accent-soft: #eef2ff;
-    --good: #16a34a;
-    --bad: #dc2626;
+  :root, [data-bs-theme="dark"], [data-bs-theme="light"] {
+    --accent: #38bdf8;
+    --accent-soft: rgba(56, 189, 248, 0.15);
+    --good: #10b981;
+    --bad: #f43f5e;
   }
-  body { background: #f8fafc; }
-  [data-bs-theme="dark"] body { background: #0f172a; }
+  body {
+    background-color: #070a13 !important;
+    background-image: 
+      radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.08) 0%, transparent 60%),
+      radial-gradient(circle at 100% 50%, rgba(99, 102, 241, 0.06) 0%, transparent 50%),
+      radial-gradient(circle at 0% 100%, rgba(168, 85, 247, 0.05) 0%, transparent 40%) !important;
+    background-attachment: fixed !important;
+    color: #f1f5f9 !important;
+    line-height: 1.7;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+  .kaii-topbar {
+    background: rgba(7, 10, 19, 0.88) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    z-index: 1030;
+  }
+  .kaii-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(30, 41, 59, 0.75);
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    color: #38bdf8 !important;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  .kaii-back-btn:hover {
+    background: rgba(56, 189, 248, 0.2);
+    border-color: #38bdf8;
+    color: #7dd3fc !important;
+    transform: translateX(-2px);
+    box-shadow: 0 0 14px rgba(56, 189, 248, 0.3);
+  }
+  .kaii-brand-center { text-align: center; line-height: 1.2; }
+  .kaii-brand-title {
+    font-size: 1.2rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    background: linear-gradient(135deg, #38bdf8, #818cf8, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.5));
+  }
+  .kaii-brand-sub { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.5px; color: #94a3b8; }
+  .kaii-level-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: rgba(56, 189, 248, 0.15);
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    color: #38bdf8;
+    font-weight: 700;
+    font-size: 0.82rem;
+    letter-spacing: 0.5px;
+  }
 
   .quiz-card {
-    max-width: 640px;
+    max-width: 680px;
     margin: 0 auto;
-    border-radius: 1rem;
-    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.06);
+    border-radius: 1.25rem;
+    border: 1px solid var(--card-border, rgba(226, 232, 240, 0.85));
+    box-shadow: 0 10px 32px rgba(29, 78, 216, 0.08);
+    background: #fff;
+  }
+  [data-bs-theme="dark"] .quiz-card {
+    background: #111827;
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.45);
   }
 
   .level-check {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 3.2rem;
-    height: 3.2rem;
-    border-radius: 0.75rem;
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 0.85rem;
     border: 2px solid #e2e8f0;
     font-weight: 700;
     cursor: pointer;
     user-select: none;
     transition: all .15s ease;
     background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,.03);
   }
   [data-bs-theme="dark"] .level-check { background: #1e293b; border-color: #334155; color: #e2e8f0; }
+  .level-check:hover { transform: translateY(-2px); border-color: var(--accent); }
   .level-check.active {
     border-color: var(--accent);
     background: var(--accent);
     color: #fff;
+    box-shadow: 0 4px 12px rgba(29, 78, 216, 0.3);
   }
   .level-check input { display: none; }
   /* The real checkbox is hidden for the custom tile look, so keyboard
@@ -140,45 +212,68 @@
 
   .option-btn {
     text-align: left;
-    padding: 0.85rem 1.1rem;
-    border-radius: 0.65rem;
-    border: 2px solid #e2e8f0;
+    padding: 0.95rem 1.25rem;
+    border-radius: 0.85rem;
+    border: 1.5px solid #e2e8f0;
     background: #fff;
     font-size: 1.05rem;
-    transition: all .12s ease;
+    transition: all .15s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 1px 3px rgba(0,0,0,.02);
   }
   [data-bs-theme="dark"] .option-btn { background: #1e293b; border-color: #334155; color: #e2e8f0; }
-  .option-btn:hover:not(:disabled) { border-color: var(--accent); background: var(--accent-soft); }
-  [data-bs-theme="dark"] .option-btn:hover:not(:disabled) { background: #1e3a5f; }
+  .option-btn:hover:not(:disabled) {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(29,78,216,.1);
+  }
+  [data-bs-theme="dark"] .option-btn:hover:not(:disabled) {
+    background: #1e3a5f;
+    box-shadow: 0 4px 14px rgba(0,0,0,.35);
+  }
+  .option-btn:active:not(:disabled) { transform: translateY(0); }
   .option-btn:disabled { cursor: default; }
-  .option-btn.correct-choice { border-color: var(--good); background: #dcfce7; color: #166534; font-weight: 600; }
-  .option-btn.incorrect-choice { border-color: var(--bad); background: #fee2e2; color: #991b1b; font-weight: 600; }
-  [data-bs-theme="dark"] .option-btn.correct-choice { background: #052e16; color: #86efac; }
-  [data-bs-theme="dark"] .option-btn.incorrect-choice { background: #450a0a; color: #fca5a5; }
+  .option-btn.correct-choice {
+    border-color: var(--good);
+    background: #dcfce7;
+    color: #166534;
+    font-weight: 600;
+    box-shadow: 0 4px 14px rgba(22, 163, 74, 0.15);
+  }
+  .option-btn.incorrect-choice {
+    border-color: var(--bad);
+    background: #fee2e2;
+    color: #991b1b;
+    font-weight: 600;
+    box-shadow: 0 4px 14px rgba(220, 38, 38, 0.15);
+  }
+  [data-bs-theme="dark"] .option-btn.correct-choice { background: #052e16; color: #86efac; border-color: #22c55e; }
+  [data-bs-theme="dark"] .option-btn.incorrect-choice { background: #450a0a; color: #fca5a5; border-color: #ef4444; }
   .option-letter {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 1.75rem;
-    height: 1.75rem;
+    width: 1.9rem;
+    height: 1.9rem;
     border-radius: 50%;
     background: #f1f5f9;
     font-weight: 700;
-    font-size: 0.85rem;
-    margin-right: 0.6rem;
+    font-size: 0.88rem;
+    margin-right: 0.65rem;
   }
-  [data-bs-theme="dark"] .option-letter { background: #334155; }
+  [data-bs-theme="dark"] .option-letter { background: #334155; color: #f8fafc; }
 
   .feedback-box {
-    border-radius: 0.75rem;
-    padding: 1rem 1.25rem;
+    border-radius: 0.85rem;
+    padding: 1.1rem 1.35rem;
     display: none;
+    border: 1px solid transparent;
   }
-  .feedback-box.correct { background: #dcfce7; color: #166534; display: block; }
-  .feedback-box.incorrect { background: #fee2e2; color: #991b1b; display: block; }
+  .feedback-box.correct { background: #dcfce7; color: #166534; border-color: #bbf7d0; display: block; }
+  .feedback-box.incorrect { background: #fee2e2; color: #991b1b; border-color: #fecaca; display: block; }
   .answer-explanation { border-top-color: currentColor !important; opacity: 0.85; font-size: 0.95rem; }
-  [data-bs-theme="dark"] .feedback-box.correct { background: #052e16; color: #86efac; }
-  [data-bs-theme="dark"] .feedback-box.incorrect { background: #450a0a; color: #fca5a5; }
+  [data-bs-theme="dark"] .feedback-box.correct { background: #052e16; color: #86efac; border-color: #14532d; }
+  [data-bs-theme="dark"] .feedback-box.incorrect { background: #450a0a; color: #fca5a5; border-color: #7f1d1d; }
 
   .score-ring {
     width: 140px;
@@ -270,6 +365,19 @@
 })();
 </script>
 
+<nav class="kaii-topbar sticky-top">
+  <div class="container d-flex align-items-center justify-content-between py-2">
+    <a href="/m" class="kaii-back-btn" title="Quay lại KAII">
+      <span class="back-arrow">←</span>
+      <span class="back-text">Quay lại KAII</span>
+    </a>
+    <div class="kaii-brand-center">
+      <div class="kaii-brand-title">KAII</div>
+      <div class="kaii-brand-sub">Hết token thì sao ông</div>
+    </div>
+    <div class="kaii-level-tag">Quiz</div>
+  </div>
+</nav>
 <div id="quiz-bar" data-page="quiz"></div>
 <script src="/quiz-bar.js"></script>
 
@@ -562,8 +670,7 @@
 
 <div id="footer-placeholder"></div>
 <script>
-(function() {
-    var footerFallback = '<footer class="site-footer mt-5 py-4 border-top"><div class="container"><div class="row g-3 align-items-center"><div class="col-lg text-center text-lg-start"><p class="mb-1 fw-semibold">🪶 WordFeather — Goethe-Zertifikat A1 to C2</p><p class="mb-0 text-secondary small">Official certification materials for German language proficiency</p></div><div class="col-lg-auto"><div class="d-flex justify-content-center gap-2 flex-wrap"><a href="https://www.goethe.de" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener">Goethe-Institut ↗</a><a href="https://github.com/abdullahbutt/wordfeather" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener">⭐ Star on GitHub</a><a href="https://www.paypal.com/paypalme/abdullahbuttde" class="btn btn-sm fw-semibold" style="background:#ffdd00;border-color:#ffdd00;color:#1a1a1a;" target="_blank" rel="noopener">☕ Buy me a Coffee</a></div></div></div><hr class="my-3" style="opacity:0.15;"><div class="d-flex justify-content-center gap-3 flex-wrap small"><a href="privacy.html" class="text-secondary text-decoration-none">Privacy &amp; Impressum</a><span class="text-secondary">·</span><a href="https://github.com/abdullahbutt/wordfeather/issues" target="_blank" rel="noopener" class="text-secondary text-decoration-none">Contact (GitHub Issues)</a></div></div></footer>';
+    var footerFallback = '<footer class="site-footer mt-5 py-4 border-top"><div class="container text-center"><p class="mb-1 fw-semibold">🪶 WordFeather — Goethe-Zertifikat A1 bis C2</p><div class="d-flex justify-content-center gap-3 flex-wrap small text-secondary"><a href="/privacy.html" class="text-secondary text-decoration-none">Privacy &amp; Impressum</a>·<a href="https://github.com/abdullahbutt/wordfeather/issues" target="_blank" rel="noopener" class="text-secondary text-decoration-none">Contact (GitHub Issues)</a></div><p class="text-secondary mb-0 mt-2 small">© 2026 Abdullah Butt · CC BY-NC 4.0</p></div></footer>';
     fetch('/footer.html?v=' + Date.now())
         .then(function(r) { return r.ok ? r.text() : Promise.reject(new Error('footer fetch failed')); })
         .then(function(html) { html = html.replace(/BASE\//g, '/'); document.getElementById('footer-placeholder').innerHTML = html; })
@@ -788,8 +895,8 @@
     }
     var w = q.word;
     return {
-      kind: 'vocab', level: w.level, de: w.de, en: w.en,
-      example: w.example || '', example_en: w.example_en || '', added: Date.now()
+      kind: 'vocab', level: w.level, de: w.de, en: w.en, vi: w.vi || '',
+      example: w.example || '', example_en: w.example_en || '', example_vi: w.example_vi || '', added: Date.now()
     };
   }
   function bookmarkCount() { return Object.keys(bookmarks).length; }
@@ -840,8 +947,10 @@
         var b = bookmarks[k], body;
         if (b.kind === 'vocab') {
           body = '<div class="fw-semibold">' + bmEsc(b.de) + '</div><div>' + bmEsc(b.en) + '</div>' +
+            (b.en && b.vi ? '<div class="small text-secondary">Tiếng Việt: ' + bmEsc(b.vi) + '</div>' : '') +
             (b.example ? '<div class="small mt-1">' + bmEsc(b.example) +
-              (b.example_en ? '<br><span class="text-muted">' + bmEsc(b.example_en) + '</span>' : '') + '</div>' : '');
+              (b.example_en ? '<br><span class="text-muted">' + bmEsc(b.example_en) + '</span>' : '') +
+              (b.example_en && b.example_vi ? '<br><span class="small text-secondary">Tiếng Việt: ' + bmEsc(b.example_vi) + '</span>' : '') + '</div>' : '');
         } else {
           body = '<div class="small text-muted">' + (b.kind === 'lesen' ? WF_LANG.bi('📰 Lesen', '📰 Reading') : WF_LANG.bi('🎧 Hören', '🎧 Listening')) +
             (b.itemTitle ? ' · ' + bmEsc(b.itemTitle) : '') + '</div>' +
@@ -2218,6 +2327,7 @@ var LESEN_PRACTICE_DATA = {
     }
   });
   function doQuitQuiz() {
+    if (window.WordFeatherTTS) window.WordFeatherTTS.stop();
     if (window.speechSynthesis) window.speechSynthesis.cancel(); // stop a Hören item mid-playback
     currentQuiz = null;
     document.getElementById('quizScreen').classList.add('hidden');
@@ -2335,6 +2445,15 @@ var LESEN_PRACTICE_DATA = {
             document.querySelectorAll('#optionsContainer .option-btn').forEach(function (b) { b.disabled = false; });
           }
 
+          if (window.WordFeatherTTS) {
+            WordFeatherTTS.speak(q.script, 'de-DE', playBtn, {
+              onStart: function () { playBtn.classList.add('playing'); },
+              onEnd: unlock,
+              onError: unlock
+            });
+            return;
+          }
+
           if (!synth) { unlock(); return; }
           synth.cancel();
           var utter = new SpeechSynthesisUtterance(q.script);
@@ -2447,6 +2566,7 @@ var LESEN_PRACTICE_DATA = {
         '<span class="wf-pair small"><span class="wf-de text-muted">Beispiel</span> <span class="wf-en" style="opacity:.6">Example:</span></span><br>' +
         '<span class="fw-semibold">' + q.word.example + '</span>' +
         (q.word.example_en ? '<br><span class="text-muted">' + q.word.example_en + '</span>' : '') +
+        (q.word.example_en && q.word.example_vi ? '<br><span class="small text-secondary">Tiếng Việt: ' + q.word.example_vi + '</span>' : '') +
         '</div>';
     }
 

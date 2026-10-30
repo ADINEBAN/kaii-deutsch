@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#070a13">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="description" content="Ứng dụng học tiếng Đức toàn diện từ A1 đến C2 dành riêng cho điện thoại Realme GT Neo 2T với giao diện Liquid Glass siêu mượt 120Hz.">
+  
+  <title>KAII Deutsch — Mobile</title>
+  
+  <!-- Manifest & Favicons -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/kaii_192.png">
+  <link rel="apple-touch-icon" href="icons/kaii_192.png">
+  
+  <!-- Google Fonts: Plus Jakarta Sans for crisp glass typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Liquid Glass Stylesheet with cache-busting -->
+  <link rel="stylesheet" href="app.css">
+  
+  <style>
+    /* Instant layout protection for Iconify custom element */
+    iconify-icon {
+      display: inline-flex !important;
+      align-items: center;
+      justify-content: center;
+      vertical-align: middle;
+      width: 1em;
+      height: 1em;
+      line-height: 1;
+      color: inherit;
+      flex-shrink: 0;
+    }
+    iconify-icon svg {
+      width: 100% !important;
+      height: 100% !important;
+      display: block;
+      pointer-events: none;
+    }
+  </style>
+
+  <!-- Monochrome Iconify Provider (100% Offline with zero latency) -->
+  <script src="icons.js"></script>
+  
+  <!-- Official Iconify Web Component CDN (Online progressive enhancement) -->
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js" async defer></script>
+</head>
+<body>
+
+  <!-- Liquid Ambient Background (CSS Hardware Accelerated for 120Hz AMOLED) -->
+  <div class="liquid-bg" aria-hidden="true">
+    <div class="liquid-orb liquid-orb-1"></div>
+    <div class="liquid-orb liquid-orb-2"></div>
+    <div class="liquid-orb liquid-orb-3"></div>
+  </div>
+
+  <div id="app-root">
+
+    <!-- Sticky Glass Header -->
+    <header class="glass-header">
+      <div class="header-top">
+        <div class="brand" id="brand-kaii">
+          <div class="brand-avatar-frame" id="btn-kaii-avatar" title="KAII Cyber Avatar">
+            <div class="avatar-glow-aura"></div>
+            <div class="avatar-conic-ring"></div>
+            <div class="avatar-tech-ring">
+              <span class="tech-notch notch-tl"></span>
+              <span class="tech-notch notch-tr"></span>
+              <span class="tech-notch notch-bl"></span>
+              <span class="tech-notch notch-br"></span>
+            </div>
+            <div class="avatar-inner-shield">
+              <!-- Divine Ethereal KAII Avatar with Live Animation -->
+              <img src="avatar_square.jpg" alt="KAII Avatar" class="cyber-avatar-img">
+              <div class="avatar-divine-flare"></div>
+              <!-- Holographic Light Sweep -->
+              <div class="avatar-hologram-sweep"></div>
+            </div>
+          </div>
+          <div class="brand-text">
+            <h1 class="brand-title">KAII</h1>
+            <span class="brand-sub">Hết token thì sao ông</span>
+          </div>
+        </div>
+        <div id="server-status-pill" class="server-status-pill" title="Trạng thái kết nối máy chủ giọng đọc">
+          <span class="status-dot"></span> Đang kết nối...
+        </div>
+      </div>
+
+      <!-- Level Scroller Bar -->
+      <nav class="level-scroll-bar" aria-label="Bộ lọc trình độ">
+        <button class="level-chip active" data-level="ALL">Tất cả</button>
+        <button class="level-chip" data-level="A1">A1</button>
+        <button class="level-chip" data-level="A2">A2</button>
+        <button class="level-chip" data-level="B1">B1</button>
+        <button class="level-chip" data-level="B2">B2</button>
+        <button class="level-chip" data-level="C1">C1</button>
+        <button class="level-chip" data-level="C2">C2</button>
+      </nav>
+    </header>
+
+    <!-- PWA 1-Click Android App Install Banner -->
+    <div id="pwa-install-banner" class="pwa-install-banner" style="display:none;">
+      <div class="install-banner-content">
+        <div class="install-icon">
+          <img src="icons/kaii_192.png" alt="KAII" width="36" height="36" style="border-radius:10px;">
+        </div>
+        <div class="install-text">
+          <div class="install-title">Cài đặt App KAII</div>
+          <div class="install-sub">Dùng như app APK, toàn màn hình không có thanh URL</div>
+        </div>
+        <button id="pwa-install-btn" class="install-action-btn">
+          <iconify-icon icon="lucide:download" width="16" height="16"></iconify-icon> Cài đặt
+        </button>
+        <button id="pwa-close-btn" class="install-close-btn" aria-label="Đóng">
+          <iconify-icon icon="lucide:x" width="14" height="14"></iconify-icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- Main View Container -->
+    <main class="main-view-container">
+
+      <!-- ====================================================================
+           TAB 1: DICTIONARY (Tra cứu từ điển 5.243 từ)
+           ==================================================================== -->
+      <section id="tab-dict" class="tab-pane active">
+        <!-- Search bar -->
+        <div class="glass-search-box">
+          <span class="search-icon-left">
+            <iconify-icon icon="lucide:search" width="18" height="18"></iconify-icon>
+          </span>
+          <input type="search" id="search-input" class="glass-search-input" placeholder="Tìm từ tiếng Đức hoặc nghĩa tiếng Việt..." autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false">
+          <button id="search-clear-btn" class="search-clear-btn" aria-label="Xóa tìm kiếm">
+            <iconify-icon icon="lucide:x" width="14" height="14"></iconify-icon>
+          </button>
+        </div>
+
+        <!-- POS Filter pills & count -->
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+          <div class="filter-tags-row" style="margin-bottom:0;">
+            <button class="filter-pill active" data-pos="ALL">Tất cả</button>
+            <button class="filter-pill" data-pos="nomen"><iconify-icon icon="lucide:bookmark" width="12" height="12"></iconify-icon> Danh từ</button>
+            <button class="filter-pill" data-pos="verben"><iconify-icon icon="lucide:zap" width="12" height="12"></iconify-icon> Động từ</button>
+            <button class="filter-pill" data-pos="adjektive"><iconify-icon icon="lucide:palette" width="12" height="12"></iconify-icon> Tính từ</button>
+          </div>
+          <span id="dict-count-pill" class="badge-level" style="flex-shrink:0;margin-left:8px;">5.243 từ</span>
+        </div>
+
+        <!-- Word List Cards -->
+        <div id="word-list-container">
+          <div class="glass-card" style="text-align:center;padding:30px;">
+            <div style="font-size:1.8rem;margin-bottom:8px;">
+              <iconify-icon icon="lucide:refresh-cw" width="32" height="32"></iconify-icon>
+            </div>
+            <div>Đang tải kho từ vựng tiếng Đức...</div>
+          </div>
+        </div>
+
+        <!-- Load More Container -->
+        <div id="load-more-container" style="text-align:center;margin:16px 0;display:none;">
+          <button id="load-more-btn" class="btn-glass-action" style="padding:10px 24px;border-radius:20px;font-size:0.85rem;">
+            Tải thêm từ vựng...
+          </button>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           TAB 2: THEMES (Từ vựng theo 37 Chủ đề)
+           ==================================================================== -->
+      <section id="tab-themes" class="tab-pane">
+        <!-- Grid of 37 categories -->
+        <div id="themes-container" class="themes-grid"></div>
+
+        <!-- Drill-down word list inside selected category -->
+        <div id="theme-words-container" style="display:none;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;">
+            <button id="theme-back-btn" class="btn-glass-action" style="padding:6px 14px;border-radius:14px;">
+              <iconify-icon icon="lucide:chevron-left" width="16" height="16"></iconify-icon> Quay lại danh mục
+            </button>
+            <div id="theme-title" style="font-size:0.95rem;font-weight:700;color:#60a5fa;text-align:right;"></div>
+          </div>
+          <div id="theme-word-list"></div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           TAB 3: SENTENCES (1.708 Mẫu câu giao tiếp A-Z)
+           ==================================================================== -->
+      <section id="tab-sentences" class="tab-pane">
+        <!-- Sentence search -->
+        <div class="glass-search-box">
+          <span class="search-icon-left">
+            <iconify-icon icon="lucide:search" width="18" height="18"></iconify-icon>
+          </span>
+          <input type="search" id="sentence-search" class="glass-search-input" placeholder="Tìm mẫu câu tiếng Đức hoặc tiếng Việt...">
+        </div>
+
+        <!-- Letter scrubber -->
+        <div id="letter-scroller" class="letter-scrubber"></div>
+
+        <!-- Sentence Cards List -->
+        <div id="sentences-list"></div>
+      </section>
+
+      <!-- ====================================================================
+           TAB 4: GRAMMAR (Ngữ pháp trọng tâm A1 - C2)
+           ==================================================================== -->
+      <section id="tab-grammar" class="tab-pane">
+        <div id="grammar-list"></div>
+      </section>
+
+      <!-- ====================================================================
+           TAB 5: PRACTICE (Luyện tập: Flashcard 3D, Nối từ & Trắc nghiệm)
+           ==================================================================== -->
+      <section id="tab-practice" class="tab-pane">
+        <!-- Mode switcher (4 modes) -->
+        <div class="practice-mode-selector">
+          <button id="mode-flashcard-btn" class="mode-tab-btn active">
+            <iconify-icon icon="lucide:layers" width="16" height="16"></iconify-icon> Lật thẻ 3D
+          </button>
+          <button id="mode-match-btn" class="mode-tab-btn">
+            <iconify-icon icon="lucide:link-2" width="16" height="16"></iconify-icon> Nối từ
+          </button>
+          <button id="mode-quiz-de-vi-btn" class="mode-tab-btn">
+            <iconify-icon icon="lucide:sparkles" width="16" height="16"></iconify-icon> Đức → Việt
+          </button>
+          <button id="mode-quiz-vi-de-btn" class="mode-tab-btn">
+            <iconify-icon icon="lucide:target" width="16" height="16"></iconify-icon> Việt → Đức
+          </button>
+        </div>
+
+        <!-- 1. Flashcard 3D Scene -->
+        <div id="flashcard-scene">
+          <div class="flashcard-3d-scene">
+            <div id="flashcard-inner" class="flashcard-inner">
+              <!-- Front Face (German) -->
+              <div class="flashcard-face flashcard-front">
+                <div style="display:flex;width:100%;justify-content:space-between;align-items:center;">
+                  <span id="card-art" class="art-badge"></span>
+                  <span id="card-level" class="badge-level">A1</span>
+                </div>
+                
+                <div>
+                  <div id="card-de" class="flashcard-center-word">Wort</div>
+                  <div id="card-ex-de" style="font-size:0.9rem;color:#cbd5e1;font-weight:500;margin-top:8px;"></div>
+                </div>
+
+                <div style="display:flex;width:100%;justify-content:space-between;align-items:center;">
+                  <button id="card-speaker-btn" class="btn-speaker" style="width:34px;height:34px;" aria-label="Nghe">
+                    <iconify-icon icon="lucide:volume-2" width="18" height="18"></iconify-icon>
+                  </button>
+                  <span class="flashcard-hint">Chạm để xem nghĩa tiếng Việt ↺</span>
+                </div>
+              </div>
+
+              <!-- Back Face (Vietnamese) -->
+              <div class="flashcard-face flashcard-back">
+                <div style="display:flex;width:100%;justify-content:flex-end;">
+                  <span style="font-size:0.75rem;color:var(--text-dim);">Tiếng Việt</span>
+                </div>
+
+                <div>
+                  <div id="card-vi" class="flashcard-center-meaning">Ý nghĩa</div>
+                  <div id="card-ex-vi" style="font-size:0.86rem;color:var(--text-muted);margin-top:8px;"></div>
+                </div>
+
+                <span class="flashcard-hint">Chạm để lật lại tiếng Đức ↻</span>
+              </div>
+            </div>
+          </div>
+
+          <div id="card-counter" style="text-align:center;font-size:0.8rem;color:var(--text-muted);margin-bottom:12px;">
+            Thẻ 1 / 50
+          </div>
+
+          <!-- Flashcard Action Buttons -->
+          <div class="flashcard-action-bar">
+            <button id="btn-card-fail" class="btn-card-action btn-card-fail">
+              <iconify-icon icon="lucide:x" width="18" height="18"></iconify-icon> Chưa thuộc
+            </button>
+            <button id="btn-card-pass" class="btn-card-action btn-card-pass">
+              <iconify-icon icon="lucide:check" width="18" height="18"></iconify-icon> Đã nhớ từ
+            </button>
+          </div>
+        </div>
+
+        <!-- 2. Match Game Scene (Game nối từ Đức - Việt) -->
+        <div id="match-scene" style="display:none;">
+          <div class="match-header-bar" style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;padding:8px 12px;background:rgba(255,255,255,0.04);border-radius:14px;border:1px solid var(--glass-border);">
+            <span id="match-counter-pill" class="badge-level">Cặp: 0 / 6</span>
+            <span id="match-tries-pill" style="font-size:0.8rem;color:var(--text-muted);font-weight:600;">Lần thử: 0</span>
+            <button id="btn-match-restart" class="btn-glass-action" style="padding:4px 10px;border-radius:10px;font-size:0.75rem;">
+              <iconify-icon icon="lucide:refresh-cw" width="13" height="13"></iconify-icon> Ván mới
+            </button>
+          </div>
+          <div style="font-size:0.78rem;color:var(--text-dim);margin-bottom:12px;text-align:center;">
+            Chạm 1 ô tiếng Đức và 1 ô tiếng Việt tương ứng để nối cặp
+          </div>
+          <div id="match-grid" class="match-grid"></div>
+          <div id="match-win-box" style="display:none;margin-top:16px;"></div>
+        </div>
+
+        <!-- 3. Quiz DE -> VI Scene (Đức → Việt) -->
+        <div id="quiz-scene" style="display:none;">
+          <div class="glass-card" style="padding:18px;margin-bottom:14px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+              <span id="quiz-progress" style="font-size:0.78rem;color:var(--text-dim);font-weight:700;">Câu 1 / 10</span>
+              <button id="quiz-speaker-btn" class="btn-speaker" style="width:30px;height:30px;" aria-label="Phát âm">
+                <iconify-icon icon="lucide:volume-2" width="16" height="16"></iconify-icon>
+              </button>
+            </div>
+            <div id="quiz-question-text" style="font-size:1.35rem;font-weight:800;color:#ffffff;">Frage</div>
+          </div>
+
+          <div id="quiz-options-container" style="display:flex;flex-direction:column;gap:10px;"></div>
+        </div>
+
+        <!-- 4. Quiz VI -> DE Scene (Việt → Đức: từ nghĩa tiếng Việt chọn từ tiếng Đức đúng) -->
+        <div id="quiz-vi-de-scene" style="display:none;">
+          <div class="glass-card" style="padding:18px;margin-bottom:14px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+              <span id="quiz-vi-de-progress" style="font-size:0.78rem;color:var(--text-dim);font-weight:700;">Câu 1 / 10</span>
+              <span style="font-size:0.75rem;padding:3px 8px;border-radius:8px;background:rgba(56,189,248,0.15);color:#38bdf8;font-weight:600;">Chọn từ Đức đúng</span>
+            </div>
+            <div style="font-size:0.78rem;color:var(--text-dim);margin-bottom:4px;text-transform:uppercase;letter-spacing:0.5px;">Ý nghĩa tiếng Việt:</div>
+            <div id="quiz-vi-de-meaning" style="font-size:1.3rem;font-weight:800;color:#38bdf8;margin-bottom:8px;">Ý nghĩa</div>
+            <div id="quiz-vi-de-hint" style="font-size:0.85rem;color:var(--text-muted);font-style:italic;"></div>
+          </div>
+
+          <div id="quiz-vi-de-options-container" style="display:flex;flex-direction:column;gap:10px;"></div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ====================================================================
+         Conjugation Bottom Sheet Drawer (Chia động từ)
+         ==================================================================== -->
+    <div id="drawer-backdrop" class="drawer-backdrop"></div>
+    <div id="drawer-sheet" class="drawer-sheet">
+      <div class="drawer-handle-bar"></div>
+      <div class="drawer-header">
+        <div>
+          <div id="drawer-verb-title" style="font-size:1.25rem;font-weight:800;color:#ffffff;">Verb</div>
+          <div id="drawer-verb-vi" style="font-size:0.86rem;color:#38bdf8;">Ý nghĩa</div>
+        </div>
+        <button id="drawer-close-btn" class="btn-glass-action" style="padding:4px 10px;border-radius:12px;">
+          <iconify-icon icon="lucide:x" width="14" height="14"></iconify-icon> Đóng
+        </button>
+      </div>
+      <div id="drawer-body" class="drawer-body"></div>
+    </div>
+
+    <!-- ====================================================================
+         Liquid Glass Bottom Navigation Bar (Monochrome Line Icons)
+         ==================================================================== -->
+    <nav class="glass-bottom-bar" aria-label="Menu chuyển mục">
+      <button class="nav-item-btn active" data-tab="dict">
+        <span class="nav-icon"><iconify-icon icon="lucide:search" width="20" height="20"></iconify-icon></span>
+        <span class="nav-label">Tra từ</span>
+      </button>
+
+      <button class="nav-item-btn" data-tab="themes">
+        <span class="nav-icon"><iconify-icon icon="lucide:book-open" width="20" height="20"></iconify-icon></span>
+        <span class="nav-label">Từ vựng</span>
+      </button>
+
+      <button class="nav-item-btn" data-tab="sentences">
+        <span class="nav-icon"><iconify-icon icon="lucide:message-square" width="20" height="20"></iconify-icon></span>
+        <span class="nav-label">Mẫu câu</span>
+      </button>
+
+      <button class="nav-item-btn" data-tab="grammar">
+        <span class="nav-icon"><iconify-icon icon="lucide:graduation-cap" width="20" height="20"></iconify-icon></span>
+        <span class="nav-label">Ngữ pháp</span>
+      </button>
+
+      <button class="nav-item-btn" data-tab="practice">
+        <span class="nav-icon"><iconify-icon icon="lucide:zap" width="20" height="20"></iconify-icon></span>
+        <span class="nav-label">Luyện tập</span>
+      </button>
+    </nav>
+
+    <!-- Floating Glass Toast -->
+    <div id="glass-toast" class="glass-toast"></div>
+
+  </div>
+
+  <!-- Application Logic with cache-busting -->
+  <script src="app.js"></script>
+</body>
+</html>

@@ -18,3 +18,11 @@ sdist/
 md_to_html_converter.py
 requirements.txt
 setup_Version2.sh
+
+KAII-Deutsch-Offline.apk
+android-apk-project/.gradle
+android-apk-project/build
+android-apk-project/app/build
+android-apk-project/local.properties
+*.log
+*.pid

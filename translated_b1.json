@@ -1,0 +1,1530 @@
+{
+  "die Frucht, -̈e": {
+    "vi": "hoa quả, trái cây",
+    "example_vi": "Và vào buổi sáng tôi luôn ăn phô mai tươi quark với hoa quả."
+  },
+  "der Quark (Sg.)": {
+    "vi": "phô mai tươi quark (sản phẩm từ sữa)",
+    "example_vi": "Vào buổi sáng tôi luôn ăn phô mai tươi quark với trái cây."
+  },
+  "krankmelden (hat krankgemeldet)": {
+    "vi": "báo ốm, xin nghỉ ốm",
+    "example_vi": "Cô ấy gọi điện vì muốn xin nghỉ ốm."
+  },
+  "die Konferenz, -en": {
+    "vi": "hội nghị, hội thảo",
+    "example_vi": "Cô ấy gọi điện vì đồng nghiệp của cô ấy phải chuẩn bị cho một hội nghị."
+  },
+  "der Schreibblock, -̈e": {
+    "vi": "tập giấy ghi chép, sổ tay",
+    "example_vi": "Bà Tokic phải đặt mua sổ tay ghi chép và bút bi."
+  },
+  "worüber": {
+    "vi": "về cái gì, về điều gì",
+    "example_vi": "Họ đang nói về điều gì vậy?"
+  },
+  "die Eile (Sg.)": {
+    "vi": "sự vội vã, vội vàng",
+    "example_vi": "Ella phải làm việc và cô ấy đang rất vội."
+  },
+  "gar": {
+    "vi": "hoàn toàn, chút nào (trong câu phủ định)",
+    "example_vi": "Nhưng tôi hoàn toàn chẳng có chút hứng thú nào với việc đó."
+  },
+  "jedenfalls": {
+    "vi": "dù sao thì, trong mọi trường hợp",
+    "example_vi": "Dù sao thì cô ấy cũng mỉm cười và nói: Không thành vấn đề."
+  },
+  "halt": {
+    "vi": "thôi, đành (từ đệm biểu thị sự chấp nhận)",
+    "example_vi": "Vậy thì chúng ta cứ đi sau lớp học yoga của bạn thôi!"
+  },
+  "so viel": {
+    "vi": "nhiều như vậy, nhiều thế",
+    "example_vi": "Nếu cô ấy không phải làm việc nhiều như vậy thì bây giờ chúng ta đã có thể đi uống nước cùng nhau."
+  },
+  "beenden (hat beendet)": {
+    "vi": "kết thúc, hoàn thành",
+    "example_vi": "Hãy kết thúc bức email của bạn bằng những lời chúc tốt đẹp cho buổi lễ."
+  },
+  "aussuchen (hat ausgesucht)": {
+    "vi": "chọn lựa, lựa chọn",
+    "example_vi": "Bạn 15 tuổi và được phép tự chọn một nơi học nghề."
+  },
+  "der Präsident, -en": {
+    "vi": "tổng thống, chủ tịch",
+    "example_vi": "Hôm nay ngài tổng thống có một bài phát biểu quan trọng."
+  },
+  "deswegen": {
+    "vi": "vì vậy, do đó, vì thế",
+    "example_vi": "Khi nghe một ngôn ngữ thường xuyên, người ta sẽ học nó nhanh hơn rất nhiều. Vì thế tôi đã thường xuyên xem phim Đức."
+  },
+  "irgendwann": {
+    "vi": "vào một lúc nào đó, một thời điểm nào đó",
+    "example_vi": "Vào một thời điểm nào đó, họ không còn hứng thú dịch thuật nữa."
+  },
+  "daher": {
+    "vi": "vì thế, do đó, vì vậy",
+    "example_vi": "Do đó người ta luôn cần có một động lực tốt cho lý do tại sao mình làm điều đó."
+  },
+  "darum": {
+    "vi": "vì thế, chính vì vậy",
+    "example_vi": "Chính vì vậy tiếng Đức của tôi bắt buộc phải thật tốt."
+  },
+  "die Wiederholung, -en": {
+    "vi": "sự lặp lại, sự nhắc lại",
+    "example_vi": "Anh ấy nói rất nhanh và bạn xin phép anh ấy nhắc lại."
+  },
+  "der Integrationskurs, -e": {
+    "vi": "khóa học hội nhập",
+    "example_vi": "Bạn muốn đăng ký một khóa học hội nhập."
+  },
+  "die Herkunft, -̈e": {
+    "vi": "nguồn gốc, gốc gác",
+    "example_vi": "Từ năm 1998, tại các trường mầm non ở Munich đã có các khóa học ngôn ngữ dành cho trẻ em có gốc gác nước ngoài."
+  },
+  "verstecken (sich) (hat versteckt)": {
+    "vi": "giấu, trốn, cất giấu",
+    "example_vi": "Trong chiếc túi phép thuật có giấu nhiều món đồ khác nhau."
+  },
+  "das Griechisch (Sg.)": {
+    "vi": "tiếng Hy Lạp",
+    "example_vi": "Tôi nói tiếng Hy Lạp với gia đình và tiếng Đức với bạn bè."
+  },
+  "der Grieche, -n": {
+    "vi": "người Hy Lạp (nam)",
+    "example_vi": "Bố tôi là người Hy Lạp, nhưng tôi sinh ra ở Áo."
+  },
+  "durcheinander": {
+    "vi": "lẫn lộn, lộn xộn",
+    "example_vi": "Đôi khi ở nhà chúng tôi nói lẫn lộn cả tiếng Đức và tiếng Hy Lạp."
+  },
+  "spätestens": {
+    "vi": "muộn nhất là, chậm nhất là",
+    "example_vi": "Ở trường chúng tôi, học sinh có thể học tiếng Anh từ lớp ba, và muộn nhất đến lớp năm là bắt buộc."
+  },
+  "allmählich": {
+    "vi": "dần dần, từ từ",
+    "example_vi": "Ban đầu tôi vẫn cảm ơn vì lời khen, nhưng dần dần câu nói đó bắt đầu làm tôi bực mình."
+  },
+  "der Nerv, -en": {
+    "vi": "dây thần kinh (auf die Nerven gehen: làm bực mình, làm phiền)",
+    "example_vi": "Dần dần câu nói đó bắt đầu làm tôi bực mình."
+  },
+  "korrekt": {
+    "vi": "chính xác, đúng đắn",
+    "example_vi": "Rằng một cô gái trẻ có thể sử dụng Dativ và Genitiv một cách chính xác."
+  },
+  "andererseits": {
+    "vi": "mặt khác, ngược lại",
+    "example_vi": "Mặt khác, bố mẹ tôi sống ở Đức lâu như tôi nhưng lại hầu như không nói được tiếng Đức."
+  },
+  "die Stirn, -en": {
+    "vi": "trán (die Stirn in Falten legen: nhăn trán, nhíu mày)",
+    "example_vi": "Bà nhăn trán và nói một cách không hài lòng: Tôi đã nuôi lớn sáu đứa con."
+  },
+  "der Autor, -en": {
+    "vi": "tác giả (nam)",
+    "example_vi": "Tác giả đang viết một cuốn tiểu thuyết rất hồi hộp."
+  },
+  "die Kenntnisse (Pl.)": {
+    "vi": "kiến thức, hiểu biết, kỹ năng",
+    "example_vi": "Kiến thức ngoại ngữ có giúp ích cho bạn trong việc học tiếng Đức không?"
+  },
+  "schimpfen (hat geschimpft)": {
+    "vi": "mắng mỏ, chửi mắng, càu nhàu",
+    "example_vi": "Bạn mắng mỏ hoặc mơ mộng bằng ngôn ngữ nào?"
+  },
+  "die Schrift, -en": {
+    "vi": "chữ viết, hệ chữ viết",
+    "example_vi": "Tiếng Serbia có hệ chữ viết khác với tiếng Đức."
+  },
+  "etwa": {
+    "vi": "khoảng chừng, xấp xỉ",
+    "example_vi": "Anh ấy nộp đơn vào trường sân khấu nổi tiếng nhất cả nước, mặc dù có khoảng tám trăm thí sinh cạnh tranh."
+  },
+  "genügen (hat genügt)": {
+    "vi": "đủ, đáp ứng đủ",
+    "example_vi": "Đôi khi chỉ một ý tưởng duy nhất là đủ ... và rồi mọi thứ sẽ trở nên tốt đẹp."
+  },
+  "aufhören (hat aufgehört)": {
+    "vi": "ngừng lại, thôi, nghỉ việc",
+    "example_vi": "Cuối tháng này tôi sẽ thôi làm điều dưỡng viên."
+  },
+  "der Vorteil, -e": {
+    "vi": "lợi thế, ưu điểm",
+    "example_vi": "Có kinh nghiệm trong thương mại và bán hàng là một lợi thế."
+  },
+  "erwarten (hat erwartet)": {
+    "vi": "chờ đợi, kỳ vọng, yêu cầu",
+    "example_vi": "Chúng tôi yêu cầu kinh nghiệm trong ngành điện mặt trời."
+  },
+  "die Voraussetzung, -en": {
+    "vi": "điều kiện tiên quyết, yêu cầu bắt buộc",
+    "example_vi": "Kỹ năng MS Office tốt là điều kiện bắt buộc."
+  },
+  "der Serviceangestellte, -n": {
+    "vi": "nhân viên phục vụ",
+    "example_vi": "Chúng tôi đang tìm một nhân viên phục vụ có kinh nghiệm từ tháng 6 với hợp đồng có thời hạn 3 tháng."
+  },
+  "die Unterlagen (Pl.)": {
+    "vi": "hồ sơ, giấy tờ, tài liệu",
+    "example_vi": "Thông tin chi tiết và hồ sơ ứng tuyển xin gửi về: ..."
+  },
+  "die Unterstützung, -en": {
+    "vi": "sự hỗ trợ, sự giúp đỡ",
+    "example_vi": "Nhiệm vụ của bạn: hỗ trợ việc nhà, chăm sóc điều dưỡng nhẹ."
+  },
+  "schriftlich": {
+    "vi": "bằng văn bản",
+    "example_vi": "Bạn không cần phải gửi đơn ứng tuyển bằng văn bản cho chúng tôi."
+  },
+  "gewohnt": {
+    "vi": "quen thuộc, có thói quen",
+    "example_vi": "Ngoài ra tôi đã quen với việc hoàn thành nhiệm vụ của mình một cách nhanh chóng và đáng tin cậy."
+  },
+  "üblich": {
+    "vi": "thông thường, phổ biến",
+    "example_vi": "Tôi cũng sử dụng thành thạo các chương trình máy tính thông dụng."
+  },
+  "die Anlage, -n": {
+    "vi": "tài liệu đính kèm, tệp đính kèm",
+    "example_vi": "Tài liệu đính kèm: sơ yếu lý lịch, chứng chỉ."
+  },
+  "herstellen (hat hergestellt)": {
+    "vi": "sản xuất, chế tạo",
+    "example_vi": "Đó là một công ty lớn chuyên sản xuất ..."
+  },
+  "innerhalb": {
+    "vi": "trong vòng, trong khoảng",
+    "example_vi": "Chỉ trong vòng vài tuần, anh ấy đã nhận được một chỗ học tại trường sân khấu nghệ thuật."
+  },
+  "der Zeitpunkt, -e": {
+    "vi": "thời điểm",
+    "example_vi": "Hãy bắt đầu ngay từ thời điểm nộp đơn ứng tuyển."
+  },
+  "beruhigen (sich) (hat beruhigt)": {
+    "vi": "bình tĩnh lại, trấn tĩnh",
+    "example_vi": "Điều này giúp trấn tĩnh và nhờ đó bạn có thể tránh bị hồi hộp thêm."
+  },
+  "statt": {
+    "vi": "thay vì",
+    "example_vi": "Tôi đã tìm một công việc được đi đây đi đó nhiều, thay vì chỉ ngồi lì trong văn phòng."
+  },
+  "der Ersatz (Sg.)": {
+    "vi": "đồ thay thế, sự thay thế",
+    "example_vi": "Đến khi nào bạn phải có chiếc cốc thay thế?"
+  },
+  "das Geheimnis, -se": {
+    "vi": "bí mật",
+    "example_vi": "Đó là bí mật của anh ấy."
+  },
+  "das Risiko, Risiken": {
+    "vi": "rủi ro, mạo hiểm",
+    "example_vi": "Hầu hết mọi người không muốn mạo hiểm và muốn giữ mọi thứ nguyên như cũ hơn."
+  },
+  "die Änderung, -en": {
+    "vi": "sự thay đổi, sự chỉnh sửa",
+    "example_vi": "Người ta nên cân nhắc kỹ các thay đổi để không mắc sai lầm."
+  },
+  "der Sinn (Sg.)": {
+    "vi": "ý nghĩa, tinh thần",
+    "example_vi": "Người ta không thể học được điều gì mới mà không dám chấp nhận rủi ro sai sót. Theo tinh thần đó: Chúng ta hãy thử xem nào."
+  },
+  "lohnen (sich) (hat gelohnt)": {
+    "vi": "đáng giá, bõ công",
+    "example_vi": "Nó không dễ dàng, nhưng rất bõ công."
+  },
+  "besitzen (hat besessen)": {
+    "vi": "sở hữu, có",
+    "example_vi": "Victor Krumm sở hữu một cửa hàng thực phẩm."
+  },
+  "geboren werden (ist geboren worden)": {
+    "vi": "được sinh ra, chào đời",
+    "example_vi": "Khi tôi chào đời, ông ấy đã quyết định quay trở về Việt Nam."
+  },
+  "entschließen (sich) (hat entschlossen)": {
+    "vi": "quyết định",
+    "example_vi": "Khi tôi chào đời, ông ấy đã quyết định quay trở về Việt Nam."
+  },
+  "das Heimweh (Sg.)": {
+    "vi": "nỗi nhớ nhà",
+    "example_vi": "Ban đầu đôi khi tôi cảm thấy hơi nhớ nhà, nhưng rồi tôi đã gặp vợ mình và quyết định ở lại."
+  },
+  "das Gewürz, -e": {
+    "vi": "gia vị",
+    "example_vi": "Kèm theo đó là rau củ, rau thơm, gia vị và một loại nước sốt đặc biệt."
+  },
+  "mittlerweile": {
+    "vi": "giờ đây, hiện nay, đến nay",
+    "example_vi": "Giờ đây tôi cũng bán bánh mì tại các khu chợ."
+  },
+  "die Rücksicht, -en": {
+    "vi": "sự để ý, sự quan tâm, cân nhắc",
+    "example_vi": "Người ta nên để ý cân nhắc điều đó trong công tác chăm sóc điều dưỡng."
+  },
+  "interkulturell": {
+    "vi": "liên văn hóa, đa văn hóa",
+    "example_vi": "Năm năm trước tôi đã thành lập một dịch vụ chăm sóc điều dưỡng đa văn hóa."
+  },
+  "gründen (hat gegründet)": {
+    "vi": "thành lập, sáng lập",
+    "example_vi": "Năm năm trước tôi đã thành lập một dịch vụ chăm sóc điều dưỡng đa văn hóa."
+  },
+  "gewöhnen (sich) (hat gewöhnt)": {
+    "vi": "làm quen, quen với",
+    "example_vi": "Người Thổ Nhĩ Kỳ chưa quen với việc để người già cho các dịch vụ chăm sóc chăm sóc."
+  },
+  "jahrelang": {
+    "vi": "suốt nhiều năm, nhiều năm liền",
+    "example_vi": "Ngay tại quê nhà Nga, tôi đã từng quản lý một cửa hàng trong nhiều năm liền."
+  },
+  "der Kaufmann, -̈er": {
+    "vi": "thương nhân, người làm kinh doanh",
+    "example_vi": "Nghề nghiệp của tôi là thương nhân và tôi đã làm việc lâu năm trong một cửa hàng hóa mỹ phẩm."
+  },
+  "die Geschäftsleute (Pl.)": {
+    "vi": "giới kinh doanh, các doanh nhân",
+    "example_vi": "Tôi nghĩ chúng tôi là những người sinh ra để làm kinh doanh."
+  },
+  "ausschließlich": {
+    "vi": "chỉ duy nhất, độc quyền",
+    "example_vi": "Chúng tôi chỉ bán độc quyền các sản phẩm của Nga."
+  },
+  "höchstens": {
+    "vi": "nhiều nhất là, tối đa",
+    "example_vi": "Hồi đó tôi chỉ có rất ít hàng, nhiều nhất khoảng 30 mặt hàng."
+  },
+  "möglichst": {
+    "vi": "càng... càng tốt, hết mức có thể",
+    "example_vi": "Anh ấy muốn làm quen với càng nhiều người khác nhau càng tốt."
+  },
+  "die Rede, -n": {
+    "vi": "bài diễn văn; lời nói (die Rede sein von: được nhắc đến, nói đến)",
+    "example_vi": "Ở khắp nơi người ta đều nói đến kỹ năng làm việc nhóm và năng lực giải quyết xung đột."
+  },
+  "der Kompromiss, -e": {
+    "vi": "sự thỏa hiệp",
+    "example_vi": "Điều đó có nghĩa là bạn có thể làm việc nhóm tốt và đôi khi cũng biết thỏa hiệp."
+  },
+  "wiederkommen (ist wiedergekommen)": {
+    "vi": "quay lại, trở lại",
+    "example_vi": "Khách hàng không thể đưa ra quyết định và muốn quay lại sau."
+  },
+  "die Mühe, -n": {
+    "vi": "sự vất vả, công sức, nỗ lực",
+    "example_vi": "Cảm ơn bạn rất nhiều vì đã bỏ công giúp đỡ."
+  },
+  "die Zahncreme, -s": {
+    "vi": "kem đánh răng",
+    "example_vi": "Bạn cần kem đánh răng, bột giặt và một chiếc bàn chải mới."
+  },
+  "das Waschmittel, -": {
+    "vi": "bột giặt, nước giặt",
+    "example_vi": "Bạn cần kem đánh răng, bột giặt và một chiếc bàn chải mới."
+  },
+  "die Bürste, -n": {
+    "vi": "bàn chải",
+    "example_vi": "Bạn cần kem đánh răng, bột giặt và một chiếc bàn chải mới."
+  },
+  "begrüßen (hat begrüßt)": {
+    "vi": "chào đón, chào hỏi",
+    "example_vi": "Bạn chào đón khách hàng và đề nghị giúp đỡ."
+  },
+  "verabschieden (sich) (hat verabschiedet)": {
+    "vi": "chào tạm biệt, chia tay",
+    "example_vi": "Họ chào tạm biệt nhau."
+  },
+  "der Anspruch, -̈e": {
+    "vi": "quyền lợi, quyền yêu cầu",
+    "example_vi": "Tôi có quyền được nhận một chiếc vali mới vì vali của tôi đã bị hư hỏng."
+  },
+  "die Kopie, -n": {
+    "vi": "bản sao, bản photocopy",
+    "example_vi": "Kèm theo đây bạn sẽ nhận được một bản sao của hóa đơn."
+  },
+  "beschädigen (hat beschädigt)": {
+    "vi": "làm hư hại, làm hỏng",
+    "example_vi": "Thật không may tôi phải nhận thấy rằng một bánh xe của chiếc vali đã bị hỏng."
+  },
+  "die Bedienungsanleitung, -en": {
+    "vi": "hướng dẫn sử dụng",
+    "example_vi": "Nó không hoạt động, mặc dù bạn đã làm đúng theo những gì ghi trong sách hướng dẫn sử dụng."
+  },
+  "jedoch": {
+    "vi": "tuy nhiên, nhưng",
+    "example_vi": "Bạn đã đặt mua một chiếc ghế văn phòng mới, tuy nhiên lại là một mẫu khác với chiếc đã được giao."
+  },
+  "bereits": {
+    "vi": "đã, từ trước",
+    "example_vi": "Bạn rất bực mình vì đã phải chờ đợi chiếc ghế suốt tám tuần."
+  },
+  "fordern (hat gefordert)": {
+    "vi": "yêu cầu, đòi hỏi",
+    "example_vi": "Bây giờ bạn yêu cầu được hoàn lại tiền của mình."
+  },
+  "enttäuschen (hat enttäuscht)": {
+    "vi": "làm thất vọng",
+    "example_vi": "Dịch vụ của các bạn đã làm tôi rất thất vọng."
+  },
+  "der Rechtsanwalt, -̈e": {
+    "vi": "luật sư (nam)",
+    "example_vi": "Ông Bremer đã thuê một luật sư."
+  },
+  "verdächtigen (hat verdächtigt)": {
+    "vi": "nghi ngờ, tình nghi",
+    "example_vi": "Họ nghi ngờ ông Bremer."
+  },
+  "der Frieden, -": {
+    "vi": "hòa bình, sự yên bình",
+    "example_vi": "Chim hót líu lo, mọi thứ thật yên bình."
+  },
+  "die Wirklichkeit, -en": {
+    "vi": "thực tế, thực tại",
+    "example_vi": "Thực tế thường trông hoàn toàn khác."
+  },
+  "der Rasen, -": {
+    "vi": "bãi cỏ, thảm cỏ",
+    "example_vi": "Bãi cỏ bị cắt tỉa quá thường xuyên."
+  },
+  "das Bundesland, -̈er": {
+    "vi": "bang, tiểu bang",
+    "example_vi": "Tại bang Baden-Württemberg, cứ mười người được hỏi thì có bốn người từng gặp rắc rối với hàng xóm."
+  },
+  "entweder ... oder": {
+    "vi": "hoặc là ... hoặc là",
+    "example_vi": "Luật sư đã viết rằng hoặc là chúng tôi phải dùng một chiếc máy cưa đỡ ồn hơn, hoặc vụ việc sẽ được đưa ra tòa."
+  },
+  "das Eigentum, -e": {
+    "vi": "tài sản, quyền sở hữu",
+    "example_vi": "Bố mẹ tôi đã mua một mảnh đất nhỏ. Bây giờ nó là tài sản của chúng tôi."
+  },
+  "miteinander": {
+    "vi": "với nhau, cùng nhau",
+    "example_vi": "Chúng tôi cười đùa nhiều với nhau và luôn ở bên cạnh nhau."
+  },
+  "der Radiergummi, -s": {
+    "vi": "cục tẩy, gôm tẩy",
+    "example_vi": "Elena cần một cục tẩy để làm bài tập về nhà."
+  },
+  "der Farbstift, -e": {
+    "vi": "bút chì màu",
+    "example_vi": "Elena cần một cục tẩy và bút chì màu cho bài tập về nhà."
+  },
+  "das Puzzle, -s": {
+    "vi": "trò chơi ghép hình",
+    "example_vi": "Những đứa trẻ ngồi trong phòng bếp với một bộ ghép hình."
+  },
+  "bloß": {
+    "vi": "chỉ, giá mà (từ biểu cảm)",
+    "example_vi": "Giá mà tôi chẳng nói gì thì hơn!"
+  },
+  "hierher": {
+    "vi": "đến đây, tới đây",
+    "example_vi": "Gia đình nhà Hanfmann đã chuyển tới đây."
+  },
+  "abmachen (hat abgemacht)": {
+    "vi": "thỏa thuận, giao hẹn, thống nhất",
+    "example_vi": "Chúng ta đã giao hẹn trước rằng ..."
+  },
+  "die Frechheit, -en": {
+    "vi": "sự xấc xược, sự trơ trẽn",
+    "example_vi": "Đó thực sự là một sự xấc xược."
+  },
+  "meinetwegen": {
+    "vi": "tùy bạn, tôi sao cũng được",
+    "example_vi": "Tôi có thể ngồi ở chỗ cạnh cửa sổ không? – Tùy bạn, tôi sao cũng được."
+  },
+  "der Lift, -e": {
+    "vi": "thang máy",
+    "example_vi": "Tôi hoàn toàn có thể không cần những thứ xa hoa như ban công, thang máy hay sân thượng."
+  },
+  "die Innenstadt, -̈e": {
+    "vi": "trung tâm thành phố",
+    "example_vi": "Khu trung tâm thành phố thì đặc biệt đắt đỏ!"
+  },
+  "die Querstraße, -n": {
+    "vi": "đường ngang, phố nhánh",
+    "example_vi": "Đi thêm vài con phố ngang, căn hộ đôi khi có giá rẻ hơn đáng kể."
+  },
+  "die Alternative, -n": {
+    "vi": "giải pháp thay thế, phương án thay thế",
+    "example_vi": "Sau một thời gian tìm kiếm vô vọng, chúng tôi đã quyết định chọn giải pháp ở vùng ven thành phố."
+  },
+  "der Rand, -̈er": {
+    "vi": "mép, rìa (am Stadtrand: ven thành phố)",
+    "example_vi": "Chúng tôi đã quyết định chọn giải pháp ở vùng ven thành phố."
+  },
+  "der Link, -s": {
+    "vi": "đường dẫn, liên kết mạng",
+    "example_vi": "Lần tới tôi sẽ nhớ tới bạn và đăng đường link vào diễn đàn này."
+  },
+  "der Staat, -en": {
+    "vi": "nhà nước, quốc gia",
+    "example_vi": "Từng có hai nhà nước Đức."
+  },
+  "die Mauer, -n": {
+    "vi": "bức tường",
+    "example_vi": "Hai nhà nước Đức đã trở lại thành một quốc gia và bức tường sụp đổ."
+  },
+  "herrschen (hat geherrscht)": {
+    "vi": "thống trị, ngự trị, có (trật tự, kỷ cương)",
+    "example_vi": "Ở nước Đức luôn có trật tự kỷ cương."
+  },
+  "die Stufe, -n": {
+    "vi": "bậc (thang), mức độ",
+    "example_vi": "Các bậc cầu thang phải có chiều cao tối thiểu theo quy định."
+  },
+  "mitten": {
+    "vi": "ở giữa, ngay chính giữa",
+    "example_vi": "Tại sao ngôi nhà vẫn tồn tại và thậm chí còn nằm ngay giữa lòng Berlin."
+  },
+  "eckig": {
+    "vi": "có góc cạnh, góc nhọn",
+    "example_vi": "Ví dụ như mảnh đất nhỏ hình tam giác ở phía bắc nhà thờ Thomaskirche."
+  },
+  "nördlich": {
+    "vi": "ở phía bắc, về phía bắc",
+    "example_vi": "Ví dụ như mảnh đất nhỏ hình tam giác ở phía bắc nhà thờ Thomaskirche."
+  },
+  "die Chance, -n": {
+    "vi": "cơ hội",
+    "example_vi": "Osman Kalin nắm bắt cơ hội."
+  },
+  "vergrößern (sich) (hat vergrößert)": {
+    "vi": "mở rộng, phóng to",
+    "example_vi": "Ông ấy không chỉ mở rộng khu vườn của mình, mà còn xây thêm một ngôi nhà nhỏ hai tầng."
+  },
+  "längst": {
+    "vi": "từ lâu rồi",
+    "example_vi": "Kalin và 'dinh thự mùa hè' của ông từ lâu đã trở thành một điểm thu hút khách du lịch."
+  },
+  "trotz": {
+    "vi": "mặc dù, bất chấp",
+    "example_vi": "Dù không có giấy phép xây dựng, họ vẫn nhắm mắt cho qua."
+  },
+  "der Bau, -ten": {
+    "vi": "việc xây dựng, công trình xây dựng",
+    "example_vi": "Dù thiếu giấy phép xây dựng, họ vẫn nhắm mắt cho qua."
+  },
+  "der Tourismus (Sg.)": {
+    "vi": "ngành du lịch",
+    "example_vi": "Ngành du lịch ở khu vực này đem lại nhiều du khách và việc làm."
+  },
+  "falls": {
+    "vi": "nếu, trong trường hợp",
+    "example_vi": "Chúng tôi giờ xưng hô thân mật rồi, phòng khi bạn quan tâm."
+  },
+  "der Chat, -s": {
+    "vi": "đoạn trò chuyện, cuộc trò chuyện trực tuyến",
+    "example_vi": "Hãy đọc đoạn tin nhắn trò chuyện và trả lời các câu hỏi."
+  },
+  "eventuell": {
+    "vi": "có thể, có khả năng",
+    "example_vi": "Có thể bạn cũng lo sợ trước những hậu quả tiêu cực."
+  },
+  "zusagen (hat zugesagt)": {
+    "vi": "nhận lời, đồng ý",
+    "example_vi": "Hãy đề cập đến vấn đề này ngay cả khi bạn đã nhận lời."
+  },
+  "nachher": {
+    "vi": "sau đó, về sau",
+    "example_vi": "Trong trường hợp mãi về sau bạn mới nhận ra rằng mình không thể làm kịp thời gian."
+  },
+  "tauschen (hat getauscht)": {
+    "vi": "đổi, hoán đổi",
+    "example_vi": "Có lẽ các công việc có thể đổi cho nhau được không?"
+  },
+  "der Kuli, -s": {
+    "vi": "bút bi",
+    "example_vi": "Cần phải có người lo phần sổ tay và bút bi cho các đại biểu tham gia."
+  },
+  "morgig-": {
+    "vi": "ngày mai, thuộc về ngày mai",
+    "example_vi": "Hôm nay bạn phải chuẩn bị cho chuyến công tác ngày mai của sếp."
+  },
+  "je": {
+    "vi": "càng (je ... desto: càng ... thì càng)",
+    "example_vi": "Càng chờ lâu thì tâm trạng càng trở nên tồi tệ hơn."
+  },
+  "desto": {
+    "vi": "thì càng (je ... desto: càng ... thì càng)",
+    "example_vi": "Càng chờ lâu thì bầu không khí càng trở nên xấu đi."
+  },
+  "die Distanz, -en": {
+    "vi": "khoảng cách",
+    "example_vi": "Liệu có khó khăn không khi lúc nào cũng phải giữ khoảng cách?"
+  },
+  "sinnvoll": {
+    "vi": "hợp lý, có ý nghĩa",
+    "example_vi": "Ngay cả những chủ đề trò chuyện rất riêng tư cũng có thể là hợp lý tại nơi làm việc."
+  },
+  "monatelang": {
+    "vi": "suốt nhiều tháng trời",
+    "example_vi": "Tôi đã cùng anh ấy đi du lịch qua châu Á suốt nhiều tháng trời."
+  },
+  "das Gedicht, -e": {
+    "vi": "bài thơ",
+    "example_vi": "Tôi thường nhận được những bài thơ rất đẹp từ anh ấy."
+  },
+  "duzen (hat geduzt)": {
+    "vi": "xưng hô thân mật bằng 'du'",
+    "example_vi": "Trong những tình huống nào thì bạn được xưng hô thân mật / trang trọng?"
+  },
+  "der Elternabend, -e": {
+    "vi": "buổi họp phụ huynh",
+    "example_vi": "Tại buổi họp phụ huynh, giáo viên chủ nhiệm xưng hô trang trọng với tôi."
+  },
+  "der Vergleich, -e": {
+    "vi": "sự so sánh (im Vergleich zu: so với)",
+    "example_vi": "Trong môi trường làm việc, người ta xưng hô thân mật nhiều hơn so với trước đây."
+  },
+  "derselbe": {
+    "vi": "cùng một, y hệt",
+    "example_vi": "Bất kể người ta đang nói về con cái, hàng xóm, cùng một đoạn đường đi làm hay thú cưng."
+  },
+  "außer": {
+    "vi": "ngoài ... ra, trừ",
+    "example_vi": "Ngoài cách xưng hô thì người ta còn phải chú ý điều gì nữa nếu muốn tỏ ra lịch sự?"
+  },
+  "die Form, -en": {
+    "vi": "hình thức, dạng thức",
+    "example_vi": "Có hai hình thức xưng hô lịch sự."
+  },
+  "der Eindruck, -̈e": {
+    "vi": "ấn tượng, cảm nhận",
+    "example_vi": "Tôi có cảm giác rằng ở Ukraine chúng tôi xưng hô trang trọng thường xuyên hơn ở Đức."
+  },
+  "der Ordner, -": {
+    "vi": "thư mục máy tính, bìa kẹp tài liệu",
+    "example_vi": "Sami không tìm thấy thư mục 'Alex Müller' trên máy tính của mình."
+  },
+  "das Virus, Viren": {
+    "vi": "vi-rút",
+    "example_vi": "Tôi nghi ngờ có vi-rút trên máy vi tính."
+  },
+  "der Monitor, -e": {
+    "vi": "màn hình máy tính",
+    "example_vi": "Liana bật máy tính và màn hình lên."
+  },
+  "anklicken (hat angeklickt)": {
+    "vi": "nhấp chuột vào, bấm vào",
+    "example_vi": "Bạn phải bấm chuột vào chương trình đó."
+  },
+  "der Gott, -̈er": {
+    "vi": "thượng đế, chúa (Gott sei Dank: ơn Chúa, may quá)",
+    "example_vi": "Ơn Trời / May quá!"
+  },
+  "tagelang": {
+    "vi": "suốt nhiều ngày liền",
+    "example_vi": "Họ làm những công việc ngớ ngẩn nhất suốt nhiều ngày liền mà không mắc một lỗi nhỏ nào."
+  },
+  "bevor": {
+    "vi": "trước khi",
+    "example_vi": "Người ta nên suy nghĩ thật kỹ trước khi tin vào một điều vô lý như vậy."
+  },
+  "der Unsinn (Sg.)": {
+    "vi": "điều vô lý, chuyện nhảm nhí",
+    "example_vi": "Người ta nên suy nghĩ chín chắn trước khi tin vào chuyện vô lý như vậy."
+  },
+  "nachdem": {
+    "vi": "sau khi",
+    "example_vi": "Sau khi bạn đã sao chép thư mục 'Alex Müller', bạn đã xóa nó trên máy tính của mình."
+  },
+  "der Rechner, -": {
+    "vi": "máy vi tính",
+    "example_vi": "Từ 16 giờ, một phần mềm diệt vi-rút mới sẽ được cài đặt trên máy tính của bạn."
+  },
+  "installieren (hat installiert)": {
+    "vi": "cài đặt (phần mềm, thiết bị)",
+    "example_vi": "Từ 16 giờ, một phần mềm diệt vi-rút mới sẽ được cài đặt trên máy tính của bạn."
+  },
+  "der Kursleiter, -": {
+    "vi": "giáo viên phụ trách lớp, người hướng dẫn khóa học",
+    "example_vi": "Bạn muốn tổ chức một bữa tiệc bất ngờ nho nhỏ cho giáo viên phụ trách khóa học của mình."
+  },
+  "als ob": {
+    "vi": "như thể là",
+    "example_vi": "Cậu làm như thể là tớ chẳng biết cái gì ấy."
+  },
+  "herrlich": {
+    "vi": "tuyệt vời, tuyệt diệu",
+    "example_vi": "Vâng, ở đây thật là tuyệt vời."
+  },
+  "der Manager, -": {
+    "vi": "nhà quản lý, giám đốc",
+    "example_vi": "Trong cuộc trò chuyện, anh ta làm ra vẻ như thể mình là một nhà quản lý cấp cao."
+  },
+  "der Wohnblock, -̈e": {
+    "vi": "khu chung cư, khối nhà tập thể",
+    "example_vi": "Bạn sống ở đâu? – Trong một khu chung cư ở trung tâm Hamburg."
+  },
+  "der Salon, -s": {
+    "vi": "tiệm dịch vụ (Waschsalon: tiệm giặt tự động)",
+    "example_vi": "Bạn đang ở tiệm giặt tự động và muốn giặt quần áo của mình."
+  },
+  "der Knopf, -̈e": {
+    "vi": "nút bấm, cúc áo",
+    "example_vi": "Sau đó bạn hãy nhấn nút khởi động."
+  },
+  "erstellen (hat erstellt)": {
+    "vi": "tạo, thiết lập",
+    "example_vi": "Hãy giải thích cách bạn tạo một liên hệ mới trên điện thoại di động của mình."
+  },
+  "süchtig": {
+    "vi": "nghiện, bị nghiện",
+    "example_vi": "Tôi lo rằng đứa con trai 16 tuổi của tôi bị nghiện chơi game."
+  },
+  "vorn": {
+    "vi": "phía trước (von vorn: từ đầu)",
+    "example_vi": "... và sau đó mọi thứ lại bắt đầu lại từ đầu."
+  },
+  "sämtlich-": {
+    "vi": "toàn bộ, tất cả",
+    "example_vi": "... bởi vì chồng tôi tiêu toàn bộ tiền bạc vào những thứ không quan trọng."
+  },
+  "das Mountainbike, -s": {
+    "vi": "xe đạp leo núi, xe đạp địa hình",
+    "example_vi": "Tôi phải tự mình trả hết khoản vay mua căn hộ, cũng như chiếc xe đạp leo núi."
+  },
+  "sowieso": {
+    "vi": "dù sao thì, đằng nào cũng",
+    "example_vi": "... mặc dù đằng nào thì anh ấy cũng chẳng thích núi non."
+  },
+  "fort": {
+    "vi": "tiếp tục, đi xa (und so weiter und so fort: vân vân và cứ thế tiếp diễn)",
+    "example_vi": "... và cứ thế tiếp diễn mãi."
+  },
+  "wieso": {
+    "vi": "tại sao, vì sao",
+    "example_vi": "Chẳng hiểu tại sao chuyện đó lại làm bạn bực mình đến thế."
+  },
+  "aufregen (hat aufgeregt)": {
+    "vi": "làm tức giận, làm bực mình, kích động",
+    "example_vi": "Chẳng hiểu tại sao chuyện đó lại làm bạn bực mình đến thế."
+  },
+  "digital": {
+    "vi": "kỹ thuật số",
+    "example_vi": "Các phương tiện truyền thông kỹ thuật số có ảnh hưởng như thế nào đối với trẻ em và thanh thiếu niên?"
+  },
+  "die Diskussion, -en": {
+    "vi": "cuộc thảo luận, cuộc tranh luận",
+    "example_vi": "Thảo luận: Một cuộc sống không có điện thoại, máy tính và mạng internet – liệu có khả thi không?"
+  },
+  "der Moderator, -en": {
+    "vi": "người điều phối, người dẫn chương trình",
+    "example_vi": "Người điều phối. Ông ấy dẫn dắt buổi thảo luận và đảm bảo rằng tất cả mọi người đều có cơ hội phát biểu."
+  },
+  "der Standpunkt, -e": {
+    "vi": "quan điểm, lập trường",
+    "example_vi": "Ông ấy điều hành cuộc thảo luận và chú ý để mọi người đều có thể nêu lên quan điểm của mình về chủ đề."
+  },
+  "die Haut (Sg.)": {
+    "vi": "da",
+    "example_vi": "Phát ban trên da: các nốt đỏ, ví dụ ở trên mặt, trên ngực hoặc ở cổ."
+  },
+  "live": {
+    "vi": "trực tiếp (live)",
+    "example_vi": "Anh ấy đã mang trà đến tòa soạn 'Stadtkurier' và chúng tôi đã làm bài kiểm tra dị ứng trực tiếp ngay tại phòng biên tập."
+  },
+  "der Sieger, -": {
+    "vi": "người chiến thắng",
+    "example_vi": "Câu trả lời của người chiến thắng rạng rỡ: Ai không tự bảo vệ quyền lợi của mình thì coi như sống uổng phí."
+  },
+  "behandeln (hat behandelt)": {
+    "vi": "đối xử, điều trị, xử lý",
+    "example_vi": "Khi bị đối xử bất công, người ta phải làm điều gì đó để chống lại."
+  },
+  "vorig-": {
+    "vi": "trước, vừa rồi",
+    "example_vi": "Tuần trước ..."
+  },
+  "schalten (hat geschaltet)": {
+    "vi": "chuyển kênh, chuyển số, bật tắt",
+    "example_vi": "Khi xem tivi mà thấy quảng cáo là tôi chuyển kênh ngay lập tức."
+  },
+  "die Limonade, -n": {
+    "vi": "nước chanh, nước ngọt có ga",
+    "example_vi": "Nước chanh – vị trái cây thanh mát sảng khoái."
+  },
+  "die Lieferung, -en": {
+    "vi": "đơn hàng được giao, đợt giao hàng",
+    "example_vi": "Đây đã là đợt giao hàng sai thứ hai rồi."
+  },
+  "die Bedingung, -en": {
+    "vi": "điều kiện, điều khoản",
+    "example_vi": "Rất tiếc là các nhà sản xuất lại có các điều kiện bảo hành khác nhau."
+  },
+  "der Fotoapparat, -e": {
+    "vi": "máy ảnh, máy chụp hình",
+    "example_vi": "Máy ảnh của bạn không tốt như những gì đã hứa hẹn trong quảng cáo."
+  },
+  "der Umtausch, -̈e": {
+    "vi": "sự đổi hàng, đổi trả",
+    "example_vi": "Đề xuất: đổi sản phẩm khác."
+  },
+  "benötigen (hat benötigt)": {
+    "vi": "cần, đòi hỏi phải có",
+    "example_vi": "Cần phải có hóa đơn mua hàng."
+  },
+  "gratis": {
+    "vi": "miễn phí",
+    "example_vi": "Bạn không muốn các giờ học miễn phí, mà muốn lấy lại tiền."
+  },
+  "die Schlange, -n": {
+    "vi": "hàng người xếp hàng (cũng có nghĩa: con rắn)",
+    "example_vi": "Hàng xếp bên cạnh bao giờ cũng di chuyển nhanh hơn."
+  },
+  "schief": {
+    "vi": "nghiêng, lệch, hỏng (schiefgehen: hỏng việc)",
+    "example_vi": "Có những ngày mà mọi thứ có thể hỏng việc đều sẽ hỏng bét."
+  },
+  "das Missgeschick, -e": {
+    "vi": "sự cố rủi ro, tai nạn xui xẻo",
+    "example_vi": "Những sự cố và rủi ro vừa ngượng ngùng vừa buồn cười."
+  },
+  "das Fahrzeug, -e": {
+    "vi": "phương tiện giao thông, xe cộ",
+    "example_vi": "Xe ưu tiên có đèn xanh được phép vượt qua ngã tư khi đèn đỏ."
+  },
+  "ausgezeichnet": {
+    "vi": "xuất sắc, tuyệt vời",
+    "example_vi": "Món ăn luôn thành công và có hương vị tuyệt vời."
+  },
+  "reinigen (hat gereinigt)": {
+    "vi": "làm sạch, tẩy rửa",
+    "example_vi": "Nó tự động làm sạch chính nó."
+  },
+  "drehen (sich) (hat gedreht)": {
+    "vi": "xoay, quay vòng",
+    "example_vi": "Chiếc xe ô tô đang bị quay vòng."
+  },
+  "hinterher": {
+    "vi": "sau đó, đằng sau",
+    "example_vi": "Những người tham gia đã có thể bỏ phiếu cho hơn 50 ý tưởng."
+  },
+  "abstimmen (hat abgestimmt)": {
+    "vi": "bỏ phiếu, biểu quyết",
+    "example_vi": "Những người tham gia đã có thể bỏ phiếu bình chọn cho hơn 50 ý tưởng."
+  },
+  "der Snack, -s": {
+    "vi": "món ăn nhẹ, đồ ăn vặt",
+    "example_vi": "Ban giám khảo đã nếm thử ba món ăn nhẹ ngon nhất và chọn hỗn hợp các loại hạt."
+  },
+  "einerseits": {
+    "vi": "một mặt",
+    "example_vi": "Một mặt họ tiết kiệm được chi phí nghiên cứu thị trường, mặt khác cũng tiết kiệm được chi phí thử nghiệm người tiêu dùng."
+  },
+  "das Projekt, -e": {
+    "vi": "dự án",
+    "example_vi": "Bạn có muốn tham gia vào một dự án như vậy không?"
+  },
+  "die Pflaume, -n": {
+    "vi": "quả mận",
+    "example_vi": "Sô-cô-la trắng với mận và mơ."
+  },
+  "die Aprikose, -n": {
+    "vi": "quả mơ",
+    "example_vi": "Sô-cô-la trắng với mận và mơ."
+  },
+  "der Kampf, -̈e": {
+    "vi": "cuộc chiến, cuộc giằng co tranh cãi",
+    "example_vi": "Ngày qua ngày lại là những cuộc tranh cãi giằng co tương tự với Luis: ..."
+  },
+  "neulich": {
+    "vi": "gần đây, dạo gần đây",
+    "example_vi": "Paola dạo gần đây đã mua một chiếc bàn chải đánh răng biết nói."
+  },
+  "der Griff, -e": {
+    "vi": "tay cầm, cán",
+    "example_vi": "... với đầu bàn chải màu vàng dạ quang và một nhân vật nhỏ có tàn nhang ở phần tay cầm."
+  },
+  "weitermachen (hat weitergemacht)": {
+    "vi": "tiếp tục làm",
+    "example_vi": "... chiếc bàn chải phát ra giọng robot: Tiếp tục đi nào!"
+  },
+  "der Dieb, -e": {
+    "vi": "kẻ trộm, tên trộm (nam)",
+    "example_vi": "Có kẻ trộm trong phòng tắm hay sao, ...?"
+  },
+  "entschlossen sein": {
+    "vi": "kiên quyết, quả quyết",
+    "example_vi": "Đầy quả quyết, tôi mở cửa và bật đèn lên."
+  },
+  "schütteln (hat geschüttelt)": {
+    "vi": "lắc, rung",
+    "example_vi": "Tôi lắc nó, nhưng nó vẫn tiếp tục nói."
+  },
+  "schlagen (hat geschlagen)": {
+    "vi": "đánh, đập (sich die Nacht um die Ohren schlagen: thức trắng đêm)",
+    "example_vi": "Tôi không thể thức trắng cả phần đêm còn lại chỉ vì chiếc bàn chải đánh răng này được."
+  },
+  "illegal": {
+    "vi": "bất hợp pháp, phạm pháp",
+    "example_vi": "Điều đó là phạm pháp mà!"
+  },
+  "anzeigen (hat angezeigt)": {
+    "vi": "báo cảnh sát, tố giác, trình báo",
+    "example_vi": "Tôi nghĩ điều đó phải được trình báo cảnh sát và xử phạt."
+  },
+  "bestrafen (hat bestraft)": {
+    "vi": "trừng phạt, xử phạt",
+    "example_vi": "Tôi nghĩ điều đó phải được trình báo cảnh sát và xử phạt."
+  },
+  "der Kasten, -̈": {
+    "vi": "thùng, hộp (Zeitungskasten: thùng bán báo tự động)",
+    "example_vi": "Thế nên thỉnh thoảng họ lại 'quên' trả tiền tờ báo mà họ lấy ra từ thùng báo."
+  },
+  "das Vertrauen (Sg.)": {
+    "vi": "lòng tin, sự tin cậy",
+    "example_vi": "Các người đang phá hủy niềm tin đấy!"
+  },
+  "weggehen (ist weggegangen)": {
+    "vi": "rời đi, đi khỏi",
+    "example_vi": "Bây giờ bạn hãy lập tức rời khỏi đây ngay để tôi còn lái xe đi."
+  },
+  "das Gebiet, -e": {
+    "vi": "khu vực, vùng lãnh thổ",
+    "example_vi": "Tại các quốc gia láng giềng, các khu nghỉ dưỡng trượt tuyết dự kiến cũng sẽ có tình trạng ùn tắc kéo dài."
+  },
+  "behindern (hat behindert)": {
+    "vi": "cản trở, gây trở ngại",
+    "example_vi": "Họ đang cản trở người đi bộ."
+  },
+  "die Aufforderung, -en": {
+    "vi": "yêu cầu, lời thúc giục, đề nghị",
+    "example_vi": "Thể hiện các lời yêu cầu / thúc giục."
+  },
+  "endgültig": {
+    "vi": "dứt khoát, vĩnh viễn, dứt điểm",
+    "example_vi": "Bỏ thuốc lá dứt điểm."
+  },
+  "bemühen (sich) (hat sich bemüht)": {
+    "vi": "cố gắng, nỗ lực",
+    "example_vi": "Nỗ lực tập thể dục thể thao đều đặn."
+  },
+  "die Erkältung, -en": {
+    "vi": "chứng cảm lạnh",
+    "example_vi": "Coi trọng mọi cơn cảm lạnh."
+  },
+  "die Flöte, -n": {
+    "vi": "cây sáo",
+    "example_vi": "Học chơi một loại nhạc cụ, ví dụ như sáo."
+  },
+  "das Instrument, -e": {
+    "vi": "nhạc cụ, dụng cụ",
+    "example_vi": "Học chơi một loại nhạc cụ, ví dụ như sáo."
+  },
+  "realistisch": {
+    "vi": "thực tế, có tính thực tế",
+    "example_vi": "Điều đó thực sự không có tính thực tế chút nào!"
+  },
+  "bereit": {
+    "vi": "sẵn sàng",
+    "example_vi": "Chiếc điện thoại thông minh luôn trong tư thế sẵn sàng."
+  },
+  "die Generation, -en": {
+    "vi": "thế hệ",
+    "example_vi": "Những gì mà người này coi là bất lịch sự thì đối với những người thuộc thế hệ khác có lẽ lại hoàn toàn bình thường."
+  },
+  "der Hauptbahnhof, -̈e": {
+    "vi": "ga tàu trung tâm, ga xe lửa chính",
+    "example_vi": "Bạn đã hẹn gặp một người bạn tại ga trung tâm."
+  },
+  "verspäten (sich) (hat sich verspätet)": {
+    "vi": "đến muộn, trễ giờ",
+    "example_vi": "Anh ấy đến muộn 20 phút mà không hề thông báo cho bạn."
+  },
+  "die Runde, -n": {
+    "vi": "nhóm người, vòng tròn",
+    "example_vi": "Một người trong nhóm bỗng nhiên lấy điện thoại ra và soạn tin nhắn."
+  },
+  "der ICE, -s": {
+    "vi": "tàu cao tốc liên tỉnh ICE",
+    "example_vi": "Bạn đang ngồi trên toa ăn của tàu cao tốc ICE và muốn yên tĩnh đọc sách."
+  },
+  "der Speisewagen, -": {
+    "vi": "toa ăn (trên tàu hỏa)",
+    "example_vi": "Bạn đang ngồi trên toa ăn của tàu cao tốc ICE và muốn yên tĩnh đọc sách."
+  },
+  "minutenlang": {
+    "vi": "suốt nhiều phút liền",
+    "example_vi": "Ngồi bên cạnh bạn, một chàng trai trẻ gọi điện thoại công việc suốt nhiều phút liền bằng giọng rất to."
+  },
+  "weigern (sich) (hat sich geweigert)": {
+    "vi": "từ chối, khước từ",
+    "example_vi": "Cô bé từ chối nói 'Cảm ơn', cầm lấy món quà rồi biến mất vào trong phòng của mình."
+  },
+  "zuschauen (hat zugeschaut)": {
+    "vi": "đứng nhìn, dõi theo",
+    "example_vi": "Bố mẹ đứng nhìn mà không nói gì và mỉm cười."
+  },
+  "unerträglich": {
+    "vi": "không thể chịu nổi",
+    "example_vi": "Bạn cảm thấy mùi đó thật không thể chịu nổi."
+  },
+  "die Ausnahme, -n": {
+    "vi": "trường hợp ngoại lệ",
+    "example_vi": "Chỉ có thể trong những trường hợp ngoại lệ."
+  },
+  "absolut": {
+    "vi": "tuyệt đối, hoàn toàn",
+    "example_vi": "Hoàn toàn không thể nào / Hoàn toàn bất khả thi."
+  },
+  "eindeutig": {
+    "vi": "rõ ràng, dứt khoát",
+    "example_vi": "Ở quê hương tôi, ăn uống trên các phương tiện giao thông công cộng rõ ràng là bất lịch sự."
+  },
+  "die Geschwindigkeitsbeschränkung, -en": {
+    "vi": "giới hạn tốc độ",
+    "example_vi": "Anh ấy đã không tuân thủ quy định giới hạn tốc độ."
+  },
+  "überqueren (hat überquert)": {
+    "vi": "băng qua, đi qua (đường)",
+    "example_vi": "Bạn đã đạp xe băng qua đường khi đèn đỏ."
+  },
+  "das Missverständnis, -se": {
+    "vi": "sự hiểu lầm",
+    "example_vi": "Chủ đề là: Những sự hiểu lầm về mặt văn hóa."
+  },
+  "kulturell": {
+    "vi": "thuộc về văn hóa",
+    "example_vi": "Cảm giác xa lạ có liên quan đến khoảng cách văn hóa và địa lý đối với quê hương bản xứ."
+  },
+  "das Herkunftsland, -̈er": {
+    "vi": "quốc gia xuất xứ, quê hương bản xứ",
+    "example_vi": "Cảm giác xa lạ có liên quan đến khoảng cách văn hóa và địa lý đối với quê hương bản xứ."
+  },
+  "die Flucht (Sg.)": {
+    "vi": "sự chạy trốn, tị nạn (auf der Flucht sein: đang đi tị nạn)",
+    "example_vi": "Khi người ta phải đi tị nạn và buộc phải rời bỏ quê hương, ban đầu người ta cảm thấy xa lạ ở khắp mọi nơi và rất nhớ nhà."
+  },
+  "beleidigen (hat beleidigt)": {
+    "vi": "xúc phạm, làm tổn thương",
+    "example_vi": "Ở Damascus, bất kỳ chủ nhà nào cũng cảm thấy bị xúc phạm nếu khách mang theo đồ ăn đến."
+  },
+  "behaupten (hat behauptet)": {
+    "vi": "khẳng định, quả quyết, cho rằng",
+    "example_vi": "Anh ấy không thể chỉ đơn giản khẳng định rằng mình thấy đồ ăn ngon, mà anh ấy còn phải chứng minh điều đó."
+  },
+  "verständlich": {
+    "vi": "dễ hiểu, rõ ràng",
+    "example_vi": "Nhưng một đầu bếp Ả Rập giỏi lại không thể nào miêu tả nguồn gốc của một món ăn một cách ngắn gọn và dễ hiểu."
+  },
+  "loben (hat gelobt)": {
+    "vi": "khen ngợi, tán dương",
+    "example_vi": "... xin lỗi vì điều đó và đồng thời khen ngợi người đi cùng thêm như một thiên thần mang lại niềm vui."
+  },
+  "die Anzahl (Sg.)": {
+    "vi": "số lượng",
+    "example_vi": "Số lượng khách tham dự."
+  },
+  "die Biene, -n": {
+    "vi": "con ong",
+    "example_vi": "Đó là con vật gì? – Một con ong."
+  },
+  "die Schwierigkeit, -en": {
+    "vi": "sự khó khăn, trở ngại",
+    "example_vi": "Các bậc cha mẹ thường gặp phải những khó khăn gì vào mùa hè?"
+  },
+  "der Zirkus, -se": {
+    "vi": "gánh xiếc, rạp xiếc",
+    "example_vi": "Chúng tôi học và luyện tập các kỹ thuật xiếc cho đến khi có thể biểu diễn chúng trong lễ hội mùa hè."
+  },
+  "aufführen (hat aufgeführt)": {
+    "vi": "biểu diễn, trình diễn",
+    "example_vi": "Chúng tôi học và luyện tập các kỹ thuật xiếc cho đến khi có thể biểu diễn trước khán giả trong lễ hội mùa hè."
+  },
+  "sonstig-": {
+    "vi": "khác, các loại khác",
+    "example_vi": "Các dịch vụ khác: môi giới người giữ trẻ ban ngày, ..."
+  },
+  "die Tagesmutter, -̈": {
+    "vi": "người trông trẻ ban ngày, bảo mẫu tại gia",
+    "example_vi": "Các dịch vụ khác: môi giới người trông trẻ ban ngày, ..."
+  },
+  "die Vermittlung, -en": {
+    "vi": "sự môi giới, trung gian kết nối",
+    "example_vi": "Các dịch vụ khác: môi giới người trông trẻ ban ngày, ..."
+  },
+  "pensioniert sein": {
+    "vi": "đã nghỉ hưu",
+    "example_vi": "Kể từ khi nghỉ hưu, bạn có đang tìm kiếm một sở thích mới không?"
+  },
+  "der Augenblick, -e": {
+    "vi": "khoảnh khắc, chốc lát",
+    "example_vi": "Chúng tôi tìm kiếm những khoảnh khắc nhỏ bé và tươi đẹp trong cuộc sống."
+  },
+  "der Kreis, -e": {
+    "vi": "vòng tròn, câu lạc bộ, hội nhóm",
+    "example_vi": "Câu lạc bộ hát: Dành cho tất cả những người yêu âm nhạc thích ca hát hoặc chơi một nhạc cụ."
+  },
+  "der Dienst, -e": {
+    "vi": "dịch vụ, ca làm việc",
+    "example_vi": "Dịch vụ đưa đón và đi cùng hỗ trợ."
+  },
+  "vorlesen (hat vorgelesen)": {
+    "vi": "đọc to cho nghe, đọc truyện",
+    "example_vi": "Dịch vụ đến thăm: Lắng nghe hoặc đọc sách cho nghe, trò chuyện."
+  },
+  "zukünftig": {
+    "vi": "trong tương lai, sắp tới",
+    "example_vi": "Sắp tới bạn sẽ làm việc vào các buổi sáng thứ Hai và đang tìm người chăm sóc cho cô con gái ba tuổi của mình."
+  },
+  "die Betreuung, -en": {
+    "vi": "sự chăm sóc, trông nom",
+    "example_vi": "Bạn đang tìm người chăm sóc cho đứa con gái ba tuổi của mình."
+  },
+  "wöchentlich": {
+    "vi": "hàng tuần, mỗi tuần",
+    "example_vi": "Mẹ bạn bị gãy tay và mỗi tuần phải được chở đi khám bác sĩ hai lần."
+  },
+  "die Geduld (Sg.)": {
+    "vi": "sự kiên nhẫn, lòng kiên trì",
+    "example_vi": "Tuy nhiên, bạn phải có một chút kiên nhẫn cho đến khi chúng tôi có lại chỗ trống."
+  },
+  "die Jugend (Sg.)": {
+    "vi": "giới trẻ, thanh thiếu niên, tuổi trẻ",
+    "example_vi": "Bên cạnh các câu lạc bộ thể thao còn có các câu lạc bộ âm nhạc, hội đoàn xã hội, câu lạc bộ thanh thiếu niên, ..."
+  },
+  "die Feuerwehr, -en": {
+    "vi": "đội cứu hỏa, lực lượng phòng cháy chữa cháy",
+    "example_vi": "... đội cứu hỏa tình nguyện và nhiều hội nhóm khác nữa."
+  },
+  "beinahe": {
+    "vi": "gần như, hầu như",
+    "example_vi": "Gần như cứ ba người Đức thì có một người dành thời gian rảnh rỗi tại đó."
+  },
+  "eintreten (ist eingetreten)": {
+    "vi": "gia nhập, bước vào",
+    "example_vi": "Một người bạn đã cho tôi lời khuyên: Hãy gia nhập một hội nhóm hay câu lạc bộ đi!"
+  },
+  "jahrzehntelang": {
+    "vi": "suốt nhiều thập kỷ",
+    "example_vi": "Tôi đã dập tắt các đám cháy, tham gia vào các đợt làm nhiệm vụ cứu nạn. Suốt nhiều thập kỷ liền!"
+  },
+  "solange": {
+    "vi": "chừng nào, trong suốt thời gian",
+    "example_vi": "Nhưng tôi giúp đỡ bằng cách chăm sóc và lo lắng cho các cháu nhỏ chừng nào bố mẹ chúng còn đang làm nhiệm vụ."
+  },
+  "versorgen (hat versorgt)": {
+    "vi": "chăm lo, cung cấp, chu cấp",
+    "example_vi": "Nhưng tôi giúp đỡ bằng cách chăm sóc và lo ăn uống cho lũ trẻ."
+  },
+  "hinweisen (hat hingewiesen)": {
+    "vi": "chỉ ra, lưu ý, nhấn mạnh",
+    "example_vi": "Năm nay tầm quan trọng của sự dấn thân vì sự hội nhập của người nhập cư đã được đặc biệt nhấn mạnh."
+  },
+  "die Bürgerinitiative, -n": {
+    "vi": "sáng kiến công dân, phong trào công dân",
+    "example_vi": "Họ tổ chức thành hàng triệu hội đoàn, phong trào công dân hoặc các nhóm tương trợ."
+  },
+  "der Babysitter, -": {
+    "vi": "người trông trẻ",
+    "example_vi": "Nhiều người tích cực tham gia với tư cách là người trông trẻ."
+  },
+  "das Verfallsdatum, -daten": {
+    "vi": "hạn sử dụng, ngày hết hạn",
+    "example_vi": "Họ thu gom thực phẩm sắp cận ngày hết hạn tại các siêu thị và phân phát cho những người có hoàn cảnh khó khăn."
+  },
+  "verteilen (hat verteilt)": {
+    "vi": "phân phát, chia",
+    "example_vi": "Họ thu gom quần áo và phân phát cho những người có hoàn cảnh khó khăn."
+  },
+  "die Kälte (Sg.)": {
+    "vi": "sự lạnh giá (soziale Kälte: sự vô cảm xã hội)",
+    "example_vi": "Mọi người đều nói về sự lạnh lùng vô cảm trong xã hội."
+  },
+  "öko(logisch)": {
+    "vi": "thuộc về sinh thái, môi trường sinh thái",
+    "example_vi": "Họ tham gia một 'năm tình nguyện vì sinh thái môi trường'."
+  },
+  "das Altenheim, -e": {
+    "vi": "viện dưỡng lão",
+    "example_vi": "Trong thời gian này họ làm việc tại các viện dưỡng lão, câu lạc bộ thể thao hoặc các nhóm bảo tồn thiên nhiên."
+  },
+  "egoistisch": {
+    "vi": "ích kỷ",
+    "example_vi": "Những dự đoán của anh ấy mang tính ích kỷ."
+  },
+  "einsetzen (sich) (hat sich eingesetzt)": {
+    "vi": "dấn thân, cống hiến, nỗ lực vì",
+    "example_vi": "Dấn thân, cống hiến vì một điều gì đó."
+  },
+  "die Philosophie, -n": {
+    "vi": "triết học, triết lý",
+    "example_vi": "Albert Schweitzer nổi tiếng với triết lý nhân đạo của mình."
+  },
+  "die Maßnahme, -n": {
+    "vi": "biện pháp, hành động can thiệp",
+    "example_vi": "Khi thấy cụ bà không còn phản ứng gì khi được gọi, nữ sinh ngay lập tức bắt đầu các biện pháp sơ cứu."
+  },
+  "tolerant": {
+    "vi": "khoan dung, bao dung",
+    "example_vi": "Bà ấy rất yêu đời và bao dung."
+  },
+  "das Gewissen, -": {
+    "vi": "lương tâm",
+    "example_vi": "Câu hỏi về lương tâm / Vấn đề thuộc về lương tâm."
+  },
+  "die Wolle (Sg.)": {
+    "vi": "len, sợi len",
+    "example_vi": "Bạn gái tôi hôm kia đã tặng tôi một chiếc áo len tự đan nhân dịp sinh nhật."
+  },
+  "die Lüge, -n": {
+    "vi": "lời nói dối",
+    "example_vi": "Nếu người ta có thể giúp một ai đó bằng một lời nói dối vô hại thì điều đó cũng tốt."
+  },
+  "heimlich": {
+    "vi": "lén lút, vụng trộm, bí mật",
+    "example_vi": "Liệu có ổn không khi lén đọc tin nhắn trên điện thoại của anh ấy?"
+  },
+  "missverstehen (hat missverstanden)": {
+    "vi": "hiểu lầm, hiểu sai",
+    "example_vi": "Tôi nghĩ anh ấy không nên hiểu lầm điều đó nếu như ..."
+  },
+  "weiterbilden (sich) (hat sich weitergebildet)": {
+    "vi": "nâng cao nghiệp vụ, học nâng cao trình độ",
+    "example_vi": "Hãy học hỏi thêm và không ngừng nâng cao trình độ của bản thân!"
+  },
+  "körperlich": {
+    "vi": "thuộc về thể chất, thân thể",
+    "example_vi": "Ở tuổi 81, August Wirth vẫn rất khỏe mạnh cả về thể chất lẫn tinh thần."
+  },
+  "das Ereignis, -se": {
+    "vi": "sự kiện, biến cố",
+    "example_vi": "Ở tuổi 81, August Wirth vẫn có thể nhớ rất rõ những biến cố trong cuộc đời dài của mình."
+  },
+  "der Krieg, -e": {
+    "vi": "chiến tranh",
+    "example_vi": "Điều đó đã xảy ra vào năm 1945, trong những tháng cuối cùng của Chiến tranh Thế giới thứ hai."
+  },
+  "die Bombe, -n": {
+    "vi": "quả bom",
+    "example_vi": "Vào tháng hai, cha của ông đã thiệt mạng trong một đợt ném bom."
+  },
+  "töten (hat getötet)": {
+    "vi": "giết, làm thiệt mạng",
+    "example_vi": "Vào tháng hai, cha của ông đã thiệt mạng trong một đợt oanh tạc bằng bom."
+  },
+  "feucht": {
+    "vi": "ẩm ướt, ngấn lệ",
+    "example_vi": "Khi người đàn ông cao tuổi kể lại chuyến vượt thoát này, đôi mắt ông ngấn lệ và giọng nói khẽ run lên."
+  },
+  "empfangen (hat empfangen)": {
+    "vi": "đón nhận, tiếp đón",
+    "example_vi": "Những người tị nạn đến từ miền Đông đã không được chào đón nhiệt tình ở miền Tây nước Đức."
+  },
+  "fördern (hat gefördert)": {
+    "vi": "bồi dưỡng, khuyến khích, hỗ trợ",
+    "example_vi": "Ông luôn coi việc bồi dưỡng và hỗ trợ những trẻ em và thanh thiếu niên có hoàn cảnh khó khăn hơn những người khác là một nhiệm vụ quan trọng."
+  },
+  "örtlich": {
+    "vi": "địa phương, tại chỗ",
+    "example_vi": "Ngoài ra, ông cũng chú ý để các doanh nghiệp địa phương cung cấp nơi học nghề cho con em người nhập cư."
+  },
+  "der Bürgermeister, -": {
+    "vi": "thị trưởng (nam)",
+    "example_vi": "Hai năm trước, tại quê hương của August Wirth, một thanh niên xuất thân từ gia đình nhập cư đã được bầu làm phó thị trưởng."
+  },
+  "der Fortschritt, -e": {
+    "vi": "sự tiến bộ, bước tiến",
+    "example_vi": "Học sinh có gốc gác nhập cư sẽ có những tiến bộ nhanh hơn nhiều về trình độ tiếng Đức."
+  },
+  "leisten (sich) (hat sich geleistet)": {
+    "vi": "có đủ khả năng chi trả, chi trả nổi",
+    "example_vi": "Đặc biệt là ở nhiều thành phố lớn, những người nghèo hơn hoàn toàn không thể tìm được một căn hộ mà họ có đủ khả năng chi trả."
+  },
+  "die Geschwindigkeit, -en": {
+    "vi": "tốc độ, vận tốc",
+    "example_vi": "Tốc độ tối đa 120 km/h, ..."
+  },
+  "die Ansicht, -en": {
+    "vi": "quan điểm, ý kiến (meiner Ansicht nach: theo quan điểm của tôi)",
+    "example_vi": "Theo quan điểm của tôi, chúng ta nên bắt đầu dự án ngay lập tức."
+  },
+  "der Zusammenhang, -̈e": {
+    "vi": "mối liên hệ, bối cảnh (in diesem Zusammenhang: trong mối liên hệ này)",
+    "example_vi": "Trong mối liên hệ này, tôi cũng thấy quan trọng là tất cả các nhân viên đều phải được thông báo."
+  },
+  "der Gegensatz, -̈e": {
+    "vi": "sự tương phản, sự trái ngược (im Gegensatz zu: trái ngược với)",
+    "example_vi": "Trái ngược với anh trai mình, cô ấy rất trầm tính."
+  },
+  "das Zeichen, -": {
+    "vi": "dấu hiệu, tín hiệu (ein Zeichen setzen: phát đi một tín hiệu)",
+    "example_vi": "Một liên minh rộng lớn đã kêu gọi phát đi một tín hiệu rõ ràng nhằm chống lại nạn bài ngoại và phân biệt chủng tộc."
+  },
+  "politisch": {
+    "vi": "thuộc về chính trị",
+    "example_vi": "Những người tham gia đã tạo thành những hàng rào người kéo dài, kết nối mang tính biểu tượng giữa các cơ sở tôn giáo, xã hội, văn hóa và chính trị với các khu lưu trú của người tị nạn."
+  },
+  "fair": {
+    "vi": "công bằng, hợp lý",
+    "example_vi": "Vì một mức giá sữa công bằng!"
+  },
+  "der Bauer, -n": {
+    "vi": "người nông dân (nam)",
+    "example_vi": "Ngày càng có nhiều nông dân chăn nuôi bò sữa ở Đức phải từ bỏ trang trại của mình."
+  },
+  "protestieren (hat protestiert)": {
+    "vi": "biểu tình phản đối, phản kháng",
+    "example_vi": "Để chỉ ra tình trạng bất cập này, khoảng 50 nông dân nuôi bò lấy sữa đã biểu tình trước Bộ Nông nghiệp vào hôm thứ Sáu."
+  },
+  "die Landwirtschaft (Sg.)": {
+    "vi": "ngành nông nghiệp",
+    "example_vi": "Để chỉ ra tình trạng bất cập này, khoảng 50 nông dân nuôi bò lấy sữa đã biểu tình trước Bộ Nông nghiệp vào hôm thứ Sáu."
+  },
+  "städtisch": {
+    "vi": "thuộc về thành phố, thuộc đô thị",
+    "example_vi": "Khoảng 50 trẻ em và thanh thiếu niên đã biểu tình ... phản đối việc đóng cửa bể bơi của thành phố."
+  },
+  "der Streik, -s": {
+    "vi": "cuộc đình công",
+    "example_vi": "Bạn đã từng nhìn thấy một cuộc biểu tình hay đình công nào ở Đức chưa?"
+  },
+  "der Bundeskanzler, -": {
+    "vi": "thủ tướng liên bang (nam)",
+    "example_vi": "Người đứng đầu chính phủ làm việc tại Văn phòng Thủ tướng Liên bang."
+  },
+  "die Macht, -̈e": {
+    "vi": "quyền lực, cường quốc (Siegermächte: các cường quốc chiến thắng)",
+    "example_vi": "Các cường quốc chiến thắng biết rất rõ mọi chuyện với nước Đức sẽ phải tiếp tục như thế nào."
+  },
+  "die Zone, -n": {
+    "vi": "khu vực chiếm đóng, phân khu",
+    "example_vi": "Nước Đức đã bị chia cắt thành bốn khu vực chiếm đóng."
+  },
+  "national": {
+    "vi": "thuộc về quốc gia, toàn quốc",
+    "example_vi": "Bạn liên tưởng những biểu tượng quốc gia nào với đất nước này?"
+  },
+  "folgend-": {
+    "vi": "sau đây, dưới đây",
+    "example_vi": "Chúng tôi đã cùng tìm hiểu những câu hỏi sau đây: ..."
+  },
+  "diesmal": {
+    "vi": "lần này",
+    "example_vi": "Những ai lần này chưa thể có mặt thì cũng đừng buồn nhé."
+  },
+  "traditionell": {
+    "vi": "truyền thống, mang tính truyền thống",
+    "example_vi": "Bánh gừng là một loại bánh ngọt truyền thống đặc biệt được ưa chuộng thưởng thức vào dịp Giáng sinh."
+  },
+  "speziell": {
+    "vi": "đặc biệt, riêng biệt, cụ thể",
+    "example_vi": "Món xúc xích nướng vùng Thüringen chỉ có ở những nhà hàng chuyên biệt."
+  },
+  "rühren (hat gerührt)": {
+    "vi": "khuấy, đảo bột",
+    "example_vi": "Cô ấy đang khuấy bột để làm bánh ngọt."
+  },
+  "das Zuhause (Sg.)": {
+    "vi": "mái ấm, tổ ấm, nhà",
+    "example_vi": "Với từ 'nhà', tôi liên tưởng đến sự ấm áp và cảm giác an toàn."
+  },
+  "die Tradition, -en": {
+    "vi": "truyền thống",
+    "example_vi": "Với 'truyền thống', tôi liên tưởng đến những buổi sum họp gia đình và những phong tục tập quán xưa."
+  },
+  "die Gegend, -en": {
+    "vi": "vùng đất, khu vực, miền quê",
+    "example_vi": "Với từ quê hương, tôi liên tưởng đến vùng đất nơi tôi đã sinh ra và lớn lên."
+  },
+  "die Migration (Sg.)": {
+    "vi": "sự di cư, di dân",
+    "example_vi": "Di cư là một chủ đề quan trọng tại nước Đức."
+  },
+  "ursprünglich": {
+    "vi": "ban đầu, có nguồn gốc từ",
+    "example_vi": "Cội nguồn của tôi là ở Liban, vì gia đình tôi có nguồn gốc ban đầu từ Beirut."
+  },
+  "das Volk, -̈er": {
+    "vi": "dân tộc, nhân dân",
+    "example_vi": "Người Liban là một dân tộc rất hiếu khách."
+  },
+  "die Staatsangehörigkeit, -en": {
+    "vi": "quốc tịch",
+    "example_vi": "Bố mẹ tôi đến từ Thổ Nhĩ Kỳ và tôi mang quốc tịch Thổ Nhĩ Kỳ."
+  },
+  "der Profi, -s": {
+    "vi": "chuyên nghiệp, vận động viên chuyên nghiệp",
+    "example_vi": "Khi còn là một cậu bé, tôi luôn mơ ước về một sự nghiệp cầu thủ bóng đá chuyên nghiệp tại câu lạc bộ Bayern."
+  },
+  "integrieren (hat integriert)": {
+    "vi": "hội nhập, hòa nhập",
+    "example_vi": "Tôi có thể nói rằng chúng tôi đã hòa nhập rất tốt."
+  },
+  "der Einwohner, -": {
+    "vi": "cư dân, người dân",
+    "example_vi": "Châu Âu có bao nhiêu cư dân?"
+  },
+  "der Kontinent, -e": {
+    "vi": "châu lục, đại lục",
+    "example_vi": "Châu Âu là một châu lục."
+  },
+  "die EU (Sg.)": {
+    "vi": "Liên minh châu Âu, EU",
+    "example_vi": "Mọi người nhìn nhận Liên minh châu Âu EU theo hướng tích cực hay tiêu cực hơn?"
+  },
+  "der Zuwanderer, -": {
+    "vi": "người nhập cư",
+    "example_vi": "Bài thi tiếng Đức dành cho người nhập cư lúc này chắc hẳn cũng sẽ không còn là vấn đề đối với bạn nữa."
+  },
+  "der Nachtisch, -e": {
+    "vi": "món tráng miệng",
+    "example_vi": "Món tráng miệng hôm nay là bánh sô-cô-la."
+  },
+  "irgend-": {
+    "vi": "bất kỳ, nào đó (tiền tố)",
+    "example_vi": "Có ai biết về một căn hộ nào còn trống không ...?"
+  },
+  "die Trainerin, -nen": {
+    "vi": "nữ huấn luyện viên",
+    "example_vi": "Huấn luyện viên của tôi đã rút tôi ra khỏi sân thi đấu."
+  },
+  "die Präsidentin, -nen": {
+    "vi": "nữ chủ tịch, nữ tổng thống",
+    "example_vi": "Cô ấy là chủ tịch của câu lạc bộ."
+  },
+  "die Griechin, -nen": {
+    "vi": "người phụ nữ Hy Lạp",
+    "example_vi": "Mẹ tôi là người phụ nữ Hy Lạp, nhưng tôi sinh ra ở Áo."
+  },
+  "die Autorin, -nen": {
+    "vi": "nữ tác giả, nhà văn nữ",
+    "example_vi": "Nữ tác giả Hatice Akyün thấy việc mình nói tiếng Đức rất tốt là điều hoàn toàn bình thường."
+  },
+  "technisch": {
+    "vi": "thuộc về kỹ thuật",
+    "example_vi": "Vâng, tôi có kiến thức kỹ thuật tốt."
+  },
+  "der Maler, -": {
+    "vi": "họa sĩ, thợ sơn (nam)",
+    "example_vi": "Có thể là người làm vườn chăng? Hay thợ sơn?"
+  },
+  "die Malerin, -nen": {
+    "vi": "nữ họa sĩ, nữ thợ sơn",
+    "example_vi": "Cô ấy làm nghề họa sĩ / thợ sơn."
+  },
+  "der Übersetzer, -": {
+    "vi": "dịch giả, người làm nghề biên dịch (nam)",
+    "example_vi": "Làm nghề dịch thuật thì bạn cũng ngồi bên máy tính, viết lách và gọi điện thoại thôi."
+  },
+  "überlegen (sich)": {
+    "vi": "suy nghĩ, cân nhắc",
+    "example_vi": "Kasimir đang cân nhắc tham gia một khóa đào tạo nâng cao."
+  },
+  "die Konkurrenz (Sg.)": {
+    "vi": "sự cạnh tranh, đối thủ cạnh tranh",
+    "example_vi": "Có nhiều sự cạnh tranh và tôi nhận được quá ít đơn đặt hàng."
+  },
+  "nebenbei": {
+    "vi": "bên cạnh đó, làm thêm ngoài giờ",
+    "example_vi": "Tôi phải làm thêm việc dọn dẹp vệ sinh bên ngoài."
+  },
+  "jobben": {
+    "vi": "làm việc tạm thời, làm việc kiếm thêm tiền",
+    "example_vi": "Tôi phải làm thêm việc dọn dẹp vệ sinh bên ngoài."
+  },
+  "zurechtkommen": {
+    "vi": "hòa hợp, thích ứng tốt (với ai)",
+    "example_vi": "Rất tiếc là ở đó tôi không hòa hợp được với người sếp."
+  },
+  "der Tierpark, -s": {
+    "vi": "vườn thú, công viên động vật",
+    "example_vi": "Hiện tại hầu như không có vị trí tuyển dụng nhân viên chăm sóc động vật ở vườn thú."
+  },
+  "vertreten": {
+    "vi": "thay thế, làm thay ca cho, đại diện",
+    "example_vi": "Tôi phải làm thay ca cho một nữ đồng nghiệp."
+  },
+  "die Kauffrau, -en": {
+    "vi": "nữ thương nhân, nữ doanh nhân",
+    "example_vi": "Nghề nghiệp của tôi là thương nhân và tôi đã làm việc lâu năm trong một cửa hàng hóa mỹ phẩm."
+  },
+  "um ... zu": {
+    "vi": "để mà (chỉ mục đích)",
+    "example_vi": "Leon muốn là người đầu tiên có mặt tại cửa hàng để mua giày ở đó cho một khách hàng."
+  },
+  "die Rechtsanwältin, -nen": {
+    "vi": "nữ luật sư",
+    "example_vi": "Cô ấy là một luật sư."
+  },
+  "die Anwältin, -nen": {
+    "vi": "nữ luật sư",
+    "example_vi": "Nữ luật sư đã viết thông báo rằng hoặc là chúng tôi phải sử dụng một chiếc máy cưa đỡ ồn hơn, hoặc vụ việc sẽ được đưa ra tòa."
+  },
+  "je ... desto": {
+    "vi": "càng ... thì càng ...",
+    "example_vi": "Càng chờ lâu thì tâm trạng lại càng trở nên tồi tệ hơn."
+  },
+  "die Kursleiterin, -nen": {
+    "vi": "nữ giáo viên phụ trách khóa học",
+    "example_vi": "Bạn muốn tổ chức một bữa tiệc bất ngờ nho nhỏ cho cô giáo phụ trách khóa học của mình."
+  },
+  "die Managerin, -nen": {
+    "vi": "nữ quản lý, nữ giám đốc",
+    "example_vi": "Trong cuộc trò chuyện, cô ấy làm như thể mình là một nhà quản lý cấp cao."
+  },
+  "die Moderatorin, -nen": {
+    "vi": "nữ MC, nữ điều phối thảo luận",
+    "example_vi": "Nữ MC điều phối cuộc thảo luận."
+  },
+  "sowohl ... als auch": {
+    "vi": "vừa ... vừa, cả ... lẫn",
+    "example_vi": "Loại trà này vừa có hương vị thơm ngon vừa giúp mang lại tâm trạng vui vẻ."
+  },
+  "weder ... noch": {
+    "vi": "không ... cũng không",
+    "example_vi": "Ella cho rằng loại trà này vừa không ngon lại cũng chẳng giúp tâm trạng vui vẻ hơn."
+  },
+  "die Verbraucherin, -nen": {
+    "vi": "nữ người tiêu dùng",
+    "example_vi": "Nữ người tiêu dùng chú ý đến chất lượng tốt khi đi mua sắm."
+  },
+  "die Diebin, -nen": {
+    "vi": "nữ kẻ trộm, tên trộm nữ",
+    "example_vi": "Có một nữ kẻ trộm trong phòng tắm sao?"
+  },
+  "entschlossen (sein)": {
+    "vi": "quyết đoán, kiên quyết",
+    "example_vi": "Đầy kiên quyết, tôi mở cửa và bật đèn lên."
+  },
+  "die Fachfrau, -en": {
+    "vi": "nữ chuyên gia",
+    "example_vi": "Với những vấn đề như vậy, tốt nhất là nên tìm kiếm lời khuyên từ một nữ chuyên gia."
+  },
+  "die Fachleute (Pl.)": {
+    "vi": "các chuyên gia, giới chuyên môn",
+    "example_vi": "Những chuyên viên tư vấn nghề nghiệp chúng tôi là những chuyên gia về mọi câu hỏi liên quan đến nguyện vọng nghề nghiệp của bạn."
+  },
+  "vornehmen (sich)": {
+    "vi": "dự định, quyết tâm làm",
+    "example_vi": "Tôi đã hạ quyết tâm làm điều đó."
+  },
+  "die Bürgermeisterin, -nen": {
+    "vi": "nữ thị trưởng",
+    "example_vi": "Hai năm trước tại quê hương của August Wirth, một phụ nữ trẻ xuất thân từ gia đình người nhập cư đã được bầu làm phó thị trưởng."
+  },
+  "die Bäuerin, -nen": {
+    "vi": "nữ nông dân",
+    "example_vi": "Để chỉ ra tình trạng bất cập này, khoảng 50 nam nữ nông dân chăn nuôi bò sữa đã biểu tình trước Bộ Nông nghiệp vào hôm thứ Sáu."
+  },
+  "die Bundeskanzlerin, -nen": {
+    "vi": "nữ thủ tướng liên bang",
+    "example_vi": "Người đứng đầu chính phủ làm việc tại Văn phòng Thủ tướng Liên bang."
+  },
+  "das Kostüm, -e": {
+    "vi": "trang phục hóa trang, bộ đồ dạ hội",
+    "example_vi": "Vào dịp lễ hội hóa trang Carnival, hàng năm cô ấy đều mặc một bộ trang phục mới."
+  },
+  "der Käufer, - / die Käuferin, -nen": {
+    "vi": "người mua hàng (nam / nữ)",
+    "example_vi": "Người mua muốn thương lượng thêm về giá cả."
+  },
+  "der Sprecher, - / die Sprecherin, -nen": {
+    "vi": "người phát ngôn (nam / nữ)",
+    "example_vi": "Nữ phát ngôn viên đã trả lời tất cả các câu hỏi của giới nhà báo."
+  }
+}

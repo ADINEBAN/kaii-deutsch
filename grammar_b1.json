@@ -15,7 +15,9 @@
     ],
     "correct": "sondern",
     "explanation_de": "'Nicht nur ... sondern auch' ist ein festes Konnektorenpaar mit der Bedeutung 'nicht nur ... sondern auch'.",
-    "explanation_en": "'Nicht nur ... sondern auch' is a fixed correlating pair meaning 'not only ... but also'."
+    "explanation_en": "'Nicht nur ... sondern auch' is a fixed correlating pair meaning 'not only ... but also'.",
+    "prompt_vi": "Căn hộ không chỉ có một phòng tắm, mà còn có cả một gian bếp.",
+    "explanation_vi": "'Nicht nur ... sondern auch' là một cặp liên từ hô ứng cố định mang nghĩa 'không những ... mà còn'."
   },
   {
     "id": "b1-umzu-001",
@@ -33,7 +35,9 @@
     ],
     "correct": "um/zu",
     "explanation_de": "'Um...zu' + Infinitiv drückt einen Zweck aus ('um etwas zu tun').",
-    "explanation_en": "'Um...zu' + infinitive expresses purpose ('in order to')."
+    "explanation_en": "'Um...zu' + infinitive expresses purpose ('in order to').",
+    "prompt_vi": "Tôi cần một cái thang [để] treo bức tranh lên tường.",
+    "explanation_vi": "Cấu trúc 'Um...zu' + động từ nguyên thể diễn đạt mục đích ('để làm gì')."
   },
   {
     "id": "b1-frage-002",
@@ -51,7 +55,9 @@
     ],
     "correct": "Welcher",
     "explanation_de": "'Welcher' stimmt mit dem maskulinen Nomen 'der Monat' im Nominativ überein.",
-    "explanation_en": "'Welcher' (which) agrees with the masculine noun 'der Monat' in the nominative."
+    "explanation_en": "'Welcher' (which) agrees with the masculine noun 'der Monat' in the nominative.",
+    "prompt_vi": "Bây giờ là tháng mấy?",
+    "explanation_vi": "'Welcher' (nào/mấy) hòa hợp với danh từ giống đực 'der Monat' ở danh cách (Nominativ)."
   },
   {
     "id": "b1-neben-wenn-001",
@@ -69,7 +75,9 @@
     ],
     "correct": "Wenn",
     "explanation_de": "'Wenn' wird für wiederholte/bedingte Situationen in der Gegenwart verwendet ('immer wenn').",
-    "explanation_en": "'Wenn' is used for repeated/conditional situations in the present ('whenever/if')."
+    "explanation_en": "'Wenn' is used for repeated/conditional situations in the present ('whenever/if').",
+    "prompt_vi": "Mỗi khi tuyết rơi, tôi lại đi trượt tuyết.",
+    "explanation_vi": "'Wenn' được dùng cho các tình huống lặp đi lặp lại hoặc có điều kiện ở hiện tại ('mỗi khi / nếu')."
   },
   {
     "id": "b1-komp-als-001",
@@ -87,7 +95,9 @@
     ],
     "correct": "als",
     "explanation_de": "Im Deutschen wird beim Komparativ 'als' für 'than' verwendet, nicht 'wie'.",
-    "explanation_en": "German comparatives use 'als' for 'than', not 'wie'."
+    "explanation_en": "German comparatives use 'als' for 'than', not 'wie'.",
+    "prompt_vi": "Cuốn tiểu thuyết thú vị hơn vở kịch.",
+    "explanation_vi": "Trong so sánh hơn của tiếng Đức, người ta dùng 'als' cho nghĩa 'hơn' (than), chứ không dùng 'wie'."
   },
   {
     "id": "b1-praep-dativ-001",
@@ -105,7 +115,9 @@
     ],
     "correct": "mir",
     "explanation_de": "'Vor' (räumlich, feste Position) verlangt den Dativ: <b>mir</b> (Dativ von ich).",
-    "explanation_en": "'Vor' (in front of), used for static location, takes the dative: <b>mir</b> (dative of ich)."
+    "explanation_en": "'Vor' (in front of), used for static location, takes the dative: <b>mir</b> (dative of ich).",
+    "prompt_vi": "Nó đang đứng ở trước mặt tôi.",
+    "explanation_vi": "Giới từ 'Vor' (ở trước), khi chỉ vị trí tĩnh, đi với cách Dativ: <b>mir</b> (dạng Dativ của ich)."
   },
   {
     "id": "b1-indef-alles-001",
@@ -123,7 +135,9 @@
     ],
     "correct": "allem",
     "explanation_de": "'Mit' verlangt den Dativ: <b>allem</b> (Dativ Neutrum von 'alles').",
-    "explanation_en": "'Mit' governs the dative case: <b>allem</b> (dative neuter of 'alles')."
+    "explanation_en": "'Mit' governs the dative case: <b>allem</b> (dative neuter of 'alles').",
+    "prompt_vi": "Tôi hài lòng với mọi thứ.",
+    "explanation_vi": "Giới từ 'Mit' luôn đòi hỏi cách Dativ: <b>allem</b> (dạng Dativ giống trung của 'alles')."
   },
   {
     "id": "b1-verb-freuen-001",
@@ -141,7 +155,9 @@
     ],
     "correct": "auf",
     "explanation_de": "'Sich freuen auf' + Akkusativ drückt die Vorfreude auf ein zukünftiges Ereignis aus.",
-    "explanation_en": "'Sich freuen auf' + accusative expresses looking forward to a future event."
+    "explanation_en": "'Sich freuen auf' + accusative expresses looking forward to a future event.",
+    "prompt_vi": "Tôi đang rất mong đợi đến kỳ nghỉ.",
+    "explanation_vi": "Cụm 'Sich freuen auf' + đối cách (Akkusativ) diễn tả sự mong đợi một sự kiện sắp diễn ra trong tương lai."
   },
   {
     "id": "b1-inf-zu-001",
@@ -159,7 +175,9 @@
     ],
     "correct": "sehen",
     "explanation_de": "Der Satz stellt 'zu' bereits als eigenes Wort bereit. 'Kennenlernen' bräuchte 'zu' eingefügt in einem Wort (kennen<b>zu</b>lernen — vgl. Frage 49), passt hier also nicht. 'Sehen' passt korrekt: <b>Toll, dich zu sehen!</b>",
-    "explanation_en": "The sentence already places 'zu' as a separate word. 'Kennenlernen' would need 'zu' infixed as one word (kennen<b>zu</b>lernen — compare Q49), so it doesn't fit here. 'Sehen' fits correctly: <b>Toll, dich zu sehen!</b>"
+    "explanation_en": "The sentence already places 'zu' as a separate word. 'Kennenlernen' would need 'zu' infixed as one word (kennen<b>zu</b>lernen — compare Q49), so it doesn't fit here. 'Sehen' fits correctly: <b>Toll, dich zu sehen!</b>",
+    "prompt_vi": "Thật tuyệt khi được gặp bạn!",
+    "explanation_vi": "Câu đã có sẵn từ 'zu' đứng riêng. Động từ tách 'kennenlernen' sẽ cần chèn 'zu' vào giữa thành một từ duy nhất (kennen<b>zu</b>lernen), do đó không phù hợp ở đây. 'Sehen' là lựa chọn chính xác: <b>Toll, dich zu sehen!</b>"
   },
   {
     "id": "b1-verb-dat-akk-001",
@@ -177,7 +195,9 @@
     ],
     "correct": "der/die",
     "explanation_de": "'Zeigen' verlangt Dativ (die Person) + Akkusativ (die Sache). 'Die Kundin' (fem.) → Dativ <b>der Kundin</b>; 'die Tasche' (fem.) → Akkusativ <b>die Tasche</b>.",
-    "explanation_en": "'Zeigen' governs dative (the person shown something) + accusative (the thing shown). 'Die Kundin' (fem.) → dative <b>der Kundin</b>; 'die Tasche' (fem.) → accusative <b>die Tasche</b>."
+    "explanation_en": "'Zeigen' governs dative (the person shown something) + accusative (the thing shown). 'Die Kundin' (fem.) → dative <b>der Kundin</b>; 'die Tasche' (fem.) → accusative <b>die Tasche</b>.",
+    "prompt_vi": "Nữ nhân viên bán hàng chỉ cho nữ khách hàng xem chiếc túi xách.",
+    "explanation_vi": "Động từ 'Zeigen' đi với Dativ (người được cho xem) + Akkusativ (vật được đưa ra xem). 'Die Kundin' (giống cái) → Dativ <b>der Kundin</b>; 'die Tasche' (giống cái) → Akkusativ <b>die Tasche</b>."
   },
   {
     "id": "b1-wortschatz-vergleich-001",
@@ -195,7 +215,9 @@
     ],
     "correct": "das Doppelte",
     "explanation_de": "'Das Doppelte' funktioniert als eigenständige Nominalphrase und dient als Objekt von 'kosten'. ('Halb' allein bräuchte zusätzliche Wörter wie 'halb so viel'.)",
-    "explanation_en": "'Das Doppelte' (the double amount) works as a standalone noun phrase, functioning as the object of 'kosten'. ('Halb' alone would need extra words, e.g. 'halb so viel', to work here.)"
+    "explanation_en": "'Das Doppelte' (the double amount) works as a standalone noun phrase, functioning as the object of 'kosten'. ('Halb' alone would need extra words, e.g. 'halb so viel', to work here.)",
+    "prompt_vi": "Một căn hộ ở München đắt gấp đôi so với ở Leipzig.",
+    "explanation_vi": "'Das Doppelte' (gấp đôi) đóng vai trò là một cụm danh từ độc lập, làm tân ngữ cho động từ 'kosten'. (Riêng từ 'halb' sẽ cần thêm từ bổ trợ như 'halb so viel' mới có thể dùng ở đây)."
   },
   {
     "id": "b1-praed-adj-001",
@@ -213,7 +235,9 @@
     ],
     "correct": "kreativ",
     "explanation_de": "Prädikative Adjektive werden im Deutschen nicht dekliniert. 'Kreativ' bleibt unverändert; die anderen Optionen sind falsch dekliniert oder Komparativformen.",
-    "explanation_en": "Predicate adjectives in German don't decline. 'Kreativ' stands unchanged; the other options are wrongly declined or comparative forms that don't fit a bare predicate position."
+    "explanation_en": "Predicate adjectives in German don't decline. 'Kreativ' stands unchanged; the other options are wrongly declined or comparative forms that don't fit a bare predicate position.",
+    "prompt_vi": "Ý tưởng này rất sáng tạo.",
+    "explanation_vi": "Tính từ vị ngữ trong tiếng Đức không biến vĩ tố. 'Kreativ' giữ nguyên dạng; các phương án còn lại bị chia đuôi sai hoặc là dạng so sánh không phù hợp với vị trí vị ngữ trần."
   },
   {
     "id": "b1-konn-deshalb-001",
@@ -231,7 +255,9 @@
     ],
     "correct": "deshalb",
     "explanation_de": "'Deshalb' (deswegen) leitet eine Folge als Hauptsatz ein.",
-    "explanation_en": "'Deshalb' (therefore/that's why) introduces a consequence as a main clause."
+    "explanation_en": "'Deshalb' (therefore/that's why) introduces a consequence as a main clause.",
+    "prompt_vi": "Tôi rất quan tâm đến một vị trí trong đội ngũ của bạn, vì vậy tôi nộp đơn ứng tuyển.",
+    "explanation_vi": "'Deshalb' (do đó / vì vậy) dẫn ra một kết quả dưới dạng mệnh đề chính."
   },
   {
     "id": "b1-gen-fem-001",
@@ -249,7 +275,9 @@
     ],
     "correct": "der",
     "explanation_de": "'Während' verlangt formal den Genitiv. 'Die Reise' (fem.) → Genitiv <b>der Reise</b>.",
-    "explanation_en": "'Während' formally governs the genitive case. 'Die Reise' (fem.) → genitive <b>der Reise</b>."
+    "explanation_en": "'Während' formally governs the genitive case. 'Die Reise' (fem.) → genitive <b>der Reise</b>.",
+    "prompt_vi": "Trong suốt chuyến đi, tôi đã chụp ảnh.",
+    "explanation_vi": "Giới từ 'Während' trong ngữ pháp chuẩn đi với sở hữu cách (Genitiv). 'Die Reise' (giống cái) → Genitiv <b>der Reise</b>."
   },
   {
     "id": "b1-indef-irgend-001",
@@ -267,7 +295,9 @@
     ],
     "correct": "irgendetwas",
     "explanation_de": "'Hören' braucht ein Akkusativobjekt. 'Irgendetwas' (etwas/irgendetwas) erfüllt diese Rolle. 'Irgendwo' (irgendwo) ist ein Ortsadverb, kein Objekt, und passt daher nicht.",
-    "explanation_en": "'Hören' needs a direct object. 'Irgendetwas' (something/anything) fills that role. 'Irgendwo' (somewhere) is a locative adverb, not an object, so it doesn't fit."
+    "explanation_en": "'Hören' needs a direct object. 'Irgendetwas' (something/anything) fills that role. 'Irgendwo' (somewhere) is a locative adverb, not an object, so it doesn't fit.",
+    "prompt_vi": "Bạn có nghe thấy gì không?",
+    "explanation_vi": "Động từ 'Hören' cần một tân ngữ trực tiếp. 'Irgendetwas' (cái gì đó / điều gì) đóng vai trò này. 'Irgendwo' (ở đâu đó) là trạng từ chỉ nơi chốn, không phải tân ngữ, nên không phù hợp."
   },
   {
     "id": "b1-pqp-reflexiv-001",
@@ -285,7 +315,9 @@
     ],
     "correct": "hatte",
     "explanation_de": "Dies beschreibt ein Ereignis vor einem anderen Ereignis in der Vergangenheit → Plusquamperfekt. Reflexive Verben wie 'sich verlieben' bilden das Perfekt/Plusquamperfekt mit 'haben': <b>hatte...verliebt</b>.",
-    "explanation_en": "This describes an event before another past event, requiring Plusquamperfekt. Reflexive verbs like 'sich verlieben' take 'haben' as their auxiliary: <b>hatte...verliebt</b>."
+    "explanation_en": "This describes an event before another past event, requiring Plusquamperfekt. Reflexive verbs like 'sich verlieben' take 'haben' as their auxiliary: <b>hatte...verliebt</b>.",
+    "prompt_vi": "Trước khi kết hôn với anh ấy, cô ấy đã phải lòng anh ấy.",
+    "explanation_vi": "Câu diễn tả một hành động xảy ra trước một hành động khác trong quá khứ, nên cần thì quá khứ hoàn thành (Plusquamperfekt). Các động từ phản thân như 'sich verlieben' dùng trợ động từ 'haben': <b>hatte...verliebt</b>."
   },
   {
     "id": "b1-neben-002",
@@ -307,7 +339,9 @@
       "kommt"
     ],
     "explanation_de": "Nebensatz-Wortstellung: Konjunktion, Subjekt, weitere Angaben, Verb am Ende.",
-    "explanation_en": "Subordinate clause word order: conjunction, subject, other elements, verb at the end."
+    "explanation_en": "Subordinate clause word order: conjunction, subject, other elements, verb at the end.",
+    "prompt_vi": "Sắp xếp các từ: (rằng / anh ấy / ngày mai / đến)",
+    "explanation_vi": "Trật tự từ trong mệnh đề phụ: liên từ, chủ ngữ, các thành phần khác, động từ đứng ở cuối câu."
   },
   {
     "id": "b1-neben-004",
@@ -327,7 +361,9 @@
       "regnet"
     ],
     "explanation_de": "Nebensatz: Konjunktion 'obwohl', Subjekt 'es', Verb 'regnet' am Ende.",
-    "explanation_en": "Subordinate clause: conjunction 'obwohl', subject 'es', verb 'regnet' at the end."
+    "explanation_en": "Subordinate clause: conjunction 'obwohl', subject 'es', verb 'regnet' at the end.",
+    "prompt_vi": "Sắp xếp các từ: (mặc dù / trời / đang mưa)",
+    "explanation_vi": "Mệnh đề phụ: liên từ 'obwohl', chủ ngữ 'es', động từ 'regnet' đứng ở cuối câu."
   },
   {
     "id": "b1-neben-005",
@@ -343,7 +379,9 @@
     ],
     "correct": "dass",
     "explanation_de": "'glauben, dass...' — 'dass' leitet einen Nebensatz ohne Grund-/Bedingungsbedeutung ein.",
-    "explanation_en": "'glauben, dass...' — 'dass' introduces a subordinate clause with no reason/condition meaning."
+    "explanation_en": "'glauben, dass...' — 'dass' introduces a subordinate clause with no reason/condition meaning.",
+    "prompt_vi": "Tôi tin rằng điều này là đúng.",
+    "explanation_vi": "'glauben, dass...' — liên từ 'dass' dẫn dắt một mệnh đề phụ đóng vai trò bổ ngữ nội dung, không mang ý nghĩa nguyên nhân hay điều kiện."
   },
   {
     "id": "b1-gen-001",
@@ -354,7 +392,9 @@
     "prompt_en": "That is the man's car.",
     "correct": "des",
     "explanation_de": "Genitiv maskulin: der → des; das Nomen bekommt zusätzlich -es.",
-    "explanation_en": "Genitive masculine: der → des; the noun also gets an -es ending."
+    "explanation_en": "Genitive masculine: der → des; the noun also gets an -es ending.",
+    "prompt_vi": "Đó là chiếc xe ô tô của người đàn ông.",
+    "explanation_vi": "Sở hữu cách (Genitiv) giống đực: der → des; danh từ cũng nhận thêm đuôi -es."
   },
   {
     "id": "b1-gen-002",
@@ -370,7 +410,9 @@
     ],
     "correct": "des Autos",
     "explanation_de": "Genitiv neutrum: das → des; das Nomen bekommt zusätzlich -s.",
-    "explanation_en": "Genitive neuter: das → des; the noun also gets an -s ending."
+    "explanation_en": "Genitive neuter: das → des; the noun also gets an -s ending.",
+    "prompt_vi": "Màu của chiếc xe ô tô là màu đỏ.",
+    "explanation_vi": "Sở hữu cách (Genitiv) giống trung: das → des; danh từ cũng nhận thêm đuôi -s."
   },
   {
     "id": "b1-gen-003",
@@ -381,7 +423,9 @@
     "prompt_en": "The woman's bag is expensive.",
     "correct": "der",
     "explanation_de": "Genitiv feminin: die → der; feminine Nomen bekommen KEINE zusätzliche Endung.",
-    "explanation_en": "Genitive feminine: die → der; feminine nouns get NO extra ending."
+    "explanation_en": "Genitive feminine: die → der; feminine nouns get NO extra ending.",
+    "prompt_vi": "Chiếc túi của người phụ nữ rất đắt tiền.",
+    "explanation_vi": "Sở hữu cách (Genitiv) giống cái: die → der; danh từ giống cái KHÔNG nhận thêm đuôi."
   },
   {
     "id": "b1-rel-001",
@@ -392,7 +436,9 @@
     "prompt_en": "The man who is standing there is my teacher.",
     "correct": "der",
     "explanation_de": "Relativpronomen Nominativ maskulin: der (Subjekt des Relativsatzes).",
-    "explanation_en": "Relative pronoun, nominative masculine: der (subject of the relative clause)."
+    "explanation_en": "Relative pronoun, nominative masculine: der (subject of the relative clause).",
+    "prompt_vi": "Người đàn ông đang đứng ở kia là thầy giáo của tôi.",
+    "explanation_vi": "Đại từ quan hệ, danh cách (Nominativ) giống đực: der (làm chủ ngữ của mệnh đề quan hệ)."
   },
   {
     "id": "b1-rel-002",
@@ -408,7 +454,9 @@
     ],
     "correct": "die",
     "explanation_de": "'treffen' verlangt Akkusativ; Akkusativ feminin sieht wie Nominativ aus: die.",
-    "explanation_en": "'treffen' takes the accusative; feminine accusative looks the same as nominative: die."
+    "explanation_en": "'treffen' takes the accusative; feminine accusative looks the same as nominative: die.",
+    "prompt_vi": "Người phụ nữ mà tôi đã gặp hôm qua là bác sĩ.",
+    "explanation_vi": "Động từ 'treffen' đòi hỏi đối cách (Akkusativ); Akkusativ giống cái có hình thức giống hệt Nominativ: die."
   },
   {
     "id": "b1-rel-003",
@@ -419,7 +467,9 @@
     "prompt_en": "The child whom I helped is happy.",
     "correct": "dem",
     "explanation_de": "'helfen' verlangt Dativ; Dativ Neutrum: dem.",
-    "explanation_en": "'helfen' takes the dative; dative neuter: dem."
+    "explanation_en": "'helfen' takes the dative; dative neuter: dem.",
+    "prompt_vi": "Đứa trẻ mà tôi đã giúp đỡ đang rất vui vẻ.",
+    "explanation_vi": "Động từ 'helfen' đòi hỏi tặng cách (Dativ); Dativ giống trung là: dem."
   },
   {
     "id": "b1-rel-004",
@@ -435,7 +485,9 @@
     ],
     "correct": "die",
     "explanation_de": "Relativpronomen Nominativ Plural (alle Genera): die.",
-    "explanation_en": "Relative pronoun, nominative plural (all genders): die."
+    "explanation_en": "Relative pronoun, nominative plural (all genders): die.",
+    "prompt_vi": "Những đứa trẻ đang chơi ở kia rất ồn ào.",
+    "explanation_vi": "Đại từ quan hệ, danh cách (Nominativ) số nhiều (cho tất cả các giống): die."
   },
   {
     "id": "b1-pass-002",
@@ -446,7 +498,9 @@
     "prompt_en": "The letter is being written by her.",
     "correct": "geschrieben",
     "explanation_de": "Partizip II von 'schreiben' (unregelmäßig): geschrieben.",
-    "explanation_en": "Past participle of 'schreiben' (irregular): geschrieben."
+    "explanation_en": "Past participle of 'schreiben' (irregular): geschrieben.",
+    "prompt_vi": "Bức thư đang được viết bởi cô ấy.",
+    "explanation_vi": "Phân từ II (Partizip II) của 'schreiben' (bất quy tắc): geschrieben."
   },
   {
     "id": "b1-pass-003",
@@ -462,7 +516,9 @@
     ],
     "correct": "wurde",
     "explanation_de": "Passiv Präteritum: wurde + Partizip II.",
-    "explanation_en": "Passive Präteritum: wurde + past participle."
+    "explanation_en": "Passive Präteritum: wurde + past participle.",
+    "prompt_vi": "Ngôi nhà đã được xây dựng vào năm 1990.",
+    "explanation_vi": "Thể bị động ở thì quá khứ đơn (Passiv Präteritum): wurde + phân từ II (Partizip II)."
   },
   {
     "id": "b1-pass-004",
@@ -473,7 +529,9 @@
     "prompt_en": "The work must be done today.",
     "correct": "gemacht werden",
     "explanation_de": "Passiv mit Modalverb: Modalverb (muss) + Partizip II + werden (Infinitiv Passiv) am Satzende.",
-    "explanation_en": "Passive with a modal verb: modal (muss) + past participle + werden (passive infinitive) at the end of the clause."
+    "explanation_en": "Passive with a modal verb: modal (muss) + past participle + werden (passive infinitive) at the end of the clause.",
+    "prompt_vi": "Công việc này phải được hoàn thành trong ngày hôm nay.",
+    "explanation_vi": "Bị động với động từ khuyết thiếu: động từ khuyết thiếu (muss) + phân từ II + werden (nguyên thể bị động) đứng ở cuối câu."
   },
   {
     "id": "b1-konj-001",
@@ -484,7 +542,9 @@
     "prompt_en": "If I had money, I would buy a new car.",
     "correct": "würde",
     "explanation_de": "Konjunktiv II mit würde + Infinitiv (kaufen steht am Satzende).",
-    "explanation_en": "Konjunktiv II with würde + infinitive (kaufen goes to the end of the clause)."
+    "explanation_en": "Konjunktiv II with würde + infinitive (kaufen goes to the end of the clause).",
+    "prompt_vi": "Nếu tôi có tiền, tôi sẽ mua một chiếc ô tô mới.",
+    "explanation_vi": "Thể giả định II (Konjunktiv II) với würde + động từ nguyên thể (kaufen đứng ở cuối câu)."
   },
   {
     "id": "b1-konj-002",
@@ -495,7 +555,9 @@
     "prompt_en": "If I were rich, I would buy a house.",
     "correct": "wäre",
     "explanation_de": "Konjunktiv II von 'sein' ist unregelmäßig: wäre (nicht 'würde sein').",
-    "explanation_en": "Konjunktiv II of 'sein' is irregular: wäre (not 'würde sein')."
+    "explanation_en": "Konjunktiv II of 'sein' is irregular: wäre (not 'würde sein').",
+    "prompt_vi": "Nếu tôi giàu, tôi sẽ mua một ngôi nhà.",
+    "explanation_vi": "Dạng Konjunktiv II của 'sein' là bất quy tắc: wäre (không dùng 'würde sein')."
   },
   {
     "id": "b1-konj-003",
@@ -511,7 +573,9 @@
     ],
     "correct": "hätte",
     "explanation_de": "Konjunktiv II von 'haben' ist unregelmäßig: hätte (Wunschform).",
-    "explanation_en": "Konjunktiv II of 'haben' is irregular: hätte (used for wishes)."
+    "explanation_en": "Konjunktiv II of 'haben' is irregular: hätte (used for wishes).",
+    "prompt_vi": "Tôi ước gì mình có nhiều thời gian hơn.",
+    "explanation_vi": "Dạng Konjunktiv II của 'haben' là bất quy tắc: hätte (dùng diễn tả mong ước)."
   },
   {
     "id": "b1-konj-004",
@@ -522,6 +586,8 @@
     "prompt_en": "If you spoke louder, I could understand you better.",
     "correct": "könnte",
     "explanation_de": "Konjunktiv II von 'können' ist unregelmäßig: könnte.",
-    "explanation_en": "Konjunktiv II of 'können' is irregular: könnte."
+    "explanation_en": "Konjunktiv II of 'können' is irregular: könnte.",
+    "prompt_vi": "Nếu bạn nói to hơn thì tôi đã có thể nghe hiểu bạn rõ hơn rồi.",
+    "explanation_vi": "Dạng Konjunktiv II của 'können' là bất quy tắc: könnte."
   }
 ]

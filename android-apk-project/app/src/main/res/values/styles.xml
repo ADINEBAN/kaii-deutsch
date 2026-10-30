@@ -1,0 +1,13 @@
+<resources>
+    <style name="Theme.KAII" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">#070a13</item>
+        <item name="android:statusBarColor">#070a13</item>
+        <item name="android:navigationBarColor">#070a13</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.KAII.Fullscreen" parent="Theme.KAII">
+        <item name="android:windowFullscreen">false</item>
+    </style>
+</resources>
+
