@@ -179,6 +179,7 @@
     initServiceWorker();
     initPwaInstall();
     await loadInitialData();
+    checkForAppUpdates();
   }
 
   function cacheDom() {
@@ -389,10 +390,25 @@
       });
     }
 
-    // Server status pill click to test audio
-    el.serverStatusPill.addEventListener('click', () => {
-      showToast('Đang kiểm tra giọng đọc Thorsten TTS...');
-      playTTS('Hallo! Willkommen bei KAII.');
+    // Server status pill click to test audio or change IP
+    el.serverStatusPill.addEventListener('click', async () => {
+      showToast('Đang kiểm tra kết nối Thorsten TTS...');
+      await checkTtsServer();
+      if (state.isTtsOnline) {
+        showToast('Đã kết nối máy chủ Thorsten TTS!');
+        playTTS('Hallo! Willkommen bei KAII.');
+      } else {
+        const newIp = prompt('Nhập địa chỉ máy tính chạy server (ví dụ: http://192.168.1.5:8080):', SERVER_BASE_URL);
+        if (newIp && newIp.trim()) {
+          SERVER_BASE_URL = newIp.trim().replace(/\/+$/, '');
+          localStorage.setItem('kaii_server_ip', SERVER_BASE_URL);
+          showToast('Đã lưu địa chỉ máy chủ: ' + SERVER_BASE_URL);
+          checkTtsServer();
+        } else {
+          showToast('Đang dùng giọng máy offline.');
+          playTTS('Hallo! Willkommen bei KAII.');
+        }
+      }
     });
 
     // KAII Cyber Avatar interactive tap
@@ -1399,20 +1415,37 @@
   // ==========================================================================
   // Thorsten Kokoro TTS with Native Fallback
   // ==========================================================================
+  // ==========================================================================
+  // Hybrid TTS (Thorsten Kokoro via LAN Server & Android Native Fallback)
+  // ==========================================================================
+  let SERVER_BASE_URL = localStorage.getItem('kaii_server_ip') || 'http://192.168.1.5:8080';
+
   async function checkTtsServer() {
     try {
-      const res = await fetch('/api/tts/health', { method: 'GET' });
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 1200);
+      const res = await fetch(`${SERVER_BASE_URL}/api/tts/health`, {
+        method: 'GET',
+        signal: controller.signal
+      });
+      clearTimeout(timeoutId);
+
       if (res.ok) {
         state.isTtsOnline = true;
-        el.serverStatusPill.className = 'server-status-pill';
-        el.serverStatusPill.innerHTML = `<span class="status-dot"></span> Thorsten TTS`;
-      } else {
-        throw new Error('TTS not ready');
+        if (el.serverStatusPill) {
+          el.serverStatusPill.className = 'server-status-pill';
+          el.serverStatusPill.innerHTML = '<span class="status-dot"></span> Thorsten TTS';
+        }
+        return;
       }
     } catch {
-      state.isTtsOnline = false;
+      // Server not reachable
+    }
+
+    state.isTtsOnline = false;
+    if (el.serverStatusPill) {
       el.serverStatusPill.className = 'server-status-pill offline';
-      el.serverStatusPill.innerHTML = `<span class="status-dot"></span> Giọng máy`;
+      el.serverStatusPill.innerHTML = '<span class="status-dot"></span> Giọng máy';
     }
   }
 
@@ -1429,26 +1462,30 @@
       return;
     }
 
-    // 2. Attempt Thorsten TTS endpoint from local server
+    // 2. If Thorsten server is reachable, generate high-quality neural voice
     try {
-      const res = await fetch('/api/tts', {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 2000);
+      const res = await fetch(`${SERVER_BASE_URL}/api/tts`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ text: cleanText, speed: 0.95 })
+        body: JSON.stringify({ text: cleanText, speed: 0.95 }),
+        signal: controller.signal
       });
+      clearTimeout(timeoutId);
 
-      if (!res.ok) throw new Error('TTS API error ' + res.status);
-
-      const blob = await res.blob();
-      const audioUrl = URL.createObjectURL(blob);
-      state.audioCache.set(cleanText, audioUrl);
-      playAudioUrl(audioUrl, buttonEl);
-      return;
+      if (res.ok) {
+        const blob = await res.blob();
+        const audioUrl = URL.createObjectURL(blob);
+        state.audioCache.set(cleanText, audioUrl);
+        playAudioUrl(audioUrl, buttonEl);
+        return;
+      }
     } catch (err) {
-      console.warn('TTS server request failed, falling back to Web Speech:', err);
+      // Failover to local speech
     }
 
-    // 3. Fallback to Android Web Speech API
+    // 3. Fallback seamlessly to Android Native TTS (offline)
     playWebSpeech(cleanText, buttonEl);
   }
 
@@ -1581,6 +1618,85 @@
   }
 
   // Run on DOM ready
+
+  // ==========================================================================
+  // Auto-Update Checker via GitHub Releases (ADINEBAN/kaii-deutsch)
+  // ==========================================================================
+  const CURRENT_APP_VERSION = '1.0.0';
+  const GITHUB_REPO = 'ADINEBAN/kaii-deutsch';
+
+  async function checkForAppUpdates() {
+    try {
+      // Check GitHub Releases API for the latest version tag
+      const res = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/releases/latest`, {
+        headers: { 'Accept': 'application/vnd.github.v3+json' }
+      });
+
+      if (!res.ok) return; // No release published yet or offline
+
+      const release = await res.json();
+      const latestTag = (release.tag_name || '').replace(/^v/i, '').trim();
+
+      if (isNewerVersion(latestTag, CURRENT_APP_VERSION)) {
+        showUpdateModal(release, latestTag);
+      }
+    } catch (err) {
+      console.log('Update check skipped (offline or not reachable):', err);
+    }
+  }
+
+  function isNewerVersion(latest, current) {
+    if (!latest) return false;
+    const lParts = latest.split('.').map(n => parseInt(n, 10) || 0);
+    const cParts = current.split('.').map(n => parseInt(n, 10) || 0);
+    for (let i = 0; i < Math.max(lParts.length, cParts.length); i++) {
+      const l = lParts[i] || 0;
+      const c = cParts[i] || 0;
+      if (l > c) return true;
+      if (l < c) return false;
+    }
+    return false;
+  }
+
+  function showUpdateModal(release, versionStr) {
+    const backdrop = document.getElementById('update-modal-backdrop');
+    const titleEl = document.getElementById('update-version-title');
+    const notesEl = document.getElementById('update-notes');
+    const btnConfirm = document.getElementById('btn-update-now');
+    const btnDismiss = document.getElementById('btn-update-dismiss');
+
+    if (!backdrop || !titleEl || !btnConfirm) return;
+
+    titleEl.textContent = `KAII Deutsch v${versionStr}`;
+    if (release.body && release.body.trim()) {
+      notesEl.textContent = release.body.trim();
+    } else {
+      notesEl.textContent = 'Đã có bản cập nhật mới nhất với nhiều tối ưu mượt mà và sửa lỗi.';
+    }
+
+    // Find direct APK asset if available, otherwise open the release page
+    let apkUrl = release.html_url;
+    if (release.assets && release.assets.length > 0) {
+      const apkAsset = release.assets.find(a => a.name && a.name.endsWith('.apk'));
+      if (apkAsset && apkAsset.browser_download_url) {
+        apkUrl = apkAsset.browser_download_url;
+      }
+    }
+
+    btnConfirm.href = apkUrl;
+    btnConfirm.onclick = function(e) {
+      backdrop.classList.add('hidden');
+    };
+
+    if (btnDismiss) {
+      btnDismiss.onclick = function() {
+        backdrop.classList.add('hidden');
+      };
+    }
+
+    backdrop.classList.remove('hidden');
+  }
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
