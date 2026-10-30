@@ -93,3 +93,4 @@ def update_file(p):
 
 update_file('mobile/app.js')
 update_file('android-apk-project/app/src/main/assets/app.js')
+

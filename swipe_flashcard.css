@@ -1,0 +1,88 @@
+/* ==========================================================================
+   Tinder-Style Smooth Swipeable 3D Flashcard
+   ========================================================================== */
+.flashcard-3d-scene {
+  perspective: 1200px;
+  height: 420px;
+  position: relative;
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+  margin-bottom: 20px;
+}
+
+.flashcard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform-style: preserve-3d;
+  cursor: grab;
+  will-change: transform;
+}
+
+.flashcard-inner.swiping {
+  cursor: grabbing;
+}
+
+.flashcard-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+/* Visual Swipe Badges */
+.swipe-stamp {
+  position: absolute;
+  top: 24px;
+  padding: 6px 14px;
+  border-radius: 12px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  z-index: 50;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+
+.swipe-stamp-pass {
+  right: 20px;
+  background: rgba(34, 197, 94, 0.2);
+  border: 2px solid #22c55e;
+  color: #4ade80;
+  transform: rotate(12deg);
+}
+
+.swipe-stamp-fail {
+  left: 20px;
+  background: rgba(239, 68, 68, 0.2);
+  border: 2px solid #ef4444;
+  color: #f87171;
+  transform: rotate(-12deg);
+}
+
+/* Bottom gesture guide */
+.flashcard-gesture-guide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin-top: 10px;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  font-weight: 600;
+}
+
+.gesture-guide-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.gesture-guide-fail {
+  color: #f87171;
+}
+
+.gesture-guide-pass {
+  color: #4ade80;
+}
