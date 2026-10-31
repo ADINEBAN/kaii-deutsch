@@ -1780,7 +1780,7 @@
   // ==========================================================================
   // Auto-Update Checker with Native Download Progress & Auto-Install
   // ==========================================================================
-  const CURRENT_APP_VERSION = '1.0.0';
+  const CURRENT_APP_VERSION = '1.0.2';
   const GITHUB_REPO = 'ADINEBAN/kaii-deutsch';
 
   window.onAppDownloadProgress = function(percent, downloaded, total, status) {

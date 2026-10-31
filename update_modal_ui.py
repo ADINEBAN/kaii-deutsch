@@ -38,3 +38,4 @@ def update_index(p):
 
 update_index('mobile/index.html')
 update_index('android-apk-project/app/src/main/assets/index.html')
+
