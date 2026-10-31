@@ -10,3 +10,4 @@ for p in ['mobile/app.css', 'android-apk-project/app/src/main/assets/app.css']:
     with open(p, 'w', encoding='utf-8', newline='\n') as f:
         f.write(c)
     print('Updated CSS in', p)
+

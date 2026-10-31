@@ -78,3 +78,4 @@ def update_html(p):
 
 update_html('mobile/index.html')
 update_html('android-apk-project/app/src/main/assets/index.html')
+

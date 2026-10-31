@@ -148,3 +148,4 @@ def update_js(p):
 
 update_js('mobile/app.js')
 update_js('android-apk-project/app/src/main/assets/app.js')
+

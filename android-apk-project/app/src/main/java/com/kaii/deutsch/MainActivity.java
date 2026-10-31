@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private SwipeRefreshLayout swipeRefresh;
     private WebViewAssetLoader assetLoader;
     private NativeTTSInterface nativeTTS;
+    private AppUpdateManager updateManager;
 
     @SuppressLint("SetJavaScriptEnabled")
     @Override
@@ -76,6 +77,10 @@ public class MainActivity extends AppCompatActivity {
         // Register Android Native TTS Javascript Bridge
         nativeTTS = new NativeTTSInterface(this, webView);
         webView.addJavascriptInterface(nativeTTS, "AndroidTTS");
+
+        // Register App Update Manager Javascript Bridge
+        updateManager = new AppUpdateManager(this, webView);
+        webView.addJavascriptInterface(updateManager, "AndroidUpdater");
 
         webView.setWebViewClient(new WebViewClient() {
             @Override
