@@ -1,45 +1,80 @@
 /* ==========================================================================
-   Tinder-Style Smooth Swipeable 3D Flashcard
+   Tinder-Style Smooth Swipeable 3D Flashcard Architecture
    ========================================================================== */
+
+/* Outer perspective container */
 .flashcard-3d-scene {
   perspective: 1200px;
-  height: 420px;
+  height: 400px;
   position: relative;
   touch-action: pan-y;
   user-select: none;
   -webkit-user-select: none;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
+/* Wrapper for swipe & drag (moves horizontally and rotates) */
+.flashcard-swipe-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  will-change: transform, opacity;
+  cursor: grab;
+}
+
+.flashcard-swipe-wrap.swiping {
+  cursor: grabbing;
+}
+
+/* Inner 3D card for 180deg flip (pure 3D flipping only) */
 .flashcard-inner {
   position: relative;
   width: 100%;
   height: 100%;
   text-align: center;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   transform-style: preserve-3d;
-  cursor: grab;
-  will-change: transform;
-}
-
-.flashcard-inner.swiping {
-  cursor: grabbing;
 }
 
 .flashcard-inner.flipped {
   transform: rotateY(180deg);
 }
 
-/* Visual Swipe Badges */
+.flashcard-face {
+  position: absolute;
+  inset: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 24px;
+  padding: 24px 20px;
+  background: var(--glass-card);
+  backdrop-filter: blur(24px) saturate(200%);
+  -webkit-backdrop-filter: blur(24px) saturate(200%);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flashcard-back {
+  transform: rotateY(180deg);
+  background: rgba(22, 34, 62, 0.88);
+  border-color: rgba(59, 130, 246, 0.35);
+}
+
+/* Stamp Indicators (Pass / Fail) */
 .swipe-stamp {
   position: absolute;
   top: 24px;
-  padding: 6px 14px;
-  border-radius: 12px;
-  font-size: 0.82rem;
+  padding: 8px 16px;
+  border-radius: 14px;
+  font-size: 0.88rem;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  z-index: 50;
+  z-index: 100;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.15s ease;
@@ -47,18 +82,20 @@
 
 .swipe-stamp-pass {
   right: 20px;
-  background: rgba(34, 197, 94, 0.2);
+  background: rgba(34, 197, 94, 0.25);
   border: 2px solid #22c55e;
   color: #4ade80;
   transform: rotate(12deg);
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
 }
 
 .swipe-stamp-fail {
   left: 20px;
-  background: rgba(239, 68, 68, 0.2);
+  background: rgba(239, 68, 68, 0.25);
   border: 2px solid #ef4444;
   color: #f87171;
   transform: rotate(-12deg);
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
 }
 
 /* Bottom gesture guide */
@@ -66,9 +103,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
-  margin-top: 10px;
-  font-size: 0.78rem;
+  padding: 0 8px;
+  margin-top: 8px;
+  font-size: 0.8rem;
   color: var(--text-dim);
   font-weight: 600;
 }
@@ -76,7 +113,7 @@
 .gesture-guide-item {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
 }
 
 .gesture-guide-fail {

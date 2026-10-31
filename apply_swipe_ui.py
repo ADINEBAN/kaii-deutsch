@@ -64,3 +64,4 @@ for path in ['mobile/index.html', 'android-apk-project/app/src/main/assets/index
 
 for path in ['mobile/app.css', 'android-apk-project/app/src/main/assets/app.css']:
     append_css(path)
+

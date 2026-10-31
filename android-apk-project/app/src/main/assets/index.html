@@ -239,46 +239,50 @@
         <!-- 1. Flashcard 3D Scene -->
         <div id="flashcard-scene">
           <div class="flashcard-3d-scene">
-            <div id="flashcard-inner" class="flashcard-inner">
-              <!-- Front Face (German) -->
-              <div class="flashcard-face flashcard-front">
-                <div id="stamp-fail" class="swipe-stamp swipe-stamp-fail">Chưa thuộc</div>
-                <div id="stamp-pass" class="swipe-stamp swipe-stamp-pass">Đã nhớ từ</div>
-                <div style="display:flex;width:100%;justify-content:space-between;align-items:center;">
-                  <span id="card-art" class="art-badge"></span>
-                  <span id="card-level" class="badge-level">A1</span>
-                </div>
-                
-                <div>
-                  <div id="card-de" class="flashcard-center-word">Wort</div>
-                  <div id="card-ex-de" style="font-size:0.9rem;color:#cbd5e1;font-weight:500;margin-top:8px;"></div>
+            <div id="flashcard-swipe-wrap" class="flashcard-swipe-wrap">
+              <!-- Visual Swipe Stamp Badges -->
+              <div id="stamp-fail" class="swipe-stamp swipe-stamp-fail">Chưa thuộc</div>
+              <div id="stamp-pass" class="swipe-stamp swipe-stamp-pass">Đã nhớ từ</div>
+
+              <div id="flashcard-inner" class="flashcard-inner">
+                <!-- Front Face (German) -->
+                <div class="flashcard-face flashcard-front">
+                  <div style="display:flex;width:100%;justify-content:space-between;align-items:center;">
+                    <span id="card-art" class="art-badge"></span>
+                    <span id="card-level" class="badge-level">A1</span>
+                  </div>
+                  
+                  <div>
+                    <div id="card-de" class="flashcard-center-word">Wort</div>
+                    <div id="card-ex-de" style="font-size:0.9rem;color:#cbd5e1;font-weight:500;margin-top:8px;"></div>
+                  </div>
+
+                  <div style="display:flex;width:100%;justify-content:space-between;align-items:center;">
+                    <button id="card-speaker-btn" class="btn-speaker" style="width:34px;height:34px;" aria-label="Nghe">
+                      <iconify-icon icon="lucide:volume-2" width="18" height="18"></iconify-icon>
+                    </button>
+                    <span class="flashcard-hint">Chạm để xem nghĩa tiếng Việt ↺</span>
+                  </div>
                 </div>
 
-                <div style="display:flex;width:100%;justify-content:space-between;align-items:center;">
-                  <button id="card-speaker-btn" class="btn-speaker" style="width:34px;height:34px;" aria-label="Nghe">
-                    <iconify-icon icon="lucide:volume-2" width="18" height="18"></iconify-icon>
-                  </button>
-                  <span class="flashcard-hint">Chạm để xem nghĩa tiếng Việt ↺</span>
-                </div>
-              </div>
+                <!-- Back Face (Vietnamese) -->
+                <div class="flashcard-face flashcard-back">
+                  <div style="display:flex;width:100%;justify-content:flex-end;">
+                    <span style="font-size:0.75rem;color:var(--text-dim);">Tiếng Việt</span>
+                  </div>
 
-              <!-- Back Face (Vietnamese) -->
-              <div class="flashcard-face flashcard-back">
-                <div style="display:flex;width:100%;justify-content:flex-end;">
-                  <span style="font-size:0.75rem;color:var(--text-dim);">Tiếng Việt</span>
-                </div>
+                  <div>
+                    <div id="card-vi" class="flashcard-center-meaning">Ý nghĩa</div>
+                    <div id="card-ex-vi" style="font-size:0.86rem;color:var(--text-muted);margin-top:8px;"></div>
+                  </div>
 
-                <div>
-                  <div id="card-vi" class="flashcard-center-meaning">Ý nghĩa</div>
-                  <div id="card-ex-vi" style="font-size:0.86rem;color:var(--text-muted);margin-top:8px;"></div>
+                  <span class="flashcard-hint">Chạm để lật lại tiếng Đức ↻</span>
                 </div>
-
-                <span class="flashcard-hint">Chạm để lật lại tiếng Đức ↻</span>
               </div>
             </div>
           </div>
 
-          <div id="card-counter" style="text-align:center;font-size:0.8rem;color:var(--text-muted);margin-bottom:12px;">
+          <div id="card-counter"  style="text-align:center;font-size:0.8rem;color:var(--text-muted);margin-bottom:12px;">
             Thẻ 1 / 50
           </div>
 

@@ -397,7 +397,7 @@
       } else {
         const newIp = prompt('Nhập địa chỉ máy tính chạy server (ví dụ: http://192.168.1.5:8080):', SERVER_BASE_URL);
         if (newIp && newIp.trim()) {
-          SERVER_BASE_URL = newIp.trim().replace(/\/+$/, '');
+          SERVER_BASE_URL = newIp.trim().replace(/\/m\/?$/, '').replace(/\/+$/, '');
           localStorage.setItem('kaii_server_ip', SERVER_BASE_URL);
           showToast('Đã lưu địa chỉ máy chủ: ' + SERVER_BASE_URL);
           checkTtsServer();
@@ -976,68 +976,66 @@
   // ==========================================================================
   // Swipeable 3D Flashcard Interaction (Left = Fail, Right = Pass, Tap = Flip)
   // ==========================================================================
+  // ==========================================================================
+  // Swipeable & 3D Flippable Flashcard Controller (Clean Separation)
+  // ==========================================================================
   function initFlashcardSwipeGestures() {
-    const card = el.flashcardInner;
-    if (!card) return;
+    const swipeWrap = document.getElementById('flashcard-swipe-wrap') || el.flashcardInner;
+    const cardInner = el.flashcardInner;
+    if (!swipeWrap || !cardInner) return;
 
     let startX = 0;
     let startY = 0;
     let currentX = 0;
     let currentY = 0;
-    let isDragging = false;
-    let isHorizontalSwipe = false;
+    let isTouching = false;
+    let isHorizontal = false;
     let startTime = 0;
 
     const stampPass = document.getElementById('stamp-pass');
     const stampFail = document.getElementById('stamp-fail');
 
-    function onTouchStart(e) {
-      if (e.target.closest('#card-speaker-btn')) return; // Ignore speaker button tap
-      const touch = e.touches ? e.touches[0] : e;
-      startX = touch.clientX;
-      startY = touch.clientY;
+    function onPointerDown(e) {
+      if (e.target.closest('#card-speaker-btn')) return; // Allow audio button clicks
+      const point = e.touches ? e.touches[0] : e;
+      startX = point.clientX;
+      startY = point.clientY;
       currentX = 0;
       currentY = 0;
-      isDragging = true;
-      isHorizontalSwipe = false;
+      isTouching = true;
+      isHorizontal = false;
       startTime = Date.now();
-      card.style.transition = 'none';
-      card.classList.add('swiping');
+      swipeWrap.style.transition = 'none';
+      swipeWrap.classList.add('swiping');
     }
 
-    function onTouchMove(e) {
-      if (!isDragging) return;
-      const touch = e.touches ? e.touches[0] : e;
-      currentX = touch.clientX - startX;
-      currentY = touch.clientY - startY;
+    function onPointerMove(e) {
+      if (!isTouching) return;
+      const point = e.touches ? e.touches[0] : e;
+      currentX = point.clientX - startX;
+      currentY = point.clientY - startY;
 
-      // Lock swipe direction: if moving mostly vertically, allow native scroll
-      if (!isHorizontalSwipe) {
-        if (Math.abs(currentX) > 10 && Math.abs(currentX) > Math.abs(currentY)) {
-          isHorizontalSwipe = true;
+      if (!isHorizontal) {
+        if (Math.abs(currentX) > 8 && Math.abs(currentX) > Math.abs(currentY)) {
+          isHorizontal = true;
         } else if (Math.abs(currentY) > 10) {
-          isDragging = false;
-          resetCardVisuals();
+          isTouching = false;
+          resetSwipeWrap();
           return;
         }
       }
 
-      if (isHorizontalSwipe) {
+      if (isHorizontal) {
         if (e.cancelable) e.preventDefault();
 
-        // Calculate rotation and transform
-        const rotateDeg = (currentX / 15) * (state.flashcardFlipped ? -1 : 1);
-        const flipRotate = state.flashcardFlipped ? ' rotateY(180deg)' : '';
-        card.style.transform = `translateX(${currentX}px) rotate(${rotateDeg}deg)${flipRotate}`;
+        const rotateDeg = currentX / 16;
+        swipeWrap.style.transform = `translateX(${currentX}px) rotate(${rotateDeg}deg)`;
 
-        // Stamp opacity feedback
-        const progress = Math.min(Math.abs(currentX) / 100, 1);
-        if (currentX > 20) {
-          // Swiping right (Đã nhớ)
+        const progress = Math.min(Math.abs(currentX) / 80, 1);
+        if (currentX > 15) {
           if (stampPass) stampPass.style.opacity = progress;
           if (stampFail) stampFail.style.opacity = 0;
-        } else if (currentX < -20) {
-          // Swiping left (Chưa thuộc)
+        } else if (currentX < -15) {
           if (stampFail) stampFail.style.opacity = progress;
           if (stampPass) stampPass.style.opacity = 0;
         } else {
@@ -1047,63 +1045,64 @@
       }
     }
 
-    function onTouchEnd(e) {
-      if (!isDragging && !isHorizontalSwipe) return;
-      isDragging = false;
-      card.classList.remove('swiping');
+    function onPointerUp(e) {
+      if (!isTouching) return;
+      isTouching = false;
+      swipeWrap.classList.remove('swiping');
 
       const elapsed = Date.now() - startTime;
-      const threshold = 85; // Pixels needed to register swipe
+      const dist = Math.abs(currentX);
 
-      if (isHorizontalSwipe && Math.abs(currentX) > threshold) {
-        // Complete the swipe exit animation
-        const isRightSwipe = currentX > 0;
-        const exitX = isRightSwipe ? window.innerWidth + 200 : -window.innerWidth - 200;
-        const exitRotate = isRightSwipe ? 25 : -25;
-        const flipRotate = state.flashcardFlipped ? ' rotateY(180deg)' : '';
+      // Check if it's a Tap (very little movement, short duration) -> Flip Card!
+      if (dist < 10 && Math.abs(currentY) < 10 && elapsed < 350) {
+        resetSwipeWrap();
+        state.flashcardFlipped = !state.flashcardFlipped;
+        cardInner.classList.toggle('flipped', state.flashcardFlipped);
+        return;
+      }
 
-        card.style.transition = 'transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s';
-        card.style.transform = `translateX(${exitX}px) rotate(${exitRotate}deg)${flipRotate}`;
-        card.style.opacity = '0';
+      // Check if it's a valid swipe threshold
+      if (isHorizontal && dist > 75) {
+        const isRight = currentX > 0;
+        const exitX = isRight ? (window.innerWidth + 250) : (-window.innerWidth - 250);
+        const exitRotate = isRight ? 25 : -25;
+
+        swipeWrap.style.transition = 'transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.28s';
+        swipeWrap.style.transform = `translateX(${exitX}px) rotate(${exitRotate}deg)`;
+        swipeWrap.style.opacity = '0';
 
         setTimeout(() => {
-          resetCardVisuals();
-          nextFlashcard(isRightSwipe);
-        }, 280);
-
+          resetSwipeWrap();
+          nextFlashcard(isRight);
+        }, 260);
       } else {
-        // Snap back or Tap to Flip
-        if (Math.abs(currentX) < 10 && Math.abs(currentY) < 10 && elapsed < 300) {
-          // Tap: Toggle Flip
-          state.flashcardFlipped = !state.flashcardFlipped;
-          card.classList.toggle('flipped', state.flashcardFlipped);
-        }
-        resetCardVisuals(true);
+        // Snap back to center
+        resetSwipeWrap(true);
       }
     }
 
-    function resetCardVisuals(animate = false) {
+    function resetSwipeWrap(animate = false) {
       if (animate) {
-        card.style.transition = 'transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.2s';
+        swipeWrap.style.transition = 'transform 0.32s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.2s';
       } else {
-        card.style.transition = '';
+        swipeWrap.style.transition = '';
       }
-      card.style.opacity = '1';
-      card.style.transform = state.flashcardFlipped ? 'rotateY(180deg)' : 'none';
+      swipeWrap.style.transform = '';
+      swipeWrap.style.opacity = '1';
       if (stampPass) stampPass.style.opacity = 0;
       if (stampFail) stampFail.style.opacity = 0;
     }
 
     // Touch events
-    card.addEventListener('touchstart', onTouchStart, { passive: true });
-    card.addEventListener('touchmove', onTouchMove, { passive: false });
-    card.addEventListener('touchend', onTouchEnd);
-    card.addEventListener('touchcancel', () => resetCardVisuals(true));
+    swipeWrap.addEventListener('touchstart', onPointerDown, { passive: true });
+    swipeWrap.addEventListener('touchmove', onPointerMove, { passive: false });
+    swipeWrap.addEventListener('touchend', onPointerUp);
+    swipeWrap.addEventListener('touchcancel', () => resetSwipeWrap(true));
 
-    // Mouse drag support for desktop/testing
-    card.addEventListener('mousedown', onTouchStart);
-    window.addEventListener('mousemove', onTouchMove);
-    window.addEventListener('mouseup', onTouchEnd);
+    // Desktop mouse events
+    swipeWrap.addEventListener('mousedown', onPointerDown);
+    window.addEventListener('mousemove', onPointerMove);
+    window.addEventListener('mouseup', onPointerUp);
   }
 
   function nextFlashcard(known) {
@@ -1549,7 +1548,7 @@
   // ==========================================================================
   // Hybrid TTS (Thorsten Kokoro via LAN Server & Android Native Fallback)
   // ==========================================================================
-  let SERVER_BASE_URL = localStorage.getItem('kaii_server_ip') || 'http://192.168.1.5:8080';
+  let SERVER_BASE_URL = (localStorage.getItem('kaii_server_ip') || 'http://192.168.1.5:8080').replace(/\/m\/?$/, '').replace(/\/+$/, '');
 
   async function checkTtsServer() {
     try {
