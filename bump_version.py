@@ -5,3 +5,4 @@ for p in ['mobile/app.js', 'android-apk-project/app/src/main/assets/app.js']:
     with open(p, 'w', encoding='utf-8', newline='\n') as f:
         f.write(c)
     print('Updated CURRENT_APP_VERSION to 1.0.2 in', p)
+

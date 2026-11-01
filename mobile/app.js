@@ -1546,9 +1546,10 @@
   // Thorsten Kokoro TTS with Native Fallback
   // ==========================================================================
   // ==========================================================================
-  // Hybrid TTS (Thorsten Kokoro via LAN Server & Android Native Fallback)
+  // Smart 3-Tier Speech Engine (Local LAN Thorsten -> Cloud TTS -> Native Offline)
   // ==========================================================================
   let SERVER_BASE_URL = (localStorage.getItem('kaii_server_ip') || 'http://192.168.1.5:8080').replace(/\/m\/?$/, '').replace(/\/+$/, '');
+  let isLocalServerLive = false;
 
   async function checkTtsServer() {
     try {
@@ -1561,21 +1562,23 @@
       clearTimeout(timeoutId);
 
       if (res.ok) {
+        isLocalServerLive = true;
         state.isTtsOnline = true;
         if (el.serverStatusPill) {
           el.serverStatusPill.className = 'server-status-pill';
-          el.serverStatusPill.innerHTML = '<span class="status-dot"></span> Thorsten TTS';
+          el.serverStatusPill.innerHTML = '<span class="status-dot"></span> Thorsten (LAN)';
         }
         return;
       }
     } catch {
-      // Server not reachable
+      // Local server offline
     }
 
-    state.isTtsOnline = false;
+    isLocalServerLive = false;
+    state.isTtsOnline = true;
     if (el.serverStatusPill) {
-      el.serverStatusPill.className = 'server-status-pill offline';
-      el.serverStatusPill.innerHTML = '<span class="status-dot"></span> Giọng máy';
+      el.serverStatusPill.className = 'server-status-pill';
+      el.serverStatusPill.innerHTML = '<span class="status-dot"></span> Giọng Cloud 24/7';
     }
   }
 
@@ -1592,30 +1595,74 @@
       return;
     }
 
-    // 2. If Thorsten server is reachable, generate high-quality neural voice
-    try {
-      const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 2000);
-      const res = await fetch(`${SERVER_BASE_URL}/api/tts`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ text: cleanText, speed: 0.95 }),
-        signal: controller.signal
-      });
-      clearTimeout(timeoutId);
+    // 2. Priority 1: If Local Laptop Server is running, use local Thorsten Kokoro TTS
+    if (isLocalServerLive) {
+      try {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 2000);
+        const res = await fetch(`${SERVER_BASE_URL}/api/tts`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ text: cleanText, speed: 0.95 }),
+          signal: controller.signal
+        });
+        clearTimeout(timeoutId);
 
-      if (res.ok) {
-        const blob = await res.blob();
-        const audioUrl = URL.createObjectURL(blob);
-        state.audioCache.set(cleanText, audioUrl);
-        playAudioUrl(audioUrl, buttonEl);
-        return;
+        if (res.ok) {
+          const blob = await res.blob();
+          const audioUrl = URL.createObjectURL(blob);
+          state.audioCache.set(cleanText, audioUrl);
+          playAudioUrl(audioUrl, buttonEl);
+          return;
+        }
+      } catch (err) {
+        console.warn('Local TTS failed, switching to Cloud:', err);
       }
-    } catch (err) {
-      // Failover to local speech
     }
 
-    // 3. Fallback seamlessly to Android Native TTS (offline)
+    // 3. Priority 2: Cloud Neural German Voice 24/7 (No laptop, no server needed)
+    try {
+      const encodedText = encodeURIComponent(cleanText);
+      const cloudUrl = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodedText}&tl=de-DE&client=tw-ob`;
+      
+      const audio = new Audio();
+      let hasHandledEnd = false;
+
+      const cleanup = () => {
+        if (!hasHandledEnd) {
+          hasHandledEnd = true;
+          if (buttonEl) buttonEl.classList.remove('playing');
+          state.currentAudio = null;
+        }
+      };
+
+      audio.onended = cleanup;
+      audio.onerror = () => {
+        cleanup();
+        // Fallback to Native TTS if offline
+        playWebSpeech(cleanText, buttonEl);
+      };
+
+      if (state.currentAudio) {
+        state.currentAudio.pause();
+        state.currentAudio = null;
+      }
+
+      state.currentAudio = audio;
+      audio.src = cloudUrl;
+      const playPromise = audio.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(() => {
+          cleanup();
+          playWebSpeech(cleanText, buttonEl);
+        });
+      }
+      return;
+    } catch (e) {
+      console.warn('Cloud audio failed, falling back to native:', e);
+    }
+
+    // 4. Priority 3: Fallback seamlessly to Android Native TTS (100% offline)
     playWebSpeech(cleanText, buttonEl);
   }
 
@@ -1752,7 +1799,7 @@
   // ==========================================================================
   // Auto-Update Checker with Native Download Progress & Auto-Install
   // ==========================================================================
-  const CURRENT_APP_VERSION = '1.0.2';
+  const CURRENT_APP_VERSION = '1.0.3';
   const GITHUB_REPO = 'ADINEBAN/kaii-deutsch';
 
   window.onAppDownloadProgress = function(percent, downloaded, total, status) {
