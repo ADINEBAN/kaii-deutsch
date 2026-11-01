@@ -13,3 +13,4 @@ def check(url):
 text = urllib.parse.quote('Guten Morgen, wie geht es dir?')
 print("Testing Google Translate TTS Audio:")
 check(f"https://translate.google.com/translate_tts?ie=UTF-8&q={text}&tl=de&client=tw-ob")
+

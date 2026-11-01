@@ -28,3 +28,4 @@ if __name__ == '__main__':
 
     # Endpoint 3: ResponsiveVoice German
     test_url("ResponsiveVoice", f"https://code.responsivevoice.org/getvoice.php?t={text}&tl=de&sv=g1&vn=&pitch=0.5&rate=0.5&vol=1")
+

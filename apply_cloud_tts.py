@@ -142,3 +142,4 @@ def update_smart_tts(p):
 
 update_smart_tts('mobile/app.js')
 update_smart_tts('android-apk-project/app/src/main/assets/app.js')
+
