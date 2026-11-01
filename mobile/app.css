@@ -1835,6 +1835,8 @@ iconify-icon > svg {
   height: 100%;
   will-change: transform, opacity;
   cursor: grab;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
 }
 
 .flashcard-swipe-wrap.swiping {
@@ -1847,12 +1849,15 @@ iconify-icon > svg {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  cursor: pointer;
 }
 
 .flashcard-inner.flipped {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 .flashcard-face {
@@ -1871,12 +1876,50 @@ iconify-icon > svg {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.flashcard-front {
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  z-index: 2;
 }
 
 .flashcard-back {
   transform: rotateY(180deg);
-  background: rgba(22, 34, 62, 0.88);
-  border-color: rgba(59, 130, 246, 0.35);
+  -webkit-transform: rotateY(180deg);
+  background: rgba(22, 34, 62, 0.95);
+  border-color: rgba(59, 130, 246, 0.45);
+  z-index: 1;
+}
+
+/* Guaranteed display states for Android WebView */
+.flashcard-inner.flipped .flashcard-front {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.flashcard-inner.flipped .flashcard-back {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  z-index: 2;
+}
+
+.flashcard-inner:not(.flipped) .flashcard-back {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.flashcard-inner:not(.flipped) .flashcard-front {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  z-index: 2;
 }
 
 /* Stamp Indicators (Pass / Fail) */
