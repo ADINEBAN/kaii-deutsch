@@ -1546,10 +1546,18 @@
   // Thorsten Kokoro TTS with Native Fallback
   // ==========================================================================
   // ==========================================================================
-  // Smart 3-Tier Speech Engine (Local LAN Thorsten -> Cloud TTS -> Native Offline)
+  // Smart 3-Tier Speech Engine (Local LAN Thorsten -> Android Native Cloud/Offline -> Web Speech)
   // ==========================================================================
   let SERVER_BASE_URL = (localStorage.getItem('kaii_server_ip') || 'http://192.168.1.5:8080').replace(/\/m\/?$/, '').replace(/\/+$/, '');
   let isLocalServerLive = false;
+  let currentTtsButton = null;
+
+  window.onNativeTtsStateChange = function(isSpeaking) {
+    if (!isSpeaking && currentTtsButton) {
+      currentTtsButton.classList.remove('playing');
+      currentTtsButton = null;
+    }
+  };
 
   async function checkTtsServer() {
     try {
@@ -1586,9 +1594,13 @@
     if (!text) return;
     const cleanText = text.trim();
 
+    if (currentTtsButton && currentTtsButton !== buttonEl) {
+      currentTtsButton.classList.remove('playing');
+    }
+    currentTtsButton = buttonEl;
     if (buttonEl) buttonEl.classList.add('playing');
 
-    // 1. Check in-memory audio blob cache
+    // 1. Check in-memory audio blob cache (for local Thorsten)
     if (state.audioCache.has(cleanText)) {
       const audioUrl = state.audioCache.get(cleanText);
       playAudioUrl(audioUrl, buttonEl);
@@ -1616,53 +1628,21 @@
           return;
         }
       } catch (err) {
-        console.warn('Local TTS failed, switching to Cloud:', err);
+        console.warn('Local TTS failed, switching to Native/Cloud:', err);
       }
     }
 
-    // 3. Priority 2: Cloud Neural German Voice 24/7 (No laptop, no server needed)
-    try {
-      const encodedText = encodeURIComponent(cleanText);
-      const cloudUrl = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodedText}&tl=de-DE&client=tw-ob`;
-      
-      const audio = new Audio();
-      let hasHandledEnd = false;
-
-      const cleanup = () => {
-        if (!hasHandledEnd) {
-          hasHandledEnd = true;
-          if (buttonEl) buttonEl.classList.remove('playing');
-          state.currentAudio = null;
-        }
-      };
-
-      audio.onended = cleanup;
-      audio.onerror = () => {
-        cleanup();
-        // Fallback to Native TTS if offline
-        playWebSpeech(cleanText, buttonEl);
-      };
-
-      if (state.currentAudio) {
-        state.currentAudio.pause();
-        state.currentAudio = null;
+    // 3. Priority 2: Android Native Bridge (Android APK: Plays Cloud Neural Voice + Caches to disk + Native MediaPlayer)
+    if (window.AndroidTTS && typeof window.AndroidTTS.speak === 'function') {
+      try {
+        const ok = window.AndroidTTS.speak(cleanText);
+        if (ok) return;
+      } catch (err) {
+        console.warn('AndroidTTS error:', err);
       }
-
-      state.currentAudio = audio;
-      audio.src = cloudUrl;
-      const playPromise = audio.play();
-      if (playPromise !== undefined) {
-        playPromise.catch(() => {
-          cleanup();
-          playWebSpeech(cleanText, buttonEl);
-        });
-      }
-      return;
-    } catch (e) {
-      console.warn('Cloud audio failed, falling back to native:', e);
     }
 
-    // 4. Priority 3: Fallback seamlessly to Android Native TTS (100% offline)
+    // 4. Priority 3: Fallback for Desktop Browsers (Outside APK)
     playWebSpeech(cleanText, buttonEl);
   }
 
@@ -1705,12 +1685,18 @@
 
     u.onend = u.onerror = () => {
       if (buttonEl) buttonEl.classList.remove('playing');
+      currentTtsButton = null;
     };
 
-    window.speechSynthesis.speak(u);
+    try {
+      window.speechSynthesis.speak(u);
+    } catch (e) {
+      if (buttonEl) buttonEl.classList.remove('playing');
+      currentTtsButton = null;
+    }
   }
 
-  // ==========================================================================
+    // ==========================================================================
   // Helpers & PWA Service Worker
   // ==========================================================================
   function showToast(msg) {
@@ -1799,7 +1785,7 @@
   // ==========================================================================
   // Auto-Update Checker with Native Download Progress & Auto-Install
   // ==========================================================================
-  const CURRENT_APP_VERSION = '1.0.3';
+  const CURRENT_APP_VERSION = '1.0.4';
   const GITHUB_REPO = 'ADINEBAN/kaii-deutsch';
 
   window.onAppDownloadProgress = function(percent, downloaded, total, status) {
